@@ -22,7 +22,7 @@
       data: function() {
         return {
           title: "The Path!",
-          description: "An example of integration of Mall Maverick with Vue.js"
+          description: "Using new SDK"
         }
       },
       computed: {
