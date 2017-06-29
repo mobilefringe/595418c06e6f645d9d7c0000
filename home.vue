@@ -59,7 +59,7 @@
         return {
             title: "The Path!",
             description: "Using new SDK",
-            mobile_search_box : "Search All Path Stores"
+            mobile_search_box : ""
         }
       },
       computed: {
