@@ -39,7 +39,7 @@
                 <a class="all_caps menu_btn_label">YOUR LOCATION</a>
             </router-link>
             <router-link tag="li" to="/stores" active-class="active" class="all_caps menu_btn" exact>
-                  <a class="all_caps menu_btn_label">STORES</a>
+                  <a class="all_caps menu_btn_label">STORESS</a>
             </router-link>
             <router-link tag="li" to="/promotions" active-class="active" class="all_caps menu_btn" exact>
                   <a class="all_caps menu_btn_label">PROMOTIONS</a>
