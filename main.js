@@ -97,7 +97,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 		$('#menu_page').hide();
         $('#menu-icon').toggle();
         $(".custom_backdrop").remove();
-
       }
     },
     router: router,
