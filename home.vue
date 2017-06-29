@@ -43,7 +43,8 @@
       data: function() {
         return {
           title: "The Path!",
-          description: "Using new SDK"
+          description: "Using new SDK",
+          mobile_search_box : "Search All Path Stores"
         }
       },
       computed: {
