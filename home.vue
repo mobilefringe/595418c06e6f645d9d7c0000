@@ -32,6 +32,21 @@
             <a href="/stores"><label class="all_caps menu_btn">STORES</label></a>
             <a href="/promotions"><label class="all_caps menu_btn">PROMOTIONS</label></a>
             <a href="/map"><label class="all_caps menu_btn">PATH MAP</label></a>
+            <router-link tag="li" to="/" active-class="active" exact>
+                <a class="all_caps menu_btn">Home</a>
+            </router-link>
+            <router-link tag="li" to="/location" active-class="active" exact>
+                <a class="all_caps menu_btn">YOUR LOCATION</a>
+            </router-link>
+            <router-link tag="li" to="/stores" active-class="active" exact>
+                  <a class="all_caps menu_btn">STORES</a>
+            </router-link>
+            <router-link tag="li" to="/promotions" active-class="active" exact>
+                  <a class="all_caps menu_btn">PROMOTIONS</a>
+            </router-link>
+             <router-link tag="li" to="/map" active-class="active" exact>
+                  <a class="all_caps menu_btn">PATH MAP</a>
+            </router-link>
         </div>
     </div>
 </template>
