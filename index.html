@@ -66,16 +66,16 @@
                         <hr>
                         <div class="menu_btn_holder">
                             <router-link tag="li" to="/" active-class="active" class="all_caps menu_btn" exact>
-                                  <a class="all_caps menu_btn_label">Home</a>
+                                  <a @click="close_menu" class="all_caps menu_btn_label">Home</a>
                             </router-link>
                             <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
-                                <a class="all_caps menu_btn_label">YOUR LOCATION</a>
+                                <a @click="close_menu" class="all_caps menu_btn_label">YOUR LOCATION</a>
                             </router-link>
                             <router-link tag="li" to="/stores" active-class="active" class="all_caps menu_btn" exact>
-                                  <a class="all_caps menu_btn_label">STORES</a>
+                                  <a @click="close_menu" class="all_caps menu_btn_label">STORES</a>
                             </router-link>
                             <router-link tag="li" to="/promotions" active-class="active" class="all_caps menu_btn" exact>
-                                  <a class="all_caps menu_btn_label">PROMOTIONS</a>
+                                  <a @click="close_menu" class="all_caps menu_btn_label">PROMOTIONS</a>
                             </router-link>
                              <router-link tag="li" to="/map" active-class="active" class="all_caps menu_btn" exact>
                                   <a class="all_caps menu_btn_label">PATH MAP</a>
