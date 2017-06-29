@@ -10,112 +10,27 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
          <hr>
-        <div class="hidden_now" id="dine_store_list">
-            <div class="" id="dine_stores_container">
-                <script id="dine_stores_template" type="x-tmpl-mustache/text">
-                    <div class="row cat_name">
-                        <div class="col-xs-6 align_left">
-                            {{name}} 
-                            <br/>
-                            Building Name
-                        </div>
-                        <div class="col-xs-6 align_right">
-                            April 27-29
-                        </div>
-                    </div>
-                     <hr>
-                </script>
-            </div>
-        </div>
-       
         <div class="all_caps cat_title" id="shop">
             Shop
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
          <hr>
-        <div class="hidden_now" id="shop_store_list">
-            <div class="" id="shop_stores_container">
-                <script id="shop_stores_template" type="x-tmpl-mustache/text">
-                    <div class="row cat_name">
-                        <div class="col-xs-6 align_left">
-                            {{name}} 
-                            <br/>
-                            Building Name
-                        </div>
-                        <div class="col-xs-6 align_right">
-                            April 27-29
-                        </div>
-                    </div>
-                     <hr>
-                </script>
-            </div>
-        </div>
         <div class="all_caps cat_title" id="play">
             Play
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
         <hr>
-        <div class="hidden_now" id="play_store_list">
-            <div class="" id="play_stores_container">
-                <script id="play_stores_template" type="x-tmpl-mustache/text">
-                    <div class="row cat_name">
-                        <div class="col-xs-6 align_left">
-                            {{name}} 
-                            <br/>
-                            Building Name
-                        </div>
-                        <div class="col-xs-6 align_right">
-                            April 27-29
-                        </div>
-                    </div>
-                     <hr>
-                </script>
-            </div>
-        </div>
         <div class="all_caps cat_title" id="service">
             Service
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
          <hr>
-        <div class="hidden_now" id="service_store_list">
-            <div class="" id="service_stores_container">
-                <script id="service_stores_template" type="x-tmpl-mustache/text">
-                    <div class="row cat_name">
-                        <div class="col-xs-6 align_left">
-                            {{name}} 
-                            <br/>
-                            Building Name
-                        </div>
-                        <div class="col-xs-6 align_right">
-                            April 27-29
-                        </div>
-                    </div>
-                     <hr>
-                </script>
-            </div>
-        </div>
         <div class="all_caps cat_title" id="stay">
             Stay
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
          <hr>
-        <div class="hidden_now" id="stay_store_list">
-            <div class="" id="stay_stores_container">
-                <script id="stay_stores_template" type="x-tmpl-mustache/text">
-                    <div class="row cat_name">
-                        <div class="col-xs-6 align_left">
-                            {{name}} 
-                            <br/>
-                            Building Name
-                        </div>
-                        <div class="col-xs-6 align_right">
-                            April 27-29
-                        </div>
-                    </div>
-                     <hr>
-                </script>
-            </div>
-        </div>
+        
     </div>
     <!--<div id="category_list_container">-->
     <!--    <script id="category_list_template" type="x-tmpl-mustache/text">-->
