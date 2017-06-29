@@ -46,7 +46,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     data: function () {
       return {
         dataLoaded: false,
-        test: ''
+        test: '',
+        newsletter_control: ''
       }
     },
     created() {
