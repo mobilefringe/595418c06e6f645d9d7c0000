@@ -455,7 +455,7 @@ body {
     }
     .open_menu {
         width: 30px;
-        padding: 30px 0;
+        // padding: 30px 0;
         position: absolute;
         right: 20px;
         z-index: 999;
