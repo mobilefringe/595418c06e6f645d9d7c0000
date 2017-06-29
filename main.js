@@ -93,7 +93,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 		$('#menu-icon').toggle();
 
       },
-      open_menu: function () {
+      close_menu: function () {
 		$(this).toggleClass('open');
 		$('#menu_page').slideToggle(100,"linear");
 		$('#menu-icon').toggle();
