@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  define(["Vue", "vue!today_hours"], function(Vue, TodayHoursComponent) {
+  define(["Vue"], function(Vue) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
       data: function() {
