@@ -94,9 +94,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 
       },
       close_menu: function () {
-		$(this).toggleClass('open');
-		$('#menu_page').slideToggle(100,"linear");
-		$('#menu-icon').toggle();
+		$('#menu_page').hide();
+        //$(this).hide();
+        $('#menu-icon').toggle();
+        $(".custom_backdrop").remove();
 
       }
     },
