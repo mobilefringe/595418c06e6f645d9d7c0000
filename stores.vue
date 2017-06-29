@@ -30,14 +30,7 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
         </div>
          <hr>
-        
     </div>
-    <!--<div id="category_list_container">-->
-    <!--    <script id="category_list_template" type="x-tmpl-mustache/text">-->
-    <!--        {{name}}-->
-    <!--    </script>-->
-        
-    <!--</div>-->
 </div>
 
   <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
