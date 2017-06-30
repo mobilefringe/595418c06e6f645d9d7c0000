@@ -43,7 +43,7 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         },
         swapSearchTerm: function () {
-            
+                        
         }
       }
     })
