@@ -58,7 +58,7 @@
             description: "Using new SDK",
             results: [],
             mobile_search_box : "",
-            keys: ["store.name"],
+            keys: ["store.name"]
         }
       },
       watch: {
