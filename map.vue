@@ -1,4 +1,4 @@
-<template>>
+<template>
     <div class="map_page">
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
