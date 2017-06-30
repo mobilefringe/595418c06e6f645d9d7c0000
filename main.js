@@ -17,6 +17,7 @@ require.config({
     'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
+    'fuse' : 'https://cdn.jsdelivr.net/fuse/2.7.4/fuse.min.js',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   }
 });
