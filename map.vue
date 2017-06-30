@@ -33,7 +33,7 @@
         <!--</div>-->
         <div class="map">
                 <div class="demo_1 map3" style="">            
-                            <img alt="map_image" id="map_image" v-bind:src={{svg_map_url />   
+                    <img alt="map_image" id="map_image" v-bind:src={{svg_map}} />   
                     	
         		</div>
             </div>
