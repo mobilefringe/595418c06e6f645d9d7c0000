@@ -2,7 +2,7 @@
     <div>
         <div class="map_page">
             <div class="gray_bar">
-                <div id="mobile_search"  class="col-xs-10">
+                <div class="col-xs-10">
                     <!--<form id="mobile_search_form" class="no_margin">-->
                     <!--    <input id="mobile_search_box" type="text" placeholder="Search All Path Stores" title="search" />-->
                     <!--</form>-->
