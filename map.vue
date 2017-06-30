@@ -16,8 +16,7 @@
             <div class="map">
                 <div class="demo_1 map3" style="">            
                     <img alt="map_image" id="map_image" v-bind:src={{getSVGurl}} />   
-                    	
-        		</div>
+                </div>
             </div>
         </div>
     </div>
