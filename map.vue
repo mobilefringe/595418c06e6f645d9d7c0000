@@ -42,7 +42,6 @@
             return this.$store.getters.getProperty;
         },
         getSVGurl : function () {
-            console.log("Helloo, whats going on");
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         }
       }
