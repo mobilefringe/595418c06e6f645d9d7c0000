@@ -63,7 +63,7 @@
       },
       watch: {
         search() {
-            console.log("Serach")
+            console.log("Serach");
             if (this.mobile_search_box.trim() === '')
                 this.result = this.list
             else
