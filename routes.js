@@ -38,7 +38,8 @@ define([], function () {
     },
     {
       path: '/map',
-      component: view('map')
+      component: view('map'),
+      name: 'map'
     },
     {
       path: '/404',
