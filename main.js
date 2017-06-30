@@ -15,7 +15,7 @@ require.config({
     'json': 'https://unpkg.com/requirejs-plugins-current@1.0.3/src/json',
     'js-cookie': 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min',
     'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
-    'store': 'https://mmvue.codecloudapp.com/store',
+    'stores': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
     'fuse' : 'https://cdn.jsdelivr.net/fuse/2.7.4/fuse.min.js'
