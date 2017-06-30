@@ -67,7 +67,7 @@
                   minMatchCharLength: 1,
                   keys: [
                     "title",
-                    "author.firstName"
+                    "store.name"
                   ]
                 }
         }
