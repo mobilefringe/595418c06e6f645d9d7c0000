@@ -3,9 +3,6 @@
         <div class="map_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                    <!--<form id="mobile_search_form" class="no_margin">-->
-                    <!--    <input id="mobile_search_box" type="text" placeholder="Search All Path Stores" title="search" />-->
-                    <!--</form>-->
                     <input v-model="mobile_search_store" class= "mobile_map_search" placeholder="Search Stores" >
                     <input v-model="mobile_find_store" class= "mobile_map_search" placeholder="Find a store near you" >
                 </div>
