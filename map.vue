@@ -47,7 +47,7 @@
         swapSearchTerm: function () {
             var temp_serach1 = this.mobile_search_store;
             this.mobile_search_store = this.mobile_find_store;
-            this.mobile_find_store = temp_search1;
+            this.mobile_find_store = temp_serach1;
         }
       }
     })
