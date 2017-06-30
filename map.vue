@@ -6,6 +6,7 @@
                     <!--<form id="mobile_search_form" class="no_margin">-->
                     <!--    <input id="mobile_search_box" type="text" placeholder="Search All Path Stores" title="search" />-->
                     <!--</form>-->
+                    <input v-model="mobile_search_store" placeholder="Search Stores" >
                     <input v-model="mobile_search_store" placeholder="Search All Path Stores" >
                 </div>
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="">
