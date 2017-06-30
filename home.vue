@@ -64,7 +64,7 @@
             if (this.mobile_search_box.trim() === '')
             this.result = this.list
             else
-            this.result = this.fuse.search(this.search.trim())
+            this.result = this.fuse.search(this.mobile_search_box.trim())
         }
       },
       computed: {
