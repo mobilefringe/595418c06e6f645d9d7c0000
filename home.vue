@@ -28,10 +28,6 @@
         </div>
          <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder">
-            <!--<a href="/"><label class="all_caps menu_btn">Your Location</label></a>-->
-            <!--<a href="/stores"><label class="all_caps menu_btn">STORES</label></a>-->
-            <!--<a href="/promotions"><label class="all_caps menu_btn">PROMOTIONS</label></a>-->
-            <!--<a href="/map"><label class="all_caps menu_btn">PATH MAP</label></a>-->
             <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
                 <a class="all_caps menu_btn_label">YOUR LOCATION</a>
             </router-link>
