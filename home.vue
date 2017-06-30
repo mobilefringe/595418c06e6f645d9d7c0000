@@ -57,7 +57,8 @@
             title: "The Path!",
             description: "Using new SDK",
             results: [],
-            mobile_search_box : ""
+            mobile_search_box : "",
+            keys: ["store.name", "model.id"],
         }
       },
       watch: {
