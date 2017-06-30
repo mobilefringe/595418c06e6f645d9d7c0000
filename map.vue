@@ -44,7 +44,7 @@
         },
         getSVGurl : function () {
             console.log("Helloo, whats going on");
-            return property().svgmap_url;
+            return this.property.svgmap_url;
         }
       }
     })
