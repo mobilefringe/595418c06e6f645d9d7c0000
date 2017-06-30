@@ -12,7 +12,7 @@
         <div id="search_results_items" class="search-results-items" style="">
         <!--RENDERED BY renderSearchResultsTemplate(..) -->
         </div>
-         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
+        <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder">
             <!--<a href="/"><label class="all_caps menu_btn">Your Location</label></a>-->
             <!--<a href="/stores"><label class="all_caps menu_btn">STORES</label></a>-->
