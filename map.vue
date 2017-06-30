@@ -33,7 +33,7 @@
         <!--</div>-->
         <div class="map">
                 <div class="demo_1 map3" style="">            
-                    <img alt="map_image" id="map_image" src="//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/png/1494862912000/STC Map - May-15-2017 copy 2.png" />   
+                            <img alt="map_image" id="map_image" v-bind:src={{svg_map_url />   
                     	
         		</div>
             </div>
@@ -56,7 +56,8 @@
       computed: {
         property(){
           return this.$store.getters.getProperty;
-        }
+        },
+        get
       }
     })
   })
