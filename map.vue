@@ -41,6 +41,7 @@
           return this.$store.getters.getProperty;
         },
         getSVGurl : function () {
+            console.log("Helloo, whats going on");
             return property.svgmap_url;
         }
       }
