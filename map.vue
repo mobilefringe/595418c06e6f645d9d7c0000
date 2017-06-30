@@ -39,7 +39,7 @@
       },
       computed: {
         property(){
-          return this.$store.getters.getProperty;
+            return this.$store.getters.getProperty;
         },
         getSVGurl : function () {
             console.log("Helloo, whats going on");
