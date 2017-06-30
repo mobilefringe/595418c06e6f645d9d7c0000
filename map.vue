@@ -17,8 +17,8 @@
             
                 <div class="demo_1 map3" style="">       
                 
-                    <img alt="map_image" id="map_image" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498505789000/background image_menu.png">   
-                    <!--v-bind:src={{getSVGurl}}-->
+                    <img alt="map_image" id="map_image" v-attr="src: imageLink" >   
+                    <!--v-bind:src={{getSVGurl}} src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498505789000/background image_menu.png"-->
                 </div>
             </div>
         </div>
