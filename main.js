@@ -18,7 +18,6 @@ require.config({
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
-    'fuse' : 'https://cdn.jsdelivr.net/fuse/2.7.4/fuse.min.js'
   }
 });
 
