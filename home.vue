@@ -49,7 +49,7 @@
 </template>
 
 <script>
-  define(["Vue"], function(Vue) {
+  define(["Vue", 'fuse'], function(Vue,fuse) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
       data: function() {
