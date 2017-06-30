@@ -43,7 +43,7 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         }
       },
-      method: {
+       methods: {
           
         swapSearchTerm: function () {
             var temp_serach1 = mobile_search            
