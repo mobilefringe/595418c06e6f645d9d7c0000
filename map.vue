@@ -57,7 +57,7 @@
         property(){
           return this.$store.getters.getProperty;
         },
-        getSVGurl: {
+        getSVGurl (): {
             return property.svgmap_url;
         }
       }
