@@ -58,7 +58,6 @@
             description: "Using new SDK",
             results: [],
             mobile_search_box : "",
-            keys: ,
             options = {
                 shouldSort: true,
                 threshold: 0.6,
