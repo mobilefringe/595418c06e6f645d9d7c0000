@@ -95,7 +95,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 
       },
       close_menu: function () {
-          console.log("closed menu!");
+        console.log("closed menu!");
 		$('#menu_page').hide();
         $('#menu-icon').toggle();
       }
