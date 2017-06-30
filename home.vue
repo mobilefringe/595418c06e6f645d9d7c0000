@@ -58,7 +58,7 @@
             description: "Using new SDK",
             results: [],
             mobile_search_box : "",
-            keys: ["store.name"],
+            keys: ,
             options = {
                 shouldSort: true,
                 threshold: 0.6,
@@ -66,10 +66,7 @@
                 distance: 100,
                 maxPatternLength: 32,
                 minMatchCharLength: 1,
-                keys: [
-                    "title",
-                    "author.firstName"
-                ]
+                keys:["store.name"]
             }
         }
       },
