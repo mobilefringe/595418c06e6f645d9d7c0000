@@ -60,7 +60,12 @@
         }
       },
       watch: {
-          
+        search() {
+            if (this.search.trim() === '')
+            this.result = this.list
+            else
+            this.result = this.fuse.search(this.search.trim())
+        }
       },
       computed: {
         property(){
