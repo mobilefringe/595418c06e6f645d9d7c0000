@@ -56,6 +56,7 @@
         return {
             title: "The Path!",
             description: "Using new SDK",
+            results: [],
             mobile_search_box : ""
         }
       },
