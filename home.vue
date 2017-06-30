@@ -49,25 +49,14 @@
 </template>
 
 <script>
-  define(["Vue", 'fuse'], function(Vue,fuse) {
+  define(["Vue"], function(Vue) {
     return Vue.component("home-component", {
       template: template, // the variable template will be injected
       data: function() {
         return {
             title: "The Path!",
             description: "Using new SDK",
-            results: [],
-            mobile_search_box : "",
-            keys:["store.name"]
-        }
-      },
-      watch: {
-        search() {
-            console.log("Serach");
-            if (this.mobile_search_box.trim() === '')
-                this.result = this.list
-            else
-                this.result = fuse.search(this.mobile_search_box.trim())
+            mobile_search_box : ""
         }
       },
       computed: {
