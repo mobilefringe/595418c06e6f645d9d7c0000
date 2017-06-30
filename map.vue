@@ -34,7 +34,7 @@
             title: "The Path!",
             description: "Using new SDK",
             mobile_search_box : "",
-            svg_map_url: getSVGurl//"//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498505789000/background image_menu.png"
+            svg_map_url: getSVGurl()//"//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498505789000/background image_menu.png"
         }
       },
       computed: {
