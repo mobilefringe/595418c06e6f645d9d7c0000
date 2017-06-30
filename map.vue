@@ -1,5 +1,5 @@
 <template>>
-    <div class="home_page">
+    <div class="map_page">
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
                 <!--<form id="mobile_search_form" class="no_margin">-->
