@@ -50,7 +50,7 @@
 
 <script>
   define(["Vue"], function(Vue) {
-    return Vue.component("home-component", {
+    return Vue.component("map-component", {
       template: template, // the variable template will be injected
       data: function() {
         return {
