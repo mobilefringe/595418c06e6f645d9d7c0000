@@ -75,7 +75,7 @@
             this.mobile_find_store = temp_search1;
         },
         removeSearch2 :function() {
-            
+            this.mobile_find_store = '';
         }
       }
     })
