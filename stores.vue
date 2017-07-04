@@ -106,7 +106,7 @@
           return this.$store.getters.storesByCategoryName;
         },
         findStoreBySlug (){
-            
+            return this.$store.getters.findStoreBySlug;
         }
       }
     });
