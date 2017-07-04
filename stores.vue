@@ -105,7 +105,7 @@
         storesByCategoryName() {
           return this.$store.getters.storesByCategoryName;
         },
-        findStoreBySlug {
+        findStoreBySlug (){
             
         }
       }
