@@ -100,10 +100,10 @@
       },
       computed: {
         storesByAlphaIndex() {
-          return this.$store.getters.storesByAlphaIndex;
+            return this.$store.getters.storesByAlphaIndex;
         },
         storesByCategoryName() {
-          return this.$store.getters.storesByCategoryName;
+            return this.$store.getters.storesByCategoryName;
         },
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
