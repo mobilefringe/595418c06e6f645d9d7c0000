@@ -53,7 +53,7 @@
                 $(".blue_dets_box").show();
             }
             else {
-                $(".blue_dets_box").hide;
+                $(".blue_dets_box").hide();
             }
         }
       },
