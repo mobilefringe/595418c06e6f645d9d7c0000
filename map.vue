@@ -20,7 +20,7 @@
                     <!--v-bind:src={{getSVGurl}} src=-->
                 </div>
                 <div class="blue_dets_box hidden_now">
-                    <div class="close_dets ">
+                    <div class="close_dets pull-left">
                         <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                     </div>
                     {{mobile_search_store}}
