@@ -67,6 +67,7 @@
         showStore1Details: function() {
             if(this.mobile_search_store != '') {
                 $(".blue_dets_box").show();
+                store1_name = findStoreBySlug(slug);
             }
             else {
                 $(".blue_dets_box").hide();
