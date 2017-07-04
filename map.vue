@@ -49,7 +49,9 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         },
         showStoreDetails: function() {
-            
+            if(this.mobile_search_store != '') {
+                
+            }
         }
       },
       methods: {
