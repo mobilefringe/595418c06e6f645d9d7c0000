@@ -28,7 +28,6 @@
                     <div class="close_dets">
                         <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="close_dets" alt="">
                     </div>
-                    
                     {{mobile_find_store}}
                     <img @click="viewMoreDets2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="more_dets" alt="">
                 </div>
