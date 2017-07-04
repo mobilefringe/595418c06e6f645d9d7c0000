@@ -69,7 +69,7 @@
         showStore1Details: function() {
             if(this.mobile_search_store != '') {
                 $(".blue_dets_box").show();
-                this.store1_name =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
+                this.store1_name =  this.findStoreBySlug("tdcentre-starbucks-coffee--2").name;
             }
             else {
                 $(".blue_dets_box").hide();
@@ -79,7 +79,7 @@
             if(this.mobile_find_store != '') {
                 $(".green_dets_box").show();
                 $(".blue_dets_box").addClass("lift_up");
-                this.store2_name = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
+                this.store2_name = this.findStoreBySlug("eatoncentrepath-nino-d-arena").name;
             }
             else {
                 $(".green_dets_box").hide();
