@@ -77,6 +77,7 @@
             if(this.mobile_find_store != '') {
                 $(".green_dets_box").show();
                 $(".blue_dets_box").addClass("lift_up");
+                this.store2_name = findStoreBySlug();
             }
             else {
                 $(".green_dets_box").hide();
