@@ -79,6 +79,12 @@
         },
         removeSearch2 :function() {
             this.mobile_find_store = '';
+        },
+        viewMoreDets1 :function() {
+            this.mobile_find_store = '';
+        },
+        viewMoreDets2 :function() {
+            this.mobile_find_store = '';
         }
       }
     })
