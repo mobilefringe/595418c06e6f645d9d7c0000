@@ -25,7 +25,7 @@
                         <div class="more_dets pull-right">
                             <img @click="viewMoreDets1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt="">
                         </div>
-                        <p class="dets_title">{{mobile_search_store}} </p>
+                        <p class="dets_title">{{store1_name}} </p>
                         
                     </div>
                     <div class="green_dets_box hidden_now">
@@ -35,7 +35,7 @@
                         <div class="more_dets pull-right">
                             <img @click="viewMoreDets2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt="">
                         </div>
-                        <p class="dets_title">{{mobile_find_store}}</p>
+                        <p class="dets_title">{{store2_name}}</p>
                         
                         
                     </div>
