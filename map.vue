@@ -71,7 +71,7 @@
             }
         },
         showStore2Details: function() {
-            if(this.mobile_search_store != '') {
+            if(this.mobile_find_store != '') {
                 $(".green_dets_box").show();
             }
             else {
