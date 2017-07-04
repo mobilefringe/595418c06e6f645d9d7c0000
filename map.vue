@@ -82,8 +82,8 @@
                 $(".blue_dets_box").removeClass("lift_up");
             }
         },
-        findStoreBySlug (){
-            return this.$store.getters.findStoreBySlug;
+        findStoreBySlug (slug){
+            return this.$store.getters.findStoreBySlug(slug);
         }
       },
       methods: {
