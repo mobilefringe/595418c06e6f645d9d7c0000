@@ -79,6 +79,7 @@
             }
             else {
                 $(".green_dets_box").hide();
+                $(".blue_dets_box").removeClass("lift_up");
             }
         },
         findStoreBySlug (){
