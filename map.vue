@@ -56,7 +56,8 @@
             mobile_search_store : "",
             mobile_find_store: "",
             store1_name = "",
-            store2_name = ""
+            store2_name = "",
+            store1= []
         }
       },
       computed: {
