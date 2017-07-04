@@ -10,7 +10,7 @@
                 <div class="blue_dets_box">
                     
                 </div>
-                <div class="gren_dets_box">
+                <div class="green_dets_box">
                     
                 </div>
             </div>
