@@ -50,7 +50,7 @@
         },
         showStoreDetails: function() {
             if(this.mobile_search_store != '') {
-                $(".blue_dets_box").toggle();
+                $(".blue_dets_box").show();
             }
         }
       },
