@@ -55,8 +55,8 @@
             description: "Using new SDK",
             mobile_search_store : "",
             mobile_find_store: "",
-            store1= [],
-            store2 = []
+            store1: {},
+            store2: {}
         }
       },
       computed: {
