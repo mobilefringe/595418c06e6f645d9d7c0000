@@ -19,6 +19,12 @@
                     <img alt="map_image" id="map_image" v-bind:src="getSVGurl"> 
                     <!--v-bind:src={{getSVGurl}} src=-->
                 </div>
+                <div class="blue_dets_box hidden_now">
+                    
+                </div>
+                <div class="green_dets_box hidden_now">
+                    
+                </div>
             </div>
         </div>
     </div>
