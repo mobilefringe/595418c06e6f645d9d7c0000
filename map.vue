@@ -27,7 +27,7 @@
                 <div class="green_dets_box hidden_now">
                     <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="close_dets" alt="">
                     {{mobile_find_store}}
-                    <img @click="viewMoreDets2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="search_icon" alt="">
+                    <img @click="viewMoreDets2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="more_dets" alt="">
                 </div>
             </div>
         </div>
