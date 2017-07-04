@@ -7,12 +7,7 @@
                     <input v-model="mobile_find_store"  v-on:keyup.enter="showStore2Details" class= "mobile_map_search" placeholder="Find a store near you" >
                 </div>
                 <img @click="swapSearchTerm" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">
-                <div class="blue_dets_box hidden_now">
-                    
-                </div>
-                <div class="green_dets_box hidden_now">
-                    
-                </div>
+                
             </div>
             <div id="search_results_items" class="search-results-items" style="">
             <!--RENDERED BY renderSearchResultsTemplate(..) -->
