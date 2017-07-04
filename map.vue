@@ -77,6 +77,9 @@
             else {
                 $(".green_dets_box").hide();
             }
+        },
+        findStoreBySlug (){
+            return this.$store.getters.findStoreBySlug;
         }
       },
       methods: {
