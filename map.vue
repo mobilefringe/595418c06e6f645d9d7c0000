@@ -41,6 +41,9 @@
         },
         getSVGurl : function () {
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
+        },
+        showStoreDetails: function() {
+            
         }
       },
       methods: {
