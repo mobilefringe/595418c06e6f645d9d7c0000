@@ -90,7 +90,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       },
       open_menu: function () {
 		$(this).toggleClass('open');
-		$('#menu_page').slideToggle(100,"linear");
+		$('#menu_page').show;
 		$('#menu-icon').toggle();
 
       },
