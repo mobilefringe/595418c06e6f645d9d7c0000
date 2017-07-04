@@ -69,7 +69,7 @@
         showStore1Details: function() {
             if(this.mobile_search_store != '') {
                 $(".blue_dets_box").show();
-                this.store1_name = findStoreBySlug("tdcentre-starbucks-coffee--2");
+                this.store1_name =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
             }
             else {
                 $(".blue_dets_box").hide();
