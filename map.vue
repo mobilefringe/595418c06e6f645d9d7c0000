@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  define(["Vue"], function(Vue) {
+  define(["Vue", "jquery"], function(Vue) {
     return Vue.component("map-component", {
       template: template, // the variable template will be injected
       data: function() {
