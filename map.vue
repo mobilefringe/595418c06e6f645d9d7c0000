@@ -55,6 +55,14 @@
             else {
                 $(".blue_dets_box").hide();
             }
+        },
+        showStore2Details: function() {
+            if(this.mobile_search_store != '') {
+                $(".green_dets_box").show();
+            }
+            else {
+                $(".green_dets_box").hide();
+            }
         }
       },
       methods: {
