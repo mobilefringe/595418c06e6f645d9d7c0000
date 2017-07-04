@@ -24,6 +24,7 @@
                         <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                     </div>
                     <div class="more_dets pull-right">
+                    <span class="Centerer"></span>
                         <img @click="viewMoreDets1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt="">
                     </div>
                     <p class="dets_title">{{mobile_search_store}} </p>
@@ -31,10 +32,12 @@
                 </div>
                 <div class="green_dets_box hidden_now">
                     <div class="close_dets pull-left">
+                    <span class="Centerer"></span>
                         <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                     </div>
                     <p class="dets_title">{{mobile_find_store}}</p>
                     <div class="more_dets pull-right">
+                    <span class="Centerer"></span>
                         <img @click="viewMoreDets2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt="">
                     </div>
                     
