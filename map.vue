@@ -77,6 +77,7 @@
             // }
         },
         showStore2Details: function() {
+            console.log(this.mobile_find_store);
             // if(this.mobile_find_store != '') {
             //     $(".green_dets_box").show();
                 $(".blue_dets_box").addClass("lift_up");
