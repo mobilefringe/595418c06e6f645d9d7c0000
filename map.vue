@@ -84,7 +84,7 @@
             },
             showStore2Details: function() {
                 this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
-                 this.store1.path_url = "stores/" + store1.slug;
+                 this.store2.path_url = "stores/" + store2.slug;
             },
             findStoreBySlug (){
                 return this.$store.getters.findStoreBySlug;
