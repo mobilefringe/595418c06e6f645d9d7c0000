@@ -37,7 +37,7 @@
                             
                         </div>
                         <p class="dets_title">{{store2.name}}</p>
-                        <p class="dets_data">{{store2.name}}</p>
+                        <p class="dets_data">Building Name {{store2.name}}</p>
                         
                     </div>
                 </div>
