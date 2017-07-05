@@ -63,11 +63,9 @@
         watch: {
             mobile_find_store : function (val) {
                 if(val != '') {
-                    console.log(val , this.lift_blue_box );
                     this.lift_blue_box = true
                 }
                else {
-                   console.log(val , this.lift_blue_box );
                     this.lift_blue_box = false;
                }
             }
