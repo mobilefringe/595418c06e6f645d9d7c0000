@@ -67,6 +67,7 @@
                     lift_blue_box = true
                 }
                else {
+                   console.log(val ,lift_blue_box );
                    lift_blue_box = false;
                }
             }
