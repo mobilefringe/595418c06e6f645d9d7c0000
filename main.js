@@ -65,14 +65,14 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         {
             name: "Stores",
-            id: "home",
+            id: "stores",
             label_class_list:"all_caps menu_btn_label",
             href : "/stores",
             is_inHome: false
         },
         {
             name: "Promotions",
-            id: "home",
+            id: "promotions",
             label_class_list:"all_caps menu_btn_label",
             href : "/promotions",
             is_inHome: false
