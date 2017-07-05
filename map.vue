@@ -18,7 +18,7 @@
                 
                     <img alt="map_image" id="map_image" v-bind:src="getSVGurl"> 
                     <!--v-bind:src={{getSVGurl}} src=-->
-                    <div class="blue_dets_box hidden_now">
+                    <div v-show = "mobile_search_store" class="blue_dets_box">
                         <div class="close_dets pull-left">
                             <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                         </div>
@@ -28,7 +28,7 @@
                         <p class="dets_title">{{store1.name}} </p>
                         <p class="dets_data">{{store2.name}}</p>
                     </div>
-                    <div class="green_dets_box hidden_now">
+                    <div class="green_dets_box">
                         <div class="close_dets pull-left">
                             <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                         </div>
