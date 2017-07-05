@@ -69,7 +69,7 @@
       </div>
                         <div class="menu_btn_holder" v-for="item in menu_items">
                             <router-link tag="li" :to="{item.href}" active-class="active" class="menu_btn" exact>
-                                  <a><label class="all_caps menu_btn_label" @click="close_menu">Home</label></a>
+                                  <a><label :class="{class_list}" @click="close_menu">Home</label></a>
                             </router-link>
                             <!--<router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>-->
                             <!--     <a><label class="all_caps menu_btn_label" @click="close_menu">YOUR LOCATION</label></a>-->
