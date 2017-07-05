@@ -30,19 +30,20 @@
 <script>
   define(["Vue"], function(Vue) {
     return Vue.component("home-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-            title: "The Path!",
-            description: "Using new SDK",
-            mobile_search_box : ""
+        props: ['message'],
+        template: template, // the variable template will be injected
+        data: function() {
+            return {
+                title: "The Path!",
+                description: "Using new SDK",
+                mobile_search_box : ""
+            }
+        },
+        computed: {
+            property(){
+              return this.$store.getters.getProperty;
+            }
         }
-      },
-      computed: {
-        property(){
-          return this.$store.getters.getProperty;
-        }
-      }
     })
   })
 </script>
