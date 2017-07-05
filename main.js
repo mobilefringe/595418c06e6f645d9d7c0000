@@ -60,28 +60,28 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             name: "Your Location",
             id: "location",
             label_class_list:"all_caps menu_btn_label",
-            href : "/",
+            href : "/location",
             is_inHome: false
         },
         {
             name: "Stores",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
-            href : "/",
+            href : "/stores",
             is_inHome: false
         },
         {
             name: "Promotions",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
-            href : "/",
+            href : "/promotions",
             is_inHome: false
         },
         {
             name: "Path Map",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
-            href : "/",
+            href : "/map",
             is_inHome: false
         }]
       }
