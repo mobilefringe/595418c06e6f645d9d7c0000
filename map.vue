@@ -80,6 +80,7 @@
             },
             showStore1Details: function() {
                 this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
+                this.store1.url = "stores/" + store1.slug;
             },
             showStore2Details: function() {
                 this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
