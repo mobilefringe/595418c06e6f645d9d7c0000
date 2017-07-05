@@ -98,19 +98,10 @@
             },
             removeSearch1 :function() {
                 this.mobile_search_store = '';
-                 //$(".blue_dets_box").hide();
             },
             removeSearch2 :function() {
                 this.mobile_find_store = '';
-                // $(".green_dets_box").hide();
             }
-           // ,
-            // viewMoreDets1 :function() {
-            //     this.mobile_find_store = '';
-            // },
-            // viewMoreDets2 :function() {
-            //     this.mobile_find_store = '';
-            // }
         }
     })
   })
