@@ -49,9 +49,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         test: 'testing',
         newsletter_control: '',
         copyright_year :  moment().year(),
-        menu_items : {
+        menu_items : [{
             
-        }
+        }]
       }
     },
     created() {
