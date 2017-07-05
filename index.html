@@ -41,38 +41,35 @@
       <!--</div>-->
       <!--<br/>-->
       <!--<header class="main_container main_nav">-->
-      <!--  <div class="row">-->
-      <!--      <div class="logo_container">-->
-      <!--          <a href="/">-->
-      <!--              <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506681000/PathLogo2x.png" class="main_logo" />-->
-      <!--          </a> -->
-      <!--      </div>-->
-      <!--      <div class="position_relative">-->
-      <!--          <img @click="open_menu" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">-->
-      <!--          <div id="menu_page">-->
-      <!--              <div class="menu_page_content">-->
-      <!--                  <div class="row">-->
-      <!--                      <div class="logo_container">-->
-      <!--                          <a href="/">-->
-      <!--                              <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506270000/Path Logo.png" class="main_logo" />-->
-      <!--                          </a> -->
-      <!--                      </div>-->
-      <!--                      <div class="position_relative">-->
-      <!--                          <img @click="close_menu" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/Close Button 2x.png" class="close_menu visible_phone menu-icon" alt="open menu" id="close-menu-icon">-->
-      <!--                      </div>-->
-      <!--                  </div>-->
-      <!--                  <hr>-->
-      <!--                  <h4 class="all_caps menu_title"> Discover The Toronto Path</h4>-->
-      <!--                  <hr>-->
-      <!--                  <div v-for="item in menu_items">-->
-      <!--                      <h2>{{item.name}}</h2>-->
-      <!--                  </div>-->
-      <!--                  <div class="menu_btn_holder" >-->
-      <!--                      <div v-for="item in menu_items">-->
-      <!--                          <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>-->
-      <!--                            <a><label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label></a>-->
-      <!--                      </router-link>-->
-      <!--                      </div>-->
+        <div class="row">
+            <div class="logo_container">
+                <a href="/">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506681000/PathLogo2x.png" class="main_logo" />
+                </a> 
+            </div>
+            <div class="position_relative">
+                <img @click="open_menu" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
+                <div id="menu_page">
+                    <div class="menu_page_content">
+                        <div class="row">
+                            <div class="logo_container">
+                                <a href="/">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506270000/Path Logo.png" class="main_logo" />
+                                </a> 
+                            </div>
+                            <div class="position_relative">
+                                <img @click="close_menu" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/Close Button 2x.png" class="close_menu visible_phone menu-icon" alt="open menu" id="close-menu-icon">
+                            </div>
+                        </div>
+                        <hr>
+                        <h4 class="all_caps menu_title"> Discover The Toronto Path</h4>
+                        <hr>
+                        <div class="menu_btn_holder" >
+                            <div v-for="item in menu_items">
+                                <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+                                  <a><label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label></a>
+                            </router-link>
+                            </div>
                             
                             <!--<router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>-->
                             <!--     <a><label class="all_caps menu_btn_label" @click="close_menu">YOUR LOCATION</label></a>-->
@@ -92,35 +89,33 @@
                             <!--<a href="/stores"><label class="all_caps menu_btn">STORES</label></a>-->
                             <!--<a href="/promotions"><label class="all_caps menu_btn">PROMOTIONS</label></a>-->
                             <!--<a href="/map"><label class="all_caps menu_btn">PATH MAP</label></a>-->
-      <!--                  </div>-->
-      <!--              </div>-->
-      <!--          </div>-->
-      <!--      </div>-->
-      <!--  </div>-->
-      <!--<router-view></router-view>-->
-    <!--  <section class="copyright_footer main_container">-->
-    <!--    <div class="text-center visible_phone">-->
-    <!--    <img src="http://assets.codecloudapp.com/sites/59515e256e6f646e860c0000/image/png/1498506682000/MFLogo2x.png" class="footer_mf_logo" alt="">-->
-    <!--    <p class="subscribe_text">-->
-    <!--        Subscribe to our newsletter and get information catered to the retail property management industry and updated features.-->
-    <!--    </p>-->
-    <!--        <div class="newsletter_div">-->
-    <!--            <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">-->
-    <!--                <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <router-view></router-view>
+      <section class="copyright_footer main_container">
+        <div class="text-center visible_phone">
+        <img src="http://assets.codecloudapp.com/sites/59515e256e6f646e860c0000/image/png/1498506682000/MFLogo2x.png" class="footer_mf_logo" alt="">
+        <p class="subscribe_text">
+            Subscribe to our newsletter and get information catered to the retail property management industry and updated features.
+        </p>
+            <div class="newsletter_div">
+                <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
+                    <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
                     
-    <!--                <button class="newsletter_btn animated_btn">Submit</button>-->
-    <!--                <p class="hidden_now" id="success_subscribe">-->
-    <!--                    Thank you for subscribing!-->
-    <!--                </p>-->
-    <!--            </form>-->
-    <!--        </div>-->
-    <div class="container">
+                    <button class="newsletter_btn animated_btn">Submit</button>
+                    <p class="hidden_now" id="success_subscribe">
+                        Thank you for subscribing!
+                    </p>
+                </form>
+            </div>
             <p class="footer_text">
                 Powered by <a href="//mobilefringe.com" target="_blank"><u>Mobile Fringe</u></a>. &copy; Copyright {{copyright_year}} {{test}}
             </p>
-    </div>
-    <!--    </div>-->
-    <!--</section>-->
+        </div>
+    </section>
     </div>
     <script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
   </body>
