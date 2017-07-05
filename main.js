@@ -64,21 +64,21 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             is_inHome: false
         },
         {
-            name: "Home",
+            name: "Stores",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
             href : "/",
             is_inHome: false
         },
         {
-            name: "Home",
+            name: "Promotions",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
             href : "/",
             is_inHome: false
         },
         {
-            name: "Home",
+            name: "Path Map",
             id: "home",
             label_class_list:"all_caps menu_btn_label",
             href : "/",
