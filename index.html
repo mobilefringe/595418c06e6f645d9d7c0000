@@ -63,10 +63,8 @@
                         </div>
                         <hr>
                         <h4 class="all_caps menu_title"> Discover The Toronto Path</h4>
-                        <hr><div class="store-section" v-for="store in stores">
-        <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
-        <hr/>
-      </div>
+                        <hr>
+                        </div>
                         <div class="menu_btn_holder" v-for="item in menu_items">
                             <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
                                   <a><label :class="item.class_list" @click="close_menu">{{name}}</label></a>
