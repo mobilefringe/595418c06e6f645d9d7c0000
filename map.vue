@@ -67,24 +67,24 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;
         },
         showStore1Details: function() {
-            if(this.mobile_search_store != '') {
-                $(".blue_dets_box").show();
+            // if(this.mobile_search_store != '') {
+                //$(".blue_dets_box").show();
                 this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
-            }
-            else {
-                $(".blue_dets_box").hide();
-            }
+            // }
+            // else {
+            //     $(".blue_dets_box").hide();
+            // }
         },
         showStore2Details: function() {
-            if(this.mobile_find_store != '') {
-                $(".green_dets_box").show();
-                $(".blue_dets_box").addClass("lift_up");
+            // if(this.mobile_find_store != '') {
+            //     $(".green_dets_box").show();
+                 $(".blue_dets_box").addClass("lift_up");
                 this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
-            }
-            else {
-                $(".green_dets_box").hide();
-                $(".blue_dets_box").removeClass("lift_up");
-            }
+            // }
+            // else {
+            //     $(".green_dets_box").hide();
+            //     $(".blue_dets_box").removeClass("lift_up");
+            // }
         },
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
