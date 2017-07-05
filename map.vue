@@ -48,77 +48,77 @@
 <script>
   define(["Vue", "jquery"], function(Vue, $) {
     return Vue.component("map-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-            title: "The Path!",
-            description: "Using new SDK",
-            mobile_search_store : "",
-            mobile_find_store: "",
-            lift_blue_box: false,
-            store1: {},
-            store2: {}
+        template: template, // the variable template will be injected
+        data: function() {
+            return {
+                title: "The Path!",
+                description: "Using new SDK",
+                mobile_search_store : "",
+                mobile_find_store: "",
+                lift_blue_box: false,
+                store1: {},
+                store2: {}
+            }
+        },
+        watch: {
+            mobile_find_store : function (val) {
+                this.fullName = val + ' ' + this.lastName
+            }
+        },
+        computed: {
+            property(){
+                return this.$store.getters.getProperty;
+            },
+            getSVGurl : function () {
+                return "https://www.mallmaverick.com" + this.property.svgmap_url;
+            },
+            showStore1Details: function() {
+                // if(this.mobile_search_store != '') {
+                    //$(".blue_dets_box").show();
+                    this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
+                // }
+                // else {
+                //     $(".blue_dets_box").hide();
+                // }
+            },
+            showStore2Details: function() {
+                //console.log(this.mobile_find_store != '');
+                // if(this.mobile_find_store != '') {
+                //     $(".green_dets_box").show();
+                   // $(".blue_dets_box").addClass("lift_up");
+                    this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
+                // }
+                // else {
+                //     $(".green_dets_box").hide();
+                //     $(".blue_dets_box").removeClass("lift_up");
+                // }
+            },
+            findStoreBySlug (){
+                return this.$store.getters.findStoreBySlug;
+            }
+        },
+         methods: {
+            swapSearchTerm: function () {
+                var temp_search1 = this.mobile_search_store;
+                this.mobile_search_store = this.mobile_find_store;
+                this.mobile_find_store = temp_search1;
+            },
+            removeSearch1 :function() {
+                this.mobile_search_store = '';
+                 $(".blue_dets_box").hide();
+            },
+            removeSearch2 :function() {
+                this.mobile_find_store = '';
+                 $(".green_dets_box").hide();
+            }
+            ,
+            viewMoreDets1 :function() {
+                this.mobile_find_store = '';
+            },
+            viewMoreDets2 :function() {
+                this.mobile_find_store = '';
+            }
         }
-      },
-      watch: {
-        mobile_find_store : function (val) {
-            this.fullName = val + ' ' + this.lastName
-        }
-      },
-      computed: {
-        property(){
-            return this.$store.getters.getProperty;
-        },
-        getSVGurl : function () {
-            return "https://www.mallmaverick.com" + this.property.svgmap_url;
-        },
-        showStore1Details: function() {
-            // if(this.mobile_search_store != '') {
-                //$(".blue_dets_box").show();
-                this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
-            // }
-            // else {
-            //     $(".blue_dets_box").hide();
-            // }
-        },
-        showStore2Details: function() {
-            //console.log(this.mobile_find_store != '');
-            // if(this.mobile_find_store != '') {
-            //     $(".green_dets_box").show();
-               // $(".blue_dets_box").addClass("lift_up");
-                this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
-            // }
-            // else {
-            //     $(".green_dets_box").hide();
-            //     $(".blue_dets_box").removeClass("lift_up");
-            // }
-        },
-        findStoreBySlug (){
-            return this.$store.getters.findStoreBySlug;
-        }
-      },
-      methods: {
-        swapSearchTerm: function () {
-            var temp_search1 = this.mobile_search_store;
-            this.mobile_search_store = this.mobile_find_store;
-            this.mobile_find_store = temp_search1;
-        },
-        removeSearch1 :function() {
-            this.mobile_search_store = '';
-             $(".blue_dets_box").hide();
-        },
-        removeSearch2 :function() {
-            this.mobile_find_store = '';
-             $(".green_dets_box").hide();
-        }
-        ,
-        viewMoreDets1 :function() {
-            this.mobile_find_store = '';
-        },
-        viewMoreDets2 :function() {
-            this.mobile_find_store = '';
-        }
-      }
     })
   })
 </script>
