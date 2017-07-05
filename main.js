@@ -52,7 +52,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         menu_items : [{
             name: "Home",
             id: "home",
-            li_class_list : "",
+            li_class_list : "menu_btn",
             a_class_list:"all_caps menu_btn_label",
             is_inHome: false
         }]
