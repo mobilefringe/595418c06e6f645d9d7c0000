@@ -8,7 +8,7 @@ require.config({
     'moment': 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min',
     'moment-timezone': 'https://momentjs.com/downloads/moment-timezone-with-data-2012-2022.min',
     'vue2-filters': 'https://cdn.jsdelivr.net/vue2-filters/0.1.8/vue2-filters.min',
-    'vue': 'https://cdn.rawgit.com/edgardleal/require-vuejs/aeaff6db/dist/require-vuejs.min',
+    'vue': 'https://cdn.rawgit.com/edgardleal/require-vuejs/master/dist/require-vuejs.min',
     'vuex': 'https://cdnjs.cloudflare.com/ajax/libs/vuex/2.3.1/vuex.min',
     'vue-i18n': 'https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/6.1.1/vue-i18n.min',
     'text': 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
@@ -18,6 +18,9 @@ require.config({
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
+  },
+  shim: {
+    "Vue": {"exports": "Vue"}
   }
 });
 
