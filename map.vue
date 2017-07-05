@@ -80,7 +80,7 @@
             //console.log(this.mobile_find_store != '');
             // if(this.mobile_find_store != '') {
             //     $(".green_dets_box").show();
-                $(".blue_dets_box").addClass("lift_up");
+               // $(".blue_dets_box").addClass("lift_up");
                 this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
             // }
             // else {
