@@ -31,7 +31,7 @@
             </div>
              <hr>
         </div>
-    </div>
+    
 
   <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
     <ul class="menu">
@@ -72,6 +72,7 @@
         <hr/>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
