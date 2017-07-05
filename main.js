@@ -79,7 +79,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         },
         {
             name: "Path Map",
-            id: "home",
+            id: "map",
             label_class_list:"all_caps menu_btn_label",
             href : "/map",
             is_inHome: false
