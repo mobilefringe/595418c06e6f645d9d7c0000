@@ -95,11 +95,11 @@
             },
             removeSearch1 :function() {
                 this.mobile_search_store = '';
-                 $(".blue_dets_box").hide();
+                 //$(".blue_dets_box").hide();
             },
             removeSearch2 :function() {
                 this.mobile_find_store = '';
-                 $(".green_dets_box").hide();
+                // $(".green_dets_box").hide();
             }
             ,
             viewMoreDets1 :function() {
