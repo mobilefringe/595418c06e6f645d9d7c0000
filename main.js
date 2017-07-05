@@ -53,7 +53,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             name: "Home",
             id: "home",
             li_class_list : "",
-            a_class_list:"all_caps menu_btn_label"
+            a_class_list:"all_caps menu_btn_label",
             is_inHome: false
         }]
       }
