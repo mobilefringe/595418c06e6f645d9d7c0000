@@ -61,6 +61,10 @@
         }
       },
       watch: {
+        mobile_find_store : function (val) {
+            this.fullName = val + ' ' + this.lastName
+        }
+    }
       },
       computed: {
         property(){
