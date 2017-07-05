@@ -52,7 +52,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         menu_items : [{
             name: "Home",
             id: "home",
-            li_class_list : "menu_btn",
             label_class_list:"all_caps menu_btn_label",
             href : "/",
             is_inHome: false
@@ -60,7 +59,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         {
             name: "Home",
             id: "home",
-            li_class_list : "menu_btn",
             label_class_list:"all_caps menu_btn_label",
             href : "/",
             is_inHome: false
