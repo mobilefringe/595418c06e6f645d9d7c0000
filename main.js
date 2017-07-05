@@ -47,7 +47,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       return {
         dataLoaded: false,
         test: '',
-        newsletter_control: ''
+        newsletter_control: '',
+        copyright_year :  moment().year()
       }
     },
     created() {
