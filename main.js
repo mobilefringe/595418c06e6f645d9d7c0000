@@ -52,35 +52,35 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         menu_items : [{
             name: "Home",
             id: "home",
-            label_class_list:"all_caps menu_btn_label",
+            class_list:"all_caps menu_btn_label",
             href : "/",
             is_inHome: false
         },
         {
             name: "Your Location",
             id: "location",
-            label_class_list:"all_caps menu_btn_label",
+            class_list:"all_caps menu_btn_label",
             href : "/location",
             is_inHome: true
         },
         {
             name: "Stores",
             id: "stores",
-            label_class_list:"all_caps menu_btn_label",
+            class_list:"all_caps menu_btn_label",
             href : "/stores",
             is_inHome: true
         },
         {
             name: "Promotions",
             id: "promotions",
-            label_class_list:"all_caps menu_btn_label",
+            class_list:"all_caps menu_btn_label",
             href : "/promotions",
             is_inHome: true
         },
         {
             name: "Path Map",
             id: "map",
-            label_class_list:"all_caps menu_btn_label",
+            class_list:"all_caps menu_btn_label",
             href : "/map",
             is_inHome: true
         }]
