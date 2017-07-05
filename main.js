@@ -52,7 +52,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         menu_items : [{
             name: "Home",
             id: "home",
-            class_list : ""
+            class_list : "",
+            is_inHome: false
         }]
       }
     },
