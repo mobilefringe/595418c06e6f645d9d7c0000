@@ -62,7 +62,9 @@
         },
         watch: {
             mobile_find_store : function (val) {
-               lift_blue_box = true
+                if(val != '') {
+                    lift_blue_box = true
+                }
                else {
                    lift_blue_box = false;
                }
