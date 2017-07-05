@@ -62,7 +62,10 @@
         },
         watch: {
             mobile_find_store : function (val) {
-                this.fullName = val + ' ' + this.lastName
+               lift_blue_box = true
+               else {
+                   lift_blue_box = false;
+               }
             }
         },
         computed: {
