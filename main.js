@@ -48,8 +48,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     el: '#app',
     data: function () {
       return {
-        // dataLoaded: false,
-        // test: 'testing',
+        dataLoaded: false,
+        test: 'testing'
         // newsletter_control: '',
         // copyright_year :  moment().year(),
         // menu_items : [{
