@@ -104,7 +104,7 @@
             console.log(this.storesByCategoryName);
             var temp = $.grep(this.storesByCategoryName,function(key,val){
                 console.log(key,val);
-                return val.name ;
+                return key ;
             });
             console.log(temp );
             }
