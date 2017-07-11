@@ -144,7 +144,7 @@
                        this.dine_stores= this.dine_stores.concat(val);
                    }
                    else {
-                       
+                        this.dine_stores=val;
                    }
                 }
             });
