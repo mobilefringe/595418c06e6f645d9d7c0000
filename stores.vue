@@ -92,7 +92,7 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          
+          dine_stores: []
           
         }
       },
