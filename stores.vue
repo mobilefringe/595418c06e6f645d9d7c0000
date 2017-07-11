@@ -112,7 +112,7 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          dine_stores: {}
+          dine_stores: []
           
         }
       },
@@ -133,13 +133,13 @@
             // var array = $.map(this.storesByCategoryName, function(value, index) {
             //     return [value];
             // });
-            // this.dine_stores.push("hello");
+            this.dine_stores.push("hello");
             console.log(this.dine_stores );
             $.each(cats, function(key,val) {
                 //console.log(key);
                 if(dine_cats.includes(key)) {
-                    console.log(key,val );
-                   this.dine_stores= (this.dine_stores).concat(val);
+                    console.log(key );
+                   this.dine_stores= this.dine_stores.concat(val);
                 }
             });
         }
