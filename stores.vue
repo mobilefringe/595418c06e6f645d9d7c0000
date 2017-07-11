@@ -113,7 +113,7 @@
             // });
             // console.log(array );
             $.each(cats, function(key,val) {
-                alert(key+val);
+                console.log(key)
             });
         }
       },
