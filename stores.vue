@@ -92,7 +92,7 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          dine_cats : [],
+          dine_cats : ["Food", "Fast Food"],
           shope_cats : []
         }
       },
