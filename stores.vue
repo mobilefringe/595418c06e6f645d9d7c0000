@@ -107,7 +107,7 @@
                 return key ;
             });
             console.log(temp );
-            var array = $.map(myObj, function(value, index) {
+            var array = $.map(this.storesByCategoryName, function(value, index) {
                 return [value];
             });
         }
