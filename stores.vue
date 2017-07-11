@@ -10,7 +10,7 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
-            <div  v-show = "mobile_find_store" class="hidden_now" id="dine_store_list">
+            <div  v-show = "dine_stores" class="hidden_now" id="dine_store_list">
             <div class="" id="dine_stores_container">
                 <script id="dine_stores_template" type="x-tmpl-mustache/text">
                     <div class="row cat_name">
