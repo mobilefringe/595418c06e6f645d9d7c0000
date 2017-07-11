@@ -102,6 +102,10 @@
         },
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
+            var temp = this.storesByCategoryName.filter(function(word){
+  return word.length > 6;
+})
+
         }
       },
       computed: {
