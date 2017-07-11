@@ -102,10 +102,10 @@
         },
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
-            var temp = $.grep(this.storesByCategoryName,function(key,val){
-                console.log(key,val);
-                return key ;
-            });
+            // var temp = $.grep(this.storesByCategoryName,function(key,val){
+            //     console.log(key,val);
+            //     return key ;
+            // });
             console.log(temp );
             // var array = $.map(this.storesByCategoryName, function(value, index) {
             //     return [value];
