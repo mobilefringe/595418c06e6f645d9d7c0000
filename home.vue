@@ -1,4 +1,4 @@
-<template v-bind:menu_items="menu_items">
+<template>
     <div class="home_page">
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
