@@ -110,6 +110,7 @@
             var array = $.map(this.storesByCategoryName, function(value, index) {
                 return [value];
             });
+            console.log(array );
         }
       },
       computed: {
