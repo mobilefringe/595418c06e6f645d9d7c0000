@@ -107,7 +107,7 @@
                 return key ;
             });
             console.log(temp );
-            }
+        }
       },
       computed: {
         storesByAlphaIndex() {
