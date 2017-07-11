@@ -25,7 +25,7 @@
         <!--    </router-link>-->
         <!--</div>-->
         <div v-for="item in menu_items">
-            <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+            <router-link v-if="item.isInHome" tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
               <a><label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label></a>
             </router-link>
         </div>
