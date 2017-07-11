@@ -102,7 +102,7 @@
         },
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
-            var temp = this.storesByCategoryName.filter(function(word){
+            var temp = this.storesByCategoryName.filter(function(val){
   return word.length > 6;
 })
 
