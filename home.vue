@@ -10,18 +10,23 @@
         <!--RENDERED BY renderSearchResultsTemplate(..) -->
         </div>
          <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
-        <div class="menu_btn_holder">
-            <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
-                <a class="all_caps menu_btn_label">YOUR LOCATION</a>
-            </router-link>
-            <router-link tag="li" to="/stores" active-class="active" class="all_caps menu_btn" exact>
-                  <a class="all_caps menu_btn_label">STORES</a>
-            </router-link>
-            <router-link tag="li" to="/promotions" active-class="active" class="all_caps menu_btn" exact>
-                  <a class="all_caps menu_btn_label">PROMOTIONS</a>
-            </router-link>
-             <router-link tag="li" to="/map" active-class="active" class="all_caps menu_btn" exact>
-                  <a class="all_caps menu_btn_label">PATH MAP</a>
+        <!--<div class="menu_btn_holder">-->
+        <!--    <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>-->
+        <!--        <a class="all_caps menu_btn_label">YOUR LOCATION</a>-->
+        <!--    </router-link>-->
+        <!--    <router-link tag="li" to="/stores" active-class="active" class="all_caps menu_btn" exact>-->
+        <!--          <a class="all_caps menu_btn_label">STORES</a>-->
+        <!--    </router-link>-->
+        <!--    <router-link tag="li" to="/promotions" active-class="active" class="all_caps menu_btn" exact>-->
+        <!--          <a class="all_caps menu_btn_label">PROMOTIONS</a>-->
+        <!--    </router-link>-->
+        <!--     <router-link tag="li" to="/map" active-class="active" class="all_caps menu_btn" exact>-->
+        <!--          <a class="all_caps menu_btn_label">PATH MAP</a>-->
+        <!--    </router-link>-->
+        <!--</div>-->
+        <div v-for="item in menu_items">
+            <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+              <a><label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label></a>
             </router-link>
         </div>
     </div>
