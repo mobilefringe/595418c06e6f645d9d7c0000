@@ -1,6 +1,6 @@
 require.config({
   paths: {
-    'Vue': 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue',
+    'Vue': 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min',
     'vue_router': 'https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.2/vue-router.min',
     'axios': 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min',
     'jquery': 'https://code.jquery.com/jquery-3.2.1.min',
@@ -18,11 +18,10 @@ require.config({
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
+  },
+  shim: {
+    "Vue": {"exports": "Vue"}
   }
-//   ,
-//   shim: {
-//     "Vue": {"exports": "Vue"}
-//   }
 });
 
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$) {
@@ -41,7 +40,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   const i18n = new VueI18n({
     locale: 'en-ca',
     fallbackLocale: 'en-ca',
-    messages,
+    messages
   });
 
   /* bootstrap app */
