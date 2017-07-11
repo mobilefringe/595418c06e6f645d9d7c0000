@@ -112,7 +112,9 @@
             //     return [value];
             // });
             // console.log(array );
-            
+            $.each(data.programs[0], function(key,val) {
+                alert(key+val);
+            });
         }
       },
       computed: {
