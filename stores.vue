@@ -133,6 +133,7 @@
             // var array = $.map(this.storesByCategoryName, function(value, index) {
             //     return [value];
             // });
+            this.dine_stores.push("hello");
             console.log(this.dine_stores.push("hello") );
             $.each(cats, function(key,val) {
                 //console.log(key);
