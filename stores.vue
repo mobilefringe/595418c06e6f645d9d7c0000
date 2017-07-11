@@ -107,9 +107,9 @@
                 return key ;
             });
             console.log(temp );
-            var array = $.map(this.storesByCategoryName, function(value, index) {
-                return [value];
-            });
+            // var array = $.map(this.storesByCategoryName, function(value, index) {
+            //     return [value];
+            // });
             console.log(array );
         }
       },
