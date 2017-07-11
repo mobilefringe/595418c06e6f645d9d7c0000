@@ -12,7 +12,7 @@
              <hr>
             <div  v-show = "dine_stores" class="hidden_now" id="dine_store_list">
             <div class="" id="dine_stores_container">
-                <script id="dine_stores_template" type="x-tmpl-mustache/text">
+               
                     <div class="row cat_name">
                         <div  v-for="store in dine_stores">
                             <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
@@ -28,7 +28,6 @@
                         // </div>
                     </div>
                      <hr>
-                </script>
             </div>
         </div>
             <div class="all_caps cat_title" id="shop">
