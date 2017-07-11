@@ -100,7 +100,7 @@
         changeMode (mode) {
           this.listMode = mode;
         },
-        getStoreByCategory(cat) {
+        getStoreByCategory() {
             
         }
       },
