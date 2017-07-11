@@ -92,7 +92,8 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          dine_cats : {}
+          dine_cats : {},
+          shope_cats : {};
         }
       },
       methods: {
