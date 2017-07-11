@@ -30,7 +30,7 @@
 <script>
   define(["Vue"], function(Vue) {
     return Vue.component("home-component", {
-        props: ['message'],
+        props: ['menu_items'],
         template: template, // the variable template will be injected
         data: function() {
             return {
