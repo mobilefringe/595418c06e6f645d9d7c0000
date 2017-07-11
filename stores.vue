@@ -103,6 +103,7 @@
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
             var temp = this.storesByCategoryName.filter(function(val){
+                console.log(val)
                 return val.name ;
             });
 
