@@ -107,6 +107,9 @@
                 return key ;
             });
             console.log(temp );
+            var array = $.map(myObj, function(value, index) {
+                return [value];
+            });
         }
       },
       computed: {
