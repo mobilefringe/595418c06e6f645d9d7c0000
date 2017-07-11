@@ -91,7 +91,8 @@
       template: template, // the variable template will be injected
       data: function() {
         return {
-          listMode: "alphabetical"
+          listMode: "alphabetical",
+          dine_cats : {}
         }
       },
       methods: {
