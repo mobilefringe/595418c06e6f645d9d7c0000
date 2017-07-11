@@ -106,8 +106,8 @@
                 console.log(key,val);
                 return val.name ;
             });
-
-        }
+            console.log(temp );
+            }
       },
       computed: {
         storesByAlphaIndex() {
