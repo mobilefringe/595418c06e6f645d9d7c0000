@@ -97,6 +97,9 @@
       methods: {
         changeMode (mode) {
           this.listMode = mode;
+        },
+        getStoreByCategory(cat) {
+            
         }
       },
       computed: {
