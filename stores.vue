@@ -101,7 +101,7 @@
           this.listMode = mode;
         },
         getStoreByCategory() {
-            // console.log(this.storesByCategoryName);
+            console.log(this.storesByCategoryName);
             var temp = $.grep(this.storesByCategoryName,function(key,val){
                 console.log(key,val);
                 return val.name ;
