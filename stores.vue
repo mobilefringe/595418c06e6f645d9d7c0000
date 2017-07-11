@@ -115,7 +115,7 @@
             // });
             // console.log(array );
             $.each(cats, function(key,val) {
-                console.log(key);
+                //console.log(key);
                 if(dine_cats.includes(key)) {
                     console.log(key);
                 }
