@@ -103,7 +103,7 @@
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
             var temp = $..grep(this.storesByCategoryName,function(key,val){
-                console.log(kwy,val);
+                console.log(key,val);
                 return val.name ;
             });
 
