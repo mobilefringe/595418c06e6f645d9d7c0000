@@ -101,7 +101,7 @@
           this.listMode = mode;
         },
         getStoreByCategory() {
-            
+            console.log(storesByCategoryName);
         }
       },
       computed: {
