@@ -14,7 +14,7 @@
             <div class="" id="dine_stores_container">
                 <script id="dine_stores_template" type="x-tmpl-mustache/text">
                     <div class="row cat_name">
-                    <div  v-for="store in stores">
+                    <div  v-for="store in dine_stores">
                         <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
                         <hr/>
                      </div>
