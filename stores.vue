@@ -118,6 +118,7 @@
                 //console.log(key);
                 if(dine_cats.includes(key)) {
                     console.log(key);
+                    this.dine_stores.concat(val);
                 }
             });
         }
