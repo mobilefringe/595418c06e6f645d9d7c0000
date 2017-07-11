@@ -116,7 +116,7 @@
             // console.log(array );
             $.each(cats, function(key,val) {
                 console.log(key);
-                if(.includes(2))
+                if(.includes(key))
             });
         }
       },
