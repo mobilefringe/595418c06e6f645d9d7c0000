@@ -92,8 +92,7 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          dine_cats : ["Food", "Fast Food"],
-          shope_cats : ["Apparel"]
+          
           
         }
       },
@@ -115,6 +114,7 @@
             // console.log(array );
             $.each(cats, function(key,val) {
                 console.log(key);
+                if(.includes(2))
             });
         }
       },
