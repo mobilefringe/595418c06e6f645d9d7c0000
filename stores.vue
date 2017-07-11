@@ -102,7 +102,7 @@
         },
         getStoreByCategory() {
             console.log(this.storesByCategoryName);
-            var temp = this.storesByCategoryName.filter(function(key,val){
+            var temp = $..grep(this.storesByCategoryName,function(key,val){
                 console.log(val);
                 return val.name ;
             });
