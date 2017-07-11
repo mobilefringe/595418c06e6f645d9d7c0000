@@ -94,6 +94,7 @@
           listMode: "alphabetical",
           dine_cats : ["Food", "Fast Food"],
           shope_cats : ["Apparel"]
+          
         }
       },
       methods: {
