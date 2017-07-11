@@ -101,6 +101,7 @@
           this.listMode = mode;
         },
         getStoreByCategory() {
+            var cats = this.storesByCategoryName;
             console.log(this.storesByCategoryName);
             // var temp = $.grep(this.storesByCategoryName,function(key,val){
             //     console.log(key,val);
@@ -111,6 +112,7 @@
             //     return [value];
             // });
             // console.log(array );
+            
         }
       },
       computed: {
