@@ -104,7 +104,7 @@
             var cats = this.storesByCategoryName;
             console.log(cats);
             var dine_cats = ["Food", "Fast Food"];
-          var shope_cats = ["Apparel"];
+            var shope_cats = ["Apparel"];
             // var temp = $.grep(this.storesByCategoryName,function(key,val){
             //     console.log(key,val);
             //     return key ;
