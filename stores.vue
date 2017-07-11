@@ -106,7 +106,7 @@
             //     console.log(key,val);
             //     return key ;
             // });
-            console.log(temp );
+            // console.log(temp );
             // var array = $.map(this.storesByCategoryName, function(value, index) {
             //     return [value];
             // });
