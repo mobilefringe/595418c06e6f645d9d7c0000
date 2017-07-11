@@ -139,6 +139,7 @@
                 //console.log(key);
                 if(dine_cats.includes(key)) {
                    console.log(key );
+                   if(this.dine_stores.length > 0)
                    this.dine_stores= this.dine_stores.concat(val);
                 }
             });
