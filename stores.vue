@@ -93,7 +93,7 @@
         return {
           listMode: "alphabetical",
           dine_cats : {},
-          shope_cats : {};
+          shope_cats : {}
         }
       },
       methods: {
