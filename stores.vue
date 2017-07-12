@@ -149,10 +149,10 @@
             $.each(cats, function(key,val) {
                 
                 if(dine_cats.includes(key)) {
-                   if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
+                    if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
                        console.log("data there");
                        temp_dine_array=temp_dine_array.concat(cats[key]);
-                   }
+                    }
                    else {
                     temp_dine_array.push.apply(temp_dine_array,cats[key]);
                    }
