@@ -154,7 +154,7 @@
                  
                 }
             });
-            console.log(temp_dine_array);
+            console.log(this.dine_stores );
         }
       },
       computed: {
