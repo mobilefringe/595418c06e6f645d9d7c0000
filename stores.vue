@@ -131,7 +131,7 @@
             else if(clicked === "play")
                 this.show_play = !this.show_play;
             else if(clicked === "stay")
-                this.show_stay = !this.show_play;
+                this.show_stay = !this.show_stay;
         },
         getStoreByCategory() {
             //toggle value of show_dine
