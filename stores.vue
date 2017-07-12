@@ -117,7 +117,7 @@
         }
       },
       created: function () {
-        this.
+        this.getStoreByCategory
       },
       methods: {
         changeMode (mode) {
