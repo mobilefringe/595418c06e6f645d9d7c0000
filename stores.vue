@@ -140,7 +140,8 @@
         },
         getStoreByCategory() {
             var cats = this.storesByCategoryName;
-            var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services"];
+            var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
+            "Restaurant"];
             var shope_cats = ["Apparel"];
             
             var temp_dine_array = [];
