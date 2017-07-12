@@ -25,8 +25,9 @@
                         <div class="col-xs-6 align_right">
                             April 27-29
                         </div>
+                    </div>
                 </div>
-                 <hr>
+                <hr>
             </div>
         </div>
             <div class="all_caps cat_title" id="shop">
