@@ -123,8 +123,8 @@
         changeMode (mode) {
           this.listMode = mode;
         },
-        toggle (val) {
-            val = !val;
+        toggle: function (clicked) {
+            clicked = !clicked
         },
         getStoreByCategory() {
             //toggle value of show_dine
