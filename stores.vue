@@ -142,14 +142,14 @@
                 //console.log(key);
                 if(dine_cats.includes(key)) {
                    console.log(key );
-                   if( this.dine_stores!== undefined && this.dine_stores.length > 0) {
+                   if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
                        console.log("data there");
-                       this.dine_stores=this.dine_stores.concat(cats[key]);
+                       temp_dine_array=temp_dine_array.concat(cats[key]);
                    }
                    else {
                        console.log(cats[key], "wink");
-                        //this.dine_stores = cats[key];
-                         this.dine_stores.push.apply(this.dine_stores,cats[key]);
+                        this.dine_stores = cats[key];
+                        //  this.dine_stores.push.apply(this.dine_stores,cats[key]);
                    }
                  
                 }
