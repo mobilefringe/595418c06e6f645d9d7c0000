@@ -113,10 +113,10 @@
           listMode: "alphabetical",
           dine_stores: [],
           show_dine : false,
-          show_dine : false,
-          show_dine : false,
-          show_dine : false,
-          show_dine : false
+          show_shop : false,
+          show_play : false,
+          show_stay : false,
+          show_service : false
           
         }
       },
