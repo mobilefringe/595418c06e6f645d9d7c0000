@@ -15,7 +15,7 @@
                     <div class="row cat_name">
                         <div  v-for="store in dine_stores">
                             <div class="col-xs-6 align_left">
-                                 {{name}} 
+                                {{name}} 
                                 <br/>
                                  Building Name
                             </div>
