@@ -116,7 +116,7 @@
           show_dine : false,
           show_dine : false,
           show_dine : false,
-          show_dine : false,
+          show_dine : false
           
         }
       },
