@@ -135,7 +135,7 @@
             // });
             //this.dine_stores.push("hello");
             console.log(this.dine_stores);
-            
+            console.log(
             $.each(cats, function(key,val) {
                 //console.log(key);
                 if(dine_cats.includes(key)) {
