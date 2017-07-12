@@ -133,7 +133,7 @@
         return {
           listMode: "alphabetical",
           dine_stores: [],
-          dine_stores: [],
+          shop_stores: [],
           dine_stores: [],
           dine_stores: [],
           dine_stores: [],
