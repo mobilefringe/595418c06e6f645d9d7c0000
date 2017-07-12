@@ -120,6 +120,7 @@
         }
       },
       created: function () {
+          console.log("happening!");
         this.getStoreByCategory
       },
       methods: {
