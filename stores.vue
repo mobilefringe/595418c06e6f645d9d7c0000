@@ -116,6 +116,8 @@
           
         }
       },
+      created: function () {
+      },
       methods: {
         changeMode (mode) {
           this.listMode = mode;
