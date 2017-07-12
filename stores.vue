@@ -125,7 +125,7 @@
         },
         toggle: function (clicked) {
             if(clicked === "dine")
-                clicked = !clicked;
+                this.show_dine = !this.show_dine;
         },
         getStoreByCategory() {
             //toggle value of show_dine
