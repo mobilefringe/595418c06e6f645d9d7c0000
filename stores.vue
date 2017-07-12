@@ -155,7 +155,6 @@
                     else {
                         temp_dine_array.push.apply(temp_dine_array,cats[key]);
                     }
-                 
                 }
             });
             this.dine_stores = temp_dine_array;
