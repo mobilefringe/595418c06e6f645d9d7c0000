@@ -23,7 +23,7 @@
                              Building Name
                         </div>
                         <div class="col-xs-6 align_right">
-                        April 27-29
+                            April 27-29
                         </div>
                 </div>
                  <hr>
