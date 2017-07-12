@@ -141,7 +141,7 @@
         getStoreByCategory() {
             var cats = this.storesByCategoryName;
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
-            "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food"];
+            "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food"];
             var shope_cats = ["Apparel"];
             
             var temp_dine_array = [];
