@@ -124,6 +124,7 @@
           this.listMode = mode;
         },
         toggle: function (clicked) {
+            console.log("hi");
             clicked = !clicked
         },
         getStoreByCategory() {
