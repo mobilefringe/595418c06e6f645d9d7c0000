@@ -121,7 +121,7 @@
       },
       created: function () {
         console.log("happening!");
-        this.getStoreByCategory
+        this.getStoreByCategory;
       },
       methods: {
         changeMode (mode) {
