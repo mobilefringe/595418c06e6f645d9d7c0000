@@ -117,6 +117,7 @@
         }
       },
       created: function () {
+        this.
       },
       methods: {
         changeMode (mode) {
