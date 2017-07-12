@@ -128,7 +128,7 @@
                 this.show_dine = !this.show_dine;
             else if(clicked === "shop")
                 this.show_shop = !this.show_shop;
-            else if(clicked === "shop")
+            else if(clicked === "play")
                 this.show_shop = !this.show_shop;
         },
         getStoreByCategory() {
