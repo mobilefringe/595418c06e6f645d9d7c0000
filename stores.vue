@@ -18,7 +18,7 @@
                             <hr/>
                         
                             <div class="col-xs-6 align_left">
-                                 {{store.name}}
+                                {{store.name}}
                                 <br/>
                                  {{store.property_id}}
                             </div>
