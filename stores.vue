@@ -117,7 +117,6 @@
           show_play : false,
           show_stay : false,
           show_service : false
-          
         }
       },
       created: function () {
