@@ -136,7 +136,7 @@
           shop_stores: [],
           play_stores: [],
           stay_stores: [],
-          dine_stores: [],
+          service_stores: [],
           show_dine : false,
           show_shop : false,
           show_play : false,
