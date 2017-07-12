@@ -128,6 +128,8 @@
                 this.show_dine = !this.show_dine;
             else if(clicked === "shop")
                 this.show_shop = !this.show_shop;
+            else if(clicked === "shop")
+                this.show_shop = !this.show_shop;
         },
         getStoreByCategory() {
             //toggle value of show_dine
