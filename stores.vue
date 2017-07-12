@@ -144,6 +144,7 @@
                        this.dine_stores=this.dine_stores.concat(val);
                    }
                    else {
+                       console.log(cats[key]);
                         this.dine_stores = cats[key];
                    }
                 }
