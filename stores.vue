@@ -145,7 +145,7 @@
                        this.dine_stores=this.dine_stores.concat(cats[key]);
                    }
                    else {
-                       console.log(cats[key]);
+                       console.log(cats[key], "wink");
                         this.dine_stores = cats[key];
                          this.dine_stores.push.apply(this.dine_stores,cats[key]);
                    }
