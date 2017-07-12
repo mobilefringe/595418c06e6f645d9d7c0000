@@ -14,7 +14,7 @@
                 <div class="" id="dine_stores_container">
                     <div class="row cat_name">
                         <div  v-for="store in dine_stores">
-                            <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}</router-link>
+                            <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}
                             <hr/>
                         
                             <div class="col-xs-6 align_left">
@@ -25,6 +25,7 @@
                             <div class="col-xs-6 align_right">
                                 April 27-29
                             </div>
+                            </router-link>
                         </div>
                     </div>
                 </div>
