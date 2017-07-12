@@ -167,7 +167,7 @@
             var cats = this.storesByCategoryName;
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
             "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food"];
-            var shope_cats = [" Jewellery","Apparel"];
+            var shop_cats = [" Jewellery","Apparel"];
             
             var temp_dine_array = [];
             var temp_shop_array = [];
@@ -181,7 +181,7 @@
                         temp_dine_array.push.apply(temp_dine_array,cats[key]);
                     }
                 }
-                if(dine_cats.includes(key)) {
+                if(shop_cats.includes(key)) {
                     if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
                        temp_dine_array=temp_dine_array.concat(cats[key]);
                     }
