@@ -141,7 +141,7 @@
                 if(dine_cats.includes(key)) {
                    console.log(key );
                    if( this.dine_stores!== undefined && this.dine_stores.length > 0) {
-                       console.log(key );
+                       console.log("data there");
                        this.dine_stores=this.dine_stores.concat(cats[key]);
                    }
                    else {
