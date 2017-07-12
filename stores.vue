@@ -147,7 +147,9 @@
                    else {
                        console.log(cats[key]);
                         this.dine_stores = cats[key];
+                        
                    }
+                  this.dine_stores.push.apply(array1, array2);
                 }
             });
             console.log(this.dine_stores );
