@@ -35,6 +35,26 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
+             <div  v-show = "show_dine" class="" id="dine_store_list">
+                <div class="" id="dine_stores_container">
+                    <div  v-for="store in dine_stores">
+                        <div class="row cat_name">
+                            <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">
+                                <div class="col-xs-6 align_left">
+                                    {{store.name}}
+                                    <br/>
+                                    {{store.property_id}}
+                                </div>
+                                <div class="col-xs-6 align_right">
+                                    April 27-29
+                                </div>
+                            </router-link>
+                        </div>
+                         <hr>
+                    </div>
+                </div>
+                <hr>
+            </div>
             <div class="all_caps cat_title" id="play">
                 Play
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
