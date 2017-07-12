@@ -181,6 +181,14 @@
                         temp_dine_array.push.apply(temp_dine_array,cats[key]);
                     }
                 }
+                if(dine_cats.includes(key)) {
+                    if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
+                       temp_dine_array=temp_dine_array.concat(cats[key]);
+                    }
+                    else {
+                        temp_dine_array.push.apply(temp_dine_array,cats[key]);
+                    }
+                }
             });
             this.dine_stores = temp_dine_array;
         }
