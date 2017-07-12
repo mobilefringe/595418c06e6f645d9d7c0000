@@ -153,9 +153,9 @@
                        console.log("data there");
                        temp_dine_array=temp_dine_array.concat(cats[key]);
                     }
-                   else {
-                    temp_dine_array.push.apply(temp_dine_array,cats[key]);
-                   }
+                    else {
+                        temp_dine_array.push.apply(temp_dine_array,cats[key]);
+                    }
                  
                 }
             });
