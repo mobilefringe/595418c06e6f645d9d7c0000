@@ -125,6 +125,8 @@
             console.log(cats);
             var dine_cats = ["Food", "Fast Food"];
             var shope_cats = ["Apparel"];
+            
+            var temp_dine_array
             // var temp = $.grep(this.storesByCategoryName,function(key,val){
             //     console.log(key,val);
             //     return key ;
