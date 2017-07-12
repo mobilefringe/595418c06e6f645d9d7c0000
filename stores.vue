@@ -126,6 +126,7 @@
         toggle: function (clicked) {
             console.log("hi",clicked);
             clicked = !clicked;
+            console.log("hi",clicked);
         },
         getStoreByCategory() {
             //toggle value of show_dine
