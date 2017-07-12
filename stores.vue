@@ -126,7 +126,7 @@
         toggle: function (clicked) {
             if(clicked === "dine")
                 this.show_dine = !this.show_dine;
-            else if(clicked === "dine")
+            else if(clicked === "shop")
                 this.show_dine = !this.show_dine;
         },
         getStoreByCategory() {
