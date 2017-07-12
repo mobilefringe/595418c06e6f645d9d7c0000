@@ -15,14 +15,14 @@
                     <div class="row cat_name">
                         <div  v-for="store in dine_stores">
                             <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">{{store.name}}
-                            <div class="col-xs-6 align_left">
-                                {{store.name}}
-                                <br/>
-                                {{store.property_id}}
-                            </div>
-                            <div class="col-xs-6 align_right">
-                                April 27-29
-                            </div>
+                                <div class="col-xs-6 align_left">
+                                    {{store.name}}
+                                    <br/>
+                                    {{store.property_id}}
+                                </div>
+                                <div class="col-xs-6 align_right">
+                                    April 27-29
+                                </div>
                             </router-link>
                         </div>
                     </div>
