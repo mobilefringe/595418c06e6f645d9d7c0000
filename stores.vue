@@ -124,7 +124,7 @@
           this.listMode = mode;
         },
         toggle (val) {
-            
+            val = !val;
         },
         getStoreByCategory() {
             //toggle value of show_dine
