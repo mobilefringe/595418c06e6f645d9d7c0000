@@ -182,11 +182,11 @@
                     }
                 }
                 if(shop_cats.includes(key)) {
-                    if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
-                       temp_dine_array=temp_dine_array.concat(cats[key]);
+                    if( temp_shop_array!== undefined && temp_shop_array.length > 0) {
+                       temp_shop_array=temp_shop_array.concat(cats[key]);
                     }
                     else {
-                        temp_dine_array.push.apply(temp_dine_array,cats[key]);
+                        temp_shop_array.push.apply(temp_shop_array,cats[key]);
                     }
                 }
             });
