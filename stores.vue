@@ -112,7 +112,11 @@
         return {
           listMode: "alphabetical",
           dine_stores: [],
-          show_dine : false
+          show_dine : false,
+          show_dine : false,
+          show_dine : false,
+          show_dine : false,
+          show_dine : false,
           
         }
       },
