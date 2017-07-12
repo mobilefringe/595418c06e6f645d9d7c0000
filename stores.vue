@@ -127,7 +127,7 @@
             if(clicked === "dine")
                 this.show_dine = !this.show_dine;
             else if(clicked === "shop")
-                this.show_dine = !this.show_dine;
+                this.show_shop = !this.show_dine;
         },
         getStoreByCategory() {
             //toggle value of show_dine
