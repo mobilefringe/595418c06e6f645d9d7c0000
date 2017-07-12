@@ -149,7 +149,7 @@
                         this.dine_stores = cats[key];
                         
                    }
-                  this.dine_stores.push.apply(this.dine_stores,cats[key]);
+                 
                 }
             });
             console.log(this.dine_stores );
