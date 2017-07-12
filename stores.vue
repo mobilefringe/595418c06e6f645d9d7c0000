@@ -145,19 +145,9 @@
             var shope_cats = ["Apparel"];
             
             var temp_dine_array = [];
-            // var temp = $.grep(this.storesByCategoryName,function(key,val){
-            //     console.log(key,val);
-            //     return key ;
-            // });
-            // console.log(temp );
-            // var array = $.map(this.storesByCategoryName, function(value, index) {
-            //     return [value];
-            // });
-            //this.dine_stores.push("hello");
-            //console.log(this.dine_stores);
-            // console.log(dine_stores);
+
             $.each(cats, function(key,val) {
-                //console.log(key);
+                
                 if(dine_cats.includes(key)) {
                    console.log(key );
                    if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
