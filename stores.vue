@@ -122,7 +122,7 @@
         },
         getStoreByCategory() {
             //toggle value of show_dine
-            this.isActive = !this.isActive;
+            this.show_dine = !this.show_dine;
             
             var cats = this.storesByCategoryName;
             console.log(cats);
