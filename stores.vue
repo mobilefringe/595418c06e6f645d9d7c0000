@@ -140,7 +140,6 @@
         },
         getStoreByCategory() {
             var cats = this.storesByCategoryName;
-            console.log(cats);
             var dine_cats = ["Food", "Fast Food"];
             var shope_cats = ["Apparel"];
             
