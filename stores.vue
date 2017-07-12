@@ -142,7 +142,7 @@
                    console.log(key );
                    if( this.dine_stores!== undefined && this.dine_stores.length > 0)
                    {
-                       this.dine_stores=this.dine_stores.concat(val);
+                       this.dine_stores=this.dine_stores.concat(cats[key]);
                    }
                    else {
                        console.log(cats[key]);
