@@ -20,7 +20,7 @@
                             <div class="col-xs-6 align_left">
                                 {{store.name}}
                                 <br/>
-                                 {{store.property_id}}
+                                {{store.property_id}}
                             </div>
                             <div class="col-xs-6 align_right">
                                 April 27-29
