@@ -95,14 +95,14 @@
   </div>
 </template>
 
-<style>
-  .center{
-    text-align: center
-  }
-  .store-section a{
-    color: #708090;
-  }
-</style>
+<!--<style>-->
+<!--  .center{-->
+<!--    text-align: center-->
+<!--  }-->
+<!--  .store-section a{-->
+<!--    color: #708090;-->
+<!--  }-->
+<!--</style>-->
 
 <script>
   define(["Vue"], function(Vue) {
