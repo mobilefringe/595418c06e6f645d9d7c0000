@@ -17,7 +17,7 @@
                             <div class="col-xs-6 align_left">
                                 {{name}} 
                                 <br/>
-                                 Building Name
+                                {{property_id}}
                             </div>
                             <div class="col-xs-6 align_right">
                                 April 27-29
