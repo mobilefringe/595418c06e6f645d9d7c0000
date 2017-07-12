@@ -170,7 +170,7 @@
             var shope_cats = [" Jewellery","Apparel"];
             
             var temp_dine_array = [];
-            zvar temp_dine_array = [];
+            zvar temp_shop_array = [];
             $.each(cats, function(key,val) {
                 
                 if(dine_cats.includes(key)) {
