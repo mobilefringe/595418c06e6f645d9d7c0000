@@ -123,6 +123,9 @@
         changeMode (mode) {
           this.listMode = mode;
         },
+        toggle (val) {
+            
+        },
         getStoreByCategory() {
             //toggle value of show_dine
             this.show_dine = !this.show_dine;
