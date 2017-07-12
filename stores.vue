@@ -124,7 +124,8 @@
           this.listMode = mode;
         },
         toggle: function (clicked) {
-            clicked = !clicked;
+            if(clicked === "dine")
+                clicked = !clicked;
         },
         getStoreByCategory() {
             //toggle value of show_dine
