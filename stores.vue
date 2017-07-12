@@ -111,7 +111,8 @@
       data: function() {
         return {
           listMode: "alphabetical",
-          dine_stores: []
+          dine_stores: [],
+          show_dine : false;
           
         }
       },
