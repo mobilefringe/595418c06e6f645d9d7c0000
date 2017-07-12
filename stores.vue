@@ -148,8 +148,8 @@
                    }
                    else {
                        console.log(cats[key], "wink");
-                        this.dine_stores = cats[key];
-                        //  this.dine_stores.push.apply(this.dine_stores,cats[key]);
+                        //this.dine_stores = cats[key];
+                         temp_dine_array.push.apply(temp_dine_array,cats[key]);
                    }
                  
                 }
