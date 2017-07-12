@@ -191,6 +191,7 @@
                 }
             });
             this.dine_stores = temp_dine_array;
+             this.shop_stores = temp_dine_array;
         }
       },
       computed: {
