@@ -121,6 +121,9 @@
           this.listMode = mode;
         },
         getStoreByCategory() {
+            //toggle value of show_dine
+            this.isActive = !this.isActive;
+            
             var cats = this.storesByCategoryName;
             console.log(cats);
             var dine_cats = ["Food", "Fast Food"];
