@@ -205,7 +205,7 @@
             return this.$store.getters.findStoreBySlug;
         },
         orderedstores: function () {
-            return _.orderBy(this.users, 'name')
+            return _.orderBy(this.dine_stores, 'name')
         }
       }
     });
