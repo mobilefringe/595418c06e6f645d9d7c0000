@@ -204,7 +204,7 @@
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
         },
-        orderedUsers: function () {
+        orderedstores: function () {
             return _.orderBy(this.users, 'name')
         }
       }
