@@ -190,7 +190,7 @@
                     }
                 }
             });
-            this.dine_stores = _.orderBy(this.dine_stores, 'name')
+            this.dine_stores = _.orderBy(temp_dine_array, 'name')
             this.shop_stores = temp_shop_array;
         }
       },
