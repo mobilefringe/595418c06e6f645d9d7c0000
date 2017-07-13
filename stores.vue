@@ -203,6 +203,9 @@
         },
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
+        },
+        orderedUsers: function () {
+            return _.orderBy(this.users, 'name')
         }
       }
     });
