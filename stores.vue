@@ -203,9 +203,6 @@
         },
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
-        },
-        orderedstores: function () {
-            return _.orderBy(this.dine_stores, 'name')
         }
       }
     });
