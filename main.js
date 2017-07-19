@@ -17,13 +17,18 @@ require.config({
     'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
+    'raphael' : '//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734613000/raphael.js',
+    'mousewheel'  '//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734619000/jquery.mousewheel.js',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   },
   shim: {
     "Vue": {"exports": "Vue"}
   }
 });
-
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734604000/jquery.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734613000/raphael.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734619000/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734624000/mapsvg.js"></script>
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$) {
   Vue.use(Meta);
   Vue.use(VueRouter);
