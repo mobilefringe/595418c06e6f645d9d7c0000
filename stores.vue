@@ -14,7 +14,7 @@
                 <div class="" id="dine_stores_container">
                     <div  v-for="(store, index) in dine_stores ">
                         <div class="row cat_name">
-                            <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">
+                            <router-link :to="{ name: 'storeDetails', params: { id: index }}">
                                 <div class="col-xs-6 align_left">
                                     {{store.name}} {{index}}
                                     <br/>
