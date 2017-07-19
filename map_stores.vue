@@ -111,7 +111,7 @@
             //     this.mobile_find_store = '';
             // }
             getStoresByName() {
-                var cats = this.storesByCategoryName;
+                var cats = this.storesByAlphaIndex;
                
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 var temp_stores = _.groupBy(this.dine_stores, 'name');
