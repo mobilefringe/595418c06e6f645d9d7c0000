@@ -132,6 +132,7 @@
                 $.each( this.all_stores , function( key, val ) {
                 
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                        console.log(val)
                         obj = {};
                         obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
                         obj["attr"] = {}
