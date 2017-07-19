@@ -5,7 +5,7 @@
             
                 <div class="demo_1 map3" style="" id="mapsvg">       
                 
-                    <img alt="map_image" id="map_image" src= v-bind:src="getSVGurl"> 
+                    <img alt="map_image" id="map_image" v-bind:src="getSVGurl"> 
                     
                     <div v-for = "store in all_stores">
                         <div class="marker" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)">
