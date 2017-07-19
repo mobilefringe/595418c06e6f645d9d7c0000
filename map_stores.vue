@@ -8,7 +8,7 @@
                     <img alt="map_image" id="map_image" v-bind:src="getSVGurl"> 
                     
                     <div v-for = "store in all_stores">
-                        <div class="marker" :id="concatVal(store_){{store.id}}" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
+                        <div class="marker" :id="concatVal('store_',store.id)" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
                             <a style="color:#fff" href=/stores/store.slug>  store.name  </a>
                         </div>
                         <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" :data-coords="store.coordinate"  class="marker">
