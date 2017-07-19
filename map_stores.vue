@@ -126,7 +126,7 @@
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
-                console.log(stores,slug);
+                // console.log(stores,slug);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
