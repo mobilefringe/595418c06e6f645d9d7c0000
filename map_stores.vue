@@ -128,7 +128,7 @@
                     console.log(x,y);
                    $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
                 });
-                $('.map3').craftmap({
+                $('#mapsvg').craftmap({
                     image:{
                         width:1650,
                         height:1636
