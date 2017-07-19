@@ -110,33 +110,9 @@
             // removeSearch2 :function() {
             //     this.mobile_find_store = '';
             // }
-            getStoreByCategory() {
+            getStoresByName() {
                 var cats = this.storesByCategoryName;
-                var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
-                "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food"];
-                var shop_cats = [" Jewellery","Apparel"];
-                
-                var temp_dine_array = [];
-                var temp_shop_array = [];
-                $.each(cats, function(key,val) {
-                    
-                    if(dine_cats.includes(key)) {
-                        if( temp_dine_array!== undefined && temp_dine_array.length > 0) {
-                           temp_dine_array=temp_dine_array.concat(cats[key]);
-                        }
-                        else {
-                            temp_dine_array.push.apply(temp_dine_array,cats[key]);
-                        }
-                    }
-                    if(shop_cats.includes(key)) {
-                        if( temp_shop_array!== undefined && temp_shop_array.length > 0) {
-                           temp_shop_array=temp_shop_array.concat(cats[key]);
-                        }
-                        else {
-                            temp_shop_array.push.apply(temp_shop_array,cats[key]);
-                        }
-                    }
-                });
+               
                 this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.dine_stores = _.groupBy(this.dine_stores, 'name');
                 console.log(this.dine_stores);
