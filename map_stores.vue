@@ -42,14 +42,7 @@
             this.getStoresByName();
         },
         watch: {
-            // mobile_find_store : function (val) {
-            //     if(val != '') {
-            //         this.lift_blue_box = true
-            //     }
-            //   else {
-            //         this.lift_blue_box = false;
-            //   }
-            // }
+           
         },
         computed: {
             property(){
@@ -58,14 +51,6 @@
             getSVGurl : function () {
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;
             },
-            // showStore1Details: function() {
-            //     this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
-            //     this.store1.path_url = "stores/" + this.store1.slug;
-            // },
-            // showStore2Details: function() {
-            //     this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
-            //      this.store2.path_url = "stores/" + this.store2.slug;
-            // },
             storesByAlphaIndex() {
                 return this.$store.getters.storesByAlphaIndex;
             },
@@ -77,17 +62,6 @@
             }
         },
          methods: {
-            // swapSearchTerm: function () {
-            //     var temp_search1 = this.mobile_search_store;
-            //     this.mobile_search_store = this.mobile_find_store;
-            //     this.mobile_find_store = temp_search1;
-            // },
-            // removeSearch1 :function() {
-            //     this.mobile_search_store = '';
-            // },
-            // removeSearch2 :function() {
-            //     this.mobile_find_store = '';
-            // }
             getStoresByName() {
                
                 var slug = this.$route.params.id;
