@@ -120,7 +120,7 @@
                 console.log(stores,slug);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
-                this.all_stores = _.filter(temp_stores, ['name', slug]);
+                
                 console.log(temp_stores);
             }
         }
