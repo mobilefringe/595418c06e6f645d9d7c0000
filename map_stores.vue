@@ -112,7 +112,7 @@
             // }
             getStoresByName() {
                 var stores = this.storesByAlphaIndex;
-               
+                console.log(stores);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 var temp_stores = _.groupBy(stores, 'name');
                 this.all_stores = _.filter(temp_stores, ['name', slug]);
