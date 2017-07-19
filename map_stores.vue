@@ -154,8 +154,8 @@
                 });
         
                 $(".map_tooltip").css({"background-color": "#C607A9", "width":"300px"});
-                    }
-                }
+            }
+        }
     })
   })
 </script>
