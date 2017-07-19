@@ -80,7 +80,6 @@
                 return this.$store.getters.getProperty;
             },
             getSVGurl : function () {
-                _.filter(users, ['active', false]);
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;
             },
             // showStore1Details: function() {
