@@ -117,7 +117,7 @@
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpper();
                  var stores = this.storesByAlphaIndex;
-                console.log(stores,slug);
+                console.log(stores,slug,first_letter);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 var temp_stores = _.groupBy(stores, 'name');
                 this.all_stores = _.filter(temp_stores, ['name', slug]);
