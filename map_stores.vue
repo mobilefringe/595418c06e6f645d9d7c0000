@@ -62,9 +62,9 @@
                 store2: {}
             }
         },
-      created: function () {
-        this.getStoreByCategory();
-      },
+        created: function () {
+            this.getStoreByCategory();
+        },
         watch: {
             // mobile_find_store : function (val) {
             //     if(val != '') {
