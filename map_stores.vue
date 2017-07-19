@@ -9,7 +9,7 @@
                     
                     <div v-for = "store in all_stores">
                         <div class="marker" :id="concatVal('store_',store.id)" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
-                            <a style="color:#fff" href=/stores/store.slug>  {{store.name}}  </a>
+                            <a style="color:#fff" :href=concatVal('/stores/',store.id)store.slug>  {{store.name}}  </a>
                         </div>
                     </div>
                     
