@@ -89,38 +89,6 @@
                     }
                 });
                 console.log(this.all_stores);
-                // reg = {}
-                // reg["path103"]={disabled: true};
-                // reg["path193"]={disabled: true};
-                // reg["path194"]={disabled: true};
-                
-                // $.each( this.all_stores , function( key, val ) {
-                
-                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                //         console.log(val.svgmap_region);
-                //         obj = {};
-                //         obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
-                //         obj["attr"] = {}
-                //         obj["attr"]["href"] = '/stores/'+val.slug 
-                //         reg[val.svgmap_region] = obj
-                //     }
-                // });
-            
-                // $('#mapsvg').mapSvg({
-                //     source: this.getSVGurl,    // Path to SVG map
-                //     colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
-                //     width: 1170,
-                //     viewBox: [520,150,1350,1400],
-                //     regions: reg,
-                //     tooltipsMode:'custom',
-                //     zoom: true,
-                //     pan:true,
-                //     cursor:'pointer',
-                //     responsive:true,
-                //     zoomLimit: [0,10]
-                // });
-        
-                // $(".map_tooltip").css({"background-color": "#C607A9", "width":"300px"});
             }
         }
     })
