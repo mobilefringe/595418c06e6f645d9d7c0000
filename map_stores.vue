@@ -41,9 +41,9 @@
                         
                     <!--</div>-->
                     <div v-for = "store in all_stores">
-                        
+                        <div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>
                     </div>
-                    <div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>
+                    
                 </div>
             </div>
         </div>
