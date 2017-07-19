@@ -14,7 +14,7 @@
             <!--</div>-->
             <div class="map">
             
-                <div class="demo_1 map3" style="">       
+                <div class="demo_1 map3" style="" id=">       
                 
                     <img alt="map_image" id="map_image" v-bind:src="getSVGurl"> 
                     <!--v-bind:src={{getSVGurl}} src=-->
