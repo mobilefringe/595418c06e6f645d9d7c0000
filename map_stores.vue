@@ -69,13 +69,13 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
                 
-                $.each(this.all_stores, function(i, val){
-                    x = val.x_coordinate - 19;
-                    y = val.y_coordinate - 58;
-                    // val.coordinate = val.x_coordinate + "," +val.y_coordinate;
-                      $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>');
-                  console.log(x,y);
-                });
+                // $.each(this.all_stores, function(i, val){
+                //     x = val.x_coordinate - 19;
+                //     y = val.y_coordinate - 58;
+                //     // val.coordinate = val.x_coordinate + "," +val.y_coordinate;
+                //       $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>');
+                //   console.log(x,y);
+                // });
                 $('#mapsvg').craftmap({
                     image:{
                         width:1650,
