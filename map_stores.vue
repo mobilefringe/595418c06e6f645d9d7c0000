@@ -71,8 +71,8 @@
                 // });
                 $('#mapsvg').craftmap({
                     image:{
-                        width:1650,
-                        height:1636
+                        width:500,
+                        height:400
                     },
                     map: {
                         position: 'center'
