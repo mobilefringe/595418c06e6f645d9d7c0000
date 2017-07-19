@@ -197,7 +197,7 @@
             this.dine_stores = _.groupBy(this.dine_stores, 'name');
             console.log(this.dine_stores);
             this.shop_stores = _.orderBy(temp_shop_array, 'name');
-            this.dine_stores = _.groupBy(this.shop_stores, 'name');
+            this.shop_stores = _.groupBy(this.shop_stores, 'name');
         }
       },
       computed: {
