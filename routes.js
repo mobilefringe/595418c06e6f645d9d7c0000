@@ -39,7 +39,18 @@ define([], function () {
     {
       path: '/map',
       component: view('map'),
-      name: 'map'
+      children: [
+        {
+          path: '',
+          component: view('promotions'),
+          name: 'map'
+        },
+        {
+          path: ':id',
+          component: view('promotion_details'),
+          name: 'promotionDetails'
+        }
+      ]
     },
     {
       path: '/404',
