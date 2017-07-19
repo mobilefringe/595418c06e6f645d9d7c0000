@@ -122,7 +122,7 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
                 console.log(this.all_stores);
-                $.each(stores, function(i, val){
+                $.each(this.all_stores, function(i, val){
                     x = val.x_coordinate - 19;
                     y = val.y_coordinate - 58;
                    $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
