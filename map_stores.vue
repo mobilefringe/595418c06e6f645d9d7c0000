@@ -114,8 +114,8 @@
                 var cats = this.storesByCategoryName;
                
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
-               var temp_stores = _.groupBy(this.dine_stores, 'name');
-               this.all_stores = _.filter(users, ['name', slug]);
+                var temp_stores = _.groupBy(this.dine_stores, 'name');
+                this.all_stores = _.filter(users, ['name', slug]);
                 console.log(this.dine_stores);
                 
             }
