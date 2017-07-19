@@ -18,11 +18,11 @@
                                 <div class="col-xs-6 align_left">
                                     {{store.name}}
                                     <br/>
-                                    {{store.property_id}}
+                                    <!--{{store.property_id}}-->
                                 </div>
-                                <div class="col-xs-6 align_right">
-                                    April 27-29
-                                </div>
+                                <!--<div class="col-xs-6 align_right">-->
+                                <!--    April 27-29-->
+                                <!--</div>-->
                             </router-link>
                         </div>
                          <hr>
@@ -190,8 +190,9 @@
                     }
                 }
             });
-            this.dine_stores = _.orderBy(temp_dine_array, 'name')
-            this.shop_stores = temp_shop_array;
+            this.dine_stores = _.orderBy(temp_dine_array, 'name');
+            this.dine_stores = _.groupBy(this.dine_stores, 'name');
+            this.shop_stores = _.orderBy(temp_shop_array, 'name');
         }
       },
       computed: {
