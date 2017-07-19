@@ -89,6 +89,9 @@
                     }
                 });
                 console.log(this.all_stores);
+            },
+            concatVal(val,key) {
+                
             }
         }
     })
