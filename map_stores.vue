@@ -76,6 +76,7 @@
                 return this.$store.getters.getProperty;
             },
             getSVGurl : function () {
+                console.log("Hello world!");
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;
             },
             // showStore1Details: function() {
