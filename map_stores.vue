@@ -122,8 +122,40 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
                 console.log(this.all_stores);
-            }
-        }
+                
+                
+                reg = {}
+                reg["path103"]={disabled: true};
+                reg["path193"]={disabled: true};
+                reg["path194"]={disabled: true};
+                
+                $.each( stores , function( key, val ) {
+                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                        obj = {};
+                        obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
+                        obj["attr"] = {}
+                        obj["attr"]["href"] = '/stores/'+val.slug 
+                        reg[val.svgmap_region] = obj
+                    }
+                });
+            
+                $('#mapsvg').mapSvg({
+                    source: '//mallmaverick.com/system/properties/svgmaps/000/000/042/original/StVital_Map_2016-09-30.svg?1475523309',    // Path to SVG map
+                    colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
+                    width: 1170,
+                    viewBox: [520,150,1350,1400],
+                    regions: reg,
+                    tooltipsMode:'custom',
+                    zoom: true,
+                    pan:true,
+                    cursor:'pointer',
+                    responsive:true,
+                    zoomLimit: [0,10]
+                });
+        
+                $(".map_tooltip").css({"background-color": "#C607A9", "width":"300px"});
+                    }
+                }
     })
   })
 </script>
