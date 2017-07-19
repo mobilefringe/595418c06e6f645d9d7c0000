@@ -9,7 +9,7 @@
                     
                     <div v-for = "store in all_stores">
                         <div class="marker" :id="concatVal('store_',store.id)" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
-                            <a style="color:#fff" href=/stores/store.slug>  store.name  </a>
+                            <a style="color:#fff" href=/stores/store.slug>  {{store.name}}  </a>
                         </div>
                         <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" :data-coords="store.coordinate"  class="marker">
                            <a style="color:#fff" >  {{store.name}}  </a>
