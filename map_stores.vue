@@ -115,6 +115,7 @@
             getStoresByName() {
                
                 var slug = this.$route.params.id;
+                var first_letter = 
                  var stores = this.storesByAlphaIndex;
                 console.log(stores,slug);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
