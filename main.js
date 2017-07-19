@@ -18,7 +18,7 @@ require.config({
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
     'raphael' : '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/text/javascript/1495734613000/raphael.js',
-    'mousewheel' : '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/text/javascript/1495734619000/jquery.mousewheel.js',
+    'mousewheel' : 'http://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel.js',
     'mapsvg' : 'http://mallmaverick.com/javascripts/mapsvg/mapsvg.js',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   },
