@@ -47,8 +47,8 @@ define([], function () {
         },
         {
           path: ':id',
-          component: view('promotion_details'),
-          name: 'promotionDetails'
+          component: view('map_stores'),
+          name: 'mapStores'
         }
       ]
     },
