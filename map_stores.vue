@@ -140,7 +140,7 @@
                 });
             
                 $('#mapsvg').mapSvg({
-                    source: '//mallmaverick.com/system/properties/svgmaps/000/000/042/original/StVital_Map_2016-09-30.svg?1475523309',    // Path to SVG map
+                    source: this.getSVGurl,    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
                     width: 1170,
                     viewBox: [520,150,1350,1400],
