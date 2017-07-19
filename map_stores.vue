@@ -44,7 +44,7 @@
                         <div class="marker" id="store_{{store.id}}" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
                             <a style="color:#fff" href=/stores/store.slug>  store.name  </a>
                         </div>
-                        <router-link tag="div" to="/map" active-class="active" class="all_caps menu_btn" exact>
+                        <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" active-class="active" class="all_caps menu_btn" exact>
                             <a class="all_caps menu_btn_label">PATH MAP</a>
                         </router-link>
                     </div>
