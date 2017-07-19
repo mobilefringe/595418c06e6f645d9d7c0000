@@ -130,7 +130,7 @@
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
-                console.log(this.all_stores);
+                
                 $.each(this.all_stores, function(i, val){
                    x = val.x_coordinate - 19;
                    y = val.y_coordinate - 58;
@@ -147,7 +147,7 @@
                         position: 'center'
                     }
                 });
-                
+                console.log(this.all_stores);
                 // reg = {}
                 // reg["path103"]={disabled: true};
                 // reg["path193"]={disabled: true};
