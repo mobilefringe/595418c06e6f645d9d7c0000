@@ -116,7 +116,7 @@
             getStoresByName() {
                 var stores = this.storesByAlphaIndex;
                 var slug = this.$route.params.slug;
-                console.log(stores,);
+                console.log(stores,slug);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 var temp_stores = _.groupBy(stores, 'name');
                 this.all_stores = _.filter(temp_stores, ['name', slug]);
