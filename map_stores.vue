@@ -5,8 +5,8 @@
             
                 <div class="demo_1 map3" style="" id="mapsvg">       
                 
-                    <img alt="map_image" id="map_image" src="//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/png/1494862912000/STC Map - May-15-2017 copy 2.png" > 
-                    <!--v-bind:src="getSVGurl"-->
+                    <img alt="map_image" id="map_image" src= v-bind:src="getSVGurl"> 
+                    
                     <div v-for = "store in all_stores">
                         <div class="marker" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)">
                             <a style="color:#fff" :href="concatVal('/stores/',store.slug)">  {{store.name}}  </a>
