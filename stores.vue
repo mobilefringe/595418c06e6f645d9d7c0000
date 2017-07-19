@@ -45,11 +45,12 @@
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
-                                    {{store.property_id}}
+                                   {{index}}
+                                    <!--{{store.name}} --> {{store.property_id}}
                                 </div>
-                                <div class="col-xs-6 align_right">
-                                    April 27-29
-                                </div>
+                                <!--<div class="col-xs-6 align_right">-->
+                                <!--    April 27-29-->
+                                <!--</div>-->
                             </router-link>
                         </div>
                          <hr>
