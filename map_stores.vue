@@ -130,6 +130,7 @@
                 reg["path194"]={disabled: true};
                 
                 $.each( this.all_stores , function( key, val ) {
+                
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         obj = {};
                         obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
