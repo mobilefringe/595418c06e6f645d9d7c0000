@@ -113,8 +113,9 @@
             //     this.mobile_find_store = '';
             // }
             getStoresByName() {
-                var stores = this.storesByAlphaIndex;
+               
                 var slug = this.$route.params.id;
+                 var stores = this.storesByAlphaIndex;
                 console.log(stores,slug);
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 var temp_stores = _.groupBy(stores, 'name');
