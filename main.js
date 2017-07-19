@@ -17,9 +17,9 @@ require.config({
     'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
     'store': 'https://mmvue.codecloudapp.com/store',
     'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
-    'raphael' : 'http://assets.codecloudapp.com/sites/595418c06e6f645d9d7c0000/text/javascript/1495734613000/raphael.js',
-    'mousewheel' : 'http://assets.codecloudapp.com/sites/595418c06e6f645d9d7c0000/text/javascript/1495734619000/jquery.mousewheel.js',
-    'mapsvg' : 'http://assets.codecloudapp.com/sites/595418c06e6f645d9d7c0000/text/javascript/1495734624000/mapsvg.js',
+    'raphael' : '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/text/javascript/1495734613000/raphael.js',
+    'mousewheel' : '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/text/javascript/1495734619000/jquery.mousewheel.js',
+    'mapsvg' : '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/text/javascript/1495734624000/mapsvg.js',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   },
   shim: {
