@@ -27,7 +27,6 @@
   define(["Vue", "jquery", "mapsvg","mousewheel","craftmap"], function(Vue, $,mapsvg,mousewheel,craftmap) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
-        map_pin : "<div class='marker'><a class='anchor'></a></div>",
         data: function() {
             return {
                 title: "The Path!",
