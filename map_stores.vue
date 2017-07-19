@@ -45,7 +45,7 @@
                             <a style="color:#fff" href=/stores/store.slug>  store.name  </a>
                         </div>
                         <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" :data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">
-                            <a class="all_caps menu_btn_label">PATH MAP</a>
+                           <a style="color:#fff" href=/stores/store.slug>  {{store.name}}  </a>
                         </router-link>
                     </div>
                     
