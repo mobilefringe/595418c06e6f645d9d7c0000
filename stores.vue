@@ -39,7 +39,7 @@
                 <div class="" id="shop_stores_container">
                     <div  v-for="store in shop_stores">
                         <div class="row cat_name">
-                            <router-link :to="{ name: 'storeDetails', params: { id: store.slug }}">
+                            <router-link :to="{ name: 'mapStores', params: { id: store.slug }}">
                                 <div class="col-xs-6 align_left">
                                     {{store.name}}
                                     <br/>
