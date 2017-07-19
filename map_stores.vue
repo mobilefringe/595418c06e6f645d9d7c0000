@@ -40,14 +40,14 @@
                     <!--    <p class="dets_data">Building Name {{store2.name}}</p>-->
                         
                     <!--</div>-->
-                    <div v-for = "store in all_stores">
+                    <!--<div v-for = "store in all_stores">-->
                         <!--<div class="marker" id="store_{{store.id}}" data-coords="{{store.x_coordinate}} , {{store.y_coordinate}}">-->
                         <!--    <a style="color:#fff" href=/stores/store.slug>  store.name  </a>-->
                         <!--</div>-->
-                        <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" :data-coords="store.coordinate"  class="marker">
-                           <a style="color:#fff" >  {{store.name}}  </a>
-                        </router-link>
-                    </div>
+                    <!--    <router-link tag="div" :to="{ name: 'storeDetails', params: { id: store.slug }}" :data-coords="store.coordinate"  class="marker">-->
+                    <!--       <a style="color:#fff" >  {{store.name}}  </a>-->
+                    <!--    </router-link>-->
+                    <!--</div>-->
                     
                 </div>
             </div>
