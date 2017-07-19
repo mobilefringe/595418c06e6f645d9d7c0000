@@ -117,7 +117,6 @@
                 var temp_stores = _.groupBy(this.dine_stores, 'name');
                 this.all_stores = _.filter(users, ['name', slug]);
                 console.log(this.dine_stores);
-                
             }
         }
     })
