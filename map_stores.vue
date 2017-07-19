@@ -91,7 +91,7 @@
                 console.log(this.all_stores);
             },
             concatVal(val,key) {
-                return val+key;
+                return val+""+key;
             }
         }
     })
