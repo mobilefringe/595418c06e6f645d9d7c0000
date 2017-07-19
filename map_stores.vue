@@ -98,12 +98,13 @@
 <style>
     .marker {
         background: url("//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/map_pin2.png") no-repeat;
+        
         cursor: pointer;
         display: block;
-        height: 65px;
+        height: 35px;
         margin-top: 5px;
         outline: medium none;
         text-indent: -9999px;
-        width: 45px;
+        width: 25px;
     }
 </style>
