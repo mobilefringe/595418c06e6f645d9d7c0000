@@ -114,7 +114,7 @@
                 var stores = this.storesByAlphaIndex;
                
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
-                var temp_stores = _.groupBy(this.dine_stores, 'name');
+                var temp_stores = _.groupBy(stores, 'name');
                 this.all_stores = _.filter(users, ['name', slug]);
                 console.log(this.dine_stores);
             }
