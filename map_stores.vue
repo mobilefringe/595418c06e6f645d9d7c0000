@@ -63,7 +63,7 @@
             }
         },
         created: function () {
-            this.getStoreByCategory();
+            this.getStoresByName();
         },
         watch: {
             // mobile_find_store : function (val) {
