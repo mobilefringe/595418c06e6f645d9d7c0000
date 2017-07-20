@@ -158,6 +158,7 @@
                 var b=map.getData().R.bottom;
                 while(b){
                     if(b.id==a){
+                        console.log(b.id);
                         return b;
                     }
                     b=b.next
