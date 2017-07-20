@@ -71,7 +71,7 @@
                 // });
                 $('#mapsvg').craftmap({
                     container: {
-                		name: 'map_image' // (string) class name for an image container
+                		name: 'map3' // (string) class name for an image container
                 	},
                     image:{
                         width:500,
