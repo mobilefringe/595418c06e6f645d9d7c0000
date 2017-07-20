@@ -137,7 +137,7 @@
                         //         }
                         //     }
                         // ]);
-                        console.log($("#"+val.svgmap_region).x);
+                        console.log($("#"+val.svgmap_region).);
                         // var coords = map.get_coords(val.svgmap_region);
                         // var height = parseInt(coords["height"])
                         // var width = parseInt(coords["width"])
