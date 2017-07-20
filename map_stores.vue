@@ -154,7 +154,7 @@
                         // map.selectRegion(val.svgmap_region);
                     }
                 });
-                console.log (map.getData().RgetById(v)); 
+                console.log (map.getData().RgetById(val.svgmap_region)); 
                  
             },
             get_coords (v, map){
