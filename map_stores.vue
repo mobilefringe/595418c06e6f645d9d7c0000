@@ -39,7 +39,7 @@
                 return this.$store.getters.getProperty;
             },
             getSVGurl : function () {
-                return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                return "https://www.mallmaverick.com" + this.property.map_url;//this.property.svgmap_url;
             },
             storesByAlphaIndex() {
                 return this.$store.getters.storesByAlphaIndex;
