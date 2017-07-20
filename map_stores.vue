@@ -59,7 +59,7 @@
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
-                map = $('#mapsvg').mapSvg({
+                var map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
