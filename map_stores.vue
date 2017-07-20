@@ -138,7 +138,7 @@
                         ]);
                     }
                 });
-                console.log (map.markaGet()); 
+                console.log (map.marksGet()); 
                  
             }
         }
