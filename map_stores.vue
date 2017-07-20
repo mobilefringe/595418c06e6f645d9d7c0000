@@ -88,38 +88,38 @@
                 // 		onClose: function(marker, popup){}
                 // 	},
                 // });
-                regions = {};
-                $.each( stores , function( key, val ) {
-                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        obj = {};
-                        if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                            obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                        }
-                        else{
-                            obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                        }
-                        obj["attr"] = {}
-                        regions[val.svgmap_region] = obj
-                    }
-                });
-                $('#store_select_container').change(function(e){
-                    drop_pin($(this).val())
-                })
-                init_map(regions, 2500, 2000)
+                // regions = {};
+                // $.each( stores , function( key, val ) {
+                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                //         obj = {};
+                //         if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                //             obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                //         }
+                //         else{
+                //             obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                //         }
+                //         obj["attr"] = {}
+                //         regions[val.svgmap_region] = obj
+                //     }
+                // });
+                // $('#store_select_container').change(function(e){
+                //     drop_pin($(this).val())
+                // })
+                // init_map(regions, 2500, 2000)
                 
-                $('.map_pin_a').click(function(e){
-                    e.preventDefault();
-                    var id = $(this).attr('data-value')
-                    map_pin(id)
-                })
+                // $('.map_pin_a').click(function(e){
+                //     e.preventDefault();
+                //     var id = $(this).attr('data-value')
+                //     map_pin(id)
+                // })
                 
-                function map_pin(value){
-                    map.marksHide();
-                    value = value.split('/')
-                    if (value[0] != null){
-                        drop_pin(value[0], map);    
-                    }
-                }
+                // function map_pin(value){
+                //     map.marksHide();
+                //     value = value.split('/')
+                //     if (value[0] != null){
+                //         drop_pin(value[0], map);    
+                //     }
+                // }
                 console.log(this.all_stores);
             },
             concatVal(val,key) {
