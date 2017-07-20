@@ -76,7 +76,7 @@
                     image:{
                         width:500,
                         height:400,
-                        name: 'imgMap'
+                        name: 'map_image'
                     },
                     map: {
                         position: 'center'
