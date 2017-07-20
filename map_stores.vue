@@ -109,68 +109,7 @@
                 });
                 this.map = map;
                  //console.log(this.map);
-                
-                
-                // $.each(this.all_stores, function(i, val){
-                //     x = val.x_coordinate - 19;
-                //     y = val.y_coordinate - 58;
-                //     // val.coordinate = val.x_coordinate + "," +val.y_coordinate;
-                //       $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>');
-                //   console.log(x,y);
-                // });
-                // $('.map').craftmap({
-                //     container: {
-                // 		name: 'map3' // (string) class name for an image container
-                // 	},
-                //     image:{
-                //         width:500,
-                //         height:400,
-                //         name: 'map_image'
-                //     },
-                //     map: {
-                //         position: 'center'
-                //     },
-                //     marker: {
-                // 		name: 'marker', // (string) class name for a marker
-                // 		center: true, // (bool) set true to pan the map to the center 
-                // 		popup: true, // (bool) set true to show a popup
-                // 		popup_name: 'popup', // (string) class name for popup
-                // 		onClick: function(marker, popup){},
-                // 		onClose: function(marker, popup){}
-                // 	},
-                // });
-                // regions = {};
-                // $.each( stores , function( key, val ) {
-                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                //         obj = {};
-                //         if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                //             obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                //         }
-                //         else{
-                //             obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                //         }
-                //         obj["attr"] = {}
-                //         regions[val.svgmap_region] = obj
-                //     }
-                // });
-                // $('#store_select_container').change(function(e){
-                //     drop_pin($(this).val())
-                // })
-                // init_map(regions, 2500, 2000)
-                
-                // $('.map_pin_a').click(function(e){
-                //     e.preventDefault();
-                //     var id = $(this).attr('data-value')
-                //     map_pin(id)
-                // })
-                
-                // function map_pin(value){
-                //     map.marksHide();
-                //     value = value.split('/')
-                //     if (value[0] != null){
-                //         drop_pin(value[0], map);    
-                //     }
-                // }
+    
                 console.log(this.all_stores);
             },
             concatVal(val,key) {
