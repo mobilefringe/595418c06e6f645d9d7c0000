@@ -149,8 +149,8 @@
                                           }
                             }
                             ])
-                        map.setViewBox(val.svgmap_region);
-                        map.selectRegion(val.svgmap_region);
+                        // map.setViewBox(val.svgmap_region);
+                        // map.selectRegion(val.svgmap_region);
                     }
                 });
                 console.log (map.marksGet()); 
