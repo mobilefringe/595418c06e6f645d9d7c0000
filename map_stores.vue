@@ -90,6 +90,8 @@
                         
                        // var coords = map.get_coords(val.svgmap_region);
                        // var height = parseInt(coords["height"])
+                        x = val.x_coordinate - 19;
+                        y = val.y_coordinate - 58;
                         var width = //parseInt(coords["width"])
                         var x_offset =// (parseInt(width) / 2);
                         var y_offset = (parseInt(height) /2);
