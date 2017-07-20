@@ -138,6 +138,7 @@
                         ]);
                     }
                 });
+                console.log (map.markGet()); 
                  
             }
         }
