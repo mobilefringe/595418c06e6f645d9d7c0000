@@ -160,6 +160,16 @@
             get_coords (v, map){
                 var coords = _data.R.getById(v).getBBox();
                 return coords
+            },
+            function (a){
+                var b=this.bottom;
+                while(b){
+                    if(b.id==a)
+                        return b;b=b.next
+                    
+                }
+                return null
+                
             }
         }
     })
