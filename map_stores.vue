@@ -109,7 +109,9 @@
                 });
                 this.map = map;
                  //console.log(this.map);
-    
+                if(map) {
+                    
+                }
                 console.log(this.all_stores);
             },
             concatVal(val,key) {
