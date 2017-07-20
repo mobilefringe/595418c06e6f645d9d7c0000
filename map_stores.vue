@@ -80,7 +80,7 @@
                     disableAll: true,
                     height:800,
                     width:1193,
-                    regions: reg,
+                    regions: regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
