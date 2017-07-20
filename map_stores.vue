@@ -96,7 +96,7 @@
                     disableAll: true,
                     height:800,
                     width:1193,
-                    region : region,
+                    regions : regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
