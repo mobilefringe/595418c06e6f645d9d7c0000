@@ -109,9 +109,19 @@
                 });
                 this.map = map;
                  //console.log(this.map);
-                if(map.init !== undefined) {
-                    console.log(map);
-                    $.each( this.all_stores , function( key, val ) {
+                
+                console.log(this.all_stores);
+            },
+            concatVal(val,key) {
+                return val+""+key;
+            },
+            concatCood(val,key) {
+                return val+","+key;
+            },
+            populateMap () {
+                var map = this.map;
+                console.log(map);
+                $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         
                         var x = val.x_coordinate - 19;
@@ -128,35 +138,6 @@
                         ]);
                     }
                 });
-                }
-                console.log(this.all_stores);
-            },
-            concatVal(val,key) {
-                return val+""+key;
-            },
-            concatCood(val,key) {
-                return val+","+key;
-            },
-            populateMap () {
-                var map = this.map;
-                // console.log(map);
-                // $.each( this.all_stores , function( key, val ) {
-                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        
-                //         var x = val.x_coordinate - 19;
-                //         var y = val.y_coordinate - 58;
-                //         //var x_offset =// (parseInt(width) / 2);
-                //         //var y_offset = (parseInt(height) /2);
-                //         // console.log(map);
-                //         map.setMarks([{ xy: [x , y ],
-                //             attrs: {
-                //                     src:  '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png',     // image for marker
-                //                     class: 'marker'
-                //                 }
-                //             }
-                //         ]);
-                //     }
-                // });
                  
             }
         }
