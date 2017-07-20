@@ -179,6 +179,7 @@
                 return val+","+key;
             },
             populateMap () {
+                console.log(this.map);
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         
@@ -195,7 +196,7 @@
                         ]);
                     }
                 });
-                 console.log(this.map);
+                 
             }
         }
     })
