@@ -69,7 +69,7 @@
                 //       $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>');
                 //   console.log(x,y);
                 // });
-                $('#mapsvg').craftmap({
+                $('.map').craftmap({
                     container: {
                 		name: 'map3' // (string) class name for an image container
                 	},
