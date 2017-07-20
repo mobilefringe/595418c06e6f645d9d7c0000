@@ -193,6 +193,9 @@
             },
             concatCood(val,key) {
                 return val+","+key;
+            },
+            populateMap () {
+                
             }
         }
     })
