@@ -7,7 +7,7 @@
                 
                     <img alt="map_image" id="map_image" class="map_image" :src="getSVGurl"> 
                     
-                    <div v-for = "store in all_stores" class="marker" style="display: inline-block;" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)">
+                    <div v-for = "store in all_stores" class="marker" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)">
                        
                             <a  style="color:#fff" :href="concatVal('/stores/',store.slug)">  {{store.name}}  </a>
                        
