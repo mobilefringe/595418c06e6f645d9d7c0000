@@ -23,7 +23,8 @@
         template: template, // the variable template will be injected
         data: function() {
             return {
-                all_stores: {}
+                all_stores: {},
+                map 
             }
         },
         mounted: function () {
