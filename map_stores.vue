@@ -107,6 +107,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
+                this.map = map;
                  //console.log(this.map);
                 
                 
