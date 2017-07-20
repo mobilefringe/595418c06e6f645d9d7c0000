@@ -154,7 +154,7 @@
                         // map.selectRegion(val.svgmap_region);
                     }
                 });
-                console.log (map.marksGet()); 
+                console.log (map.getData()); 
                  
             }
         }
