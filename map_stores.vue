@@ -67,27 +67,27 @@
                 //       $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>');
                 //   console.log(x,y);
                 // });
-                $('.map').craftmap({
-                    container: {
-                		name: 'map3' // (string) class name for an image container
-                	},
-                    image:{
-                        width:500,
-                        height:400,
-                        name: 'map_image'
-                    },
-                    map: {
-                        position: 'center'
-                    },
-                    marker: {
-                		name: 'marker', // (string) class name for a marker
-                		center: true, // (bool) set true to pan the map to the center 
-                		popup: true, // (bool) set true to show a popup
-                		popup_name: 'popup', // (string) class name for popup
-                		onClick: function(marker, popup){},
-                		onClose: function(marker, popup){}
-                	},
-                });
+                // $('.map').craftmap({
+                //     container: {
+                // 		name: 'map3' // (string) class name for an image container
+                // 	},
+                //     image:{
+                //         width:500,
+                //         height:400,
+                //         name: 'map_image'
+                //     },
+                //     map: {
+                //         position: 'center'
+                //     },
+                //     marker: {
+                // 		name: 'marker', // (string) class name for a marker
+                // 		center: true, // (bool) set true to pan the map to the center 
+                // 		popup: true, // (bool) set true to show a popup
+                // 		popup_name: 'popup', // (string) class name for popup
+                // 		onClick: function(marker, popup){},
+                // 		onClose: function(marker, popup){}
+                // 	},
+                // });
                 console.log(this.all_stores);
             },
             concatVal(val,key) {
