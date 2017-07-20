@@ -97,7 +97,7 @@
                             //var y_offset = (parseInt(height) /2);
                         map.setMarks([{ xy: [x , y ],
                             attrs: {
-                                    src:  '//codecloud.cdn.speedyrails.net/sites/57f5246e6e6f644418020000/image/png/1446761110000/pin.png'     // image for marker
+                                    src:  '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500565442000/map_pin.png'     // image for marker
                                 }
                             }
                         ])
