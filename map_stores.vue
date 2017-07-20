@@ -74,21 +74,21 @@
                         // obj["attr"]["href"] = "/stores/"+val.slug
                         regions[val.svgmap_region] = obj;
                         
+                        // var coords = map.get_coords(val.svgmap_region);
+                        // var height = parseInt(coords["height"])
+                        // var width = //parseInt(coords["width"])
+                        // var x = val.x_coordinate - 19;
+                        // var y = val.y_coordinate - 58;
+                        // var x_offset =// (parseInt(width) / 2);
+                        // var y_offset = (parseInt(height) /2);
+                        // console.log(map);
+                        // map.setMarks([{ xy: [x , y ],
+                        //     attrs: {
+                        //             src:  '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500565442000/map_pin.png'     // image for marker
+                        //         }
+                        //     }
+                        // ]);
                         var coords = map.get_coords(val.svgmap_region);
-                        var height = parseInt(coords["height"])
-                        var width = //parseInt(coords["width"])
-                        var x = val.x_coordinate - 19;
-                        var y = val.y_coordinate - 58;
-                        var x_offset =// (parseInt(width) / 2);
-                        var y_offset = (parseInt(height) /2);
-                        console.log(map);
-                        map.setMarks([{ xy: [x , y ],
-                            attrs: {
-                                    src:  '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500565442000/map_pin.png'     // image for marker
-                                }
-                            }
-                        ]);
-                        var coords = map.get_coords(id);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
@@ -100,8 +100,8 @@
                                           }
                             }
                             ])
-                        map.setViewBox(id);
-                        map.selectRegion(id);
+                        map.setViewBox(val.svgmap_region);
+                        map.selectRegion(val.svgmap_region);
                     }
                 });
                 var map = $('#mapsvg').mapSvg({
