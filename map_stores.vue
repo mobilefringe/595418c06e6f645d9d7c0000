@@ -107,7 +107,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
-                 console.log(this.map);
+                 //console.log(this.map);
                 
                 
                 // $.each(this.all_stores, function(i, val){
