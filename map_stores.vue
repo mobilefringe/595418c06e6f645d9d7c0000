@@ -99,7 +99,7 @@
                 map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
                     attrs: {
                             src:  '//codecloud.cdn.speedyrails.net/sites/57f5246e6e6f644418020000/image/png/1446761110000/pin.png'     // image for marker
-                         }
+                        }
                     }
                 ])
                 // $.each(this.all_stores, function(i, val){
