@@ -97,11 +97,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
-                var coords = map.get_coords(id);
-                var height = parseInt(coords["height"])
-                var width = parseInt(coords["width"])
-                var x_offset = (parseInt(width) / 2);
-                var y_offset = (parseInt(height) /2);
+                
                 
                 
                 // $.each(this.all_stores, function(i, val){
