@@ -156,6 +156,10 @@
                 });
                 console.log (map.getData()); 
                  
+            },
+            get_coords (v){
+                var coords = _data.R.getById(v).getBBox();
+                return coords
             }
         }
     })
