@@ -59,6 +59,23 @@
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
+                $('#mapsvg').mapSvg({
+                    source: this.getSVGurl,    // Path to SVG map
+                    colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
+                    // viewBox: [3000,0,6000,6000],
+                    disableAll: true,
+                    height:800,
+                    width:1193,
+                    
+                    tooltipsMode:'custom',
+                    loadingText: "loading...",
+                    zoom: true,
+                    zoomButtons: {'show': true,'location': 'left' },
+                    pan:true,
+                    cursor:'pointer',
+                    responsive:true,
+                    zoomLimit: [0,10]
+                });
                 var regions = {}
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -85,23 +102,7 @@
                     }
                 });
             
-                $('#mapsvg').mapSvg({
-                    source: this.getSVGurl,    // Path to SVG map
-                    colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
-                    // viewBox: [3000,0,6000,6000],
-                    disableAll: true,
-                    height:800,
-                    width:1193,
-                    
-                    tooltipsMode:'custom',
-                    loadingText: "loading...",
-                    zoom: true,
-                    zoomButtons: {'show': true,'location': 'left' },
-                    pan:true,
-                    cursor:'pointer',
-                    responsive:true,
-                    zoomLimit: [0,10]
-                });
+                
                 
                 
                 
