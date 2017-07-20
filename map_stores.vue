@@ -124,7 +124,7 @@
                         ]);
                     }
                 });
-                 console.log(map);
+                 console.log(this.map);
                 
                 // $.each(this.all_stores, function(i, val){
                 //     x = val.x_coordinate - 19;
