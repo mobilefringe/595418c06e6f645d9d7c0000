@@ -165,7 +165,8 @@
                 var b=this.bottom;
                 while(b){
                     if(b.id==a)
-                        return b;b=b.next
+                        return b;
+                    b=b.next
                     
                 }
                 return null
