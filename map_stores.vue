@@ -92,7 +92,7 @@
                     disableAll: true,
                     height:800,
                     width:1193,
-                    regions: regions,
+                    
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
