@@ -67,11 +67,11 @@
                         if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
                             val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
                         } 
-                        // obj = {};
-                        // obj["popover"] = "<img src='"+val.store_front_url_abs+"'/><p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
-                        // obj["attr"] = {}
-                        // // obj["attr"]["href"] = "/stores/"+val.slug
-                        // regions[val.svgmap_region] = obj;
+                        obj = {};
+                        obj["popover"] = "<img src='"+val.store_front_url_abs+"'/><p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
+                        obj["attr"] = {}
+                        // obj["attr"]["href"] = "/stores/"+val.slug
+                        regions[val.svgmap_region] = obj;
                         
                        // var coords = map.get_coords(val.svgmap_region);
                        // var height = parseInt(coords["height"])
