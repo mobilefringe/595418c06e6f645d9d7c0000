@@ -24,7 +24,7 @@
         data: function() {
             return {
                 all_stores: {},
-                map :{}
+                map :""
             }
         },
         mounted: function () {
