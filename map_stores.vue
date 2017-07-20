@@ -7,11 +7,11 @@
                 
                     <img alt="map_image" id="map_image" class="map_image" :src="getSVGurl"> 
                     
-                    <!--<div v-for = "store in all_stores">-->
+                    <div v-for = "store in all_stores">
                        
-                    <!--        <a class="marker" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)" style="color:#fff" :href="concatVal('/stores/',store.slug)">  {{store.name}}  </a>-->
+                            <a class="marker" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)" style="color:#fff" :href="concatVal('/stores/',store.slug)">  {{store.name}}  </a>
                        
-                    <!--</div>-->
+                    </div>
                     
                 </div>
             </div>
