@@ -93,8 +93,8 @@
                        // var width = //parseInt(coords["width"])
                            x = val.x_coordinate - 19;
                            y = val.y_coordinate - 58;
-                        var x_offset =// (parseInt(width) / 2);
-                        var y_offset = (parseInt(height) /2);
+                            var x_offset =// (parseInt(width) / 2);
+                            var y_offset = (parseInt(height) /2);
                         map.setMarks([{ xy: [x + x_offset, y + y_offset],
                             attrs: {
                                     src:  '//codecloud.cdn.speedyrails.net/sites/57f5246e6e6f644418020000/image/png/1446761110000/pin.png'     // image for marker
