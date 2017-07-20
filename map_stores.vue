@@ -95,7 +95,7 @@
                         var y = val.y_coordinate - 58;
                         //var x_offset =// (parseInt(width) / 2);
                         //var y_offset = (parseInt(height) /2);
-                        console.log(map);
+                        //console.log(map);
                         map.setMarks([{ xy: [x , y ],
                             attrs: {
                                     src:  '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500565442000/map_pin.png'     // image for marker
