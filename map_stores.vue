@@ -157,7 +157,7 @@
                 console.log (map.getData().R);//.getById("stores_x5F_6_x5F_18_4_")); 
                 var b=map.getData().R.bottom;
                 while(b){
-                    if(b.id.indexOf("stores_x5F") > -1)
+                    // if(b.id.indexOf("stores_x5F") > -1)
                      console.log(b.id);
                     if(b.id=="stores_x5F_6_x5F_18_4_"){
                         console.log(b.id);
