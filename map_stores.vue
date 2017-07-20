@@ -157,7 +157,7 @@
                 console.log (map.getData()); 
                  
             },
-            get_coords (v){
+            get_coords (v, map){
                 var coords = _data.R.getById(v).getBBox();
                 return coords
             }
