@@ -27,7 +27,7 @@
             }
         },
         created: function () {
-            this.getStoresByName();
+            // this.getStoresByName();
         },
         watch: {
            
