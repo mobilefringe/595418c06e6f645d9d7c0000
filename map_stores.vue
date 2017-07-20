@@ -5,7 +5,7 @@
             
                 <div class="demo_1 map3" style="" id="mapsvg">       
                 
-                    <img alt="map_image" id="map_image" class="map_img" :src="getSVGurl"> 
+                    <img alt="map_image" id="map_image" class="map_image" :src="getSVGurl"> 
                     
                     <div v-for = "store in all_stores">
                        
