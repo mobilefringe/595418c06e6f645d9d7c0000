@@ -155,7 +155,13 @@
                     }
                 });
                 console.log (map.getData().R);//.getById("stores_x5F_6_x5F_18_4_")); 
-                 
+                var b=map.getData().R.bottom;
+                while(b){
+                    if(b.id==a)
+                        return b;
+                    b=b.next
+                    
+                }
             },
             get_coords (v, map){
                 var coords = _data.R.getById(v).getBBox();
