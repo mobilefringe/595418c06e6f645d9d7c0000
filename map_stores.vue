@@ -76,6 +76,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
+                console.log(map);
                 var regions = {}
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
