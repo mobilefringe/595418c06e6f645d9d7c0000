@@ -106,7 +106,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
-                
+                 console.log(map);
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         
@@ -123,7 +123,7 @@
                         ]);
                     }
                 });
-                
+                 console.log(map);
                 
                 // $.each(this.all_stores, function(i, val){
                 //     x = val.x_coordinate - 19;
