@@ -91,8 +91,8 @@
                        // var coords = map.get_coords(val.svgmap_region);
                        // var height = parseInt(coords["height"])
                        // var width = //parseInt(coords["width"])
-                           x = val.x_coordinate - 19;
-                           y = val.y_coordinate - 58;
+                           var x = val.x_coordinate - 19;
+                           var y = val.y_coordinate - 58;
                             //var x_offset =// (parseInt(width) / 2);
                             //var y_offset = (parseInt(height) /2);
                         map.setMarks([{ xy: [x , y ],
