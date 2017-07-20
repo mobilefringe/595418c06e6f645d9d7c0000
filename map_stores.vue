@@ -71,7 +71,7 @@
                         // obj["attr"]["href"] = "/stores/"+val.slug
                         regions[val.svgmap_region] = obj;
                         
-                        var coords = map.get_coords(id);
+                        var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
