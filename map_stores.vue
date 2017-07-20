@@ -26,8 +26,8 @@
                 all_stores: {}
             }
         },
-        created: function () {
-            // this.getStoresByName();
+        mounted: function () {
+            this.getStoresByName();
         },
         watch: {
            
