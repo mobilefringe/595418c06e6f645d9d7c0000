@@ -109,7 +109,7 @@
                 });
                 this.map = map;
                  //console.log(this.map);
-                if(map ! == undefined) {
+                if(map !== undefined) {
                     $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         
