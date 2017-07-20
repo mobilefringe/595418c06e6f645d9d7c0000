@@ -2,7 +2,7 @@
     <div>
         <div class="map_page">
             <div class="map">
-            
+                <div @click="populateMap"> </div>
                 <div class="demo_1 map3" style="" id="mapsvg">       
                 
                     <!--<img alt="map_image" id="map_image" class="map_image" :src="getSVGurl"> -->
