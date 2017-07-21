@@ -193,7 +193,7 @@
                     
                 }
                 
-                var coords = _data.R.getById(v).getBBox();
+                var coords = v_data.getBBox();
                 return coords
             }
         }
