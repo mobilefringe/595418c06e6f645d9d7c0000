@@ -158,10 +158,11 @@
                             return b;
                         }
                     }
-                    console.log(a);
+                    
                     b=b.next
                     
                 }
+                console.log(a);
             },
             get_coords (v, map){
                 var coords = _data.R.getById(v).getBBox();
