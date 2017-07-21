@@ -129,7 +129,6 @@
                 console.log(map);
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        
                         var coords = map.get_coords(val.svgmap_region);
                         //var coords = this.get_coords(val.svgmap_region,map);
                         var height = parseInt(coords["height"])
