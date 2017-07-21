@@ -109,7 +109,7 @@
                         obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
                         obj["attr"] = {}
                         // obj["attr"]["href"] = "/stores/"+val.slug
-                        this.populateMap([val.svgmap_region]);
+                        this.populateMap(val.svgmap_region);
                         
                     }
                 });
