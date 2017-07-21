@@ -159,6 +159,7 @@
                             }
                             b=b.next
                         }
+                        if(v_data !== undefined)
                         var coords = v_data.getBBox();
                         //var coords = this.get_coords(val.svgmap_region,map);
                         var height = parseInt(coords["height"])
