@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
+  define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         data: function() {
@@ -123,7 +123,7 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
-                        // var coords = map.this.get_coords(val.svgmap_region);
+                        // var coords = map.get_coords(val.svgmap_region);
                         // var height = parseInt(coords["height"])
                         // var width = parseInt(coords["width"])
                         // var x_offset = (parseInt(width) / 2);
@@ -143,8 +143,7 @@
                 var b=map.getData().R.bottom;
                 while(b){
                     // if(b.id.indexOf("stores_x5F") > -1)
-                    var similar = this.similarity(b.id,"stores_x5F_6_x5F_18_4_");
-                    console.log(b.id,"stores_x5F_6_x5F_18_4_",similar);
+                     console.log(b.id);
                     if(b.id=="stores_x5F_6_x5F_18_4_"){
                         console.log(b.id);
                         return b;
@@ -157,55 +156,16 @@
                 var coords = _data.R.getById(v).getBBox();
                 return coords
             },
-            // function (a){
-            //     var b=this.bottom;
-            //     while(b){
-            //         if(b.id==a)
-            //             return b;
-            //         b=b.next
+            function (a){
+                var b=this.bottom;
+                while(b){
+                    if(b.id==a)
+                        return b;
+                    b=b.next
                     
-            //     }
-            //     return null
-                
-            // },
-            similarity(s1, s2) {
-              var longer = s1;
-              var shorter = s2;
-              if (s1.length < s2.length) {
-                longer = s2;
-                shorter = s1;
-              }
-              var longerLength = longer.length;
-              if (longerLength == 0) {
-                return 1.0;
-              }
-              return (longerLength - this.editDistance(longer, shorter)) / parseFloat(longerLength);
-            },
-            editDistance(s1, s2) {
-              s1 = s1.toLowerCase();
-              s2 = s2.toLowerCase();
-            
-              var costs = new Array();
-              for (var i = 0; i <= s1.length; i++) {
-                var lastValue = i;
-                for (var j = 0; j <= s2.length; j++) {
-                  if (i == 0)
-                    costs[j] = j;
-                  else {
-                    if (j > 0) {
-                      var newValue = costs[j - 1];
-                      if (s1.charAt(i - 1) != s2.charAt(j - 1))
-                        newValue = Math.min(Math.min(newValue, lastValue),
-                          costs[j]) + 1;
-                      costs[j - 1] = lastValue;
-                      lastValue = newValue;
-                    }
-                  }
                 }
-                if (i > 0)
-                  costs[s2.length] = lastValue;
-              }
-              return costs[s2.length];
+                return null
+                
             }
         }
     })
