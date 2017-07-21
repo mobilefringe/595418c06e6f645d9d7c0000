@@ -159,22 +159,23 @@
                             }
                             b=b.next
                         }
-                        if(v_data !== undefined)
-                        var coords = v_data.getBBox();
-                        //var coords = this.get_coords(val.svgmap_region,map);
-                        var height = parseInt(coords["height"])
-                        var width = parseInt(coords["width"])
-                        var x_offset = (parseInt(width) / 2);
-                        var y_offset = (parseInt(height) /2);
-                        
-                        map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-                                  attrs: {
-                                            src:   '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png'   // image for marker
-                                          }
-                            }
-                            ])
-                        map.setViewBox(val.svgmap_region);
-                        map.selectRegion(val.svgmap_region);
+                        if(v_data !== undefined) {
+                            var coords = v_data.getBBox();
+                            //var coords = this.get_coords(val.svgmap_region,map);
+                            var height = parseInt(coords["height"])
+                            var width = parseInt(coords["width"])
+                            var x_offset = (parseInt(width) / 2);
+                            var y_offset = (parseInt(height) /2);
+                            
+                            map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+                                      attrs: {
+                                                src:   '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png'   // image for marker
+                                              }
+                                }
+                                ])
+                            map.setViewBox(val.svgmap_region);
+                            map.selectRegion(val.svgmap_region);
+                        }
                     }
                 });
                 console.log (map.getData().R);//.getById("stores_x5F_6_x5F_18_4_")); 
