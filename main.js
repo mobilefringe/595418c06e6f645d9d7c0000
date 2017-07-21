@@ -21,7 +21,7 @@ require.config({
     'mousewheel' : 'http://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
     'mapsvg' : 'http://mallmaverick.com/javascripts/mapsvg/mapsvg',
     'mm_mapsvg' : '//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap',
-    'tp_svg' : '//assets.codecloudapp.com/sites/595418c06e6f645d9d7c0000/text/javascript/1500659501000/tpath_mapsvg',
+    'tp_svg' : '//assets.codecloudapp.com/sites/595418c06e6f645d9d7c0000/text/javascript/1500660386000/tpath_mapsvg',
     'craftmap' : '//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
   },
