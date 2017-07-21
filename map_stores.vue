@@ -163,7 +163,7 @@
                             b=b.next
                         }
                         if(v_data !== undefined) {
-                            console.log (map.getData().R);
+                            // console.log (map.getData().R);
                             var coords = v_data.getBBox();
                             //var coords = this.get_coords(val.svgmap_region,map);
                             var height = parseInt(coords["height"])
