@@ -145,7 +145,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 		$('#menu_page').hide();
         $('#menu-icon').toggle();
       },
-        populateMap (svg_val,map) {
+        populateMap: function  (svg_val,map) {
             var coords = map.get_coords(svg_val);
             var height = parseInt(coords["height"])
             var width = parseInt(coords["width"])
