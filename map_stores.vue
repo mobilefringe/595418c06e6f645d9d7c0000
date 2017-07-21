@@ -165,7 +165,7 @@
                         
                         // if(v_data !== null && v_data !== undefined) {
                             // console.log (map.getData().R);
-                            var coords = map.get_coords();
+                            var coords = map.get_coords(val.svgmap_region);
                             //var coords = this.get_coords(val.svgmap_region,map);
                             var height = parseInt(coords["height"])
                             var width = parseInt(coords["width"])
