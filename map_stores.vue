@@ -82,20 +82,20 @@
                 
                 
                
-                var regions = {}
-                $.each( this.all_stores , function( key, val ) {
-                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-                            val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-                        } 
-                        obj = {};
-                        obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
-                        obj["attr"] = {}
-                        // obj["attr"]["href"] = "/stores/"+val.slug
-                        regions[val.svgmap_region] = obj;
+                // var regions = {}
+                // $.each( this.all_stores , function( key, val ) {
+                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                //         if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                //             val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                //         } 
+                //         obj = {};
+                //         obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
+                //         obj["attr"] = {}
+                //         // obj["attr"]["href"] = "/stores/"+val.slug
+                //         regions[val.svgmap_region] = obj;
                         
-                    }
-                });
+                //     }
+                // });
                 var map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
