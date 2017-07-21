@@ -179,7 +179,7 @@
               if (longerLength == 0) {
                 return 1.0;
               }
-              return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
+              return (longerLength - this.editDistance(longer, shorter)) / parseFloat(longerLength);
             },
             editDistance(s1, s2) {
               s1 = s1.toLowerCase();
