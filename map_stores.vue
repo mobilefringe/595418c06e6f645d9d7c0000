@@ -154,7 +154,7 @@
                                 var temp_id = b.id.replace(/[_-]/g, "");
                                 temp_id = temp_id.replace("stores", "");
                                 temp_id = temp_id.replace("doors", "");
-                                console.log(b);
+                                console.log(temp_id);
                                 if(temp_id,(v.indexOf(temp_id) > -1)){
                                     console.log("Hey");
                                     v_data= b;
