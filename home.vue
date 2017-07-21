@@ -6,7 +6,7 @@
             </div>
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="">
         </div>
-         <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+        <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
           <template slot="item" scope="option">
             <article class="media">
               <!--<figure class="media-left">
