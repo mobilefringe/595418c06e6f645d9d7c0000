@@ -11,9 +11,9 @@
                               <img :src="option.data.store_front_url_abs">
                             </p>
                           </figure>-->
-                          <p>
-                            <strong>{{ option.data.name }}</strong>
-                          </p>
+                            <p>
+                                <strong>{{ option.data.name }}</strong>
+                            </p>
                         </article>
                     </template>
                 </search-component>
