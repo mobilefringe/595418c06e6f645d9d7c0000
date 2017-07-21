@@ -59,7 +59,7 @@
                         var temp_id = b.id.replace(/[_-]/g, "");
                         temp_id = temp_id.replace("stores", "");
                         temp_id = temp_id.replace("doors", "");
-                        if(temp_id,(a.indexOf(temp_id) > -1)){
+                        if(temp_id,(v.indexOf(temp_id) > -1)){
                             v_data= b;
                         }
                     }
