@@ -149,8 +149,8 @@
                          var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                         //   console.log(b);
                         var temp_id = b.id.replace(/[_-]/g, "");
-                         temp_id = temp_id.replace("stores", "");
-                         temp_id = temp_id.replace("doors", "");
+                        temp_id = temp_id.replace("stores", "");
+                        temp_id = temp_id.replace("doors", "");
                         //  console.log(temp_id,(a.indexOf(temp_id) > -1));
                          console.log(_.includes(temp_id, a, [fromIndex=-5]));
                          if(a.indexOf(b.id) > -1){
