@@ -154,6 +154,7 @@
                                 temp_id = temp_id.replace("stores", "");
                                 temp_id = temp_id.replace("doors", "");
                                 if(temp_id,(v.indexOf(temp_id) > -1)){
+                                    console.log("Hey")
                                     v_data= b;
                                 }
                             }
