@@ -64,11 +64,8 @@
                             v_data= b;
                         }
                     }
-                    
                     b=b.next
-                    
                 }
-                
                 var coords = v_data.getBBox();
                 return coords;
             }
