@@ -47,6 +47,7 @@
                 zoomLimit: [0,10]
             });
             this.map = map;
+            this.populateMap;
         },
         watch: {
            
