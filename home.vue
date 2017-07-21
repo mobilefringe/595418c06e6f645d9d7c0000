@@ -53,7 +53,8 @@
             return {
                 title: "The Path!",
                 description: "Using new SDK",
-                mobile_search_box : ""
+                mobile_search_box : "",
+                suggestionAttribute: 'name'
             }
         },
         computed: {
