@@ -168,6 +168,7 @@
             get_coords (v, map){
                 v =  v.replace("stores", "");
                 v = v.replace("doors", "");
+                var v_id;
                 var b=map.getData().R.bottom;
                 // var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                 while(b){
