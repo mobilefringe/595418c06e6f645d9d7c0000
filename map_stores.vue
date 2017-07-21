@@ -106,7 +106,7 @@
                     regions : regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
-                    zoom: false,
+                    zoom: true,
                     zoomButtons: {'show': true,'location': 'left' },
                     pan:true,
                     cursor:'pointer',
@@ -177,8 +177,8 @@
                                               }
                                 }
                                 ])
-                            //map.setViewBox(val.svgmap_region);
-                           // map.selectRegion(val.svgmap_region);
+                            // map.setViewBox(val.svgmap_region);
+                            // map.selectRegion(val.svgmap_region);
                         // }
                     }
                 });
