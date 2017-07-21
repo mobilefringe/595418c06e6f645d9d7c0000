@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "tp_svg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
+  define(["Vue", "jquery", "mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         data: function() {
@@ -126,7 +126,7 @@
             },
             populateMap () {
                 var map = this.map;
-                console.log(map);
+                // console.log(map);
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         
@@ -143,29 +143,28 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
-                        // var v =val.svgmap_region.replace(/[_-]/g, "");
-                        // v =  v.replace("stores", "");
-                        // v = v.replace("doors", "");
-                        // console.log("v=",v);
-                        // var v_data;
-                        // var b=map.getData().R.bottom;
-                        // while(b){
-                        //     if((typeof b.id) === "string"){
-                        //         var temp_id = b.id.replace(/[_-]/g, "");
-                        //         temp_id = temp_id.replace("stores", "");
-                        //         temp_id = temp_id.replace("doors", "");
-                        //         // console.log(temp_id);
-                        //         if(temp_id,(v.indexOf(temp_id) > -1)){
-                        //             console.log(b);
-                        //             v_data= b;
-                        //         }
-                        //     }
-                        //     b=b.next
-                        // }
-                        
-                        // if(v_data !== null && v_data !== undefined) {
+                        var v =val.svgmap_region.replace(/[_-]/g, "");
+                        v =  v.replace("stores", "");
+                        v = v.replace("doors", "");
+                        console.log("v=",v);
+                        var v_data;
+                        var b=map.getData().R.bottom;
+                        while(b){
+                            if((typeof b.id) === "string"){
+                                var temp_id = b.id.replace(/[_-]/g, "");
+                                temp_id = temp_id.replace("stores", "");
+                                temp_id = temp_id.replace("doors", "");
+                                // console.log(temp_id);
+                                if(temp_id,(v.indexOf(temp_id) > -1)){
+                                    console.log(b);
+                                    v_data= b;
+                                }
+                            }
+                            b=b.next
+                        }
+                        if(v_data !== null && v_data !== undefined) {
                             // console.log (map.getData().R);
-                            var coords = map.get_coords(val.svgmap_region);
+                            var coords = v_data.getBBox();
                             //var coords = this.get_coords(val.svgmap_region,map);
                             var height = parseInt(coords["height"])
                             var width = parseInt(coords["width"])
@@ -180,7 +179,7 @@
                                 ])
                             map.setViewBox(val.svgmap_region);
                             map.selectRegion(val.svgmap_region);
-                        // }
+                        }
                     }
                 });
                 //.getById("stores_x5F_6_x5F_18_4_")); 
