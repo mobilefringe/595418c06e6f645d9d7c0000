@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
+  define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         data: function() {
@@ -123,7 +123,7 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
-                        var coords = this.get_coords(val.svgmap_region,map);
+                        var coords = get_coords(val.svgmap_region,map);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
