@@ -157,17 +157,17 @@
                 var coords = _data.R.getById(v).getBBox();
                 return coords
             },
-            function (a){
-                var b=this.bottom;
-                while(b){
-                    if(b.id==a)
-                        return b;
-                    b=b.next
+            // function (a){
+            //     var b=this.bottom;
+            //     while(b){
+            //         if(b.id==a)
+            //             return b;
+            //         b=b.next
                     
-                }
-                return null
+            //     }
+            //     return null
                 
-            },
+            // },
             similarity(s1, s2) {
               var longer = s1;
               var shorter = s2;
