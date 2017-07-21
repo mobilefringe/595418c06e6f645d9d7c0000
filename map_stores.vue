@@ -146,7 +146,7 @@
                         var v =val.svgmap_region;
                         v =  v.replace("stores", "");
                         v = v.replace("doors", "");
-                        console.log(v);
+                        console.log("v=",v);
                         var v_data;
                         var b=map.getData().R.bottom;
                         while(b){
