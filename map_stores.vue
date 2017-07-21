@@ -116,7 +116,7 @@
             concatCood(val,key) {
                 return val+","+key;
             },
-            populateMap () {
+            populateMap (svg_val) {
                 var map = this.map;
                 console.log("Hello");
                 $.each( this.all_stores , function( key, val ) {
