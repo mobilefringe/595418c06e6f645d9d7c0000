@@ -145,7 +145,7 @@
                     // if(b.id.indexOf("stores_x5F") > -1)
                     //console.log(b.id);
                     var a = "stores_x5F_6_x5F_18_4_";
-                   
+                   console.log(b);
                     if(b.id !== null && b.id !== undefined){
                          console.log(b.id,(b.id.indexOf(a) > -1));
                     }
