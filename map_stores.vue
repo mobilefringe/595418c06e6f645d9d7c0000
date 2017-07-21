@@ -158,7 +158,7 @@
                             return b;
                         }
                     }
-                    
+                    console.log(a);
                     b=b.next
                     
                 }
