@@ -56,19 +56,11 @@
                 var b=map.getData().R.bottom;
                 // var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                 while(b){
-                    // if(b.id.indexOf("stores_x5F") > -1)
-                    //console.log(b.id);
-                    
                     if((typeof b.id) === "string"){
-                        
-                        //   console.log(b);
                         var temp_id = b.id.replace(/[_-]/g, "");
                         temp_id = temp_id.replace("stores", "");
                         temp_id = temp_id.replace("doors", "");
-                         console.log(temp_id,(a.indexOf(temp_id) > -1));
-                        //  console.log(_.includes(temp_id, a, [fromIndex=-5]));
-                         if(temp_id,(a.indexOf(temp_id) > -1)){
-                            // console.log(b.id, a);
+                        if(temp_id,(a.indexOf(temp_id) > -1)){
                             v_data= b;
                         }
                     }
