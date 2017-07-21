@@ -156,7 +156,7 @@
                                 temp_id = temp_id.replace("doors", "");
                                 // console.log(temp_id);
                                 if(temp_id,(v.indexOf(temp_id) > -1)){
-                                    console.log("Hey");
+                                    console.log(b);
                                     v_data= b;
                                 }
                             }
