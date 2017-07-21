@@ -54,7 +54,6 @@
                 v = v.replace("doors", "");
                 var v_data;
                 var b=map.getData().R.bottom;
-                // var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                 while(b){
                     if((typeof b.id) === "string"){
                         var temp_id = b.id.replace(/[_-]/g, "");
