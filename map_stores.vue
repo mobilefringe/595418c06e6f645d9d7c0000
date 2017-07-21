@@ -146,7 +146,7 @@
                     //console.log(b.id);
                     
                     if((typeof b.id) === "string"){
-                         var a = "stores_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
+                         var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                         //   console.log(b);
                         var temp_id = b.id.replace(/[_-]/g, "");
                          temp_id = temp_id.replace("stores", "");
