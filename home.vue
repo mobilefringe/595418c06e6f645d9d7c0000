@@ -63,7 +63,7 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                return _.groupBy(this.$store.getters.processedStores, 'name');
+                return removeDuplicates(this.$store.getters.processedStores, 'name');
             }
         },
         methods : {
