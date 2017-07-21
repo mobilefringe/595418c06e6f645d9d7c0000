@@ -165,7 +165,7 @@
                 // }
                 // console.log(a);
             },
-            get_coords : function (v, map){
+            get_coords (v, map){
                 v =  v.replace("stores", "");
                 v = v.replace("doors", "");
                 var v_data;
