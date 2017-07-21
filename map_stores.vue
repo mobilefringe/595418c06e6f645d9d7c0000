@@ -116,7 +116,7 @@
             concatCood(val,key) {
                 return val+","+key;
             },
-            populateMap (svg_val,ap) {
+            populateMap (svg_val,map) {
                 var map = this.map;
                 var coords = map.get_coords(svg_val);
                 var height = parseInt(coords["height"])
