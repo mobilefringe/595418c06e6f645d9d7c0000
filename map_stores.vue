@@ -146,7 +146,7 @@
                     //console.log(b.id);
                     var a = "stores_x5F_6_x5F_18_4_";
                     if(a.indexOf(b.id) > -1){
-                        console.log(b.id);
+                        console.log(b.id, a);
                         return b;
                     }
                     b=b.next
