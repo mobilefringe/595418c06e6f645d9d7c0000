@@ -144,7 +144,8 @@
                 while(b){
                     // if(b.id.indexOf("stores_x5F") > -1)
                     //console.log(b.id);
-                    if(b.id=="stores_x5F_6_x5F_18_4_"){
+                    var a = "stores_x5F_6_x5F_18_4_";
+                    if(b.id==){
                         console.log(b.id);
                         return b;
                     }
