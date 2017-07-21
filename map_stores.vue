@@ -146,6 +146,9 @@
                     //console.log(b.id);
                     
                     if((typeof temp_id) === "string"){
+                         var a = "stores_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
+                //   console.log(b);
+                var temp_id = b.id.replace(/[_-]/g, "");
                          console.log(temp_id,(temp_id.indexOf(a) > -1));
                     }
                     if(a.indexOf(b.id) > -1){
