@@ -117,7 +117,6 @@
                 return val+","+key;
             },
             populateMap (svg_val,map) {
-                var map = this.map;
                 var coords = map.get_coords(svg_val);
                 var height = parseInt(coords["height"])
                 var width = parseInt(coords["width"])
