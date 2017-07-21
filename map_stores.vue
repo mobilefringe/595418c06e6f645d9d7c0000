@@ -142,7 +142,7 @@
                                 href: '/stores/'+val.slug,
                                 tooltip :val.name
                             },
-                            popover : "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
+                            tooltip : "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
                         }]);
                     }
                 });
