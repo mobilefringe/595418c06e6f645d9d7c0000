@@ -58,7 +58,7 @@
         },
         computed: {
             property(){
-              return this.$store.getters.getProperty;
+                return this.$store.getters.getProperty;
             },
             processedStores() {
                 return this.$store.getters.processedStores;
