@@ -49,6 +49,11 @@
             property(){
               return this.$store.getters.getProperty;
             }
+        },
+        methods : {
+            onOptionSelect(option) {
+                console.log('Selected option:', option)
+            }
         }
     })
   })
