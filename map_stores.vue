@@ -28,7 +28,6 @@
             }
         },
         mounted: function () {
-            this.getStoresByName();
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
@@ -46,6 +45,8 @@
                 zoomLimit: [0,10]
             });
             this.map = map;
+            this.getStoresByName();
+            
             this.populateMap;
         },
         watch: {
