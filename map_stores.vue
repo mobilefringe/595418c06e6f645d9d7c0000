@@ -162,9 +162,10 @@
                         //     }
                         //     b=b.next
                         // }
-                        if(v_data !== null && v_data !== undefined) {
+                        
+                        // if(v_data !== null && v_data !== undefined) {
                             // console.log (map.getData().R);
-                            var coords = v_data.getBBox();
+                            var coords = map.get_coords.getBBox();
                             //var coords = this.get_coords(val.svgmap_region,map);
                             var height = parseInt(coords["height"])
                             var width = parseInt(coords["width"])
@@ -179,7 +180,7 @@
                                 ])
                             map.setViewBox(val.svgmap_region);
                             map.selectRegion(val.svgmap_region);
-                        }
+                        // }
                     }
                 });
                 //.getById("stores_x5F_6_x5F_18_4_")); 
