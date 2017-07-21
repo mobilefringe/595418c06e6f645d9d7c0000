@@ -160,7 +160,7 @@
                             b=b.next
                         }
                         var coords = v_data.getBBox();
-                        var coords = this.get_coords(val.svgmap_region,map);
+                        var coords = //this.get_coords(val.svgmap_region,map);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
