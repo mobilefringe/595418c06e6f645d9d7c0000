@@ -144,7 +144,7 @@
                 while(b){
                     // if(b.id.indexOf("stores_x5F") > -1)
                     var similar = this.similarity(b.id,"stores_x5F_6_x5F_18_4_");
-                    console.log(b.id,"stores_x5F_6_x5F_18_4_");
+                    console.log(b.id,"stores_x5F_6_x5F_18_4_",similar);
                     if(b.id=="stores_x5F_6_x5F_18_4_"){
                         console.log(b.id);
                         return b;
