@@ -194,7 +194,7 @@
                 }
                 
                 var coords = v_data.getBBox();
-                return coords
+                return coords;
             }
         }
     })
