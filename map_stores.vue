@@ -28,6 +28,7 @@
             }
         },
         mounted: function () {
+            //init map on load and populate it with marker
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
