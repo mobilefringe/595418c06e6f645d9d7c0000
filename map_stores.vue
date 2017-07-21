@@ -97,22 +97,22 @@
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
-                this.populateMap();
+               
                
                 // var regions = {}
-                // $.each( this.all_stores , function( key, val ) {
-                //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                //         if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-                //             val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-                //         } 
-                //         obj = {};
-                //         obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
-                //         obj["attr"] = {}
-                //         // obj["attr"]["href"] = "/stores/"+val.slug
-                //         regions[val.svgmap_region] = obj;
+                $.each( this.all_stores , function( key, val ) {
+                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                        if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                            val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                        } 
+                        obj = {};
+                        obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'>View Details</a>"
+                        obj["attr"] = {}
+                        // obj["attr"]["href"] = "/stores/"+val.slug
+                        this.populateMap([val.svgmap_region]);
                         
-                //     }
-                // });
+                    }
+                });
                 
                  //console.log(this.map);
                 
