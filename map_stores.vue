@@ -179,7 +179,7 @@
                                 ])
                             map.setViewBox(val.svgmap_region);
                             map.selectRegion(val.svgmap_region);
-                        }
+                        // }
                     }
                 });
                 //.getById("stores_x5F_6_x5F_18_4_")); 
