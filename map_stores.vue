@@ -143,6 +143,23 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
+                        
+                        v =  v.replace("stores", "");
+                        v = v.replace("doors", "");
+                        var v_data;
+                        var b=map.getData().R.bottom;
+                        while(b){
+                            if((typeof b.id) === "string"){
+                                var temp_id = b.id.replace(/[_-]/g, "");
+                                temp_id = temp_id.replace("stores", "");
+                                temp_id = temp_id.replace("doors", "");
+                                if(temp_id,(v.indexOf(temp_id) > -1)){
+                                    v_data= b;
+                                }
+                            }
+                            b=b.next
+                        }
+                        var coords = v_data.getBBox();
                         var coords = this.get_coords(val.svgmap_region,map);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
