@@ -158,7 +158,7 @@
                         // map.selectRegion(val.svgmap_region);
                     }
                 });
-                console.log (map.getData().R);//.getById("stores_x5F_6_x5F_18_4_")); 
+                console.log (map.getViewBox());//.getById("stores_x5F_6_x5F_18_4_")); 
                 // var b=map.getData().R.bottom;
                 // var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                 // while(b){
