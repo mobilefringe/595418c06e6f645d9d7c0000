@@ -97,7 +97,7 @@
                 // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
-                this.populateMap;
+                this.populateMap();
                
                 // var regions = {}
                 // $.each( this.all_stores , function( key, val ) {
