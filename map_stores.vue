@@ -119,7 +119,7 @@
             populateMap (svg_val) {
                 var map = this.map;
                 
-                var coords = map.get_coords(val.svgmap_region);
+                var coords = map.get_coords(svg_val);
                 var height = parseInt(coords["height"])
                 var width = parseInt(coords["width"])
                 var x_offset = (parseInt(width) / 2);
