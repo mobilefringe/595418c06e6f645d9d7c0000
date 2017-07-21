@@ -106,7 +106,7 @@
                     regions : regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
-                    zoom: true,
+                    zoom: false,
                     zoomButtons: {'show': true,'location': 'left' },
                     pan:true,
                     cursor:'pointer',
