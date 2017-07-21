@@ -150,7 +150,7 @@
                         //   console.log(b);
                         var temp_id = b.id.replace(/[_-]/g, "");
                         //  console.log(temp_id,(a.indexOf(temp_id) > -1));
-                         _.includes(temp_id, a, [fromIndex=0])
+                         _.includes(temp_id, a, [fromIndex=-3])
                          if(a.indexOf(b.id) > -1){
                             console.log(b.id, a);
                             return b;
