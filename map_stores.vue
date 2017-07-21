@@ -36,7 +36,6 @@
                 // disableAll: true,
                 height:1000,
                 width:1300,
-                regions : regions,
                 tooltipsMode:'custom',
                 loadingText: "loading...",
                 zoom: true,
