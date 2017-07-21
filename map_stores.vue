@@ -151,9 +151,9 @@
                         var temp_id = b.id.replace(/[_-]/g, "");
                          console.log(temp_id,(temp_id.indexOf(a) > -1));
                          if(a.indexOf(b.id) > -1){
-                        console.log(b.id, a);
-                        return b;
-                    }
+                            console.log(b.id, a);
+                            return b;
+                        }
                     }
                     
                     b=b.next
