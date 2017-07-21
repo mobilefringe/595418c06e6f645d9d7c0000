@@ -6,9 +6,20 @@
             </div>
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="">
         </div>
-        <div id="search_results_items" class="search-results-items" style="">
-        <!--RENDERED BY renderSearchResultsTemplate(..) -->
-        </div>
+         <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+          <template slot="item" scope="option">
+            <article class="media">
+              <!--<figure class="media-left">
+                <p class="image is-64x64">
+                  <img :src="option.data.store_front_url_abs">
+                </p>
+              </figure>-->
+              <p>
+                <strong>{{ option.data.name }}</strong>
+              </p>
+            </article>
+          </template>
+        </search-component>
          <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder" >
             <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
