@@ -166,8 +166,8 @@
                 // console.log(a);
             },
             get_coords (v, map){
-                v =  v = temp_id.replace("stores", "");
-                v = temp_id.replace("doors", "");
+                v =  v.replace("stores", "");
+                v = v.replace("doors", "");
                 var b=map.getData().R.bottom;
                 // var a = "_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                 while(b){
