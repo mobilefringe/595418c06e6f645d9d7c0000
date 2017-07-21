@@ -3,7 +3,7 @@
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
                 <!--<input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >-->
-                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" id="mobile_search_box">
                     <template slot="item" scope="option">
                         <article class="media">
                           <!--<figure class="media-left">
