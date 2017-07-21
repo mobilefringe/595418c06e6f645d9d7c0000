@@ -149,7 +149,7 @@
                          var a = "stores_x5F_6_x5F_18_4_".replace(/[_-]/g, "");
                         //   console.log(b);
                         var temp_id = b.id.replace(/[_-]/g, "");
-                         console.log(temp_id,(temp_id.indexOf(a) > -1));
+                         console.log(temp_id,(a.indexOf(temp_id) > -1));
                          if(a.indexOf(b.id) > -1){
                             console.log(b.id, a);
                             return b;
