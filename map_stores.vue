@@ -143,25 +143,25 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
-                        var v =val.svgmap_region.replace(/[_-]/g, "");
-                        v =  v.replace("stores", "");
-                        v = v.replace("doors", "");
-                        console.log("v=",v);
-                        var v_data;
-                        var b=map.getData().R.bottom;
-                        while(b){
-                            if((typeof b.id) === "string"){
-                                var temp_id = b.id.replace(/[_-]/g, "");
-                                temp_id = temp_id.replace("stores", "");
-                                temp_id = temp_id.replace("doors", "");
-                                // console.log(temp_id);
-                                if(temp_id,(v.indexOf(temp_id) > -1)){
-                                    console.log(b);
-                                    v_data= b;
-                                }
-                            }
-                            b=b.next
-                        }
+                        // var v =val.svgmap_region.replace(/[_-]/g, "");
+                        // v =  v.replace("stores", "");
+                        // v = v.replace("doors", "");
+                        // console.log("v=",v);
+                        // var v_data;
+                        // var b=map.getData().R.bottom;
+                        // while(b){
+                        //     if((typeof b.id) === "string"){
+                        //         var temp_id = b.id.replace(/[_-]/g, "");
+                        //         temp_id = temp_id.replace("stores", "");
+                        //         temp_id = temp_id.replace("doors", "");
+                        //         // console.log(temp_id);
+                        //         if(temp_id,(v.indexOf(temp_id) > -1)){
+                        //             console.log(b);
+                        //             v_data= b;
+                        //         }
+                        //     }
+                        //     b=b.next
+                        // }
                         if(v_data !== null && v_data !== undefined) {
                             // console.log (map.getData().R);
                             var coords = v_data.getBBox();
