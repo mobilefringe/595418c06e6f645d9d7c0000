@@ -143,7 +143,7 @@
                 var b=map.getData().R.bottom;
                 while(b){
                     // if(b.id.indexOf("stores_x5F") > -1)
-                    similarity(b.id,"stores_x5F_6_x5F_18_4_")
+                    var similar = this.similarity(b.id,"stores_x5F_6_x5F_18_4_")
                     console.log(b.id,"stores_x5F_6_x5F_18_4_");
                     if(b.id=="stores_x5F_6_x5F_18_4_"){
                         console.log(b.id);
