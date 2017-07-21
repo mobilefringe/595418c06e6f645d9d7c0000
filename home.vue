@@ -21,7 +21,7 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt=""/>
         </div>
         
-        <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
+        <!--<h4 class="all_caps home_title"> Discover The Toronto Path</h4>-->
         <div class="menu_btn_holder" >
             <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
                 <a class="all_caps menu_btn_label">YOUR LOCATION</a>
