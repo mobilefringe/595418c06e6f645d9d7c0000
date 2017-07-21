@@ -162,7 +162,7 @@
                             }
                             b=b.next
                         }
-                        if(v_data !== undefined) {
+                        if(v_data !== null && v_data !== undefined) {
                             // console.log (map.getData().R);
                             var coords = v_data.getBBox();
                             //var coords = this.get_coords(val.svgmap_region,map);
