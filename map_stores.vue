@@ -143,7 +143,7 @@
                         //     }
                         // ]);
                         // console.log($("#"+val.svgmap_region));//.getBoundingClientRect());
-                        
+                        var v =val.svgmap_region;
                         v =  v.replace("stores", "");
                         v = v.replace("doors", "");
                         var v_data;
