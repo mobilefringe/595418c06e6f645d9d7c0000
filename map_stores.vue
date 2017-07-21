@@ -47,7 +47,7 @@
             this.map = map;
             this.getStoresByName();
             
-            this.populateMap;
+            
         },
         watch: {
            
