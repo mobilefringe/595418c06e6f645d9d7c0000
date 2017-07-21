@@ -22,6 +22,7 @@ require.config({
     'mapsvg' : 'http://mallmaverick.com/javascripts/mapsvg/mapsvg',
     'mm_mapsvg' : '//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
+    'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'
   },
   shim: {
     "Vue": {"exports": "Vue"}
