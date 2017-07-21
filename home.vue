@@ -20,6 +20,7 @@
             </article>
           </template>
         </search-component>
+        
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder" >
             <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
