@@ -93,22 +93,14 @@
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
-                // console.log(stores,slug);
-                // this.dine_stores = _.orderBy(temp_dine_array, 'name');
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 
-               
-               
-                // var regions = {}
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                       this.populateMap(val.svgmap_region,this.map);
                     }
                 });
                 
-                 //console.log(this.map);
-                
-                console.log(this.all_stores);
             },
             concatVal(val,key) {
                 return val+""+key;
