@@ -128,7 +128,7 @@
             },
             populateMap () {
                 var map = this.map;
-                console.log(map);
+                console.log("map"Hello"");
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
