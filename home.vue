@@ -4,7 +4,7 @@
             <div id="mobile_search"  class="col-xs-10">
                 <input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >
             </div>
-            <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="">
+            <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt=""/>
         </div>
         <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
           <template slot="item" scope="option">
