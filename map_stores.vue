@@ -46,8 +46,6 @@
             });
             this.map = map;
             this.getStoresByName();
-            
-            
         },
         watch: {
            
