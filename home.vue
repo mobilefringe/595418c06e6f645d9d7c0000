@@ -73,6 +73,7 @@
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log(counted_stores[option.name]);
+                if (option != undefined &&  option != "")
                 if( counted_stores[option.name] >1) {
                     // routes.go('/map_details/' + option.name);
                     var route = '/map/' + option.name;
