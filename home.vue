@@ -63,6 +63,9 @@
             },
             processedStores() {
                 return this.removeDuplicates(this.$store.getters.processedStores, 'name');
+            },
+            allStores() {
+                return this.removeDuplicates(this.$store.getters.processedStores, 'name');
             }
         },
         methods : {
