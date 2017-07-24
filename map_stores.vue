@@ -75,7 +75,7 @@
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
                 this.all_stores = _.groupBy(stores, 'name')[slug];
-                
+                console.log();
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                       this.populateMap(val.svgmap_region,this.map);
