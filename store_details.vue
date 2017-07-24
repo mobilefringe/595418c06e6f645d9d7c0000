@@ -1,26 +1,4 @@
 <template>
-    <div>
-        <div class="map_page">
-            <div class="map">
-                <!--<div @click="populateMap">Populate Map </div>-->
-                <div class="demo_1 map3" style="" id="mapsvg">       
-                
-                    <!--<img alt="map_image" id="map_image" class="map_image" :src="getSVGurl"> -->
-                    
-                    <!--<div v-for = "store in all_stores" class="marker" style="display: inline-block;" :id="concatVal('store_',store.id)" :data-coords="concatCood(store.x_coordinate, store.y_coordinate)">-->
-                    <!--    <a  style="color:#fff" :href="concatVal('/stores/',store.slug)">  {{store.name}}  </a>-->
-                    <!--</div>-->
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
-
-
-
-<template>
   <div class="row" v-if="currentStore">
     <!--<div class="large-6 columns">-->
     <!--  <div>-->
