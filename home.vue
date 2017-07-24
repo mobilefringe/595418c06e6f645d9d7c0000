@@ -74,7 +74,8 @@
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log(counted_stores[option.name]);
                 if( counted_stores[option.name] >1) {
-                    routes.go('/map_details/' + option.name);
+                    // routes.go('/map_details/' + option.name);
+                    this.$router.push('Home') 
                 }
                 else {
                     router.go('/stores/'+ option.slug);
