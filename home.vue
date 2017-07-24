@@ -75,7 +75,7 @@
                 console.log(counted_stores[option.name]);
                 if( counted_stores[option.name] >1) {
                     // routes.go('/map_details/' + option.name);
-                    var route = ;
+                    var route = 'map_details/' + option.name;
                     console.log(route);
                     this.$router.push(route);
                 }
