@@ -3,8 +3,8 @@
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
                 <!--<input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >-->
-                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
-                    <template slot="item" scope="option" >
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" id="m_search">
+                    <template slot="item" scope="option">
                         <article class="media">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
@@ -78,16 +78,3 @@
     })
   })
 </script>
-
-/*<style>*/
-/*    search-component input {*/
-/*        border:0;*/
-/*        width:100%;*/
-/*        padding: 0 20px;*/
-/*        height: 50px;*/
-/*        text-align:left ;*/
-/*        font-size: 18px;*/
-/*        color: #000000;*/
-/*        border-radius: 5px;*/
-/*    }*/
-/*</style>*/
