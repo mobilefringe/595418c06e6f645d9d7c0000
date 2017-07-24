@@ -198,7 +198,7 @@
                     pan:true,
                     cursor:'pointer',
                     responsive:true,
-                    zoomLimit: [0,10]
+                    zoomLimit: [0,14]
                 });
          }
       }
