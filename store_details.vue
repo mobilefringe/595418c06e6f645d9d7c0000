@@ -153,6 +153,20 @@
           if (vm.currentStore === null || vm.currentStore === undefined){
             vm.$router.replace({ name: '404'});
           }
+            var coords = map.get_coords(val.svgmap_region);
+            var height = parseInt(coords["height"])
+            var width = parseInt(coords["width"])
+            var x_offset = (parseInt(width) / 2);
+            var y_offset = (parseInt(height) /2);
+            
+            map.setMarks([{ xy: [coords["x"]  + x_offset, coords["y"] + y_offset],
+                attrs: {
+                    src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png',   // image for marker
+                    href: '/stores/'+val.slug,
+                    tooltip :val.name
+                },
+                tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
+            }]);
         })
       },
       beforeRouteUpdate (to, from, next) {
