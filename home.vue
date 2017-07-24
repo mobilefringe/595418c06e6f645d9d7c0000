@@ -75,7 +75,9 @@
                 console.log($(".input").val());
                 // console.log(counted_stores[option.name],option);
                 // if (option != undefined &&  option != "")
-                
+                if(option.type==="click") {
+                    
+                }
                 if( counted_stores[option.name] >1) {
                     // routes.go('/map_details/' + option.name);
                     var route = '/map/' + option.name;
