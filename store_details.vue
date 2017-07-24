@@ -29,6 +29,8 @@
     <!--    <a v-bind:href="currentStore.website">{{currentStore.website}}</a>-->
     <!--  </div>-->
     <!--</div>-->
+    <div class="demo_1 map3" style="" id="mapsvg">
+    </div>
   </div>
 </template>
 
