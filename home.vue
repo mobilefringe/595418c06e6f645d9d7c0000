@@ -77,7 +77,7 @@
                     router.go('/map_details/' + option.name);
                 }
                 else {
-                    router.go(/map_details);
+                    router.go('/stores/'+ option.slug);
                 }
             },
             removeDuplicates(myArr, prop) {
