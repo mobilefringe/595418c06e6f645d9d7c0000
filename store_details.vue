@@ -177,9 +177,9 @@
         this.loadMap();
       },
       computed: {
-          property(){
-                return this.$store.getters.getProperty;
-            },
+        property(){
+            return this.$store.getters.getProperty;
+        },
         findStoreBySlug () {
           return this.$store.getters.findStoreBySlug;
         },
