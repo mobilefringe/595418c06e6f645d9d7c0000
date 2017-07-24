@@ -195,7 +195,7 @@
         }
       }, 
       methods : function () {
-         loadMap(map) {
+         loadMap() {
              
          }
       }
