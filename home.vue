@@ -4,7 +4,7 @@
             <div id="mobile_search"  class="col-xs-10">
                 <!--<input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >-->
                 <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
-                    <template slot="item" scope="option">
+                    <template slot="item" scope="option" id="m_search">
                         <article class="media">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
