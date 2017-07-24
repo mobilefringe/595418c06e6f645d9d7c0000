@@ -79,7 +79,6 @@
                 else {
                     
                 }
-                router.go(/map_details)
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
