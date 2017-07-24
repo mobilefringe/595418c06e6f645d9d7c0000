@@ -80,8 +80,8 @@
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         console.log("2x",this.map);
-                        console.log(val.svgmap_region,this.map);
-                        this.populateMap(val.svgmap_region,this.map);
+                        console.log(val.svgmap_region,map);
+                        this.populateMap(val.svgmap_region,map);
                       
                     }
                 });
