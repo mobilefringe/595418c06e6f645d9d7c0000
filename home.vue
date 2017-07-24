@@ -62,7 +62,6 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                console.log(this.removeDuplicates(this.$store.getters.processedStores, 'name'));
                 return this.removeDuplicates(this.$store.getters.processedStores, 'name');
             }
         },
