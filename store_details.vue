@@ -143,7 +143,8 @@
         return {
           title: "The Path!",
           description: "An example of integration of Mall Maverick with Vue.js",
-          currentStore: null
+          currentStore: null,
+          map: {}
         }
       },
       beforeRouteEnter (to, from, next) {
