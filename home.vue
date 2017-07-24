@@ -80,7 +80,7 @@
                     this.$router.push(route);
                 }
                 else {
-                    var route = '/stores/' + option.name;
+                    var route = '/stores/' + option.slug;
                     console.log(route);
                     this.$router.push(route);
                     router.go('/stores/'+ option.slug);
