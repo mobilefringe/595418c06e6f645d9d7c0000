@@ -71,7 +71,7 @@
         methods : {
             onOptionSelect(option) {
                 console.log('Selected option:', option);
-                var counted_stores = _.countBy(collection, [iteratee=_.identity]);
+                var counted_stores = _.countBy(this.allStores, [iteratee=_.identity]);
                 // if( option)
                 // router.go(/map_details)
             },
