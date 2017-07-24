@@ -77,7 +77,7 @@
                     // routes.go('/map_details/' + option.name);
                     var route = ;
                     console.log(route);
-                    this.$router.push();
+                    this.$router.push(route);
                 }
                 else {
                     router.go('/stores/'+ option.slug);
