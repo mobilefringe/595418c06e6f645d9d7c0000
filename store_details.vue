@@ -195,7 +195,7 @@
         }
       }, 
       methods : function () {
-         getStoresByName(map) {
+         loadMap(map) {
          }
       }
     });
