@@ -77,7 +77,7 @@
                     router.go(/map_details);
                 }
                 else {
-                    
+                    router.go(/map_details);
                 }
             },
             removeDuplicates(myArr, prop) {
