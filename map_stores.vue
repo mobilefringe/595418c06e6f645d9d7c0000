@@ -47,7 +47,7 @@
             });
             this.map = map;
             console.log(this.map);
-            this.getStoresByName();
+            this.getStoresByName(map);
         },
         watch: {
            
