@@ -196,6 +196,7 @@
       }, 
       methods : function () {
          loadMap(map) {
+             
          }
       }
     });
