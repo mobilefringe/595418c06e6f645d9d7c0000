@@ -56,9 +56,6 @@
             property(){
                 return this.$store.getters.getProperty;
             },
-            getSVGurl : function () {
-                return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
-            },
             storesByAlphaIndex() {
                 return this.$store.getters.storesByAlphaIndex;
             },
@@ -182,6 +179,9 @@
       computed: {
         findStoreBySlug () {
           return this.$store.getters.findStoreBySlug;
+        },
+        getSVGurl : function () {
+            return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
         }
       }, 
       methods : function () {
