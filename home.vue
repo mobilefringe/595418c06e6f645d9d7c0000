@@ -45,7 +45,7 @@
 </template>
 
 <script>
-  define(["Vue"], function(Vue) {
+  define(["Vue","vue!search-component"], function(Vue,SearchComponent) {
     return Vue.component("home-component", {
         // props: ['menu_items'],
         template: template, // the variable template will be injected
