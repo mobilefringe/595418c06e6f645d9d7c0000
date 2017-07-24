@@ -95,7 +95,7 @@
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         console.log("2x",map);
-                        console.log(val.svgmap_region,map);
+                        console.log(val,map);
                         // this.populateMap(val.svgmap_region,map);
                         
                     }
