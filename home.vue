@@ -73,8 +73,8 @@
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log(counted_stores[option.name]);
-                // if( option)
-                // router.go(/map_details)
+                if( option)
+                router.go(/map_details)
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
