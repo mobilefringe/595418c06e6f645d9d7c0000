@@ -18,7 +18,7 @@
                     </template>
                 </search-component>
             </div>
-            <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="" @click="onOptionSelect"/>
+            <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="" @click="onOptionSelect(option)"/>
         </div>
         
         <!--<h4 class="all_caps home_title"> Discover The Toronto Path</h4>-->
