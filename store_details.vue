@@ -193,6 +193,10 @@
         findStoreBySlug () {
           return this.$store.getters.findStoreBySlug;
         }
+      }, 
+      methods : function () {
+         getStoresByName(map) {
+         }
       }
     });
   });
