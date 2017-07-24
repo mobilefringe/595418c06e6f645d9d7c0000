@@ -29,7 +29,7 @@
         },
         created: function() {
             
-        }
+        },
         mounted: function () {
             //init map on load and populate it with marker
             var map = $('#mapsvg').mapSvg({
