@@ -65,7 +65,7 @@
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
-                return this.removeDuplicates(this.$store.getters.processedStores, 'name');
+                return this.$store.getters.processedStores;
             }
         },
         methods : {
