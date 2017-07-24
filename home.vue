@@ -81,6 +81,13 @@
 
 <style>
     #m_search input {
-        
+        border:0;
+        width:100%;
+        padding: 0 20px;
+        height: 50px;
+        text-align:left ;
+        font-size: 18px;
+        color: #000000;
+        border-radius: 5px;
     }
 </style>
