@@ -174,6 +174,9 @@
           this.$router.replace({ name: '404'});
         }
       },
+      mounted : function () {
+          
+      },
       computed: {
         findStoreBySlug () {
           return this.$store.getters.findStoreBySlug;
