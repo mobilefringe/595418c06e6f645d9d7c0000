@@ -3,20 +3,20 @@
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
                 <!--<input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >-->
-                <!--<search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">-->
-                <!--    <template slot="item" scope="option">-->
-                <!--        <article class="media">-->
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+                    <template slot="item" scope="option">
+                        <article class="media">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
                               <img :src="option.data.store_front_url_abs">
                             </p>
                           </figure>-->
-                <!--            <p>-->
-                <!--                <strong>{{ option.data.name }}</strong>-->
-                <!--            </p>-->
-                <!--        </article>-->
-                <!--    </template>-->
-                <!--</search-component>-->
+                            <p>
+                                <strong>{{ option.data.name }}</strong>
+                            </p>
+                        </article>
+                    </template>
+                </search-component>
             </div>
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt=""/>
         </div>
