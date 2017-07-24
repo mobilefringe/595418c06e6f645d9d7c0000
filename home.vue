@@ -72,7 +72,7 @@
             onOptionSelect(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
-                console.log(counted_stores);
+                console.log(counted_stores[option]);
                 // if( option)
                 // router.go(/map_details)
             },
