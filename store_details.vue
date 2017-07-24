@@ -175,7 +175,7 @@
         }
       },
       mounted : function () {
-        this.loadMap;
+        this.loadMap();
       },
       computed: {
         findStoreBySlug () {
