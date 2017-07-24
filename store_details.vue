@@ -186,7 +186,7 @@
       }, 
       methods : function () {
          loadMap() {
-            var map = $('#mapsvg').mapSvg({
+            this.map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
