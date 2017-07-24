@@ -80,6 +80,9 @@
                     this.$router.push(route);
                 }
                 else {
+                    var route = '/stores/' + option.name;
+                    console.log(route);
+                    this.$router.push(route);
                     router.go('/stores/'+ option.slug);
                 }
             },
