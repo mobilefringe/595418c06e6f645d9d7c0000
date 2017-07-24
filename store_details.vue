@@ -17,15 +17,6 @@
     </div>
 </template>
 
-<script>
-  define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
-    return Vue.component("map-component", {
- 
-
-
-
-
-
 
 
 
