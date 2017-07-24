@@ -75,7 +75,7 @@
                 console.log(counted_stores[option.name]);
                 if( counted_stores[option.name] >1) {
                     // routes.go('/map_details/' + option.name);
-                    this.$router.push('Home') 
+                    this.$router.push('map_details' + option.name) 
                 }
                 else {
                     router.go('/stores/'+ option.slug);
