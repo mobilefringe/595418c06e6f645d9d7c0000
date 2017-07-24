@@ -54,7 +54,7 @@
           this.$router.replace({ name: '404'});
         }
       },
-      mounted : function () {
+      mounted : {
         this.loadMap();
       },
       computed: {
@@ -68,7 +68,7 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
         }
       }, 
-      methods : function () {
+      methods : {
          loadMap() {
             this.map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
