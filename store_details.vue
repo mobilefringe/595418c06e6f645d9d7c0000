@@ -70,7 +70,7 @@
         }
       }, 
       methods : {
-         loadMap() {
+         loadMap(map) {
              console.log( this.getSVGurl);
             
                 console.log(map);
