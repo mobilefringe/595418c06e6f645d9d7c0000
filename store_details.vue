@@ -37,7 +37,7 @@
             <div class="close_dets  pull-left" >
                 <a :href="concatVal('/stores/',currentStore.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt=""></a>
             </div>
-            <p class="dets_title all_caps">{{currentStore.name | capitalize}} </p>
+            <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">{{currentStore.property_id}}</p>
         </div>
   </div>
