@@ -62,6 +62,7 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
+                $(".options-list").addClass("scrollable-menu");
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
