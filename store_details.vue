@@ -1,3 +1,22 @@
+<style>
+    .maps .blue_dets_box{
+    background: #00BCE6;
+    height: 80px;
+    width: 100%;
+    float: left;
+    position:relative;
+    left: initial;
+    bottom: initial;
+    z-index: 1;
+    box-shadow: 1px -1px 3px 0 rgba(0,0,0,0.50);
+    .close_dets, .more_dets{
+        background: #00B3DB;  
+    }
+    img {
+        width:25px;
+    }
+}
+</style>
 <template>
   <!--<div class="row" v-if="currentStore">-->
     <!--<div class="large-6 columns">-->
