@@ -103,8 +103,7 @@
                         map.setMarks([{ xy: [coords["x"]  + x_offset, coords["y"] + y_offset],
                             attrs: {
                                 src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png',   // image for marker
-                                href: '/stores/'+val.slug,
-                                tooltip :val.name
+                                href: '/stores/'+val.slug
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
