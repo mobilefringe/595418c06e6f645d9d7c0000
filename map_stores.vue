@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="maps">
         <div class="map_page">
             <div class="map">
                 <!--<div @click="populateMap">Populate Map </div>-->
