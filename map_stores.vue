@@ -27,7 +27,7 @@
                 map :{}
             }
         },
-        mounted: {
+        mounted: function (){
             //init map on load and populate it with marker
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
@@ -49,7 +49,7 @@
             // console.log(this.map);
             this.getStoresByName(map);
         },
-        computed: {
+        computed:  function (){
             property : function(){
                 return this.$store.getters.getProperty;
             },
@@ -66,7 +66,7 @@
                 return this.$store.getters.findStoreBySlug;
             }
         },
-         methods: {
+         methods: function (){
             getStoresByName(map) {
                 // var map = $('#mapsvg').mapSvg({
                 //     source: this.getSVGurl,    // Path to SVG map
