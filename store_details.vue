@@ -62,7 +62,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
-        this.loadMap(map);
+                this.loadMap(map);
             }
         },
       computed: {
