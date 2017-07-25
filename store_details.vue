@@ -1,5 +1,5 @@
 <style>
-    .maps .blue_dets_box{
+    .blue_dets_box{
     background: #00BCE6;
     height: 80px;
     width: 100%;
