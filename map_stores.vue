@@ -21,8 +21,8 @@
             <div class="more_dets pull-right">
                 <router-link v-bind:to="stores/store.slug"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
             </div>
-            <p class="dets_title">{{store1.name}} </p>
-            <p class="dets_data">Building Name {{store1.name}}</p>
+            <p class="dets_title">{{store.name}} </p>
+            <p class="dets_data">Building Name {{store.name}}</p>
         </div>
     </div>
 </template>
