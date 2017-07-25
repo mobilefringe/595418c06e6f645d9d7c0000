@@ -96,6 +96,7 @@
                 },
                 tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
             }]);
+            map.setViewBox(val.svgmap_region);
          }
       }
     });
