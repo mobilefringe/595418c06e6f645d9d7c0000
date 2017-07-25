@@ -128,7 +128,6 @@
         height: 80px;
         width: 100%;
         float: left;
-        position: absolute;
         left: 0px;
         bottom: 0px;
         z-index: 1;
