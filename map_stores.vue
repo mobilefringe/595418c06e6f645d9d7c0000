@@ -39,6 +39,18 @@
         },
         mounted: function (){
             //init map on load and populate it with marker
+                var val = this.currentStore;
+                regions = {};
+            
+            obj = {};
+            if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+            }
+            else{
+                obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+            }
+            obj["attr"] = {}
+            regions[val.svgmap_region] = obj;
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
@@ -46,6 +58,7 @@
                 // disableAll: true,
                 height:1000,
                 width:1300,
+                regions:regions,
                 tooltipsMode:'custom',
                 loadingText: "loading...",
                 zoom: true,
