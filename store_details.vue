@@ -40,7 +40,7 @@
         }
       },
       mounted : function (){
-        this.loadMap();
+        this.loadMap;
       },
       computed: {
         property(){
