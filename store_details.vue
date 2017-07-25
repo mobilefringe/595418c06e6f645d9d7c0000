@@ -10,16 +10,16 @@
     <div>
         <div class="demo_1 map3" style="" id="mapsvg">
         </div>
-        <!--<div class="blue_dets_box">-->
+        <div class="blue_dets_box">
             <!--<div class="close_dets pull-left">-->
             <!--    <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">-->
             <!--</div>-->
-        <!--    <div class="close_dets  pull-left">-->
-        <!--        <a :href="concatVal('/stores/',store.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt=""></a>-->
-        <!--    </div>-->
-        <!--    <p class="dets_title">{{store.name}} </p>-->
-        <!--    <p class="dets_data">{{store.property_id}}</p>-->
-        <!--</div>-->
+            <div class="close_dets  pull-left">
+                <a :href="concatVal('/stores/',currentStore.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt=""></a>
+            </div>
+            <p class="dets_title">{{currentStore.name}} </p>
+            <p class="dets_data">{{currentStore.property_id}}</p>
+        </div>
   </div>
 </template>
 
