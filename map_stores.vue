@@ -91,9 +91,6 @@
                 // console.log( this.all_stores );
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        // console.log("2x",map);
-                        // console.log(val.svgmap_region,map);
-                        // this.populateMap(val.svgmap_region,map);
                         var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
