@@ -87,17 +87,7 @@
             var width = parseInt(coords["width"])
             var x_offset = (parseInt(width) / 2);
             var y_offset = (parseInt(height) /2);
-            regions = {};
             
-            obj = {};
-            if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-            }
-            else{
-                obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-            }
-            obj["attr"] = {}
-            regions[val.svgmap_region] = obj
                 
             map.setMarks([{ xy: [coords["x"]  + x_offset, coords["y"] + y_offset],
                 attrs: {
