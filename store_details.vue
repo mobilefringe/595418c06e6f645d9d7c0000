@@ -52,7 +52,7 @@
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
                     disableAll: true,
-                    height:1000,
+                    height:200,
                     width:1300,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
