@@ -56,7 +56,7 @@
             getSVGurl : function() {
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
             },
-            storesByAlphaInde : functionx() {
+            storesByAlphaIndex : function() {
                 return this.$store.getters.storesByAlphaIndex;
             },
             storesByCategoryName : function() {
