@@ -58,7 +58,7 @@
                     loadingText: "loading...",
                     zoom: true,
                     zoomButtons: {'show': true,'location': 'left' },
-                    pan:false,
+                    pan:true,
                     cursor:'pointer',
                     responsive:true,
                     zoomLimit: [0,10]
