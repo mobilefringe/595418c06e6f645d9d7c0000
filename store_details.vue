@@ -71,7 +71,6 @@
       }, 
       methods : {
          loadMap(map) {
-             console.log( this.getSVGurl);
             
             console.log(map);
             var val =this.currentStore;
