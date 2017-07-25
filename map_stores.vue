@@ -50,19 +50,19 @@
             this.getStoresByName(map);
         },
         computed: {
-            property(){
+            property : function(){
                 return this.$store.getters.getProperty;
             },
-            getSVGurl () {
+            getSVGurl : function() {
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
             },
-            storesByAlphaIndex() {
+            storesByAlphaInde : functionx() {
                 return this.$store.getters.storesByAlphaIndex;
             },
-            storesByCategoryName() {
+            storesByCategoryName : function() {
                 return this.$store.getters.storesByCategoryName;
             },
-            findStoreBySlug (){
+            findStoreBySlug : function(){
                 return this.$store.getters.findStoreBySlug;
             }
         },
