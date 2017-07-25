@@ -49,9 +49,6 @@
             // console.log(this.map);
             this.getStoresByName(map);
         },
-        watch: {
-           
-        },
         computed: {
             property(){
                 return this.$store.getters.getProperty;
