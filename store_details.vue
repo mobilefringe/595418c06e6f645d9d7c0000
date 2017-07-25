@@ -31,7 +31,7 @@
           if (vm.currentStore === null || vm.currentStore === undefined){
             vm.$router.replace({ name: '404'});
           }
-            this.loadMap();
+            this.loadMap;
             // var val =vm.currentStore;
             // var coords = map.get_coords(val.svgmap_region);
             // var height = parseInt(coords["height"])
