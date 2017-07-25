@@ -55,7 +55,7 @@
           this.$router.replace({ name: '404'});
         }
       },
-      mounted : {
+      mounted : function (){
         this.loadMap();
       },
       computed: {
