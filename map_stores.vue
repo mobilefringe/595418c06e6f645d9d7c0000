@@ -121,3 +121,9 @@
     })
   })
 </script>
+
+<style>
+    .blue_dets_box{
+        
+    }
+</style>
