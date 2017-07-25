@@ -72,7 +72,7 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
-                
+                console.log(map);
                 // var val =vm.currentStore;
             // var coords = map.get_coords(val.svgmap_region);
             // var height = parseInt(coords["height"])
