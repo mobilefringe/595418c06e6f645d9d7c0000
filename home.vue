@@ -62,7 +62,7 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-               console.log("hi", $(".options-list").addClass("scrollable-menu"));
+                // $(".options-list").addClass("scrollable-menu");
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
