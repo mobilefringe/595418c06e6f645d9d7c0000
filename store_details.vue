@@ -48,7 +48,7 @@
       watch: {
             currentStore : function () {
                 var val = this.currentStore;
-                var regions = {};
+                regions = {};
             
             obj = {};
             if(val.store_front_url_abs.indexOf('missing.png') > -1){
@@ -67,7 +67,7 @@
                     disableAll: true,
                     height:200,
                     width:1300,
-                    regions: regrions,
+                    regions: regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
