@@ -39,24 +39,24 @@
         },
         mounted: function (){
             //init map on load and populate it with marker
-             var slug = this.$route.params.id;
-                var first_letter = slug[0].toUpperCase();
-                var stores = this.storesByAlphaIndex[first_letter];
-                var all_stores = _.groupBy(stores, 'name')[slug];
-              //  var val = this.currentStore;
-            $.each( all_stores , function( key, val ) {
-                    regions = {};
+            //  var slug = this.$route.params.id;
+            //     var first_letter = slug[0].toUpperCase();
+            //     var stores = this.storesByAlphaIndex[first_letter];
+            //     var all_stores = _.groupBy(stores, 'name')[slug];
+            //   //  var val = this.currentStore;
+            // $.each( all_stores , function( key, val ) {
+            //         regions = {};
                 
-                obj = {};
-                if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                }
-                else{
-                    obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                }
-                obj["attr"] = {}
-                regions[val.svgmap_region] = obj;
-            });
+            //     obj = {};
+            //     if(val.store_front_url_abs.indexOf('missing.png') > -1){
+            //         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+            //     }
+            //     else{
+            //         obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+            //     }
+            //     obj["attr"] = {}
+            //     regions[val.svgmap_region] = obj;
+            // });
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
@@ -133,8 +133,8 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
-                        console.log(val.slug, val.svgmap_region);
-                         map.selectRegion(val.svgmap_region);
+                        // console.log(val.slug, val.svgmap_region);
+                        //  map.selectRegion(val.svgmap_region);
                     }
                 });
             },
