@@ -15,9 +15,9 @@
             </div>
         </div>
         <div class="blue_dets_box" v-for="store in all_stores">
-            <div class="close_dets pull-left">
-                <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
-            </div>
+            <!--<div class="close_dets pull-left">-->
+            <!--    <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">-->
+            <!--</div>-->
             <div class="more_dets pull-right">
                 <a :href="concatVal('/stores/',store.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></a>
             </div>
