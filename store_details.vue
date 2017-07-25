@@ -60,6 +60,16 @@
                 });
         this.loadMap(map);
       },
+      watch: {
+            mobile_find_store : function (val) {
+                if(val != '') {
+                    this.lift_blue_box = true
+                }
+               else {
+                    this.lift_blue_box = false;
+               }
+            }
+        },
       computed: {
         property(){
             return this.$store.getters.getProperty;
