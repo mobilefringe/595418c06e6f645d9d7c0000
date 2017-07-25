@@ -41,7 +41,7 @@
             //init map on load and populate it with marker
              
               //  var val = this.currentStore;
-              $.each( this.all_stores , function( key, val ) {
+            $.each( this.all_stores , function( key, val ) {
                     regions = {};
                 
                 obj = {};
