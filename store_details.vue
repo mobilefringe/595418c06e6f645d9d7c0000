@@ -1,5 +1,5 @@
 <template>
-  <div class="row" v-if="currentStore">
+  <!--<div class="row" v-if="currentStore">-->
     <!--<div class="large-6 columns">-->
     <!--  <div>-->
     <!--    <h1>{{currentStore.name}}</h1>-->
