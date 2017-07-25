@@ -39,9 +39,12 @@
         },
         mounted: function (){
             //init map on load and populate it with marker
-             
+             var slug = this.$route.params.id;
+                var first_letter = slug[0].toUpperCase();
+                var stores = this.storesByAlphaIndex[first_letter];
+                var all_stores = _.groupBy(stores, 'name')[slug];
               //  var val = this.currentStore;
-            $.each( this.all_stores , function( key, val ) {
+            $.each( all_stores , function( key, val ) {
                     regions = {};
                 
                 obj = {};
