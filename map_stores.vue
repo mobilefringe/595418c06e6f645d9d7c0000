@@ -22,7 +22,7 @@
                 <router-link v-bind:to="stores/store.slug"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
             </div>
             <p class="dets_title">{{store.name}} </p>
-            <p class="dets_data"></p>{{store.property_id}}</p>
+            <p class="dets_data">{{store.property_id}}</p>
         </div>
     </div>
 </template>
