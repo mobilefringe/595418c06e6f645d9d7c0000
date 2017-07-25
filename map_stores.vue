@@ -121,21 +121,3 @@
     })
   })
 </script>
-
-<style>
-    .blue_dets_box{
-        background: #00BCE6;
-        height: 80px;
-        width: 100%;
-        float: left;
-        left: 0px;
-        bottom: 0px;
-        z-index: 1;
-        .close_dets, .more_dets{
-            background: #00B3DB;  
-        }
-        img {
-            width:25px;
-        }
-    }
-</style>
