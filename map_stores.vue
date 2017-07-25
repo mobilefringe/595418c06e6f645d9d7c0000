@@ -39,7 +39,9 @@
         },
         mounted: function (){
             //init map on load and populate it with marker
-                var val = this.currentStore;
+             
+              //  var val = this.currentStore;
+              $.each( this.all_stores , function( key, val ) {
                 regions = {};
             
             obj = {};
@@ -51,6 +53,7 @@
             }
             obj["attr"] = {}
             regions[val.svgmap_region] = obj;
+              });
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
