@@ -40,23 +40,7 @@
         }
       },
       mounted : function (){
-        this.loadMap();
-      },
-      computed: {
-        property(){
-            return this.$store.getters.getProperty;
-        },
-        findStoreBySlug () {
-          return this.$store.getters.findStoreBySlug;
-        },
-        getSVGurl : function () {
-            return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
-        }
-      }, 
-      methods : {
-         loadMap() {
-             console.log( this.getSVGurl);
-            var map = $('#mapsvg').mapSvg({
+          var map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
@@ -72,6 +56,23 @@
                     responsive:true,
                     zoomLimit: [0,10]
                 });
+        this.loadMap(map);
+      },
+      computed: {
+        property(){
+            return this.$store.getters.getProperty;
+        },
+        findStoreBySlug () {
+          return this.$store.getters.findStoreBySlug;
+        },
+        getSVGurl : function () {
+            return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
+        }
+      }, 
+      methods : {
+         loadMap() {
+             console.log( this.getSVGurl);
+            
                 console.log(map);
                 // var val =vm.currentStore;
             // var coords = map.get_coords(val.svgmap_region);
