@@ -61,7 +61,7 @@
         this.loadMap(map);
       },
       watch: {
-            mobile_find_store : function (val) {
+            currentStore : function (val) {
                 if(val != '') {
                     this.lift_blue_box = true
                 }
