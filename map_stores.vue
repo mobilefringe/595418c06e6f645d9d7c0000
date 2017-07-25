@@ -117,7 +117,7 @@
                     }
                 });
             },
-            concatVal('/stores/',store.slug) {
+            concatVal(val1,val2) {
                 
             }
         }
