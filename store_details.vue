@@ -104,7 +104,7 @@
             
                 
             // map.setMarks([{ xy: [coords["x"]  + x_offset, coords["y"] + y_offset],
-            map.setMarks([{ xy: [coords["x"]  - 15 + x_offset, coords["y"] -55 + y_offset],
+            map.setMarks([{ xy: [coords["x"]  - 20 + x_offset, coords["y"] -60 + y_offset],
                 attrs: {
                     src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500565442000/map_pin.png',   // image for marker
                     href: '/stores/'+val.slug,
