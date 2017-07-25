@@ -48,7 +48,7 @@
       watch: {
             currentStore : function () {
                 var val = this.currentStore;
-                regions = {};
+                var regions = {};
             
             obj = {};
             if(val.store_front_url_abs.indexOf('missing.png') > -1){
