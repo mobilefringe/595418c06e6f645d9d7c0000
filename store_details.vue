@@ -61,13 +61,8 @@
         this.loadMap(map);
       },
       watch: {
-            currentStore : function (val) {
-                if(val != '') {
-                    this.lift_blue_box = true
-                }
-               else {
-                    this.lift_blue_box = false;
-               }
+            currentStore : function () {
+                
             }
         },
       computed: {
