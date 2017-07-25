@@ -67,6 +67,7 @@
                     disableAll: true,
                     height:200,
                     width:1300,
+                    regions: regrions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
