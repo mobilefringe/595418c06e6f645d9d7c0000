@@ -116,6 +116,9 @@
                         }]);
                     }
                 });
+            },
+            concatVal('/stores/',store.slug) {
+                
             }
         }
     })
