@@ -48,15 +48,15 @@
                 }
             },
             beforeRouteEnter (to, from, next) {
-            next(vm => {
-                // access to component instance via `vm`
-                vm.currentStore = vm.findStoreBySlug(to.params.id);
-                this.currentStore = vm.currentStore;
-                if (vm.currentStore === null || vm.currentStore === undefined){
-                    vm.$router.replace({ name: '404'});
-                }
-            })
-      },
+                next(vm => {
+                    // access to component instance via `vm`
+                    vm.currentStore = vm.findStoreBySlug(to.params.id);
+                    this.currentStore = vm.currentStore;
+                    if (vm.currentStore === null || vm.currentStore === undefined){
+                        vm.$router.replace({ name: '404'});
+                    }
+                })
+            },
       beforeRouteUpdate (to, from, next) {
         this.currentStore = this.findStoreBySlug(to.params.id);
         if (this.currentStore === null || this.currentStore === undefined){
