@@ -115,6 +115,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 
+                
             },
             all_hours : function () {
                 console.log(this.all_hours);
