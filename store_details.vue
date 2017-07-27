@@ -15,6 +15,11 @@
     img {
         width:25px;
     }
+    .store_dets {
+    position: relative;
+    left: initial;
+    bottom: initial;
+    z-index: 1;
 }
 </style>
 <template>
