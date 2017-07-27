@@ -37,9 +37,9 @@
             <p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>
             
         </div>
-        <div class="store_dets"><i class="icon-map-marker"></i><i class="icon-phone"></i>
+        <div class="store_dets"><i class="icon-phone"></i>
             <div class="row">
-                <i class="icon-globe"></i>
+                <i class="icon-map-marker"></i>
             </div>
             <div class="row">
                 <i class="icon-globe"></i>
