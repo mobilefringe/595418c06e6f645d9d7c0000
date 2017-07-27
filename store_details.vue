@@ -158,8 +158,7 @@
             let todayHours = hours.find(hour => hour.day_of_week === moment().day());
             let hoursObject = null;
             hoursObject = todayHours;
-            console.log(todayHours);
-        //   todayHours.locale = state.locale; // IMPORTANT! Here I am adding the state's locale in the hours object such that it will trigger a change in the template anytime the locale changes in the app.
+            console.log(todayHours);.
             return todayHours;
         }
         catch (err) {
