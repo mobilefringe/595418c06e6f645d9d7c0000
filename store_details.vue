@@ -62,7 +62,7 @@
                 if (this.currentStore === null || this.currentStore === undefined){
                     this.$router.replace({ name: '404'});
                 }
-      },
+            },
       created () {
         
       },
