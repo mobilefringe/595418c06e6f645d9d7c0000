@@ -63,12 +63,12 @@
                     this.$router.replace({ name: '404'});
                 }
             },
-      created () {
-        
-      },
-      mounted : function (){
-          
-      },
+            created () {
+            
+            },
+            mounted : function (){
+              
+            },
       watch: {
             currentStore : function () {
                 var val = this.currentStore;
