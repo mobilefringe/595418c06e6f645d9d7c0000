@@ -157,7 +157,7 @@
             let store_hour_id = this.currentStore.todays_hour;
             console.log(hours);
             let property = this.property;
-            console.log(property);
+            // console.log(property);
             let timezone = property.timezone_moment;
             let all_hours =this.state.results.hours;
             // console.log("all_hours", all_hours);
