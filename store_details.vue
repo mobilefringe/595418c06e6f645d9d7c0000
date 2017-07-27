@@ -20,6 +20,7 @@
     left: initial;
     bottom: initial;
     z-index: 1;
+    }
 }
 </style>
 <template>
