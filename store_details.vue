@@ -69,7 +69,7 @@
             mounted : function (){
               
             },
-      watch: {
+            watch: {
             currentStore : function () {
                 var val = this.currentStore;
                 regions = {};
