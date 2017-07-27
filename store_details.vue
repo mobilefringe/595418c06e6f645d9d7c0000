@@ -53,7 +53,8 @@
           title: "The Path!",
           description: "An example of integration of Mall Maverick with Vue.js",
           currentStore: null,
-          map: {}
+          map: {},
+          all_hours:{}
         }
       },
       beforeRouteEnter (to, from, next) {
