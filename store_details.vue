@@ -113,7 +113,7 @@
                 this.loadMap(map);
             },
             all_hours : function () {
-                
+             this.store_hours   
             }
         },
       computed: {
