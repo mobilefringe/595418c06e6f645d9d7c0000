@@ -125,7 +125,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     console.log(val);
                 });
                 
-                
+                console.log(this.all_promos);
             },
             all_hours : function () {
                 console.log(this.all_hours);
