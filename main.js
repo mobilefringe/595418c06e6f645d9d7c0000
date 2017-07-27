@@ -127,10 +127,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
           this.$store.commit('SET_LOCALE', { lang: value })
         }
       },
-      hours: {
-        get () {
+      hours () {
           return this.$store.state.hours
-        }
       }
     },
     methods: {
