@@ -162,7 +162,7 @@
             let all_hours =this.state.results.hours;
             // console.log("all_hours", all_hours);
             let todayHours = _.find(all_hours, { 'id': store_hour_id});//hours.find(hour => hour.day_of_week === moment().day());
-            console.log(todayHours);
+            console.log("todayHours", todayHours);
             return todayHours;
         }
         catch (err) {
