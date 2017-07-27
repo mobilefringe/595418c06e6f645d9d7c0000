@@ -38,7 +38,9 @@
             
         </div>
         <div class="store_dets">
-            
+            <div class="row">
+                
+            </div>
         </div>
   </div>
 </template>
