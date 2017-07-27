@@ -39,7 +39,7 @@
             </div>
             <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">{{currentStore.property_id}}</p>
-            <p class="dets_data">{{currentStore.store_hours_data.open_time | moment("H a", timezone)}} - {{currentStore.store_hours_data.close_time | moment("H a", timezone)}}</p>
+            <p class="dets_data">{{currentStore.store_hours_data.open_time | moment("h a", timezone)}} - {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>
             
         </div>
   </div>
