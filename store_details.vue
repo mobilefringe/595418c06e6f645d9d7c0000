@@ -115,7 +115,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 _.forEach(this.currentStore.promotions, function(val, key) {
-                    this.all_promos.push(temp_shop_array,cats[key]);
+                    .push(temp_shop_array,cats[key]);
+                    Vue.set(this.all_promos,'store_hours_data', val);
                 });
                 findPromoBySlug
                 
