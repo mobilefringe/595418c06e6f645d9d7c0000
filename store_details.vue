@@ -125,21 +125,21 @@
                 }
             },
             computed: {
-        property(){
-            return this.$store.getters.getProperty;
-        },
-        findStoreBySlug () {
-          return this.$store.getters.findStoreBySlug;
-        },
-        getSVGurl : function () {
-            return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
-        },
-        state () {
-            return this.$store.state;
-        },
-        timezone() {
-          return this.$store.getters.getTimezone;
-        }
+                property(){
+                    return this.$store.getters.getProperty;
+                },
+                findStoreBySlug () {
+                  return this.$store.getters.findStoreBySlug;
+                },
+                getSVGurl : function () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
+                },
+                state () {
+                    return this.$store.state;
+                },
+                timezone() {
+                  return this.$store.getters.getTimezone;
+                }
       }, 
       methods : {
          loadMap(map) {
