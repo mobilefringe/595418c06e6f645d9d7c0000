@@ -169,7 +169,7 @@
                 togglePromo (){
                 
                 }
-      }
+            }
     });
   });
 </script>
