@@ -154,7 +154,7 @@
         },
         getTodaysStoreHours (){
         try {
-            let store_hour_is = this.currentStore.todays_hour;
+            let store_hour_id = this.currentStore.todays_hour;
             console.log(hours);
             let property = this.property;
             console.log(property);
