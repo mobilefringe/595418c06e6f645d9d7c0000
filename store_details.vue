@@ -116,10 +116,10 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.all_hours = this.state.results.hours; 
                 console.log(this.promotions());
                 var store_promo =  _.find(this.promotions(), 'id', this.currentStore.todays_hour);
-                // _.forEach(this.currentStore.promotions, function(val, key) {
-                //     Vue.set(this.all_promos,key, this.findPromoBySlug(val));
-                //     console.log(val);
-                // });
+                _.forEach(this.currentStore.promotions, function(val, key) {
+                    Vue.set(this.all_promos,key, this.findPromoBySlug(val));
+                    console.log(val);
+                });
                 
                 
             },
