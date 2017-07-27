@@ -123,7 +123,7 @@
                     });
                      console.log(this.currentStore);
                 }
-        },
+            },
       computed: {
         property(){
             return this.$store.getters.getProperty;
