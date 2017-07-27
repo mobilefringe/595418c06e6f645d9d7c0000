@@ -127,7 +127,7 @@
                     {
                         console.log("HELLO WORLD", val);
                         this.store_hours = val;
-                        breakl
+                        break;
                     }
                 });
                  console.log(this.store_hours);
