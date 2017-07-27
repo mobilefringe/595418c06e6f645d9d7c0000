@@ -32,7 +32,7 @@
         </div>
         <div  v-show = "show_promo" class="" id="" >
             <div v-for="promo in all_promos">
-                {{promo.name}} - {{promo.date}
+                {{promo.name}} - {{promo.date}}
             </div>
         </div>
   </div>
