@@ -17,7 +17,9 @@
     }
     .store_dets {
         position: relative;
-        z-index: 2;
+        left: initial;
+        bottom: initial;
+        z-index: 1;
     }
 }
 </style>
