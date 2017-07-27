@@ -149,7 +149,7 @@
         concatVal(val1,val2) {
             return val1 + val2;
         },
-        getTodayHours (){
+        getTodaysStoreHours (){
         try {
             let hours = this.currentStore.todays_hour;
             console.log(hours);
