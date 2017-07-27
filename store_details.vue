@@ -43,7 +43,7 @@
                 {{currentStore.property_id}}
             </div>
             <div class="row">
-                <i class="icon-globe"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
                 {{currentStore.website}}
             </div>
             <div class="row">
