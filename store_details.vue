@@ -115,6 +115,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 _.forEach(this.currentStore.promotions, function(val, key) {
+                    temp_shop_array.push(temp_shop_array,cats[key]);
                 });
                 findPromoBySlug
                 
