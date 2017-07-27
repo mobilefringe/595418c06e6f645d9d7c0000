@@ -127,7 +127,7 @@
                     {
                         console.log(val.id, val);
                         this.store_hours = val;
-                        return;
+                        return false;
                     }
                 });
                  console.log(this.store_hours);
