@@ -120,6 +120,9 @@
         },
         getSVGurl : function () {
             return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
+        },
+        state () {
+            
         }
       }, 
       methods : {
