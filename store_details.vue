@@ -189,8 +189,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.show_promo = ! this.show_promo;
             },
             promotions() {
-          return this.$store.getters.processedPromos;
-        }
+                return this.$store.getters.processedPromos;
+            }
         }
     });
 });
