@@ -44,6 +44,7 @@
             </div>
             <div class="row">
                 <i class="icon-globe"></i>
+                {{currentStore.website}}
             </div>
             <div class="row">
                 <i class="icon-phone"></i>
