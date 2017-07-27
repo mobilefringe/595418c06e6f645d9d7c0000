@@ -36,7 +36,11 @@
                     {{promo.name}} - {{promo.date}}
                 </div>
             </div>
-            
+            <div v-else>
+                <div v-for="promo in all_promos">
+                    {{promo.name}} - {{promo.date}}
+                </div>
+            </div>
         </div>
   </div>
 </template>
