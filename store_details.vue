@@ -44,7 +44,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 currentStore: null,
                 map: {},
                 all_hours:{},
-                store_hours: {}
+                this.showPromo : flase
             }
         },
         beforeRouteEnter (to, from, next) {
