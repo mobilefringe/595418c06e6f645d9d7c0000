@@ -116,9 +116,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.all_hours = this.state.results.hours; 
                 _.forEach(this.currentStore.promotions, function(val, key) {
                     Vue.set(this.all_promos,key, val);
-                    console.log(promo);
+                    console.log(val);
                 });
-                findPromoBySlug
+                
                 
             },
             all_hours : function () {
