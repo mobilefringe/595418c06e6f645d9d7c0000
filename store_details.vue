@@ -115,7 +115,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 
-                var store_promo =  this.promotions();
+                var store_promo = _.groupBy(store_promo, 'id');
                 // console.log(store_promo);
                 // console.log( _.groupBy(store_promo, 'id'));
                 _.forEach(this.currentStore.promotions, function(val, key) {
