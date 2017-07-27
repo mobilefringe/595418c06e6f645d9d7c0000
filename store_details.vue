@@ -159,13 +159,13 @@
         },
         getTodaysStoreHours (){
         try {
-            let store_hour_id = this.currentStore.todays_hour;
-            console.log(store_hour_id);
-            let property = this.property;
-            // console.log(property);
-            let timezone = property.timezone_moment;
-            this.all_hours =this.state.results.hours;
-            console.log("all_hours", all_hours);
+            // let store_hour_id = this.currentStore.todays_hour;
+            // console.log(store_hour_id);
+            // let property = this.property;
+            // // console.log(property);
+            // let timezone = property.timezone_moment;
+            // this.all_hours =this.state.results.hours;
+            // console.log("all_hours", all_hours);
             var todayHours = _.find(all_hours, { 'id': store_hour_id});//hours.find(hour => hour.day_of_week === moment().day());
             console.log("todayHours", todayHours);
             return todayHours;
