@@ -114,7 +114,8 @@
                     zoomLimit: [0,10]
                 });
                 this.loadMap(map);
-                this.all_hours = this.state.results.hours;  
+                this.all_hours = this.state.results.hours; 
+                
             },
             all_hours : function () {
              this.store_hours =  _.find(this.all_hours, { 'id': this.currentStore.todays_hour}); 
