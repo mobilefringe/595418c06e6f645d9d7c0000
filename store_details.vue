@@ -110,6 +110,9 @@
                     zoomLimit: [0,10]
                 });
                 this.loadMap(map);
+            },
+            all_hours : function () {
+                
             }
         },
       computed: {
