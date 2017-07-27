@@ -122,7 +122,7 @@
             return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
         },
         state () {
-            return this.$store.state
+            return this.$store.state;
         }
       }, 
       methods : {
