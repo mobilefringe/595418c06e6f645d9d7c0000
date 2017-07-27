@@ -37,9 +37,7 @@
                 </div>
             </div>
             <div v-else>
-                <div v-for="promo in all_promos">
-                    {{promo.name}} - {{promo.date}}
-                </div>
+                Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
   </div>
