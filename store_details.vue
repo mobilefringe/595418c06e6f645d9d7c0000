@@ -46,7 +46,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael"], function(Vue, $,mapsvg,mousewheel,raphael) {
+  define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-timezone", "vue-moment"], function(Vue, $,mapsvg,mousewheel,raphael) {
     return Vue.component("store-details-component", {
       template: template, // the variable template will be injected,
       data: function() {
