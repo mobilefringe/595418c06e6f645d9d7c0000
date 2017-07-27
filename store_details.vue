@@ -37,7 +37,7 @@
             <p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>
             
         </div>
-        <div class="store_dets"  v-if="currentStore">
+        <div class="store_dets .mobile_padding"  v-if="currentStore">
             <div class="row">
                 <i class="icon-map-marker"></i>
                 {{currentStore.property_id}}
