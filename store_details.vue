@@ -31,6 +31,7 @@
             
         </div>
         <div  v-show = "show_promo" class="" id="" >
+        <div v-if="currentStore.total_published_promos > 0"></div>
             <div v-for="promo in all_promos">
                 {{promo.name}} - {{promo.date}}
             </div>
