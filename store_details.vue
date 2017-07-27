@@ -39,7 +39,7 @@
         </div>
         <div class="store_dets .mobile_padding"  v-if="currentStore">
             <div class="row">
-                <i class="icon-map-marker"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 {{currentStore.property_id}}
             </div>
             <div class="row">
