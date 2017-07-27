@@ -155,6 +155,7 @@
             console.log(hours);
             let property = this.property;
             let timezone = property.timezone_moment;
+            let all_hours = property.hours;
             let todayHours = hours.find(hour => hour.day_of_week === moment().day());
             console.log(todayHours);
             return todayHours;
