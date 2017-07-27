@@ -31,7 +31,7 @@
             
         </div>
         <div  v-show = "show_promo" class="" id="" >
-            <div> v-for="promo in all_promos"></div>
+            <div v-for="promo in all_promos"></div>
         </div>
   </div>
 </template>
