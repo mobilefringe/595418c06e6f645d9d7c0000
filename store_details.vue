@@ -75,6 +75,9 @@
           this.$router.replace({ name: '404'});
         }
       },
+      created () {
+          
+      },
       mounted : function (){
           
       },
