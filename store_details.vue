@@ -152,7 +152,7 @@
         getTodayHours (){
         try {
           let hours = state.results.hours;
-          let property = state.results.property;
+          let property = this.property;
           let timezone = property.timezone_moment;
           let todayHours = hours.find(hour => hour.day_of_week === moment().day());
           let holidayHours = hours.find(hour => hour.is_holiday == true && (moment(hour.holiday_date).tz(timezone).date() == moment().tz(timezone).date() && moment(hour.holiday_date).tz(timezone).month() + 1 == moment().tz(timezone).month() + 1 && moment(hour.holiday_date).tz(timezone).year() == moment().tz(timezone).year()));
