@@ -125,8 +125,9 @@
                     // console.log(val.id);
                     if(val.id == this.currentStore.todays_hour)
                     {
-                        console.log(val.id, val);
+                       
                         this.store_hours = val;
+                         console.log(val.id, val);
                         return false;
                     }
                 });
