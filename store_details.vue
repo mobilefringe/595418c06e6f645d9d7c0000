@@ -39,7 +39,7 @@
             </div>
             <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">{{currentStore.property_id}}</p>
-            <p class="dets_data">{{getTodayHours()}}</p>
+            <p class="dets_data">{{getTodaysStoreHours()}}</p>
         </div>
   </div>
 </template>
