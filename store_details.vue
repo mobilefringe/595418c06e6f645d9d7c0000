@@ -128,10 +128,11 @@
                        
                         this.store_hours = val;
                         console.log(val.id, val);
+                        console.log(this.store_hours);
                         return false;
                     }
                 });
-                //  console.log(this.store_hours);
+                 
             }
         },
       computed: {
