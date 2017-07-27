@@ -32,12 +32,12 @@
         <div class="blue_dets_box"  v-if="currentStore">
             <div class="close_dets  pull-left" >
                 <a :href="concatVal('/stores/',currentStore.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt=""></a>
-            </div  v-if="currentStore">
+            </div >
             <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>
             
         </div>
-        <div class="store_dets">
+        <div class="store_dets"  v-if="currentStore">
             <div class="row">
                 <i class="icon-map-marker"></i>
                 {{currentStore.property_id}}
