@@ -129,6 +129,7 @@
                         this.store_hours = val;
                         console.log(val.id, val);
                         console.log(this.store_hours);
+                        Vue.set(vm.someObject, 'b', 2)
                         return false;
                     }
                 });
