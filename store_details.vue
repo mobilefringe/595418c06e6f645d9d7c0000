@@ -131,7 +131,7 @@
                         return false;
                     }
                 });
-                 console.log(this.store_hours);
+                //  console.log(this.store_hours);
             }
         },
       computed: {
