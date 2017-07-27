@@ -126,7 +126,7 @@
                     if(val.id == this.currentStore.todays_hour)
                     {
                         console.log(val.id, val);
-                        this.store_hours = val;
+                        this.$set(store_hours,val);
                         return false;
                     }
                 });
