@@ -38,15 +38,15 @@
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
             data: function() {
-        return {
-          title: "The Path!",
-          description: "An example of integration of Mall Maverick with Vue.js",
-          currentStore: null,
-          map: {},
-          all_hours:{},
-          store_hours: {}
-        }
-      },
+                return {
+                  title: "The Path!",
+                  description: "An example of integration of Mall Maverick with Vue.js",
+                  currentStore: null,
+                  map: {},
+                  all_hours:{},
+                  store_hours: {}
+                }
+            },
       beforeRouteEnter (to, from, next) {
         next(vm => {
           // access to component instance via `vm`
