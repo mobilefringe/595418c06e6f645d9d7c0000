@@ -149,7 +149,7 @@
         concatVal(val1,val2) {
             return val1 + val2;
         },
-        getTodayHours: state => {
+        getTodayHours (){
         try {
           let hours = state.results.hours;
           let property = state.results.property;
