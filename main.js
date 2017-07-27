@@ -126,6 +126,11 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         set (value) {
           this.$store.commit('SET_LOCALE', { lang: value })
         }
+      },
+      locale: {
+        get () {
+          return this.$store.state.locale
+        }
       }
     },
     methods: {
