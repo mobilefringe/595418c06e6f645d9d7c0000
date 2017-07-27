@@ -167,7 +167,6 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 return val1 + val2;
             },
             togglePromo (){
-                = togg
                  this.showPromo = ! this.showPromo;
             }
         }
