@@ -48,6 +48,7 @@
             </div>
             <div class="row">
                 <i class="icon-phone"></i>
+                {{currentStore.website}}
             </div>
         </div>
   </div>
