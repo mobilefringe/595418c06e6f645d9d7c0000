@@ -113,7 +113,7 @@
                 this.loadMap(map);
             },
             all_hours : function () {
-             this.store_hours  _.find(all_hours, { 'id': store_hour_id}); 
+             this.store_hours =  _.find(all_hours, { 'id': store_hour_id}); 
             }
         },
       computed: {
