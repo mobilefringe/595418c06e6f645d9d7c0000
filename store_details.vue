@@ -144,13 +144,13 @@
             methods : {
                 loadMap(map) {
             
-            console.log(map);
-            var val = this.currentStore;
-            var coords = map.get_coords(val.svgmap_region);
-            var height = parseInt(coords["height"])
-            var width = parseInt(coords["width"])
-            var x_offset = (parseInt(width) / 2);
-            var y_offset = (parseInt(height) /2);
+                    console.log(map);
+                    var val = this.currentStore;
+                    var coords = map.get_coords(val.svgmap_region);
+                    var height = parseInt(coords["height"])
+                    var width = parseInt(coords["width"])
+                    var x_offset = (parseInt(width) / 2);
+                    var y_offset = (parseInt(height) /2);
             
                 
             // map.setMarks([{ xy: [coords["x"]  + x_offset, coords["y"] + y_offset],
