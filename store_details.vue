@@ -122,7 +122,7 @@
                 console.log(this.currentStore.todays_hour);
                 // this.store_hours =  _.find(this.all_hours, 'id', this.currentStore.todays_hour);
                 _.forEach(this.all_hours, function(val, key) {
-                    console.log(val.id);
+                    ??console.log(val.id);
                     if(val.id == this.currentStore.todays_hour)
                     {
                         console.log("HELLO WORLD", val);
