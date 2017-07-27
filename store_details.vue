@@ -76,7 +76,7 @@
         }
       },
       created () {
-          
+        this.all_hours = this.state.results.hours;  
       },
       mounted : function (){
           
