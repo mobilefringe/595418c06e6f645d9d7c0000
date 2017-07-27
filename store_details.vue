@@ -159,7 +159,7 @@
           let hoursObject = null;
      `hoursObject = todayHours;
             console.log(todayHours);
-          todayHours.locale = state.locale; // IMPORTANT! Here I am adding the state's locale in the hours object such that it will trigger a change in the template anytime the locale changes in the app.
+        //   todayHours.locale = state.locale; // IMPORTANT! Here I am adding the state's locale in the hours object such that it will trigger a change in the template anytime the locale changes in the app.
           return todayHours;
         }
         catch (err) {
