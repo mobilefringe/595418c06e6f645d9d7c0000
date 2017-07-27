@@ -47,7 +47,7 @@
                 {{currentStore.website}}
             </div>
             <div class="row">
-                <i class="icon-phone"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 {{currentStore.phone}}
             </div>
         </div>
