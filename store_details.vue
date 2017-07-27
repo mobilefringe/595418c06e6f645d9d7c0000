@@ -1,9 +1,6 @@
 <style>
   
-    img {
-        width:25px;
-    }
-}
+   
 </style>
 <template>
   <!--<div class="row" v-if="currentStore">-->
