@@ -158,7 +158,7 @@
             let todayHours = hours.find(hour => hour.day_of_week === moment().day());
             let hoursObject = null;
             hoursObject = todayHours;
-            console.log(todayHours);.
+            console.log(todayHours);
             return todayHours;
         }
         catch (err) {
