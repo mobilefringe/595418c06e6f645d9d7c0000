@@ -118,7 +118,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 var store_promo =  this.promotions();
                 console.log(store_promo);
                 _.forEach(this.currentStore.promotions, function(val, key) {
-                    _.find(this.promotions(), 'id', this.currentStore.todays_hour);
+                   var promo =  _.find(this.promotions(), 'id', this.currentStore.todays_hour);
                     Vue.set(this.all_promos,key, this.findPromoBySlug(val));
                     console.log(val);
                 });
