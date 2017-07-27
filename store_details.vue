@@ -133,18 +133,18 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 // this.store_hours =  _.find(this.all_hours, 'id', this.currentStore.todays_hour);
                 var store_hours = _.groupBy(this.all_hours, 'id');
                 Vue.set(this.currentStore,'store_hours_data', store_hours[this.currentStore.todays_hour]);
-                _.forEach(this.all_hours, function(val, key) {
-                    // console.log(val.id);
-                    if(val.id == this.currentStore.todays_hour)
-                    {
+                // _.forEach(this.all_hours, function(val, key) {
+                //     // console.log(val.id);
+                //     if(val.id == this.currentStore.todays_hour)
+                //     {
                        
-                        this.store_hours = val;
-                        // console.log(val.id, val);
-                        // console.log(this.store_hours);
+                //         this.store_hours = val;
+                //         // console.log(val.id, val);
+                //         // console.log(this.store_hours);
                         
-                        return false;
-                    }
-                });
+                //         return false;
+                //     }
+                // });
                  console.log(this.currentStore);
             }
         },
