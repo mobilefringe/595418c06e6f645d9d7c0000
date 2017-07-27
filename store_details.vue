@@ -121,7 +121,7 @@
                 console.log(this.all_hours);
                 console.log(this.currentStore.todays_hour);
                 this.store_hours =  _.find(this.all_hours, 'id', this.currentStore.todays_hour);
-                _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+                _.forEach(this.all_hours, function(value, key) {
                     console.log(key);
                 });
                  console.log(this.store_hours);
