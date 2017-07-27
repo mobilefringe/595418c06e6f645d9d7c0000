@@ -55,7 +55,7 @@
           currentStore: null,
           map: {},
           all_hours:{},
-          store_hours: {}
+          store_hours[]{}
         }
       },
       beforeRouteEnter (to, from, next) {
