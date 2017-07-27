@@ -124,6 +124,9 @@
                 _.forEach(this.all_hours, function(value, key) {
                     console.log(key);
                     if(val.id === this.currentStore.todays_hour)
+                    {
+                        
+                    }
                 });
                  console.log(this.store_hours);
             }
