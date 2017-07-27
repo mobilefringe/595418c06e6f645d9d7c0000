@@ -1,7 +1,3 @@
-<style>
-  
-   
-</style>
 <template>
   <!--<div class="row" v-if="currentStore">-->
     <!--<div class="large-6 columns">-->
