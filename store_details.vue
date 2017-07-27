@@ -144,7 +144,7 @@
             methods : {
                 loadMap(map) {
             
-                    console.log(map);
+                    // console.log(map);
                     var val = this.currentStore;
                     var coords = map.get_coords(val.svgmap_region);
                     var height = parseInt(coords["height"])
