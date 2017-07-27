@@ -30,7 +30,7 @@
             <!--<p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>-->
             
         </div>
-        <div  v-show = "show_shop" class="" id="shop_store_list">
+        <div  v-show = "show_promo" class="" id="shop_store_list">
             
         </div>
   </div>
