@@ -54,7 +54,8 @@
           description: "An example of integration of Mall Maverick with Vue.js",
           currentStore: null,
           map: {},
-          all_hours:{}
+          all_hours:{},
+          store_hours: {};
         }
       },
       beforeRouteEnter (to, from, next) {
