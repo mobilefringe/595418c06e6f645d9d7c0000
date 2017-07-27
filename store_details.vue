@@ -129,7 +129,7 @@
                         this.store_hours = val;
                         console.log(val.id, val);
                         console.log(this.store_hours);
-                        Vue.set(this.currentStore,store_hours_data, val);
+                        Vue.set(this.currentStore,'store_hours_data', val);
                         return false;
                     }
                 });
