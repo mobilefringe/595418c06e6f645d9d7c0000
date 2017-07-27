@@ -169,7 +169,7 @@
         concatVal(val1,val2) {
             return val1 + val2;
         },
-        getTodaysStoreHours (){
+        togglePromo (){
         try {
             // let store_hour_id = this.currentStore.todays_hour;
             // console.log(store_hour_id);
