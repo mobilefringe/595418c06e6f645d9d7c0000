@@ -152,6 +152,7 @@
         getTodayHours (){
         try {
           let hours = this.currentStore.todays_hour;
+          console.log(hours);
           let property = this.property;
           let timezone = property.timezone_moment;
           let todayHours = hours.find(hour => hour.day_of_week === moment().day());
