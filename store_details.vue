@@ -125,6 +125,7 @@
                     console.log(val.id);
                     if(val.id === this.currentStore.todays_hour)
                     {
+                        console.log("HELLO WORLD");
                         this.store_hours = val;
                     }
                 });
