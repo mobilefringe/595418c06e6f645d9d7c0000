@@ -152,8 +152,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
               return this.$store.getters.getTimezone;
             },
             findPromoBySlug () {
-          return this.$store.getters.findPromoBySlug;
-        }
+                return this.$store.getters.findPromoBySlug;
+            }
         }, 
         methods : {
             loadMap(map) {
