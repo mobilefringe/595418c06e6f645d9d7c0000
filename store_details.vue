@@ -156,7 +156,7 @@
         try {
             let store_hour_id = this.currentStore.todays_hour;
             console.log(hours);
-            let property = this.property;
+            let property = store_hour_idthis.property;
             // console.log(property);
             let timezone = property.timezone_moment;
             let all_hours =this.state.results.hours;
