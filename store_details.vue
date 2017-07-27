@@ -133,7 +133,7 @@
                         return false;
                     }
                 });
-                 
+                 console.log(this.currentStore);
             }
         },
       computed: {
