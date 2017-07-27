@@ -40,6 +40,7 @@
         <div class="store_dets">
             <div class="row">
                 <i class="icon-map-marker"></i>
+                {{currentStore.name}}
             </div>
             <div class="row">
                 <i class="icon-globe"></i>
