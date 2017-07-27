@@ -141,8 +141,8 @@
                   return this.$store.getters.getTimezone;
                 }
             }, 
-      methods : {
-         loadMap(map) {
+            methods : {
+                loadMap(map) {
             
             console.log(map);
             var val = this.currentStore;
