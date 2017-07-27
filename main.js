@@ -128,6 +128,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         }
       },
       hours () {
+          console.log(this.$store.state.hours);
           return this.$store.state.hours
       }
     },
