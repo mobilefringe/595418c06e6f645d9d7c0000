@@ -27,7 +27,7 @@
         <div class="blue_box"  v-if="currentStore">
             
             <p class="dets_title">Promotions </p>
-            <p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>
+            <!--<p class="dets_data">{{currentStore.property_id}} - {{currentStore.store_hours_data.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_data.close_time | moment("h a", timezone)}}</p>-->
             
         </div>
   </div>
