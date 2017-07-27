@@ -129,7 +129,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       },
       hours: {
         get () {
-          return this.$store.state.locale
+          return this.$store.state.hours
         }
       }
     },
