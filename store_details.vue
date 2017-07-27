@@ -41,6 +41,12 @@
             <div class="row">
                 <i class="icon-globe"></i>
             </div>
+            <div class="row">
+                <i class="icon-globe"></i>
+            </div>
+            <div class="row">
+                <i class="icon-globe"></i>
+            </div>
         </div>
   </div>
 </template>
