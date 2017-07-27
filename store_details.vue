@@ -114,7 +114,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 });
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
-                
+                findPromoBySlug
                 
             },
             all_hours : function () {
