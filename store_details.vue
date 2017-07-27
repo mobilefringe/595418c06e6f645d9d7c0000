@@ -39,7 +39,7 @@
         </div>
         <div class="store_dets">
             <div class="row">
-                
+                <i class="icon-globe"></i>
             </div>
         </div>
   </div>
