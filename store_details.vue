@@ -35,9 +35,9 @@
 
 <script>
     define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-timezone", "vue-moment"], function(Vue, $,mapsvg,mousewheel,raphael, moment, tz, VueMoment) {
-    return Vue.component("store-details-component", {
-      template: template, // the variable template will be injected,
-      data: function() {
+        return Vue.component("store-details-component", {
+            template: template, // the variable template will be injected,
+            data: function() {
         return {
           title: "The Path!",
           description: "An example of integration of Mall Maverick with Vue.js",
@@ -45,7 +45,7 @@
           map: {},
           all_hours:{},
           store_hours: {}
-         }
+        }
       },
       beforeRouteEnter (to, from, next) {
         next(vm => {
