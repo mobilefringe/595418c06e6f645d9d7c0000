@@ -118,7 +118,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 var store_promo =  this.promotions();
                 console.log(store_promo);
                 _.forEach(this.currentStore.promotions, function(val, key) {
-                    var promo = _.groupBy(stores, 'name')[slug]; //_.find(store_promo, 'id', val);
+                    var promo =_.find(store_promo, 'id', val);
                     console.log(promo);
                     // Vue.set(this.all_promos,key, this.findPromoBySlug(val));
                     console.log(val);
