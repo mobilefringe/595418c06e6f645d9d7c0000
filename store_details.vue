@@ -105,24 +105,24 @@
                     this.all_hours = this.state.results.hours; 
                     
                 },
-            all_hours : function () {
-                console.log(this.all_hours);
-                console.log(this.currentStore.todays_hour);
-                // this.store_hours =  _.find(this.all_hours, 'id', this.currentStore.todays_hour);
-                _.forEach(this.all_hours, function(val, key) {
-                    // console.log(val.id);
-                    if(val.id == this.currentStore.todays_hour)
-                    {
-                       
-                        this.store_hours = val;
-                        // console.log(val.id, val);
-                        // console.log(this.store_hours);
-                        Vue.set(this.currentStore,'store_hours_data', val);
-                        return false;
-                    }
-                });
-                 console.log(this.currentStore);
-            }
+                all_hours : function () {
+                    console.log(this.all_hours);
+                    console.log(this.currentStore.todays_hour);
+                    // this.store_hours =  _.find(this.all_hours, 'id', this.currentStore.todays_hour);
+                    _.forEach(this.all_hours, function(val, key) {
+                        // console.log(val.id);
+                        if(val.id == this.currentStore.todays_hour)
+                        {
+                           
+                            this.store_hours = val;
+                            // console.log(val.id, val);
+                            // console.log(this.store_hours);
+                            Vue.set(this.currentStore,'store_hours_data', val);
+                            return false;
+                        }
+                    });
+                     console.log(this.currentStore);
+                }
         },
       computed: {
         property(){
