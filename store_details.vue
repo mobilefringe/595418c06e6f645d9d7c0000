@@ -39,12 +39,12 @@
             template: template, // the variable template will be injected,
             data: function() {
                 return {
-                  title: "The Path!",
-                  description: "An example of integration of Mall Maverick with Vue.js",
-                  currentStore: null,
-                  map: {},
-                  all_hours:{},
-                  store_hours: {}
+                    title: "The Path!",
+                    description: "An example of integration of Mall Maverick with Vue.js",
+                    currentStore: null,
+                    map: {},
+                    all_hours:{},
+                    store_hours: {}
                 }
             },
       beforeRouteEnter (to, from, next) {
