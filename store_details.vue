@@ -122,7 +122,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     var promo =store_promo[val];
                     console.log(promo);
                     Vue.set(this.all_promos,key,promo);
-                    console.log(val);
+                    // console.log(val);
                 });
                 
                 console.log(this.all_promos);
