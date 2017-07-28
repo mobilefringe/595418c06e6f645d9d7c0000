@@ -45,8 +45,6 @@
                     </div>
                     <hr/>
                 </div>
-                
-                 
             </div>
             
             <div v-else>
