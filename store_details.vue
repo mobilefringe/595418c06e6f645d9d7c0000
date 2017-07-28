@@ -254,6 +254,10 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                         break;
                 }
                 return day;
+            },
+            go_back () {
+                this.router.go(-1)
+
             }
         }
     });
