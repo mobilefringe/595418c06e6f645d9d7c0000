@@ -214,7 +214,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
             state () {
                 return this.$store.state;
             },
-            timezone() {
+            timezon() {
               return this.$store.getters.getTimezone;
             },
             findPromoBySlug () {
