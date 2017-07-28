@@ -40,6 +40,21 @@
                     {{promo.name}} - {{promo.date}}
                 </li>
             </ul>
+            <div class="row cat_name">
+                <router-link :to="{ name: 'mapStores', params: { id:  index }}">
+                    <div class="col-xs-6 align_left">
+                        {{index}}
+                        <!--{{store.name}} -->
+                        <br/>
+                       {{index}}
+                        <!--{{store.name}} --> {{store.property_id}}
+                    </div>
+                    <!--<div class="col-xs-6 align_right">-->
+                    <!--    April 27-29-->
+                    <!--</div>-->
+                </router-link>
+            </div>
+             <hr>
             <div v-else>
                 Sorry, There are no promotions available now. Check back later!
             </div>
