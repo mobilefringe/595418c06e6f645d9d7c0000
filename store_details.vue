@@ -51,6 +51,28 @@
                 Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
+        <!-- Store Promotions -->
+        <div class="blue_box promo"  v-if="currentStore" @click="togglePromo">
+            <p class="dets_title">Promotions </p>
+        </div>
+        <div  v-show = "show_promo" class="" id="" v-if="currentStore">
+            <div class="" v-if="currentStore.total_published_promos > 0">
+                <div class="row" v-for="promo in all_promos">
+                    <div class="disp_table">
+                        <p class="col-xs-6 pull-left disp_table_cell">
+                            {{promo.name}}
+                        </p>
+                        <p class="col-xs-6 pull-right align_right disp_table_cell">
+                            {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
+                        </p>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+            <div v-else>
+                Sorry, There are no promotions available now. Check back later!
+            </div>
+        </div>
     </div>
 </template>
 
