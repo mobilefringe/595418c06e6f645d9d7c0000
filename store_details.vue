@@ -59,26 +59,26 @@
             <!--<div class="" v-if="currentStore.total_published_promos > 0">-->
                 <div class="row" v-for="day in currentStore.store_hours_data">
                     <div v-if="!day.is_holiday" class="disp_table">
-                        <p class="col-xs-6 pull-left disp_table_cell">
+                        <p class="col-xs-8 pull-left disp_table_cell">
                             {{day.name}}
                         </p>
-                        <p class="col-xs-6 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                        <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                             {{day.open_time | moment("h a", timezone)}}  {{day.close_time | moment("h a", timezone)}}
                         </p>
-                         <p class="col-xs-6 pull-right align_right disp_table_cell" v-else>
+                         <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
                             Closed
                         </p>
                     </div>
                     
                     <div v-else>
                         <hr/>
-                        <p class="col-xs-6 pull-left disp_table_cell">
+                        <p class="col-xs-8 pull-left disp_table_cell">
                             {{day.holiday_name}}
                         </p>
-                        <p class="col-xs-6 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                        <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                             {{day.open_time | moment("h a", timezone)}}  {{day.close_time | moment("h a", timezone)}}
                         </p>
-                         <p class="col-xs-6 pull-right align_right disp_table_cell" v-else>
+                         <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
                             Closed
                         </p>
                     </div>
