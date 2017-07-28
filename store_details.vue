@@ -127,18 +127,18 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
         },
         watch: {
             currentStore : function () {
-                var val = this.currentStore;
-                regions = {};
+                // var val = this.currentStore;
+                // regions = {};
                 
-                obj = {};
-                if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                }
-                else{
-                    obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-                }
-                obj["attr"] = {}
-                regions[val.svgmap_region] = obj;
+                // obj = {};
+                // if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                //     obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                // }
+                // else{
+                //     obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                // }
+                // obj["attr"] = {}
+                // regions[val.svgmap_region] = obj;
             
                 var map = $('#mapsvg').mapSvg({
                     source: this.getSVGurl,    // Path to SVG map
@@ -147,7 +147,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     disableAll: true,
                     height:200,
                     width:1300,
-                    regions: regions,
+                    // regions: regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
@@ -241,7 +241,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                 }]);
                 map.setViewBox(val.svgmap_region);
-                map.selectRegion(val.svgmap_region);
+                // map.selectRegion(val.svgmap_region);
             },
             concatVal(val1,val2) {
                 return val1 + val2;
