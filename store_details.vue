@@ -84,7 +84,7 @@
             </div>
         </div>
         <!-- Backdrop-->
-        <div v-if="map === undefined" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>
+        <div  class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>
     </div>
 </template>
 
