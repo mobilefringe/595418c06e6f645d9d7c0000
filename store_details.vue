@@ -70,7 +70,7 @@
                 </div>
             <!--</div>-->
             <hr/>
-            <div>
+            <div v-if="">
                 Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
