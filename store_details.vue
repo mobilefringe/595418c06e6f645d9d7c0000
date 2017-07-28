@@ -64,7 +64,7 @@
                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                         {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
                     </p>
-                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
                         Closed
                     </p>
                 </div>
@@ -77,7 +77,7 @@
                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                         {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
                     </p>
-                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
                         Closed
                     </p>
                 </div>
