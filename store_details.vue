@@ -37,7 +37,7 @@
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
             <div class="" v-if="currentStore.total_published_promos > 0">
                 <div class="row" v-for="promo in all_promos">
-                    <div>
+                    <div class="disp_table">
                         <p class="col-xs-6 pull-left">
                         <!--{{currentStore.name | uppercase}}-->
                             <!--<br/>-->
