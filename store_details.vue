@@ -42,9 +42,9 @@
             <!--</ul>-->
             <div class="row cat_name" v-if="currentStore.total_published_promos > 0">
                 <div class=" align_left" v-for="promo in all_promos">
-                    <p class="col-xs-12">{{currentStore.name | uppercase}}</p>
+                    <p class="col-xs-6">{{currentStore.name | uppercase}}</p>
                     <br/>
-                    <p class="col-xs-12"></p> {{promo.name}} - {{promo.date}}
+                    <p class="col-xs-6"></p> {{promo.name}} - {{promo.date}}
                 </div>
             </div>
              <hr>
