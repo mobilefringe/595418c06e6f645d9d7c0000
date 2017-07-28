@@ -129,7 +129,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 var temp_promo=[];
                 _.forEach(this.currentStore.promotions, function(val, key) {
                     var promo =store_promo[val];
-                    console.log(promo, val);
+                    // console.log(promo, val);
                     temp_promo.push(promo[0]);
                 });
                 this.all_promos = temp_promo;
