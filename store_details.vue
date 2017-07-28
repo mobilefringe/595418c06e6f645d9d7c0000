@@ -69,7 +69,7 @@
                             Closed
                         </p>
                     </div>
-                    <hr/>
+                    
                     <div v-else>
                         <p class="col-xs-6 pull-left disp_table_cell">
                             {{day.holiday_name}}
