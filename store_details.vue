@@ -244,7 +244,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 this.show_promo = ! this.show_promo;
             },
             toggleHours () {
-             ,
+                 this.show_hours = ! this.show_hours;
+            },
             promotions() {
                 return this.$store.getters.processedPromos;
             }
