@@ -84,9 +84,7 @@
             </div>
         </div>
         <!-- Backdrop-->
-        <div>
-            
-        </div>
+        <div class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>
     </div>
 </template>
 
