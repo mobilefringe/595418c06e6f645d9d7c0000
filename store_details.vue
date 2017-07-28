@@ -51,8 +51,9 @@
                     <p class="col-xs-6 pull-right align_right">
                         {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
                     </p>
-                    <hr/>
+                    
                 </div>
+                <hr/>
                  
             </div>
             
