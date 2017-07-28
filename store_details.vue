@@ -143,6 +143,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     responsive:true,
                     zoomLimit: [0,5]
                 });
+                this.map = map;
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 
