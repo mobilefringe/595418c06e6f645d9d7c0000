@@ -56,7 +56,8 @@
                 title: "The Path!",
                 description: "Using new SDK",
                 mobile_search_box : "",
-                suggestionAttribute: 'name'
+                suggestionAttribute: 'name',
+                loading : true
             }
         },
         computed: {
