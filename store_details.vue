@@ -56,7 +56,7 @@
             <p class="dets_title">Full Hours</p>
         </div>
         <div  v-show = "show_hours" class="" id="" v-if="currentStore">
-            <div class="" v-if="currentStore.total_published_promos > 0">
+            <!--<div class="" v-if="currentStore.total_published_promos > 0">-->
                 <div class="row" v-for="promo in all_promos">
                     <div class="disp_table">
                         <p class="col-xs-6 pull-left disp_table_cell">
@@ -68,7 +68,7 @@
                     </div>
                     <hr/>
                 </div>
-            </div>
+            <!--</div>-->
             <div v-else>
                 Sorry, There are no promotions available now. Check back later!
             </div>
