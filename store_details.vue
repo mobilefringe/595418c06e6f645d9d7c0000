@@ -145,7 +145,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     console.log(hours, val);
                     temp_hours.push(hours[0]);
                 });
-                Vue.set(this.currentStore,'store_hours_data', store_hours[this.currentStore.todays_hour]);
+                Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 // _.forEach(this.all_hours, function(val, key) {
                 //     // console.log(val.id);
                 //     if(val.id == this.currentStore.todays_hour)
