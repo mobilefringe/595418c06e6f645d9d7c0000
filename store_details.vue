@@ -94,11 +94,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
         template: template, // the variable template will be injected,
         data: function() {
             return {
-                title: "The Path!",
-                description: "An example of integration of Mall Maverick with Vue.js",
-                currentStore: null,
-                map: {},
-                all_hours:{},
+                currentStore : null,
+                map : {},
+                all_hours : {},
                 show_promo : false,
                 show_hours : false,
                 all_promos: []
