@@ -45,9 +45,10 @@
                     <p class="col-xs-6 pull-left">
                     {{currentStore.name | uppercase}}
                         <br/>
+                        {{promo.name}}
                     </p>
                     
-                    <p class="col-xs-6 pull-right"> {{promo.name}} - {{promo.date}}</p>
+                    <p class="col-xs-6 pull-right">  - {{promo.date}}</p>
                 </div>
                  <hr>
             </div>
