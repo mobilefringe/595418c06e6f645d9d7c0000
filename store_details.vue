@@ -56,35 +56,32 @@
             <p class="dets_title">Full Hours</p>
         </div>
         <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore">
-            <!--<div class="" v-if="currentStore.total_published_promos > 0">-->
-                <div class="row" v-for="day in currentStore.store_hours_data">
-                    <div v-if="!day.is_holiday" class="">
-                        <p class="col-xs-8 pull-left disp_table_cell">
-                            {{getDay(day.day_of_week)}}
-                        </p>
-                        <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
-                            {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
-                        </p>
-                         <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
-                            Closed
-                        </p>
-                    </div>
-                    
-                    <div v-else id="holiday_hours">
-                        <hr/>
-                        <p class="col-xs-8 pull-left disp_table_cell">
-                            {{day.holiday_name}}
-                        </p>
-                        <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
-                            {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
-                        </p>
-                         <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
-                            Closed
-                        </p>
-                    </div>
+            <div class="row" v-for="day in currentStore.store_hours_data">
+                <div v-if="!day.is_holiday" class="">
+                    <p class="col-xs-8 pull-left disp_table_cell">
+                        {{getDay(day.day_of_week)}}
+                    </p>
+                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                        {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
+                    </p>
+                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                        Closed
+                    </p>
                 </div>
-            <!--</div>-->
-            
+                
+                <div v-else id="holiday_hours">
+                    <hr/>
+                    <p class="col-xs-8 pull-left disp_table_cell">
+                        {{day.holiday_name}}
+                    </p>
+                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                        {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
+                    </p>
+                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                        Closed
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </template>
