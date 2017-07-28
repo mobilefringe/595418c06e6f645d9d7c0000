@@ -1,5 +1,6 @@
 <template>
     <div >
+    <!-- SVG Map diplay area -->
         <div class="demo_1 map3" style="" id="mapsvg">
         </div>
         <div class="blue_box"  v-if="currentStore">
