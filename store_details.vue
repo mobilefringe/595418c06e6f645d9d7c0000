@@ -23,7 +23,7 @@
             </div>
             <div class="row">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                 <p>{{currentStore.phone}}</p>
+                 <p class="wrap">{{currentStore.phone}}</p>
                 
             </div>
         </div> 
