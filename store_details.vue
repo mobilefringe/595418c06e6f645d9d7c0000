@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <i class="fa fa-phone col-xs-1" aria-hidden="true"></i>
-                 <p class="wrap col-xs-10">{{currentStore.phone}}</p>
+                <p class="wrap col-xs-10">{{currentStore.phone}}</p>
                 
             </div>
         </div> 
