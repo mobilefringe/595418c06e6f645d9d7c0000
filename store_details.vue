@@ -44,7 +44,7 @@
                 <div class="" v-for="promo in all_promos">
                     <p class="col-xs-6 pull-left">{{currentStore.name | uppercase}}</p>
                     <br/>
-                    <p class="col-xs-6 pull-right"></p> {{promo.name}} - {{promo.date}}
+                    <p class="col-xs-6 pull-right"> {{promo.name}} - {{promo.date}}</p>
                 </div>
                  <hr>
             </div>
