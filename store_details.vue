@@ -58,7 +58,7 @@
         <div  v-show = "show_hours" class="" id="" v-if="currentStore">
             <!--<div class="" v-if="currentStore.total_published_promos > 0">-->
                 <div class="row" v-for="day in currentStore.store_hours_data">
-                    <div v-if="!day.is_holiday" class="disp_table">
+                    <div v-if="!day.is_holiday" class="">
                         <p class="col-xs-8 pull-left disp_table_cell">
                             {{getDay(day.day_of_week)}}
                         </p>
