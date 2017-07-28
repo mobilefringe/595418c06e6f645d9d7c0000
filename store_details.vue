@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <i class="fa fa-globe" aria-hidden="true"></i>
-                <p>{{currentStore.website}}</p>
+                <p class="wrap">{{currentStore.website}}</p>
                 
             </div>
             <div class="row">
