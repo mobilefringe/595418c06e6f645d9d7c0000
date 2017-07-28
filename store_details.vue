@@ -37,7 +37,7 @@
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
             <div class="" v-if="currentStore.total_published_promos > 0">
                 <div class="row disp_table" v-for="promo in all_promos">
-                    <!--<div class="">-->
+                    <div class="">
                         <p class="col-xs-6 pull-left disp_table_cell">
                         <!--{{currentStore.name | uppercase}}-->
                             <!--<br/>-->
@@ -47,7 +47,7 @@
                         <p class="col-xs-6 pull-right align_right disp_table_cell">
                             {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
                         </p>
-                    <!--</div>-->
+                    </div>
                     <hr/>
                 </div>
                 
