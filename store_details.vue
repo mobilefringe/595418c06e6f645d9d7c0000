@@ -48,7 +48,7 @@
                         {{promo.name}}
                     </p>
                     
-                    <p class="col-xs-6 pull-right">  - {{promo.date}}</p>
+                    <p class="col-xs-6 pull-right">{{promo.date}}</p>
                 </div>
                  <hr>
             </div>
