@@ -71,7 +71,7 @@
                     </div>
                     
                     <div v-else>
-                    <hr/>
+                        <hr/>
                         <p class="col-xs-6 pull-left disp_table_cell">
                             {{day.holiday_name}}
                         </p>
