@@ -100,7 +100,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 map: {},
                 all_hours:{},
                 show_promo : false,
-                show_hours:false,
+                show_hours : false,
                 all_promos: []
             }
         },
