@@ -52,7 +52,7 @@
             </div>
         </div>
         <!-- Store Hours -->
-        <div class="blue_box promo"  v-if="currentStore" @click="togglePromo">
+        <div class="blue_box promo"  v-if="currentStore" @click="toggleHours">
             <p class="dets_title">Full Hours</p>
         </div>
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
