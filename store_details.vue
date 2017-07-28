@@ -178,7 +178,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                  console.log(this.currentStore);
             },
             map : function () {
-                loading = false;
+                this.loading = false;
             } 
         },
         computed: {
