@@ -28,7 +28,7 @@
                 <p class="wrap col-xs-10">{{currentStore.phone}}</p>
             </div>
         </div> 
-        
+        <!-- Promotions -->
         <div class="blue_box promo"  v-if="currentStore" @click="togglePromo">
             <p class="dets_title">Promotions </p>
         </div>
