@@ -69,7 +69,7 @@
                     <hr/>
                     <div v-else>
                         <p class="col-xs-6 pull-left disp_table_cell">
-                            {{day.name}}
+                            {{day.holiday_name}}
                         </p>
                         <p class="col-xs-6 pull-right align_right disp_table_cell">
                             {{day.open_time | moment("h a", timezone)}}  {{day.close_time | moment("h a", timezone)}}
