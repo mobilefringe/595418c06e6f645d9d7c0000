@@ -55,7 +55,7 @@
         <div class="blue_box promo"  v-if="currentStore" @click="toggleHours">
             <p class="dets_title">Full Hours</p>
         </div>
-        <div  v-show = "show_promo" class="" id="" v-if="currentStore">
+        <div  v-show = "show_hours" class="" id="" v-if="currentStore">
             <div class="" v-if="currentStore.total_published_promos > 0">
                 <div class="row" v-for="promo in all_promos">
                     <div class="disp_table">
