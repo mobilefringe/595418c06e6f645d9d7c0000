@@ -63,7 +63,7 @@
                             {{day.name}}
                         </p>
                         <p class="col-xs-6 pull-right align_right disp_table_cell">
-                            {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
+                            {{currentStore.store_hours_today.open_time | moment("h a", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a", timezone)}}
                         </p>
                     </div>
                     <hr/>
