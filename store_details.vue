@@ -46,7 +46,6 @@
                     <hr/>
                 </div>
             </div>
-            
             <div v-else>
                 Sorry, There are no promotions available now. Check back later!
             </div>
