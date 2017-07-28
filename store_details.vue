@@ -180,6 +180,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     console.log(hours, val);
                     // hours.day_of_week = moment(val.open_time).day();
                     // console.log(moment(val.open_time).day());
+                    var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
+                    var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
+                    val.h = open_time + " - " + close_time;
                     temp_hours.push(hours[0]);
                 });
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
@@ -278,6 +281,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                         break;
                 }
                 return day;
+            },
+            function in_my_time_zone(hour, format){
+                return hour.tz(getPropertyTimeZone()).format(format)
             }
         }
     });
