@@ -50,7 +50,7 @@
                 Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>
