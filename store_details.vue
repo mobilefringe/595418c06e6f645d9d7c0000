@@ -105,7 +105,6 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 // access to component instance via `vm`
                 vm.currentStore = vm.findStoreBySlug(to.params.id);
                 this.currentStore = vm.currentStore;
-                console.log("1",from);
                 if (vm.currentStore === null || vm.currentStore === undefined){
                     vm.$router.replace({ name: '404'});
                 }
@@ -113,7 +112,6 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
         },
         beforeRouteUpdate (to, from, next) {
             this.currentStore = this.findStoreBySlug(to.params.id);
-            console.log("1",from);
             if (this.currentStore === null || this.currentStore === undefined){
                 this.$router.replace({ name: '404'});
             }
