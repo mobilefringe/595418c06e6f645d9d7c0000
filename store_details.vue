@@ -182,7 +182,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     // console.log(moment(val.open_time).day());
                     // var open_time = this.in_my_time_zone(moment(hours[0].open_time), "h:mmA");
                     // var close_time = this.in_my_time_zone(moment(hours[0].close_time), "h:mmA");
-                    hours[0].h = open_time + " - " + close_time;
+                    // hours[0].h = open_time + " - " + close_time;
                     temp_hours.push(hours[0]);
                 });
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
