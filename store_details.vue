@@ -66,7 +66,10 @@
                             {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
                         </p>
                     </div>
-                    
+                    <hr/>
+                    <div v-else>
+                        Sorry, There are no promotions available now. Check back later!
+                    </div>
                 </div>
             <!--</div>-->
             
