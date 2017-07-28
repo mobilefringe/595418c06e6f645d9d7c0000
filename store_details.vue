@@ -26,7 +26,8 @@
             </div>
             <div class="row">
                 <i class="fa fa-phone col-xs-1" aria-hidden="true"></i>
-                <p class="wrap col-xs-10">{{currentStore.phone}}</p>
+                <p class="wrap col-xs-10"><a href="tel:{{currentStore.phone}}">Call 1-800-555-5555</a></p>
+                
             </div>
         </div> 
         <!-- Store Promotions -->
