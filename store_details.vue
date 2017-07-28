@@ -43,6 +43,8 @@
             <div class="row cat_name" v-if="currentStore.total_published_promos > 0">
                 <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
                     <div class="col-xs-6 align_left" v-for="promo in all_promos">
+                        {{currentStore.name | uppercase}}
+                        <br/>
                          {{promo.name}} - {{promo.date}}
                     </div>
                     <!--<div class="col-xs-6 align_right">-->
