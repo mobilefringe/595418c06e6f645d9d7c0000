@@ -45,7 +45,7 @@
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
-                                   {{index}}
+                                   <!--{{index}}-->
                                     <!--{{store.name}} --> {{store.property_id}}
                                 </div>
                                 <!--<div class="col-xs-6 align_right">-->
