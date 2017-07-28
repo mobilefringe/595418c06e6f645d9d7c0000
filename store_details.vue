@@ -60,7 +60,7 @@
                 <div class="row" v-for="day in currentStore.store_hours_data">
                     <div class="disp_table">
                         <p class="col-xs-6 pull-left disp_table_cell">
-                            {{promo.name}}
+                            {{day.name}}
                         </p>
                         <p class="col-xs-6 pull-right align_right disp_table_cell">
                             {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
@@ -69,10 +69,7 @@
                     
                 </div>
             <!--</div>-->
-            <hr/>
-            <div v-if="">
-                Sorry, There are no promotions available now. Check back later!
-            </div>
+            
         </div>
     </div>
 </template>
