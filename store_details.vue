@@ -99,7 +99,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 all_hours : {},
                 show_promo : false,
                 show_hours : false,
-                all_promos: []
+                all_promos : []
             }
         },
         beforeRouteEnter (to, from, next) {
