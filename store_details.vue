@@ -23,8 +23,8 @@
             </div>
             <div class="row">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                 <p></p>
-                {{currentStore.phone}}
+                 <p>{{currentStore.phone}}</p>
+                
             </div>
         </div> 
         <div class="blue_box"  v-if="currentStore" @click="togglePromo">
