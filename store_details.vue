@@ -253,6 +253,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 return this.$store.getters.processedPromos;
             },
             getDay(day_of_week) {
+                var day= "";
                 switch(day_of_week) {
                     case 0:
                         val.day = "Sunday";
