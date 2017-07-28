@@ -57,7 +57,7 @@
         </div>
         <div  v-show = "show_hours" class="" id="" v-if="currentStore">
             <!--<div class="" v-if="currentStore.total_published_promos > 0">-->
-                <div class="row" v-for="promo in all_promos">
+                <div class="row" v-for="day in currentStore.store_hours_data">
                     <div class="disp_table">
                         <p class="col-xs-6 pull-left disp_table_cell">
                             {{promo.name}}
