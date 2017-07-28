@@ -147,7 +147,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     disableAll: true,
                     height:200,
                     width:1300,
-                    // regions: regions,
+                    regions: regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
                     zoom: true,
