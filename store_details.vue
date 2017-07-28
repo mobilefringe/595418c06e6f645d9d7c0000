@@ -46,6 +46,7 @@
                     <br/>
                     <p class="col-xs-6"></p> {{promo.name}} - {{promo.date}}
                 </div>
+                 <hr>
             </div>
             
             <div v-else>
