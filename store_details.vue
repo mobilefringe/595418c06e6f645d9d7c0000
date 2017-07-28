@@ -17,13 +17,13 @@
                 
             </div>
             <div class="row">
-                <i class="fa fa-globe col-xs-11" aria-hidden="true"></i>
-                <p class="wrap">{{currentStore.website}}</p>
+                <i class="fa fa-globe col-xs-1" aria-hidden="true"></i>
+                <p class="wrap col-xs-11">{{currentStore.website}}</p>
                 
             </div>
             <div class="row">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                 <p class="wrap">{{currentStore.phone}}</p>
+                <i class="fa fa-phone col-xs-1" aria-hidden="true"></i>
+                 <p class="wrap col-xs-11">{{currentStore.phone}}</p>
                 
             </div>
         </div> 
