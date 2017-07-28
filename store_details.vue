@@ -52,7 +52,7 @@
                     <!--<div class="col-xs-6 align_right">-->
                     <!--    April 27-29-->
                     <!--</div>-->
-                </router-link>
+                <!--</router-link>-->
             </div>
              <hr>
             <div v-else>
