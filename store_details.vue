@@ -17,7 +17,7 @@
         <div class="store_dets"  v-if="currentStore">
             <div class="row">
                 <i class="fa fa-map-marker col-xs-1" aria-hidden="true"></i>
-                 <p class="wrap col-xs-10">{{currentStore.property_id}}</p>
+                <p class="wrap col-xs-10">{{currentStore.property_id}}</p>
                 
             </div>
             <div class="row">
