@@ -51,7 +51,7 @@
                 Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
-        <!-- Store Promotions -->
+        <!-- Store Hours -->
         <div class="blue_box promo"  v-if="currentStore" @click="togglePromo">
             <p class="dets_title">Promotions </p>
         </div>
