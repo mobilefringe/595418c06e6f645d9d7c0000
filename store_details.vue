@@ -13,14 +13,17 @@
         <div class="store_dets"  v-if="currentStore">
             <div class="row">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <p></p>
                 {{currentStore.property_id}}
             </div>
             <div class="row">
                 <i class="fa fa-globe" aria-hidden="true"></i>
+                <p></p>
                 {{currentStore.website}}
             </div>
             <div class="row">
                 <i class="fa fa-phone" aria-hidden="true"></i>
+                 <p></p>
                 {{currentStore.phone}}
             </div>
         </div> 
