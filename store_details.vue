@@ -18,17 +18,14 @@
             <div class="row">
                 <i class="fa fa-map-marker col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10">{{currentStore.property_id}}</p>
-                
             </div>
             <div class="row">
                 <i class="fa fa-globe col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10">{{currentStore.website}}</p>
-                
             </div>
             <div class="row">
                 <i class="fa fa-phone col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10">{{currentStore.phone}}</p>
-                
             </div>
         </div> 
         
