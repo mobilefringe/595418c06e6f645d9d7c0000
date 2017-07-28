@@ -141,7 +141,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 
                  var temp_hours=[];
                 _.forEach(this.currentStore.store_hours, function(val, key) {
-                    var hours =store_promo[val];
+                    var hours =store_hours[val];
                     console.log(hours, val);
                     temp_hours.push(hours[0]);
                 });
