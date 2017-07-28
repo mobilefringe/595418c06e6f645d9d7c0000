@@ -256,7 +256,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 return day;
             },
             go_back () {
-                this.router.go(-1);
+               this.$router.go(-1);
             }
         }
     });
