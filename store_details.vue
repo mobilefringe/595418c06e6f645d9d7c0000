@@ -48,7 +48,7 @@
                     <hr/>
                 </div>
             </div>
-            <div v-else class="promo_row">
+            <div v-else class="padding_1010">
                 Sorry, There are no promotions available now. Check back later!
             </div>
         </div>
