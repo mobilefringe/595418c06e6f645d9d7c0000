@@ -180,9 +180,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     console.log(hours, val);
                     // hours.day_of_week = moment(val.open_time).day();
                     // console.log(moment(val.open_time).day());
-                    var open_time = moment(hours[0].open_time.format("h a"));
+                    var open_time = moment(hours[0].open_time).format("h a");
                     console.log(open_time);
-                    var close_time = moment(hours[0].close_time.format("h a"));
+                    var close_time = moment(hours[0].close_time).format("h a");
                     hours[0].h = open_time + " - " + close_time;
                     temp_hours.push(hours[0]);
                 });
