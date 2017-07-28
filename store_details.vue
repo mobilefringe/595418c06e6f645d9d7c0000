@@ -13,18 +13,15 @@
         <div class="store_dets"  v-if="currentStore">
             <div class="row">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                 <p>{{currentStore.property_id}}</p>
-                
+                {{currentStore.property_id}}
             </div>
             <div class="row">
                 <i class="fa fa-globe" aria-hidden="true"></i>
-                <p class="wrap">{{currentStore.website}}</p>
-                
+                {{currentStore.website}}
             </div>
             <div class="row">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                 <p>{{currentStore.phone}}</p>
-                
+                {{currentStore.phone}}
             </div>
         </div> 
         <div class="blue_box"  v-if="currentStore" @click="togglePromo">
