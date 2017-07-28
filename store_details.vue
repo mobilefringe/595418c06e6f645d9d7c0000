@@ -60,7 +60,7 @@
                 <div class="row" v-for="day in currentStore.store_hours_data">
                     <div v-if="!day.is_holiday" class="disp_table">
                         <p class="col-xs-8 pull-left disp_table_cell">
-                            {{day.open_time | moment().day}}
+                            {{day.open_time | moment().day()}}
                         </p>
                         <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                             {{day.open_time | moment("h a", timezone)}}  {{day.close_time | moment("h a", timezone)}}
