@@ -35,11 +35,11 @@
             
         </div>
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
-            <div v-if="currentStore.total_published_promos > 0">
-                <div v-for="promo in all_promos">
+            <ul v-if="currentStore.total_published_promos > 0">
+                <li v-for="promo in all_promos">
                     {{promo.name}} - {{promo.date}}
-                </div>
-            </div>
+                </li>
+            </ul>
             <div v-else>
                 Sorry, There are no promotions available now. Check back later!
             </div>
