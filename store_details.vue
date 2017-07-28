@@ -277,7 +277,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                         day = "Saturday";
                         break;
                 }
-                retun day;
+                return day;
             }
         }
     });
