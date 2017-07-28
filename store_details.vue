@@ -282,7 +282,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 }
                 return day;
             },
-            function in_my_time_zone(hour, format){
+            in_my_time_zone(hour, format){
                 return hour.tz(getPropertyTimeZone()).format(format)
             }
         }
