@@ -41,13 +41,13 @@
             <!--    </li>-->
             <!--</ul>-->
             <div class="row cat_name" v-if="currentStore.total_published_promos > 0">
-                <div class=" align_left" v-for="promo in all_promos">
+                <div class="" v-for="promo in all_promos">
                     <p class="col-xs-6">{{currentStore.name | uppercase}}</p>
                     <br/>
                     <p class="col-xs-6"></p> {{promo.name}} - {{promo.date}}
                 </div>
             </div>
-             <hr>
+            
             <div v-else>
                 Sorry, There are no promotions available now. Check back later!
             </div>
