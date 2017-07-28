@@ -4,7 +4,7 @@
         <div class="demo_1 map3" style="" id="mapsvg">
         </div>
         <div class="blue_box"  v-if="currentStore">
-            <div class="close_dets  pull-left" @click="goback">
+            <div class="close_dets  pull-left" @click="go_back">
                 <a :href="">
                     <img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt="">
                 </a>
