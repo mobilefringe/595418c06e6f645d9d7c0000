@@ -219,6 +219,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
             },
             findPromoBySlug () {
                 return this.$store.getters.findPromoBySlug;
+            },
+            in_my_time_zone (hour, format){
+                return hour.tz(getPropertyTimeZone()).format(format)
             }
         }, 
         methods : {
@@ -281,10 +284,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                         break;
                 }
                 return day;
-            },
-            in_my_time_zone (hour, format){
-                return hour.tz(getPropertyTimeZone()).format(format)
             }
+            
         }
     });
 });
