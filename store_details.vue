@@ -139,6 +139,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 
                 var store_hours = _.groupBy(this.all_hours, 'id');
                 Vue.set(this.currentStore,'store_hours_data', store_hours[this.currentStore.todays_hour]);
+                
+                // Vue.set(this.currentStore,'store_hours_data', store_hours[this.currentStore.todays_hour]);
                 // _.forEach(this.all_hours, function(val, key) {
                 //     // console.log(val.id);
                 //     if(val.id == this.currentStore.todays_hour)
