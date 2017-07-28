@@ -129,7 +129,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     // Vue.set(this.all_promos,key,promo);
                     // console.log(val);
                 });
-                this.all_promos = temp_promol
+                this.all_promos = temp_promo;
                 console.log(this.all_promos);
             },
             all_hours : function () {
