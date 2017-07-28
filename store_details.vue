@@ -179,7 +179,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     var hours =store_hours[val];
                     console.log(hours, val);
                     // hours.day_of_week = moment(val.open_time).day();
-                    console.log(moment(val.open_time).day());
+                    // console.log(moment(val.open_time).day());
                     // var open_time = this.in_my_time_zone(moment(hours[0].open_time), "h:mmA");
                     // var close_time = this.in_my_time_zone(moment(hours[0].close_time), "h:mmA");
                     // hours[0].h = open_time + " - " + close_time;
