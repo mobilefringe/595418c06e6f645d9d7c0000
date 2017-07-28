@@ -221,7 +221,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 return this.$store.getters.findPromoBySlug;
             },
             in_my_time_zone (hour, format){
-                return hour.tz(getPropertyTimeZone()).format(format)
+                return hour.tz(this.timezone).format(format)
             }
         }, 
         methods : {
