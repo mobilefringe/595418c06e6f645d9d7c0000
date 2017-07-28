@@ -18,8 +18,8 @@
             </div>
             <div class="row">
                 <i class="fa fa-globe" aria-hidden="true"></i>
-                <p></p>
-                {{currentStore.website}}
+                <p>{{currentStore.website}}</p>
+                
             </div>
             <div class="row">
                 <i class="fa fa-phone" aria-hidden="true"></i>
