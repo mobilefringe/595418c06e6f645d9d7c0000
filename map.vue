@@ -13,8 +13,6 @@
             <!--RENDERED BY renderSearchResultsTemplate(..) -->
             </div>
             <div class="map">
-            
-                
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
             
                 <!--<div class="demo_1 map3" style="">       -->
