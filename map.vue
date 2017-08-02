@@ -105,14 +105,14 @@
             this.map = map;
         },
         watch: {
-            store2 : function (val) {
-                if(val != '') {
-                    this.lift_blue_box = true
-                }
-               else {
-                    this.lift_blue_box = false;
-               }
-            }
+            // store2 : function (val) {
+            //     if(val != '') {
+            //         this.lift_blue_box = true
+            //     }
+            //   else {
+            //         this.lift_blue_box = false;
+            //   }
+            // }
         },
         computed: {
             property(){
