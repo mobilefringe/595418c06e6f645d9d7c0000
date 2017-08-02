@@ -108,15 +108,10 @@
             // $(".search2 input").attr("placeholder", "Find a store near you");
         },
         watch: {
-            store1 : function (val) {
-                if(val != '') {
-                    this.lift_blue_box = true
-                }
-              else {
-                    this.lift_blue_box = false;
-              }
+            store1 : function () {
+                this.mobile_search_store = option.name;
             },
-            store2 : function (val) {
+            store2 : function () {
                 if(val != '') {
                     this.lift_blue_box = true
                 }
@@ -175,7 +170,7 @@
                 this.store1 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                this.mobile_search_store = option.name;
+                
                 var val = option;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
