@@ -98,7 +98,7 @@
         watch: {
             store1 : function () {
                 
-                this.mobile_search_store = this.store1.name;
+                // this.mobile_search_store = this.store1.name;
                 // $(".search1 input").val(this.mobile_search_store);
                 // console.log("changed store1",this.mobile_search_store);
                 var val = this.store1;
