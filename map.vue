@@ -132,10 +132,10 @@
             findStoreBySlug (){
                 return this.$store.getters.findStoreBySlug;
             },
-            processedStores() {
-                // $(".options-list").addClass("scrollable-menu");
-                return this.removeDuplicates(this.allStores, 'name');
-            },
+            // processedStores() {
+            //     // $(".options-list").addClass("scrollable-menu");
+            //     return this.removeDuplicates(this.allStores, 'name');
+            // },
             allStores() {
                 return this.$store.getters.processedStores;
             }
