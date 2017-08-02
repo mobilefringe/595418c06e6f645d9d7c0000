@@ -53,8 +53,6 @@
         template: template, // the variable template will be injected
         data: function() {
             return {
-                title: "The Path!",
-                description: "Using new SDK",
                 mobile_search_store : "",
                 mobile_find_store: "",
                 lift_blue_box: false,
