@@ -146,7 +146,7 @@
          methods: {
             swapSearchTerm: function () {
                 var temp_store1 = this.store1;
-                this.store1 = this.mobile_find_store;
+                this.store1 = this.store2;
                 this.mobile_find_store = temp_search1;
                 var temp_search1 = this.mobile_search_store;
                 this.mobile_search_store = this.mobile_find_store;
