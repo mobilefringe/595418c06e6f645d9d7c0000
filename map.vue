@@ -103,6 +103,7 @@
                 zoomLimit: [0,10]
             });
             this.map = map;
+            console.log(this.store1);
         },
         watch: {
             // store2 : function (val) {
