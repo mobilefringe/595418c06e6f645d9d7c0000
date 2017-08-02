@@ -42,27 +42,27 @@
             <div class="map">
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
                 <div v-show = "mobile_search_store" class="blue_dets_box" v-bind:class="{ lift_up: lift_blue_box }">
-                <div class="close_dets pull-left">
-                    <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
+                    <div class="close_dets pull-left">
+                        <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
+                    </div>
+                    <div class="more_dets pull-right">
+                        <router-link v-bind:to="store1.path_url"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
+                    </div>
+                    <p class="dets_title">{{store1.name}} </p>
+                    <p class="dets_data">{{store1.property_id}}</p>
                 </div>
-                <div class="more_dets pull-right">
-                    <router-link v-bind:to="store1.path_url"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
-                </div>
-                <p class="dets_title">{{store1.name}} </p>
-                <p class="dets_data">{{store1.property_id}}</p>
-            </div>
-            <div  v-show = "mobile_find_store" class="green_dets_box">
-                <div class="close_dets pull-left">
-                    <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
-                </div>
-                <div class="more_dets pull-right">
-                <router-link v-bind:to="store2.path_url"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
+                <div  v-show = "mobile_find_store" class="green_dets_box">
+                    <div class="close_dets pull-left">
+                        <img @click="removeSearch2" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
+                    </div>
+                    <div class="more_dets pull-right">
+                    <router-link v-bind:to="store2.path_url"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></router-link>
+                        
+                    </div>
+                    <p class="dets_title">{{store2.name}}</p>
+                    <p class="dets_data">{{store2.property_id}}</p>
                     
                 </div>
-                <p class="dets_title">{{store2.name}}</p>
-                <p class="dets_data">{{store2.property_id}}</p>
-                
-            </div>
             </div>
             
         </div>
