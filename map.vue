@@ -3,7 +3,7 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" v-model="mobile_search_store">
+                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores">
                     <template slot="item" scope="option">
                         <article class="media ">
                             <p>
@@ -163,8 +163,7 @@
                 this.store1 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                // this.mobile_search_store = option.name;
-                console.log(this.mobile_search_store);
+                this.mobile_search_store = option.name;
                 var val = option;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -192,7 +191,7 @@
                 this.store2 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                // this.mobile_find_store = option.name;
+                this.mobile_find_store = option.name;
                 var val = option;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
