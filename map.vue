@@ -5,7 +5,7 @@
                 <div class="col-xs-10">
                 <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
                     <template slot="item" scope="option">
-                        <article class="media">
+                        <article class="media search1">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
                               <img :src="option.data.store_front_url_abs">
