@@ -12,7 +12,7 @@
                         </article>
                     </template>
                 </search-component>
-                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" class="search2">
+                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" class="search2">
                     <template slot="item" scope="option">
                         <article class="media ">
                             <p>
