@@ -210,7 +210,7 @@
                 this.store2 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                this.mobile_find_store = option.name;
+                // this.mobile_find_store = option.name;
                 console.log(this.map);
                 // var val = option;
                 // var map= this.map;
