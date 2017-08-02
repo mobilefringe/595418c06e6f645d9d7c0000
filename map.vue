@@ -155,7 +155,8 @@
                 // var temp_search1 = this.mobile_search_store;
                 // this.mobile_search_store = this.mobile_find_store;
                 // this.mobile_find_store = temp_search1;
-               
+                 $(".search1 input").val(this.mobile_search_store);
+                $(".search2 input").val(this.mobile_find_store);
                 console.log("swap?",this.mobile_search_store , this.mobile_find_store);
             },
             removeSearch1 :function() {
