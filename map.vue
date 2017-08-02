@@ -102,8 +102,8 @@
         template: template, // the variable template will be injected
         data: function() {
             return {
-                mobile_search_store : "",
-                mobile_find_store: "",
+                mobile_search_store : false,
+                mobile_find_store: false,
                 lift_blue_box: false,
                 store1: {},
                 store2: {},
