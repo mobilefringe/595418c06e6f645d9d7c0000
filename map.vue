@@ -189,11 +189,11 @@
                 // console.log("swap?",this.mobile_search_store , this.mobile_find_store);
             },
             removeSearch1 :function() {
-                $(".search1 input").val('');
+                $(".search1 .input").val('');
                 this.store1 = null;
             },
             removeSearch2 :function() {
-                $(".search2 input").val('');
+                $(".search2 .input").val('');
                 this.store2 = null;
             },
             onOptionSelect1(option) {
