@@ -3,7 +3,7 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores">
+                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" :id="myOwnID">
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
