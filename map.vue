@@ -197,6 +197,7 @@
                 $(".search1 input").val(this.store1.name);
                 $(".search2 input").val(this.store2.name);
                 console.log();
+                console.log();
                 console.log("swap?",this.mobile_search_store , this.mobile_find_store);
             },
             removeSearch1 :function() {
