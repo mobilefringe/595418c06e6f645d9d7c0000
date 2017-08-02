@@ -19,7 +19,7 @@
                 </search-component>
                 <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
                     <template slot="item" scope="option">
-                        <article class="media">
+                        <article class="media search2">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
                               <img :src="option.data.store_front_url_abs">
