@@ -187,6 +187,7 @@
         },
          methods: {
             swapSearchTerm: function () {
+                map.marksHide();
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
