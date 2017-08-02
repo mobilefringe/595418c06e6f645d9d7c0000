@@ -123,7 +123,7 @@
             },
             store2 : function () {
                 
-                this.mobile_find_store = this.store2.name;
+                // this.mobile_find_store = this.store2.name;
                 // $(".search2 input").val(this.mobile_find_store);
                 // console.log("changed store2",this.mobile_find_store);
                 var val = this.store2;
