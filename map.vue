@@ -112,7 +112,7 @@
                 
                 this.mobile_search_store = this.store1.name;
                 // $(".search1 input").val(this.mobile_search_store);
-                console.log("changed store1",this.mobile_search_store);
+                // console.log("changed store1",this.mobile_search_store);
                 var val = this.store1;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -137,7 +137,7 @@
                 
                 this.mobile_find_store = this.store2.name;
                 // $(".search2 input").val(this.mobile_find_store);
-                console.log("changed store2",this.mobile_find_store);
+                // console.log("changed store2",this.mobile_find_store);
                 var val = this.store2;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
