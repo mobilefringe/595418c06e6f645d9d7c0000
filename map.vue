@@ -182,8 +182,8 @@
                 // var temp_search1 = this.mobile_search_store;
                 // this.mobile_search_store = this.mobile_find_store;
                 // this.mobile_find_store = temp_search1;
-                $(".search1 input").val(this.store1.name);
-                $(".search2 input").val(this.store2.name);
+                $(".search1 .input").val(this.store1.name);
+                $(".search2 .input").val(this.store2.name);
                 console.log($(".search1 input").val());
                 console.log($(".search2 input").val());
                 // console.log("swap?",this.mobile_search_store , this.mobile_find_store);
