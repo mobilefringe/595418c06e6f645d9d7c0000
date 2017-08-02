@@ -109,15 +109,16 @@
         },
         watch: {
             store1 : function () {
-                console.log("changed store1");
+                
                 this.mobile_search_store = this.store1.name;
                 $(".search1 input").val(this.mobile_search_store);
-               
+               console.log("changed store1");
             },
             store2 : function () {
-                console.log("changed store2");
+                
                 this.mobile_find_store = this.store2.name;
                 $(".search2 input").val(this.mobile_find_store);
+                console.log("changed store2");
             }
         },
         computed: {
