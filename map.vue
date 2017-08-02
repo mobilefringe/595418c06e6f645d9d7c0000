@@ -94,7 +94,8 @@
                 lift_blue_box: false,
                 store1: {},
                 store2: {},
-                map :{}
+                map :{},
+                suggestionAttribute: 'name'
             }
         },
         mounted: function (){
