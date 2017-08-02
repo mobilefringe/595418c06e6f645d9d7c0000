@@ -142,7 +142,7 @@
         },
          methods: {
             swapSearchTerm: function () {
-                console.log("swap?");
+                console.log("swap?",this.mobile_search_store , this.mobile_find_store);
                 var temp_search1 = this.mobile_search_store;
                 this.mobile_search_store = this.mobile_find_store;
                 this.mobile_find_store = temp_search1;
