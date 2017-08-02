@@ -81,7 +81,8 @@
                 store1: null,
                 store2: null,
                 map :{},
-                suggestionAttribute: 'name'
+                suggestionAttribute: 'name',
+                search_key: ["name", ""]
             }
         },
         mounted: function (){
