@@ -112,7 +112,7 @@
                 
                 this.mobile_search_store = this.store1.name;
                 $(".search1 input").val(this.mobile_search_store);
-                console.log("changed store1");
+                console.log("changed store1",this.mobile_search_store);
             },
             store2 : function () {
                 
