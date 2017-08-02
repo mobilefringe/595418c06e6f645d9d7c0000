@@ -140,6 +140,7 @@
                 console.log("changed store2",this.mobile_find_store);
                 var val = this.store2;
                 var map= this.map;
+                map.marksHide();
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
