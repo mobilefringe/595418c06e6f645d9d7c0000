@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="position_relative map_page_">
+        <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
                 <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
