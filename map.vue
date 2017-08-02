@@ -183,25 +183,6 @@
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log($(".search1 input").val());
                 console.log($(".search2 input").val());
-                // console.log(counted_stores[option.name],option);
-                // if (option != undefined &&  option != "")
-                // if(option.type==="click") {
-                //     console.log($(".input").val());
-                // }
-                // else {
-                //     if( counted_stores[option.name] >1) {
-                //         // routes.go('/map_details/' + option.name);
-                //         var route = '/map/' + option.name;
-                //         console.log(route);
-                //         this.$router.push(route);
-                //     }
-                //     else {
-                //         var route = '/stores/' + option.slug;
-                //         console.log(route);
-                //         this.$router.push(route);
-                //     }
-                // }
-                
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
