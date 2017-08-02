@@ -104,6 +104,7 @@
             });
             this.map = map;
             console.log(this.store1);
+            $(".search1 input").attr("placeholder", "New placeholder text");
         },
         watch: {
             // store2 : function (val) {
