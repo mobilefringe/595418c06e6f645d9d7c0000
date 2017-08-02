@@ -192,7 +192,7 @@
                 $(".search1 input").val('');
             },
             removeSearch2 :function() {
-                this.mobile_find_store = '';
+                $(".search2 input").val('');
             },
             onOptionSelect1(option) {
                 console.log('Selected option:', option);
