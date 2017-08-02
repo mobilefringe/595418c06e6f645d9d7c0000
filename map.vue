@@ -3,9 +3,9 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" class="class1">
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" class="search1">
                     <template slot="item" scope="option">
-                        <article class="media search1">
+                        <article class="media ">
                           <!--<figure class="media-left">
                             <p class="image is-64x64">
                               <img :src="option.data.store_front_url_abs">
