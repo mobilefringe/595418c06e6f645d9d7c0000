@@ -112,7 +112,7 @@
                 this.mobile_search_store = this.store1.name;
             },
             store2 : function () {
-                this.mobile_find_store = this.store1.name;
+                this.mobile_find_store = this.store2.name;
             }
         },
         computed: {
