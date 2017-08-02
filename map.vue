@@ -189,7 +189,7 @@
                 // console.log("swap?",this.mobile_search_store , this.mobile_find_store);
             },
             removeSearch1 :function() {
-                this.mobile_search_store = '';
+                $(".search1 input").val('');
             },
             removeSearch2 :function() {
                 this.mobile_find_store = '';
