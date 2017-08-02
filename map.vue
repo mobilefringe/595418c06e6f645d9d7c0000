@@ -129,6 +129,7 @@
                 responsive:true,
                 zoomLimit: [0,10]
             });
+            this.map = map;
         },
         watch: {
             store2 : function (val) {
