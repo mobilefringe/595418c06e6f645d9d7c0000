@@ -108,6 +108,14 @@
             // $(".search2 input").attr("placeholder", "Find a store near you");
         },
         watch: {
+            store1 : function (val) {
+                if(val != '') {
+                    this.lift_blue_box = true
+                }
+              else {
+                    this.lift_blue_box = false;
+              }
+            },
             store2 : function (val) {
                 if(val != '') {
                     this.lift_blue_box = true
