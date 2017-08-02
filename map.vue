@@ -190,11 +190,11 @@
             },
             removeSearch1 :function() {
                 $(".search1 input").val('');
-                this.store1 = this.store2;
+                this.store1 = null;
             },
             removeSearch2 :function() {
                 $(".search2 input").val('');
-                this.store2 = temp_store1;
+                this.store2 = null;
             },
             onOptionSelect1(option) {
                 console.log('Selected option:', option);
