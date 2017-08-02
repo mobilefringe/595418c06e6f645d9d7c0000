@@ -3,7 +3,7 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" :keys="search_key">
+                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores">
                     <template slot="item" scope="option">
                         <article class="media ">
                             <p>
@@ -12,7 +12,7 @@
                         </article>
                     </template>
                 </search-component>
-                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you" :keys="search_key">
+                <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you">
                     <template slot="item" scope="option">
                         <article class="media ">
                             <p>
@@ -81,8 +81,7 @@
                 store1: null,
                 store2: null,
                 map :{},
-                suggestionAttribute: 'name',
-                search_key: ["name", "category"]
+                suggestionAttribute: 'name'
             }
         },
         mounted: function (){
