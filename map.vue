@@ -41,8 +41,7 @@
             <!--</div>-->
             <div class="map">
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
-            </div>
-            <div v-show = "mobile_search_store" class="blue_dets_box" v-bind:class="{ lift_up: lift_blue_box }">
+                <div v-show = "mobile_search_store" class="blue_dets_box" v-bind:class="{ lift_up: lift_blue_box }">
                 <div class="close_dets pull-left">
                     <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
                 </div>
@@ -64,6 +63,8 @@
                 <p class="dets_data">{{store2.property_id}}</p>
                 
             </div>
+            </div>
+            
         </div>
     </div>
 </template>
