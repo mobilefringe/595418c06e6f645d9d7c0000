@@ -46,7 +46,6 @@
                         <router-link :to="'stores/' +store2.path_url">
                             <img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt="">
                         </router-link>
-                        
                     </div>
                     <p class="dets_title">{{store2.name}}</p>
                     <p class="dets_data">{{store2.property_id}}</p>
