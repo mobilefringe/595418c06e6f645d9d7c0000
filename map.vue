@@ -178,13 +178,13 @@
             removeSearch2 :function() {
                 this.mobile_find_store = '';
             },
-            onOptionSelect(option) {
+            onOptionSelect1(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log($(".search1 input").val());
                 console.log($(".search2 input").val());
             },
-            onOptionSelect(option) {
+            onOptionSelect2(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log($(".search1 input").val());
