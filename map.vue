@@ -104,7 +104,7 @@
             });
             this.map = map;
             console.log(this.store1);
-            $(".search1 input").attr("placeholder", "New placeholder text");
+            $(".search1 input").attr("placeholder", "Search Stores");
         },
         watch: {
             // store2 : function (val) {
