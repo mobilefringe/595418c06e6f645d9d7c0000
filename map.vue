@@ -16,7 +16,7 @@
                             </p>
                         </article>
                     </template>
-            </search-component>
+                </search-component>
                     <!--<input v-model="mobile_search_store" v-on:keyup="showStore1Details" class= "mobile_map_search" placeholder="Search Stores" >-->
                     <!--<input v-model="mobile_find_store"  v-on:keyup="showStore2Details" class= "mobile_map_search" placeholder="Find a store near you" >-->
                 </div>
