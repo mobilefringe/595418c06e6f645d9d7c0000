@@ -59,7 +59,8 @@
                 mobile_find_store: "",
                 lift_blue_box: false,
                 store1: {},
-                store2: {}
+                store2: {},
+                map :{}
             }
         },
         watch: {
