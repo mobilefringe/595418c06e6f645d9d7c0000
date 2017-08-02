@@ -213,7 +213,7 @@
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
                 this.mobile_find_store = option.name;
-                var val = 
+                var val = option;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
