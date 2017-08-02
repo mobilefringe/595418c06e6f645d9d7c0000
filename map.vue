@@ -184,7 +184,7 @@
                 this.store1 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                this.mobile_search_store = option.name
+                this.mobile_search_store = option.name;
             },
             onOptionSelect2(option) {
                 console.log('Selected option:', option);
@@ -192,7 +192,7 @@
                 this.store2 = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
-                mobile_search_store
+                this.mobile_find_store = option.name;
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
