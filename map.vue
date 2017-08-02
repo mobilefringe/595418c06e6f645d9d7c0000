@@ -111,10 +111,11 @@
             store1 : function () {
                 this.mobile_search_store = this.store1.name;
                 $(".search1 input").val(this.mobile_search_store);
-                $(".search2 input").val(this.mobile_find_store);
+               
             },
             store2 : function () {
                 this.mobile_find_store = this.store2.name;
+                 $(".search2 input").val(this.mobile_find_store);
             }
         },
         computed: {
