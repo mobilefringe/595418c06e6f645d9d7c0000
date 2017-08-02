@@ -183,7 +183,7 @@
                 // this.mobile_search_store = this.mobile_find_store;
                 // this.mobile_find_store = temp_search1;
                 $(".search1 .input").val(this.store1.name);
-                $('#link').attr('value', 'new value');
+                $('.search2 .input').attr('value', 'new value');
                 $(".search2 .input").val(this.store2.name);
                 $('.search2 .input').attr('value', 'new value');
                 console.log($(".search1 .input").val());
