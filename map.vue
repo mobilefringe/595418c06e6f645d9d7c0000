@@ -181,13 +181,14 @@
             onOptionSelect1(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
-                this.mobile_find_store = option;
+                this.mobile_search_store = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
             },
             onOptionSelect2(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
+                this.mobile_find_store = option;
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
             },
