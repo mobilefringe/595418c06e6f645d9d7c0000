@@ -21,24 +21,10 @@
                         </article>
                     </template>
                 </search-component>
-                    <!--<input v-model="mobile_search_store" v-on:keyup="showStore1Details" class= "mobile_map_search" placeholder="Search Stores" >-->
-                    <!--<input v-model="mobile_find_store"  v-on:keyup="showStore2Details" class= "mobile_map_search" placeholder="Find a store near you" >-->
                 </div>
                 <img @click="swapSearchTerm" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">
                 
             </div>
-            
-            <!--<div class="gray_bar">-->
-            <!--    <div class="col-xs-10">-->
-            <!--        <input v-model="mobile_search_store" v-on:keyup="showStore1Details" class= "mobile_map_search" placeholder="Search Stores" >-->
-            <!--        <input v-model="mobile_find_store"  v-on:keyup="showStore2Details" class= "mobile_map_search" placeholder="Find a store near you" >-->
-            <!--    </div>-->
-            <!--    <img @click="swapSearchTerm" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">-->
-                
-            <!--</div>-->
-            <!--<div id="search_results_items" class="search-results-items" style="">-->
-            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-            <!--</div>-->
             <div class="map">
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
                 <div v-if = "store1" class="blue_dets_box">
