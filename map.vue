@@ -212,25 +212,6 @@
                 // console.log($(".search2 input").val());
                 // this.mobile_find_store = option.name;
                 console.log(this.map);
-                // var val = option;
-                // var map= this.map;
-                // if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                //         var coords = map.get_coords(val.svgmap_region);
-                //         var height = parseInt(coords["height"])
-                //         var width = parseInt(coords["width"])
-                //         var x_offset = (parseInt(width) / 2);
-                //         var y_offset = (parseInt(height) /2);
-                        
-                //         map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
-                //             attrs: {
-                //                 src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png', // image for marker
-                //                 href: '/stores/'+val.slug
-                //             },
-                //             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
-                //         }]);
-                //         // console.log(val.slug, val.svgmap_region);
-                //         //  map.selectRegion(val.svgmap_region);
-                //     }
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
