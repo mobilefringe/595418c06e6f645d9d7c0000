@@ -78,8 +78,8 @@
                 mobile_search_store : "",
                 mobile_find_store: "",
                 lift_blue_box: false,
-                store1: {},
-                store2: {},
+                store1: null,
+                store2: null,
                 map :{},
                 suggestionAttribute: 'name'
             }
