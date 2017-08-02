@@ -17,6 +17,20 @@
                         </article>
                     </template>
                 </search-component>
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+                    <template slot="item" scope="option">
+                        <article class="media">
+                          <!--<figure class="media-left">
+                            <p class="image is-64x64">
+                              <img :src="option.data.store_front_url_abs">
+                            </p>
+                          </figure>-->
+                            <p>
+                                <strong>{{ option.data.name }}</strong>
+                            </p>
+                        </article>
+                    </template>
+                </search-component>
                     <!--<input v-model="mobile_search_store" v-on:keyup="showStore1Details" class= "mobile_map_search" placeholder="Search Stores" >-->
                     <!--<input v-model="mobile_find_store"  v-on:keyup="showStore2Details" class= "mobile_map_search" placeholder="Find a store near you" >-->
                 </div>
