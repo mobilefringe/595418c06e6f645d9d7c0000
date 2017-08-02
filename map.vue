@@ -138,7 +138,7 @@
                 this.mobile_find_store = this.store2.name;
                 // $(".search2 input").val(this.mobile_find_store);
                 console.log("changed store2",this.mobile_find_store);
-                var val = option;
+                var val = this.store2;
                 var map= this.map;
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
