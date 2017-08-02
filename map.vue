@@ -181,7 +181,7 @@
             onOptionSelect(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
-                console.log($(".input").val());
+                console.log($(".search1 input").val());
                 // console.log(counted_stores[option.name],option);
                 // if (option != undefined &&  option != "")
                 // if(option.type==="click") {
