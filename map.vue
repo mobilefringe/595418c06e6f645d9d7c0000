@@ -82,7 +82,7 @@
                 store2: null,
                 map :{},
                 suggestionAttribute: 'name',
-                search_key: ["name", ""]
+                search_key: ["name", "category"]
             }
         },
         mounted: function (){
