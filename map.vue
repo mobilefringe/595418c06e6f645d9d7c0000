@@ -179,10 +179,10 @@
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
-                console.log( $('.search1').position());
-                console.log( $('.search2').position());
-                var temp_cords1 =  $('.search1').position();
-                var temp_cords2 =  $('.search2').position();
+                console.log( $('.search1').offset());
+                console.log( $('.search2').offset());
+                var temp_cords1 =  $('.search1').offset();
+                var temp_cords2 =  $('.search2').offset();
                 var x = $('.search1').offset( temp_cords2 );
                 var y = $('.search2').offset( temp_cords1 );
                 console.log(x,y);
