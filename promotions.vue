@@ -12,7 +12,7 @@
             </div>
              <hr>
             <div  v-show="store_promo[0].show_promo" class="" id="dine_store_list">
-                <div class="" id="dine_stores_container">
+                <div class="">
                     <div  v-for="promo in store_promo ">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">
