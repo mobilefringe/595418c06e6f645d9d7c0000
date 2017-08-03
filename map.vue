@@ -179,23 +179,10 @@
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
-                console.log( $('.search1').offset());
-                console.log( $('.search2').offset());
+                
                 var temp_cords1 =  $('.search1').offset();
                 var temp_cords2 =  $('.search2').offset();
-                var x = $('.search1').offset( temp_cords2 );
-                var y = $('.search2').offset( temp_cords1 );
-                console.log(x,y);
-                // var temp_search1 = this.mobile_search_store;
-                // this.mobile_search_store = this.mobile_find_store;
-                // this.mobile_find_store = temp_search1;
-                // $(".search1 .input").val(this.store1.name);
-                // $('.search1 .input').attr('value', this.store1.name);
-                // $(".search2 .input").val(this.store2.name);
-                // $('.search2 .input').attr('value', this.store2.name);
-                // console.log("swap?", $(".search1 .input").val() , $(".search2 .input").val());
-                // console.log("search1", $(".search1 .input").html(this.store1.name));
-                // console.log("search2", $(".search2 .input").html(this.store2.name));
+               
                 
             },
             removeSearch1 :function() {
