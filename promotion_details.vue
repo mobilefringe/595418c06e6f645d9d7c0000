@@ -17,7 +17,7 @@
         <div class="promo_box" >
             <div class="close_dets  pull-left" @click="go_back">
                 <a href="">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="close_dets" alt="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt="">
                 </a>
             </div >
             <p class="dets_title">{{currentPromo.name | uppercase}} </p>
@@ -59,6 +59,12 @@
         timezone() {
           return this.$store.getters.getTimezone;
         }
+      }
+      methods : {
+          ,
+            go_back () {
+               this.$router.go(-1);
+            }
       }
     });
   });
