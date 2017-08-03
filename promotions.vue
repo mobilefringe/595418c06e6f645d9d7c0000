@@ -71,7 +71,7 @@
             }
         },
         created : {
-            promo_by_stores;
+            this.promo_by_stores;
         }
       computed: {
         promotions() {
