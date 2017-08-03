@@ -82,6 +82,7 @@
       },
       methods : {
         toggle: function (val) {
+            console.log(val);
             val.show_promo = !val.shoe_promo;
         }
       }
