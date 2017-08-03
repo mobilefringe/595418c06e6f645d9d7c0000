@@ -70,7 +70,7 @@
                 sorted_promos: null
             }
         },
-        created : {
+        created : function ()  {
             this.promo_by_stores;
         },
       computed: {
