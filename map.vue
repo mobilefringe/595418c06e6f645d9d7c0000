@@ -205,7 +205,10 @@
             onOptionSelect1(option) {
                 console.log('Selected option:', option);
                 // var counted_stores = _.countBy(this.allStores,'name');
-                this.store1 = option;
+                if(this.store1) {
+                    this.store1 = option;
+                }
+                
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
                 
