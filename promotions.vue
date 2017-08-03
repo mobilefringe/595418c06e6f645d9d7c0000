@@ -1,7 +1,7 @@
 <template>
   <div class="stores_page"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="all_caps store_header">
-            Promotions
+            Promotions {{sorted_promos}}
         </div>
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="store_cat_listing" v-for="(store_promo, index) in sorted_promos">
