@@ -85,25 +85,17 @@
         promo_by_stores () {
             var promo = _.groupBy(this.promotions, 'store.id');
             //   _.orderBy(promo, 'store.name');
-            console.log(promo);
             this.sorted_promos = promo;
         }
       },
       methods : {
         toggle: function (index) {
-            // console.log(this.sorted_promos, index);
             if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
-                // console.log("creating new value");
                 Vue.set(this.sorted_promos[index][0],'show_promo', true);
-                // console.log(this.sorted_promos[index][0]);
             }
             else {
                 this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
-                // console.log(this.sorted_promos[index][0]);
             }
-            
-            
-            // val.show_promo = !val.show_promo;
         }
       }
     });
