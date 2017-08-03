@@ -66,7 +66,7 @@
           return this.$store.getters.getTimezone;
         },
         promo_by_stores () {
-            console.log(this.promotions)
+            console.log(this.promotions);
             var promo = _.groupBy(this.promotions, 'store.id');
             console.log(_.toArray(promo));
             //   _.orderBy(promo, 'store.name');
