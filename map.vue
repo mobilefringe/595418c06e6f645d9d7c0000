@@ -209,10 +209,10 @@
             },
             onOptionSelect1(option) {
                 if(this.search_one === $('.search1').offset()) {
-                    this.store2 = option;
+                    this.store1 = option;
                 }
                 else {
-                    this.store1 = option;
+                    this.store2 = option;
                 }   
             },
             onOptionSelect2(option) {
