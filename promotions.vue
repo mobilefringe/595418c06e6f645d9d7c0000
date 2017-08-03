@@ -66,7 +66,7 @@
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
       created () {
-        var promo = _.groupBy(this.promotions, 'store');
+        var promo = _.groupBy(this.promotions, 'store.name');
        console.log(promo);
         }, 
       computed: {
