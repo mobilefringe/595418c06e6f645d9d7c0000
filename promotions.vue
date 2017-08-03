@@ -67,7 +67,7 @@
       template: template, // the variable template will be injected
        data: function() {
             return {
-                sorted_promos: null
+                sorted_promos: promo_by_stores;
             }
         },
       computed: {
