@@ -189,6 +189,7 @@
                 // console.log("swap?", $(".search1 .input").val() , $(".search2 .input").val());
                 // console.log("search1", $(".search1 .input").html(this.store1.name));
                 // console.log("search2", $(".search2 .input").html(this.store2.name));
+                console.log( $('.search1').position());
                 console.log( $('.search2').position());
             },
             removeSearch1 :function() {
