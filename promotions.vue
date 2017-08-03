@@ -12,7 +12,7 @@
              <hr>
             <div  v-show = "show_dine" class="" id="dine_store_list">
                 <div class="" id="dine_stores_container">
-                    <div  v-for="(store, index) in dine_stores ">
+                    <div  v-for="promo in index ">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id: index }}">
                                 <div class="col-xs-6 align_left">
