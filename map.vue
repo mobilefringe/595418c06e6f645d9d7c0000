@@ -95,7 +95,7 @@
             });
             this.map = map;
             console.log(this.store1);
-            this.search_one = 
+            this.search_one = $('.search1').offset();
             // $(".search1 input").attr("placeholder", "Search Stores");
             // $(".search2 input").attr("placeholder", "Find a store near you");
         },
