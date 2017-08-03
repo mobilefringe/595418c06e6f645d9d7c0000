@@ -180,6 +180,7 @@
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
                 var temp_cords1 =  $('.search1').position();
+                var temp_cords2 =  $('.search2').position();
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
                 
