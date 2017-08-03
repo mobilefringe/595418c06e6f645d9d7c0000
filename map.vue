@@ -184,9 +184,7 @@
                     var temp_cords2 =  $('.search2').offset();
                     $('.search1').offset( temp_cords2 );
                     $('.search2').offset( temp_cords1 );
-                    console.log( );
                     var temp_placeholder =  $(".search1 input").attr("placeholder");
-                    this.store1 = this.store2;
                      $(".search1 input").attr("placeholder", $(".search2 input").attr("placeholder"));
                      $(".search2 input").attr("placeholder",temp_placeholder );
                     // $(".search1 input").attr("placeholder", "Search Stores");
