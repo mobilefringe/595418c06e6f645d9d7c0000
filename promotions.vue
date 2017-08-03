@@ -93,7 +93,7 @@
         toggle: function (index) {
             // console.log(this.sorted_promos, index);
             if() {
-                Vue.set(this.sorted_promos[0],'show_promo', store_hours[this.currentStore.todays_hour][0]);
+                Vue.set(this.sorted_promos[index][0],'show_promo', store_hours[this.currentStore.todays_hour][0]);
             }
             this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
             console.log(this.sorted_promos[index][0]);
