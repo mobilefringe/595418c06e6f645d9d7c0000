@@ -89,7 +89,7 @@
             this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
             console.log(val);
             
-            val.show_promo = !val.show_promo;
+            // val.show_promo = !val.show_promo;
         }
       }
     });
