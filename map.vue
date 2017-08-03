@@ -3,7 +3,7 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" :v-model="mobile_search_store">
+                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores">
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
@@ -36,7 +36,7 @@
                         </router-link>
                     </div>
                     <p class="dets_title">{{store1.name}} </p>
-                    <p class="dets_data">{{store1.property_id}} hi {{mobile_search_store}}</p>
+                    <p class="dets_data">{{store1.property_id}}</p>
                 </div>
                 <div  v-if = "store2" class="green_dets_box">
                     <div class="close_dets pull-left">
