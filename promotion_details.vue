@@ -22,6 +22,11 @@
             </div >
             <p class="dets_title">{{currentPromo.name | uppercase}} </p>
             <p class="dets_data">
+                
+            </p>
+        </div>
+        <div>
+            <p>
                 {{currentPromo.description}}
             </p>
         </div>
