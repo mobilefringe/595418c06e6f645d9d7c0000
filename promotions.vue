@@ -93,13 +93,13 @@
         toggle: function (index) {
             // console.log(this.sorted_promos, index);
             if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
-                console.log("creating new value");
+                // console.log("creating new value");
                 Vue.set(this.sorted_promos[index][0],'show_promo', true);
-                console.log(this.sorted_promos[index][0]);
+                // console.log(this.sorted_promos[index][0]);
             }
             else {
                 this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
-                console.log(this.sorted_promos[index][0]);
+                // console.log(this.sorted_promos[index][0]);
             }
             
             
