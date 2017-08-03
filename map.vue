@@ -179,7 +179,7 @@
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
-                if(this.store || this.store2) {
+                if(this.store1 || this.store2) {
                     var temp_cords1 =  $('.search1').offset();
                     var temp_cords2 =  $('.search2').offset();
                     $('.search1').offset( temp_cords2 );
