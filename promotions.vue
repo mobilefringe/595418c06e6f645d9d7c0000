@@ -83,8 +83,8 @@
           return this.$store.getters.getTimezone;
         },
         promo_by_stores () {
-            var promo = _.groupBy(_.orderBy(this.promotions, 'store.name'), 'store.id');
-            // promo = _.orderBy(promo, 'store.name');
+            var promo = _.groupBy(this.promotions, 'store.id');
+        //   _.orderBy(promo, 'store.name');
             console.log(promo);
             this.sorted_promos = promo;
             // return promo;
