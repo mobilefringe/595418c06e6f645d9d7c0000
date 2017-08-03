@@ -91,8 +91,8 @@
       methods : {
         toggle: function (index) {
             // console.log(this.sorted_promos, index);
-            this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
-            console.log(this.sorted_promos[index]);
+            this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
+            console.log(this.sorted_promos[index][0]);
             
             // val.show_promo = !val.show_promo;
         }
