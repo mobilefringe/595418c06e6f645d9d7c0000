@@ -75,7 +75,8 @@
           return this.$store.getters.getTimezone;
         },
         promo_by_stores () {
-            
+            var promo = _.groupBy(this.promotions, 'store.name');
+       console.log(promo);
         }
       }
     });
