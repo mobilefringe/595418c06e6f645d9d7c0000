@@ -183,9 +183,9 @@
                 console.log( $('.search2').position());
                 var temp_cords1 =  $('.search1').position();
                 var temp_cords2 =  $('.search2').position();
-                $('.search1').offset( temp_cords2 );
-                $('.search2').offset( temp_cords1 );
-                
+                var x = $('.search1').offset( temp_cords2 );
+                var y = $('.search2').offset( temp_cords1 );
+                console.log(x,y);
                 // var temp_search1 = this.mobile_search_store;
                 // this.mobile_search_store = this.mobile_find_store;
                 // this.mobile_find_store = temp_search1;
