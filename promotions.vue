@@ -14,7 +14,7 @@
                 <div class="" id="dine_stores_container">
                     <div  v-for="promo in index ">
                         <div class="row cat_name">
-                            <router-link :to="{ name: 'mapStores', params: { id: index }}">
+                            <router-link :to="{ name: 'promotionDetails', params: { id: index }}">
                                 <div class="col-xs-6 align_left">
                                     {{promo.name}}
                                     <!--{{store.name}} -->
