@@ -59,7 +59,7 @@
         timezone() {
           return this.$store.getters.getTimezone;
         }
-      }
+      },
       methods : {
             go_back () {
                this.$router.go(-1);
