@@ -67,34 +67,31 @@
       template: template, // the variable template will be injected
        data: function() {
             return {
-                sorted_promos: null
+                sorted_promos: this.promo_by_stores
             }
         },
-        created : {
-            this.promo_by_stores;
+      computed: {
+        promotions() {
+          
+          return this.$store.getters.processedPromos;
         },
-        computed: {
-            promotions() {
-              
-              return this.$store.getters.processedPromos;
-            },
-            timezone () {
-              return this.$store.getters.getTimezone;
-            },
-            promo_by_stores () {
-                var promo = _.groupBy(this.promotions, 'store.name');
-                console.log(promo);
-                this.sorted_promo= promo;
-            }
+        timezone () {
+          return this.$store.getters.getTimezone;
         },
-        methods : {
-            toggle: function (index) {
-                this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
-                console.log(this.sorted_promos[index]);
-                
-                // val.show_promo = !val.show_promo;
-            }
+        promo_by_stores () {
+            var promo = _.groupBy(this.promotions, 'store.name');
+            console.log(promo);
+            return promo;
         }
+      },
+      methods : {
+        toggle: function (index) {
+            this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
+            console.log(this.sorted_promos[index]);
+            
+            // val.show_promo = !val.show_promo;
+        }
+      }
     });
   });
 </script>
