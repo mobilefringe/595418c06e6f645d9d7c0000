@@ -16,7 +16,7 @@
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id: index }}">
                                 <div class="col-xs-6 align_left">
-                                    {{index}}
+                                    {{promo.namw}}
                                     <!--{{store.name}} -->
                                     <br/>
                                     <!--{{store.property_id}}-->
