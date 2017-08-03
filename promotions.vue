@@ -65,6 +65,9 @@
     Vue.use(Meta);
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
+      created () {
+        
+        }, 
       computed: {
         promotions() {
             console.log(this.$store.getters.processedPromos);
