@@ -73,28 +73,28 @@
         created : {
             this.promo_by_stores;
         },
-      computed: {
-        promotions() {
-          
-          return this.$store.getters.processedPromos;
+        computed: {
+            promotions() {
+              
+              return this.$store.getters.processedPromos;
+            },
+            timezone () {
+              return this.$store.getters.getTimezone;
+            },
+            promo_by_stores () {
+                var promo = _.groupBy(this.promotions, 'store.name');
+                console.log(promo);
+                this.sorted_promo= promo;
+            }
         },
-        timezone () {
-          return this.$store.getters.getTimezone;
-        },
-        promo_by_stores () {
-            var promo = _.groupBy(this.promotions, 'store.name');
-            console.log(promo);
-            this.sorted_promo= promo;
+        methods : {
+            toggle: function (index) {
+                this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
+                console.log(this.sorted_promos[index]);
+                
+                // val.show_promo = !val.show_promo;
+            }
         }
-      },
-      methods : {
-        toggle: function (index) {
-            this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
-            console.log(this.sorted_promos[index]);
-            
-            // val.show_promo = !val.show_promo;
-        }
-      }
     });
   });
 </script>
