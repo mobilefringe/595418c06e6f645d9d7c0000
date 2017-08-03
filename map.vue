@@ -188,7 +188,7 @@
                     var temp_placeholder =  $(".search1 input").attr("placeholder");
                     this.store1 = this.store2;
                      $(".search1 input").attr("placeholder")
-                     $(".search1 input").attr("placeholder",temp_placeholder )
+                     $(".search2 input").attr("placeholder",temp_placeholder )
                     // $(".search1 input").attr("placeholder", "Search Stores");
                     // $(".search2 input").attr("placeholder", "Find a store near you");
                 }
