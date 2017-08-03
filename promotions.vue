@@ -4,7 +4,7 @@
             Promotions
         </div>
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
-        <div class="store_cat_listing">
+        <div class="store_cat_listing" v-for="">
             <div class="all_caps cat_title" id="dine" v-on:click="toggle('dine')">
                 Dine
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
@@ -65,10 +65,7 @@
     Vue.use(Meta);
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
-      created () {
-        var promo = _.groupBy(this.promotions, 'store.name');
-       console.log(promo);
-        }, 
+      
       computed: {
         promotions() {
           
@@ -76,6 +73,9 @@
         },
         timezone () {
           return this.$store.getters.getTimezone;
+        },
+        promo_by_stores () {
+            
         }
       }
     });
