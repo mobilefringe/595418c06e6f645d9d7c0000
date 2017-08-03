@@ -82,7 +82,7 @@
       },
       methods : {
         toggle: function (val) {
-            val.show_promo = val.shoe_promo;
+            val.show_promo = !val.shoe_promo;
         }
       }
     });
