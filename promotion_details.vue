@@ -12,7 +12,7 @@
    <div >
         <!-- SVG Map diplay area -->
         <div class="demo_1 map3" style="" id="mapsvg">
-        <img :src="currentPromo.image_url">
+            <img :src="currentPromo.image_url">
         </div>
         <div class="blue_box"  v-if="currentStore">
             <div class="close_dets  pull-left" @click="go_back">
