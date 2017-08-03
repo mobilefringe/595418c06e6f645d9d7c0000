@@ -1,15 +1,30 @@
 <template>
-  <div class="row" v-if="currentPromo">
-    <div class="large-6 columns">
-      <div>
-      <img :src="currentPromo.image_url">
-        <h1>{{currentPromo.name}}</h1>
-        <p><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link> | {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
-        <p>{{currentPromo.description}}</p>
+  <!--<div class="row" v-if="currentPromo">-->
+  <!--  <div class="large-6 columns">-->
+  <!--    <div>-->
+  <!--      <h1>{{currentPromo.name}}</h1>-->
+  <!--      <p><router-link :to="{ name: 'storeDetails', params: { id: currentPromo.store.slug }}">{{currentPromo.store.name}}</router-link> | {{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>-->
+  <!--      <p>{{currentPromo.description}}</p>-->
         
-      </div>
-    </div>
-  </div>
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</div>-->
+  <div >
+        <!-- SVG Map diplay area -->
+        <div class="demo_1 map3" style="" id="mapsvg">
+        </div>
+        <div class="blue_box"  v-if="currentStore">
+            <div class="close_dets  pull-left" @click="go_back">
+                <a href="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501003074000/arrow_left_2x.png" class="" alt="">
+                </a>
+            </div >
+            <p class="dets_title">{{currentStore.name | uppercase}} </p>
+            <p class="dets_data">
+                {{currentStore.property_id}} - {{currentStore.store_hours_today.open_time | moment("h a ", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a z", timezone)}}
+            </p>
+        </div>
+        </div>
 </template>
 
 <script>
