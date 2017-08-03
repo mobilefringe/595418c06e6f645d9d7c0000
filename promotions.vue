@@ -7,6 +7,7 @@
         <div v-if="sorted_promos" class="store_cat_listing" v-for="(store_promo, index) in sorted_promos">
             <div class="all_caps cat_title" id="dine" v-on:click="toggle(index)">
                 {{store_promo[0].store.name}} @ {{store_promo[0].store.property_id}}
+                {{store_promo[0]}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
