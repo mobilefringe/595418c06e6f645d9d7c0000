@@ -1,5 +1,5 @@
 <template>
-  <div class="stores_page"> <!-- for some reason if you do not put an outer container div this component template will not render -->
+    <div class="stores_page"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div class="all_caps store_header">
             Promotions
         </div>
@@ -33,7 +33,7 @@
                 <hr>
             </div>
         </div>
-  </div>
+    </div>
 </template>
 
 <style>
