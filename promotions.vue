@@ -67,6 +67,7 @@
         },
         promo_by_stores () {
             var promo = _.groupBy(this.promotions, 'store.id');
+            console.log(promo);
              o =_.sortBy(promo, 'name');
              console.log(o);
             //   _.orderBy(promo, 'store.name');
