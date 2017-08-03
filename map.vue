@@ -181,8 +181,8 @@
                 this.store2 = temp_store1;
                 var temp_cords1 =  $('.search1').position();
                 var temp_cords2 =  $('.search2').position();
-                this.store1 = this.store2;
-                this.store2 = temp_store1;
+                 $('.search1').offset( temp_cords2 )
+                $('.search2').offset( temp_cords1 )
                 
                 // var temp_search1 = this.mobile_search_store;
                 // this.mobile_search_store = this.mobile_find_store;
