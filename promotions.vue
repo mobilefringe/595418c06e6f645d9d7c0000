@@ -10,6 +10,7 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
+             {{store_promo}}
             <div  v-show = "store_promo.show_promo" class="" id="dine_store_list">
                 <div class="" id="dine_stores_container">
                     <div  v-for="promo in store_promo ">
