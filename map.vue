@@ -70,7 +70,9 @@
                 store2: null,
                 map :{},
                 suggestionAttribute: 'name',
-                input1 : ""
+                input1 : "",
+                search_one : null,
+                search_two:null
             }
         },
         mounted: function (){
