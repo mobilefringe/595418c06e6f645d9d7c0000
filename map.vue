@@ -188,7 +188,7 @@
                 $('.search2 .input').attr('value', this.store2.name);
                 console.log("search1", $(".search1 .input").html(this.store1.name));
                 console.log("search2", $(".search2 .input").html(this.store2.name));
-                // console.log("swap?",this.mobile_search_store , this.mobile_find_store);
+                console.log("swap?",this.mobile_search_store , this.mobile_find_store);
             },
             removeSearch1 :function() {
                 $(".search1 .input").val('');
