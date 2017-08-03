@@ -84,10 +84,9 @@
         },
         promo_by_stores () {
             var promo = _.groupBy(this.promotions, 'store.id');
-        //   _.orderBy(promo, 'store.name');
+            //   _.orderBy(promo, 'store.name');
             console.log(promo);
             this.sorted_promos = promo;
-            // return promo;
         }
       },
       methods : {
