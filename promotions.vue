@@ -23,7 +23,7 @@
                                     <!--{{store.property_id}}-->
                                 </div>
                                 <div class="col-xs-6 align_right">
-                                    April 27-29
+                                   {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
                                 </div>
                             </router-link>
                         </div>
