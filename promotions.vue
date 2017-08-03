@@ -81,7 +81,6 @@
         }
       },
       methods : {
-          ,
         toggle: function (clicked) {
             if(clicked === "dine")
                 this.show_dine = !this.show_dine;
