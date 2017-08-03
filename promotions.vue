@@ -85,7 +85,7 @@
             var promo = _.groupBy(this.promotions, 'store.name');
             console.log(promo);
             this.sorted_promos = promo;
-            return promo;
+            // return promo;
         }
       },
       methods : {
