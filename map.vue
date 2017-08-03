@@ -69,8 +69,8 @@
                 store1: null,
                 store2: null,
                 map :{},
-                suggestionAttribute: 'name',
-                input1 : $(".search1 input")
+                suggestionAttribute: 'name'
+                input1 : "$(".search1 input")"""
             }
         },
         mounted: function (){
@@ -98,7 +98,7 @@
         },
         watch: {
             store1 : function () {
-                console.log(this.input1);
+                
                 // this.mobile_search_store = this.store1.name;
                 // $(".search1 input").val(this.mobile_search_store);
                 // console.log("changed store1",this.mobile_search_store);
