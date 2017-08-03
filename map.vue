@@ -222,7 +222,7 @@
                 console.log('Selected option:', option);
                 // var counted_stores = _.countBy(this.allStores,'name');
                 
-                if(this.store1) {
+                if(this.store2) {
                     this.store1 = option;
                 }
                 else {
