@@ -181,8 +181,8 @@
                 this.store2 = temp_store1;
                 var temp_cords1 =  $('.search1').position();
                 var temp_cords2 =  $('.search2').position();
-                $('.search1').offset( temp_cords2 )
-                $('.search2').offset( temp_cords1 )
+                $('.search1').offset( temp_cords2 );
+                $('.search2').offset( temp_cords1 );
                 
                 // var temp_search1 = this.mobile_search_store;
                 // this.mobile_search_store = this.mobile_find_store;
@@ -196,8 +196,6 @@
                 // console.log("search2", $(".search2 .input").html(this.store2.name));
                 console.log( $('.search1').position());
                 console.log( $('.search2').position());
-                $('.search1').offset( coordinates )
-                $('.search2').offset( coordinates )
             },
             removeSearch1 :function() {
                 $(".search1 .input").val('');
