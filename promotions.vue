@@ -85,8 +85,9 @@
         }
       },
       methods : {
-        toggle: function (val) {
+        toggle: function (index) {
             console.log(val);
+            var 
             val.show_promo = !val.show_promo;
         }
       }
