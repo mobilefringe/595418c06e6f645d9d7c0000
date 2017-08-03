@@ -191,6 +191,8 @@
                 // console.log("search2", $(".search2 .input").html(this.store2.name));
                 console.log( $('.search1').position());
                 console.log( $('.search2').position());
+                $('.search1').offset( coordinates )
+                $('.search2').offset( coordinates )
             },
             removeSearch1 :function() {
                 $(".search1 .input").val('');
