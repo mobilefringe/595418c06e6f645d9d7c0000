@@ -69,7 +69,7 @@
                 store1: null,
                 store2: null,
                 map :{},
-                suggestionAttribute: 'name'
+                suggestionAttribute: 'name',
                 input1 : $(".search1 input")
             }
         },
