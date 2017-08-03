@@ -220,7 +220,7 @@
                     this.store2 = option;
                 }
                 else {
-                    this.store2 = option;
+                    this.store1 = option;
                 }
             },
             removeDuplicates(myArr, prop) {
