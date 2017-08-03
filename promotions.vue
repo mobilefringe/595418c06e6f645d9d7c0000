@@ -65,7 +65,17 @@
     Vue.use(Meta);
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
-      
+       data: function() {
+            return {
+                mobile_search_store : "",
+                // mobile_find_store: "",
+                lift_blue_box: false,
+                store1: null,
+                store2: null,
+                map :{},
+                suggestionAttribute: 'name'
+            }
+        },
       computed: {
         promotions() {
           
