@@ -22,7 +22,7 @@
             </div >
             <p class="dets_title">{{currentPromo.name | uppercase}} </p>
             <p class="dets_data">
-                
+                {{currentPromo.name}}
             </p>
         </div>
         <div>
