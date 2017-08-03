@@ -70,6 +70,7 @@
                 store2: null,
                 map :{},
                 suggestionAttribute: 'name'
+                input1 : $(".search1 input")
             }
         },
         mounted: function (){
