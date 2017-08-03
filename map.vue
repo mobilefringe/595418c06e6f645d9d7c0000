@@ -128,7 +128,7 @@
                 // console.log("changed store2",this.mobile_find_store);
                 var val = this.store2;
                 var map= this.map;
-                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                if(val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
