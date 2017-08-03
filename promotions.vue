@@ -92,7 +92,7 @@
       methods : {
         toggle: function (index) {
             // console.log(this.sorted_promos, index);
-            if() {
+            if(this.sorted_promos[index][0] == undefined || this.sorted_promos[index][0] == null) {
                 Vue.set(this.sorted_promos[index][0],'show_promo', true);
             }
             this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
