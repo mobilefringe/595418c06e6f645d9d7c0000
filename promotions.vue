@@ -66,7 +66,7 @@
     return Vue.component("promos-component", {
       template: template, // the variable template will be injected
       created () {
-        
+        this.promotions;
         }, 
       computed: {
         promotions() {
