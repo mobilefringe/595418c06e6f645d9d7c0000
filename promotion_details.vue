@@ -25,7 +25,7 @@
                 {{currentPromo.name}}
             </p>
         </div>
-        <div>
+        <div class="store_dets">
             <p>
                 {{currentPromo.description}}
             </p>
