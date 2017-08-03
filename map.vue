@@ -72,7 +72,7 @@
                 suggestionAttribute: 'name',
                 input1 : "",
                 search_one : null,
-                search_two:null
+                search_two : null
             }
         },
         mounted: function (){
