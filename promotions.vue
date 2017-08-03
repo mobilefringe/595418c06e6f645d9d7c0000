@@ -67,11 +67,11 @@
       template: template, // the variable template will be injected
       created () {
         var promo = _.groupBy(this.promotions, 'store');
-       
+       console.log(promo);
         }, 
       computed: {
         promotions() {
-            console.log(this.$store.getters.processedPromos);
+          
           return this.$store.getters.processedPromos;
         },
         timezone () {
