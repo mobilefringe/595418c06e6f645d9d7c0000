@@ -77,7 +77,7 @@
       computed: {
         promotions() {
           
-          return this.dine_stores = _.orderBy(temp_dine_array, 'name');
+          return this.dine_stores = _.orderBy(this.$store.getters.processedPromos, 'name');
         },
         timezone () {
           return this.$store.getters.getTimezone;
