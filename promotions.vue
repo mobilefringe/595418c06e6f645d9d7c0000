@@ -10,9 +10,9 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
-            <div  v-show = "true" class="" id="dine_store_list">
+            <div  v-show = "show_dine" class="" id="dine_store_list">
                 <div class="" id="dine_stores_container">
-                    <div  v-for="promo in index ">
+                    <div  v-for="promo in store_promo ">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'promotionDetails', params: { id: slug }}">
                                 <div class="col-xs-6 align_left">
