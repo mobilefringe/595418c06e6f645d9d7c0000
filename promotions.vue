@@ -72,7 +72,7 @@
         },
         created : {
             this.promo_by_stores;
-        }
+        },
       computed: {
         promotions() {
           
