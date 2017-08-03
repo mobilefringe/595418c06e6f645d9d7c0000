@@ -221,7 +221,13 @@
             onOptionSelect2(option) {
                 console.log('Selected option:', option);
                 // var counted_stores = _.countBy(this.allStores,'name');
-                this.store2 = option;
+                
+                if(this.store1) {
+                    this.store1 = option;
+                }
+                else {
+                    this.store2 = option;
+                }
                 // console.log($(".search1 input").val());
                 // console.log($(".search2 input").val());
                 // this.mobile_find_store = option.name;
