@@ -203,35 +203,20 @@
                 this.store2 = null;
             },
             onOptionSelect1(option) {
-                console.log('Selected option:', option);
-                // var counted_stores = _.countBy(this.allStores,'name');
                 if(this.store1) {
                     this.store2 = option;
                 }
                 else {
                     this.store1 = option;
-                }
-                
-                // console.log($(".search1 input").val());
-                // console.log($(".search2 input").val());
-                
-                
-                    
+                }   
             },
             onOptionSelect2(option) {
-                console.log('Selected option:', option);
-                // var counted_stores = _.countBy(this.allStores,'name');
-                
                 if(this.store2) {
                     this.store1 = option;
                 }
                 else {
                     this.store2 = option;
                 }
-                // console.log($(".search1 input").val());
-                // console.log($(".search2 input").val());
-                // this.mobile_find_store = option.name;
-                console.log(this.map);
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
