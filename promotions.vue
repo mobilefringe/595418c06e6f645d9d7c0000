@@ -1,6 +1,6 @@
 <template>
   <div class="container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-  <div class="all_caps store_header">
+        <div class="all_caps store_header">
             Stores Directory
         </div>
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
@@ -31,6 +31,7 @@
                 </div>
                 <hr>
             </div>
+        </div>
     <!--<div class="columns large-3 medium 6" v-for="promo in promotions">-->
     <!--  <div class="card">-->
     <!--    <div class="card-divider">-->
