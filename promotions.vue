@@ -87,7 +87,7 @@
       methods : {
         toggle: function (index) {
             this.sorted_promos[index].show_promo = !this.sorted_promos[index].show_promo;
-            console.log(val);
+            console.log(this.sorted_promos[index]);
             
             // val.show_promo = !val.show_promo;
         }
