@@ -81,17 +81,8 @@
         }
       },
       methods : {
-        toggle: function (clicked) {
-            if(clicked === "dine")
-                this.show_dine = !this.show_dine;
-            else if(clicked === "shop")
-                this.show_shop = !this.show_shop;
-            else if(clicked === "play")
-                this.show_play = !this.show_play;
-            else if(clicked === "stay")
-                this.show_stay = !this.show_stay;
-            else if(clicked === "service")
-                this.show_service = !this.show_service;
+        toggle: function (val) {
+            
         }
       }
     });
