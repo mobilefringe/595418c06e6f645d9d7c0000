@@ -195,9 +195,6 @@
                     // $(".search1 input").attr("placeholder", "Search Stores");
                     // $(".search2 input").attr("placeholder", "Find a store near you");
                 }
-                
-                
-                
             },
             removeSearch1 :function() {
                 $(".search1 .input").val('');
