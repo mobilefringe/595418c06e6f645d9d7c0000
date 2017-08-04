@@ -29,11 +29,6 @@
              <router-link tag="li" to="/map" active-class="active" class="all_caps menu_btn" exact>
                 <a class="all_caps menu_btn_label">PATH MAP</a>
             </router-link>
-            <!--<div v-for="item in menu_items">-->
-            <!--    <router-link v-if="item.is_inHome" tag="li" :to="item.href" active-class="active" class="menu_btn" exact>-->
-            <!--      <a><label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label></a>-->
-            <!--    </router-link>-->
-            <!--</div>-->
         </div>
         <!-- Backdrop-->
         <!--<div v-show="loading" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>-->
