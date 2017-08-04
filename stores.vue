@@ -120,7 +120,7 @@
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
             "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food"];
             var shop_cats = [" Jewellery","Apparel"];
-            
+            console.log(cats);
             var temp_dine_array = [];
             var temp_shop_array = [];
             cats.filter(function () {
