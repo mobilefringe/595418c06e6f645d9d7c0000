@@ -116,10 +116,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             locale: function (val, oldVal) {
                 this.$i18n.locale = val;
                 moment.locale(val);
-          },
-          dataLoaded : function () {
-              this.showLoader = !this.dataLoaded;
-              console.log(this.showLoader);
+            },
+            dataLoaded : function () {
+                this.showLoader = !this.dataLoaded;
+                console.log(this.showLoader);
           }
         },
     computed: {
