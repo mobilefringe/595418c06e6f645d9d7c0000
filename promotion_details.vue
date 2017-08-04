@@ -1,5 +1,5 @@
 <template>
-   <div  v-if="currentPromo">
+    <div  v-if="currentPromo">
         <!-- SVG Map diplay area -->
         <div class="demo_1 map3" style="" id="mapsvg">
             <img :src="currentPromo.image_url">
