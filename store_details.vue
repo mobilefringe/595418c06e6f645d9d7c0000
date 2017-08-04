@@ -127,7 +127,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
             }
         },
         created () {
-            console.log({{showLoader}})
+            console.log({{showLoader}});
             this.$emit('loadChange', true);
             console.log("emit to parent to make this true");
         },
