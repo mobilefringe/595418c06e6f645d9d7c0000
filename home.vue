@@ -17,16 +17,16 @@
         
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder" >
-            <router-link tag="li" to="/location" active-class="active" class="all_caps menu_btn" exact>
+            <router-link tag="li" to="/location" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">YOUR LOCATION</a>
             </router-link>
-            <router-link tag="li" to="/stores" active-class="active" class="all_caps menu_btn" exact>
+            <router-link tag="li" to="/stores" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">STORES</a>
             </router-link>
-            <router-link tag="li" to="/promotions" active-class="active" class="all_caps menu_btn" exact>
+            <router-link tag="li" to="/promotions" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">PROMOTIONS</a>
             </router-link>
-             <router-link tag="li" to="/map" active-class="active" class="all_caps menu_btn" exact>
+             <router-link tag="li" to="/map" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">PATH MAP</a>
             </router-link>
         </div>
