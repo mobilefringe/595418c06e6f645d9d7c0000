@@ -95,7 +95,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
         template: template, // the variable template will be injected,
         props: {
             showLoader:{
-              type: Boolean
+              type: Boolean,
+              default: true
             }
         },
         data: function() {
