@@ -144,13 +144,13 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         //console.log(this.copyright_year);
 		$(this).toggleClass('open');
 		this.open_menu = true;
-		$('#menu_page').show();
+// 		$('#menu_page').show();
 		$('#menu-icon').toggle();
 
       },
       close_menu: function () {
         console.log("closed menu!");
-		$('#menu_page').hide();
+// 		$('#menu_page').hide();
         $('#menu-icon').toggle();
         this.open_menu = false;
         this.closed_icon = ! this.closed_icon;
