@@ -152,6 +152,9 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                     zoomLimit: [0,5]
                 });
                 this.map = map;
+                if(this.map) {
+                    this.$emit.('eventname', this.showLoader)
+                }
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
                 
