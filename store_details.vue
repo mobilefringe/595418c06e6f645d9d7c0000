@@ -127,7 +127,8 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
             }
         },
         created () {
-        
+            this.showLoader = true;
+            this.$emit('eventname', this.showLoader);
         },
         mounted : function (){
           
