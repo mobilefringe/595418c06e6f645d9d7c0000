@@ -56,9 +56,9 @@
         }
       },
       methods : {
-            go_back () {
-               this.$router.go(-1);
-            }
+        go_back () {
+           this.$router.go(-1);
+        }
       }
     });
   });
