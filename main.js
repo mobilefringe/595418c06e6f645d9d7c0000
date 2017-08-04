@@ -143,10 +143,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 this.open_icon = false;
                 this.closed_icon = true;
             },
-      close_menu: function () {
-        this.show_menu = false;
-        this.closed_icon = false;
-        this.open_icon = true;
+            close_menu: function () {
+                this.show_menu = false;
+                this.closed_icon = false;
+                this.open_icon = true;
       },
         updateLoader(variable) {
             this.showLoader = variable;
