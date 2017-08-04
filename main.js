@@ -59,6 +59,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         newsletter_control: '',
         closed_icon: false,
         open_icon : true,
+        open_menu:false,
         copyright_year :  moment().year(),
         menu_items : [{
             name: "Home",
@@ -142,6 +143,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       open_menu: function () {
         //console.log(this.copyright_year);
 		$(this).toggleClass('open');
+		open_menu
 		$('#menu_page').show();
 		$('#menu-icon').toggle();
 
