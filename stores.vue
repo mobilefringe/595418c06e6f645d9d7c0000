@@ -77,14 +77,6 @@
     </div>
 </template>
 
-<!--<style>-->
-<!--  .center{-->
-<!--    text-align: center-->
-<!--  }-->
-<!--  .store-section a{-->
-<!--    color: #708090;-->
-<!--  }-->
-<!--</style>-->
 
 <script>
   define(["Vue","lodash"], function(Vue,_) {
