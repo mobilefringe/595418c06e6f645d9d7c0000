@@ -141,20 +141,15 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
       },
       open_menu: function () {
-        //console.log(this.copyright_year);
-// 		$(this).toggleClass('open');
+     
 		this.show_menu = true;
 		console.log(this.show_menu);
-// 		$('#menu_page').show();
-		$('#menu-icon').toggle();
 		this.open_icon = false;
 		this.closed_icon = true;
 
       },
       close_menu: function () {
-        console.log("closed menu!");
-// 		$('#menu_page').hide();
-        $('#menu-icon').toggle();
+      
         this.show_menu = false;
         this.closed_icon = false;
         this.open_icon = true;
