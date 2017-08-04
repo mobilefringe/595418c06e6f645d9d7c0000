@@ -148,7 +148,10 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         console.log("closed menu!");
 		$('#menu_page').hide();
         $('#menu-icon').toggle();
-      }
+      },
+        updateparent(variable) {
+            this.parentvariable = variable
+        }
     },
     router: router,
     store,
