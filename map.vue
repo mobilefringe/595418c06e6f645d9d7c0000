@@ -104,7 +104,7 @@
             store1 : function () {
                 var val = this.store1;
                 var map= this.map;
-                if(val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                if (val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
                         var coords = map.get_coords(val.svgmap_region);
                         var height = parseInt(coords["height"])
                         var width = parseInt(coords["width"])
