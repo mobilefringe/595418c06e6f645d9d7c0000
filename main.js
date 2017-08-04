@@ -59,7 +59,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         newsletter_control: '',
         closed_icon: false,
         open_icon : true,
-        open_menu:false,
+        show_menu:false,
         copyright_year :  moment().year(),
         menu_items : [{
             name: "Home",
