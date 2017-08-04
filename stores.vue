@@ -77,7 +77,6 @@
     </div>
 </template>
 
-
 <script>
   define(["Vue","lodash"], function(Vue,_) {
     return Vue.component("stores-component", {
