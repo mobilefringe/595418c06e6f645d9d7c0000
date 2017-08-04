@@ -78,7 +78,6 @@
                         this.$router.push(route);
                     }
                 }
-                
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
