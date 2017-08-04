@@ -2,7 +2,6 @@
     <div class="maps">
         <div class="map_page">
             <div class="map">
-                <!--<div @click="populateMap">Populate Map </div>-->
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
             </div>
         </div>
