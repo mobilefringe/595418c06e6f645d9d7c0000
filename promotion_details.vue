@@ -20,7 +20,7 @@
                 {{currentPromo.description}}
             </p>
         </div>
-        </div>
+    </div>
 </template>
 
 <script>
