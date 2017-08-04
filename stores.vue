@@ -123,9 +123,6 @@
             console.log(cats);
             var temp_dine_array = [];
             var temp_shop_array = [];
-            cats.filter(function () {
-                
-            })
             $.each(cats, function(key,val) {
                 
                 if(dine_cats.includes(key)) {
