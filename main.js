@@ -131,7 +131,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 set (value) {
                     this.$store.commit('SET_LOCALE', { lang: value })
                 }
-          }
+            }
         },
     methods: {
       // utility method to allow user to change locale value
