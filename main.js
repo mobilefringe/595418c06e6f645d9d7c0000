@@ -98,19 +98,19 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 }]
             }
         },
-    created() {
-      // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
-      this.$store.dispatch('INITIALIZE_LOCALE');
-      
-      this.$store.dispatch('LOAD_META_DATA');
-
-      // make an async call to load mall data
-      this.$store.dispatch('LOAD_MALL_DATA', {url:"https://www.mallmaverick.com/api/v3/torontopath/all.json"}).then(response => {
-        this.dataLoaded = true;
-      }, error => {
-        console.error("Could not retrieve data from server. Please check internet connection and try again.");
-      });
-    },
+        created() {
+            // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
+            this.$store.dispatch('INITIALIZE_LOCALE');
+          
+            this.$store.dispatch('LOAD_META_DATA');
+    
+            // make an async call to load mall data
+            this.$store.dispatch('LOAD_MALL_DATA', {url:"https://www.mallmaverick.com/api/v3/torontopath/all.json"}).then(response => {
+                this.dataLoaded = true;
+            }, error => {
+                console.error("Could not retrieve data from server. Please check internet connection and try again.");
+            });
+        },
     watch: {
       // watcher to update vue-i18n when the locale has been changed by the user
       locale: function (val, oldVal) {
