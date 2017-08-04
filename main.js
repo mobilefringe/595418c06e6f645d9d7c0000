@@ -142,8 +142,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         		this.show_menu = true;
         		this.open_icon = false;
         		this.closed_icon = true;
-
-      },
+            },
       close_menu: function () {
         this.show_menu = false;
         this.closed_icon = false;
