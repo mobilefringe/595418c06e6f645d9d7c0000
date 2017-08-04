@@ -54,49 +54,49 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         el: '#app',
         data: function () {
         return {
-        dataLoaded: false,
-        showLoader: true,
-        newsletter_control: '',
-        closed_icon: false,
-        open_icon : true,
-        show_menu : false,
-        copyright_year :  moment().year(),
-        menu_items : [{
-            name: "Home",
-            id: "home",
-            class_list:"all_caps menu_btn_label",
-            href : "/",
-            is_inHome: false
-        },
-        {
-            name: "Your Location",
-            id: "location",
-            class_list:"all_caps menu_btn_label",
-            href : "/location",
-            is_inHome: true
-        },
-        {
-            name: "Stores",
-            id: "stores",
-            class_list:"all_caps menu_btn_label",
-            href : "/stores",
-            is_inHome: true
-        },
-        {
-            name: "Promotions",
-            id: "promotions",
-            class_list:"all_caps menu_btn_label",
-            href : "/promotions",
-            is_inHome: true
-        },
-        {
-            name: "Path Map",
-            id: "map",
-            class_list:"all_caps menu_btn_label",
-            href : "/map",
-            is_inHome: true
-        }]
-      }
+            dataLoaded: false,
+            showLoader: true,
+            newsletter_control: '',
+            closed_icon: false,
+            open_icon : true,
+            show_menu : false,
+            copyright_year :  moment().year(),
+            menu_items : [{
+                name: "Home",
+                id: "home",
+                class_list:"all_caps menu_btn_label",
+                href : "/",
+                is_inHome: false
+            },
+            {
+                name: "Your Location",
+                id: "location",
+                class_list:"all_caps menu_btn_label",
+                href : "/location",
+                is_inHome: true
+            },
+            {
+                name: "Stores",
+                id: "stores",
+                class_list:"all_caps menu_btn_label",
+                href : "/stores",
+                is_inHome: true
+            },
+            {
+                name: "Promotions",
+                id: "promotions",
+                class_list:"all_caps menu_btn_label",
+                href : "/promotions",
+                is_inHome: true
+            },
+            {
+                name: "Path Map",
+                id: "map",
+                class_list:"all_caps menu_btn_label",
+                href : "/map",
+                is_inHome: true
+            }]
+        }
     },
     created() {
       // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
