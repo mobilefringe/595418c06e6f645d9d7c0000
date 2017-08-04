@@ -133,15 +133,15 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 }
             }
         },
-    methods: {
-      // utility method to allow user to change locale value
-      changeLocale: function(val) {
-        this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
-      },
-      open_menu: function () {
-		this.show_menu = true;
-		this.open_icon = false;
-		this.closed_icon = true;
+        methods: {
+            // utility method to allow user to change locale value
+            changeLocale: function(val) {
+                this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+            },
+            open_menu: function () {
+        		this.show_menu = true;
+        		this.open_icon = false;
+        		this.closed_icon = true;
 
       },
       close_menu: function () {
