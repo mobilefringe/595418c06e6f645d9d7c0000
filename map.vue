@@ -128,9 +128,6 @@
             },
             store2 : function () {
                 
-                // this.mobile_find_store = this.store2.name;
-                // $(".search2 input").val(this.mobile_find_store);
-                // console.log("changed store2",this.mobile_find_store);
                 var val = this.store2;
                 var map= this.map;
                 if(val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -147,8 +144,6 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
-                        // console.log(val.slug, val.svgmap_region);
-                        //  map.selectRegion(val.svgmap_region);
                     }
             }
         },
