@@ -49,11 +49,11 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         messages
     });
 
-  /* bootstrap app */
-  const vm = new Vue({
-    el: '#app',
-    data: function () {
-      return {
+    /* bootstrap app */
+    const vm = new Vue({
+        el: '#app',
+        data: function () {
+        return {
         dataLoaded: false,
         showLoader: true,
         newsletter_control: '',
