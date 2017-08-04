@@ -157,6 +157,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
                 if(this.map) {
                     this.showLoader = true;
                     this.$emit('updateLoader', this.showLoader);
+                    console.log("emit in map loader")
                 }
                 this.loadMap(map);
                 this.all_hours = this.state.results.hours; 
