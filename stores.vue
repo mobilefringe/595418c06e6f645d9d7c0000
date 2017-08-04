@@ -74,7 +74,7 @@
             </div>
              <hr>
         </div>
-  </div>
+    </div>
 </template>
 
 <!--<style>-->
