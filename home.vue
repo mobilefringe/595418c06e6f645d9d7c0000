@@ -1,8 +1,7 @@
 <template>
     <div class="home_page">
         <div class="gray_bar">
-            <div id="mobile_search"  class="col-xs-10">
-                <!--<input v-model="mobile_search_box" id="mobile_search_box" placeholder="Search All Path Stores" >-->
+            <div id="mobile_search"  class="col-xs-10">=
                 <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
                     <template slot="item" scope="option">
                         <article class="media">
