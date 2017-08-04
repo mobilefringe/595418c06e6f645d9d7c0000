@@ -52,7 +52,6 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                // $(".options-list").addClass("scrollable-menu");
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
@@ -64,8 +63,6 @@
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 console.log($(".input").val());
-                // console.log(counted_stores[option.name],option);
-                // if (option != undefined &&  option != "")
                 if(option.type==="click") {
                     console.log($(".input").val());
                 }
