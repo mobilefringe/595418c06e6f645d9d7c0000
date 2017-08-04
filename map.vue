@@ -208,6 +208,7 @@
                 console.log(this.search_one, $('.search1').offset());
                 if(this.search_one === $('.search1').offset()) {
                     this.store1 = option;
+                    console.log("hi");
                 }
                 else {
                     this.store2 = option;
