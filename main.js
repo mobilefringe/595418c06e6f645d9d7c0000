@@ -156,6 +156,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         $('#menu-icon').toggle();
         this.show_menu = false;
         this.closed_icon = ! this.closed_icon;
+        this.open_icon = true;
       },
         updateLoader(variable) {
             this.showLoader = variable;
