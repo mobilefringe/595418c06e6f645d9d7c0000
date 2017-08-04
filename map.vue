@@ -170,10 +170,6 @@
             findStoreBySlug (){
                 return this.$store.getters.findStoreBySlug;
             },
-            // processedStores() {
-            //     // $(".options-list").addClass("scrollable-menu");
-            //     return this.removeDuplicates(this.allStores, 'name');
-            // },
             allStores() {
                 return this.$store.getters.processedStores;
             }
@@ -191,9 +187,7 @@
                     $('.search2').offset( temp_cords1 );
                     var temp_placeholder =  $(".search1 input").attr("placeholder");
                     $(".search1 input").attr("placeholder", $(".search2 input").attr("placeholder"));
-                    $(".search2 input").attr("placeholder",temp_placeholder );
-                    // $(".search1 input").attr("placeholder", "Search Stores");
-                    // $(".search2 input").attr("placeholder", "Find a store near you");
+                    $(".search2 input").attr("placeholder",temp_placeholder );;
                 }
             },
             removeSearch1 :function() {
