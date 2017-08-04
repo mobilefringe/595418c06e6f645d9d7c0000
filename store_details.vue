@@ -102,7 +102,7 @@ define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-t
         data: function() {
             return {
                 currentStore : null,
-                map : {},
+                map : null,
                 all_hours : {},
                 show_promo : false,
                 show_hours : false,
