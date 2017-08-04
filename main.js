@@ -144,7 +144,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         //console.log(this.copyright_year);
 // 		$(this).toggleClass('open');
 		this.show_menu = true;
-		console.log(this.show_menu)
+		console.log(this.show_menu);
 // 		$('#menu_page').show();
 		$('#menu-icon').toggle();
 
