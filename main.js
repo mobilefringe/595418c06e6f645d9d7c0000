@@ -120,7 +120,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
             dataLoaded : function () {
                 this.showLoader = !this.dataLoaded;
                 console.log(this.showLoader);
-          }
+            }
         },
     computed: {
       // computed property for locale which returns locale value from data store and also updates the data store with new locale information
