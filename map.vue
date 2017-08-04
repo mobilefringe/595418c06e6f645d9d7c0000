@@ -122,8 +122,6 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
-                        // console.log(val.slug, val.svgmap_region);
-                        //  map.selectRegion(val.svgmap_region);
                     }
             },
             store2 : function () {
