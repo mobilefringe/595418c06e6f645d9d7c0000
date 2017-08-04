@@ -115,6 +115,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         moment.locale(val);
         // console.log(moment().format('LLLL'));
         // console.log(this.$store.getters.getTodayHours);
+      },
+      dataLoader : function () {
+          this.showLoader = !this.dataLoader;
       }
     },
     computed: {
