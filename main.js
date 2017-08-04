@@ -147,6 +147,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
 		console.log(this.show_menu);
 // 		$('#menu_page').show();
 		$('#menu-icon').toggle();
+		this.open_icon = false;
 
       },
       close_menu: function () {
