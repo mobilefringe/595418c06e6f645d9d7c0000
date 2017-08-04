@@ -68,7 +68,6 @@
                 }
                 else {
                     if( counted_stores[option.name] >1) {
-                        // routes.go('/map_details/' + option.name);
                         var route = '/map/' + option.name;
                         console.log(route);
                         this.$router.push(route);
