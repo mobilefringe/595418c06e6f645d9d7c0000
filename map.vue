@@ -206,7 +206,7 @@
             },
             onOptionSelect1(option) {
                 console.log(this.search_one, $('.search1').offset());
-                if(this.search_one === $('.search1').offset()) {
+                if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
                     this.store1 = option;
                     console.log("hi");
                 }
