@@ -150,6 +150,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         console.log("closed menu!");
 		$('#menu_page').hide();
         $('#menu-icon').toggle();
+        this.closed_icon = ! this.closed_iconl
       },
         updateLoader(variable) {
             this.showLoader = variable;
