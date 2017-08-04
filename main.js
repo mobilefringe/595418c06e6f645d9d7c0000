@@ -150,7 +150,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         $('#menu-icon').toggle();
       },
         updateparent(variable) {
-            this.showLoader = variable
+            this.showLoader = variable;
+            console.log("changed showLoader to", this.showLoader);
         }
     },
     router: router,
