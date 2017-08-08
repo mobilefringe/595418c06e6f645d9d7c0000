@@ -4,6 +4,7 @@
         "date": "Date: {date}"
     },
     "menu":{
-    
+        "home" : "Home"
+        
     }
 }
