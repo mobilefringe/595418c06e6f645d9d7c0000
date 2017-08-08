@@ -152,6 +152,12 @@
             
             this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
             this.shop_stores = _.groupBy(this.shop_stores, 'name');
+            
+            this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
+            this.shop_stores = _.groupBy(this.shop_stores, 'name');
+            
+            this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
+            this.shop_stores = _.groupBy(this.shop_stores, 'name');
         }
       },
       computed: {
