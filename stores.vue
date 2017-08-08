@@ -161,7 +161,10 @@
         },
         findStoreBySlug (){
             return this.$store.getters.findStoreBySlug;
-        }
+        },
+        allStores() {
+                return this.$store.getters.processedStores;
+            }
       }
     });
   });
