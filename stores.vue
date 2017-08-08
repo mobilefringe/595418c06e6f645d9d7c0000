@@ -122,7 +122,7 @@
                     <div  v-for="(store, index) in stay_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
-                                <div class="col-xs-6 align_center">
+                                <div class="align_center">
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
