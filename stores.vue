@@ -163,8 +163,8 @@
             return this.$store.getters.findStoreBySlug;
         },
         allStores() {
-                return this.$store.getters.processedStores;
-            }
+            return this.$store.getters.processedStores;
+        }
       }
     });
   });
