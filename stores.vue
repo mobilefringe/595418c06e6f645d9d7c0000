@@ -154,7 +154,7 @@
             this.shop_stores = _.groupBy(this.shop_stores, 'name');
             
             this.stay_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(stay_cats,o.category_name); }), 'name');
-            this.stay_stores = _.groupBy(this.shop_stores, 'name');
+            this.stay_stores = _.groupBy(this.stayp_stores, 'name');
             
             this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
             this.shop_stores = _.groupBy(this.shop_stores, 'name');
