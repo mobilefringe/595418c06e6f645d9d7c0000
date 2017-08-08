@@ -125,7 +125,7 @@
             var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health","Health & Wellness","Health Services","Management","News","Opitcal/Health/Beauty","Other","Personal Care","Personal Care & Health Service","Pharmacies & Drug Store","Photography & Photo Equipment","Post Office","Postal Services","Printing Services","Professional Services","Retail","SERVICES","Services","Services ","Services and Stores","Specialty Service","Specialty Services","Storage","Telephone,Computers, Electronics","Travel","Travel Agent","florist","health","services"];
             console.log(cats);
             console.log(this.allStores);
-            console.log(_.filter(this.allStores, ['category_name', function(o) { return !o.active; });
+            console.log(_.filter(this.allStores, function(o) { return !o.active; });
             var temp_dine_array = [];
             var temp_shop_array = [];
             $.each(cats, function(key,val) {
