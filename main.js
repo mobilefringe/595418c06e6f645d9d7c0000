@@ -62,7 +62,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 show_menu : false,
                 copyright_year :  moment().year(),
                 menu_items : [{
-                    name: $t("menu.home"),
+                    name: "Home",
                     id: "home",
                     class_list:"all_caps menu_btn_label",
                     href : "/",
