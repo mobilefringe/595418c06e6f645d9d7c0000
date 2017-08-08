@@ -18,7 +18,7 @@
         <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
         <div class="menu_btn_holder" >
             <router-link tag="li" to="/location" active-class="active" class=" menu_btn" exact>
-                <a class=" menu_btn_label">{{$t("menu.your_location")}}</a>
+                <a class=" menu_btn_label">{{$t("menu.yourLocation")}}</a>
             </router-link>
             <router-link tag="li" to="/stores" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">STORES</a>
