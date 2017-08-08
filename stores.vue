@@ -150,8 +150,8 @@
             this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }), 'name');
             this.dine_stores = _.groupBy(this.dine_stores, 'name');
             
-            this.shop_stores = _.orderBy(temp_shop_array, 'name');
-            this.shop_stores = _.groupBy(this.shop_stores, 'name');
+            this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }), 'name');
+            this.dine_stores = _.groupBy(this.dine_stores, 'name');
         }
       },
       computed: {
