@@ -15,7 +15,7 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498575328000/Search Icon.png" class="search_icon" alt="" @click="onOptionSelect"/>
         </div>
         
-        <h4 class="all_caps home_title"> {{$t("messages.discoverPathDiscover")}}</h4>
+        <h4 class="all_caps home_title"> {{$t("message.discoverPathDiscover")}}</h4>
         <div class="menu_btn_holder" >
             <router-link tag="li" to="/location" active-class="active" class=" menu_btn" exact>
                 <a class=" menu_btn_label">{{$t("menu.yourLocation")}}</a>
