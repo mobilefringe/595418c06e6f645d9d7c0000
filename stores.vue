@@ -182,7 +182,7 @@
                 this.show_service = !this.show_service;
         },
         getStoreByCategory() {
-            var cats = this.storesByCategoryName;
+
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
             "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food","Healthy Choices","Take-out Restaurant"];
             var shop_cats = ["Apparel","Accessories", "Accessories & Luggage", "Beauty Product","Bedding","Cards & Stationary","Cards, Stationary and Gifts","Children's Apparel", "Children's Wear", "Drugstore","Electronics","Electronics, Computers and Telephones", "Electronics, Computers, and Telephones","Fashion","Fashion & Accessories", "Fashion Accessories","Flower","Flowers", "Footwear", "General Variety","Groceries","Grocery Store","Health & Beauty","Healthy Choices","Jewelery & Accessories"," Jewellery","Jewellery","Kids & Ladies Apparel","Kids Apparel","Ladies Apparel","Leather & Luggage","Leather and Luggage","Market Place","Men's Wear","Mens Apparel","Mens and Ladies Apparel","Mens, Ladies and Kids Apparel ","Music & Videos","Office Supplies","SPECIALTY SHOPS","Shoes","Specialty Apparel","Specialty ","Specialty Store","Specialty, News & Gifts","Sporting Goods & Athleticwear","Telephone,Computers, Electronics","Telephones","Unisex Apparel", "Women's Wear","florist"];
