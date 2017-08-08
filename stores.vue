@@ -120,7 +120,7 @@
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
             "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food"];
             var shop_cats = [" Jewellery","Apparel","Accessories", "Accessories & Luggage", "Beauty Product","Bedding","Cards & Stationary","Cards, Stationary and Gifts","Children's Apparel", "Children's Wear", "Drugstore","Electronics","Electronics, Computers and Telephones", "Electronics, Computers, and Telephones","Fashion","Fashion & Accessories", "Fashion Accessories"];
-            var play_cats = [];
+            var play_cats = ["ATTRACTIONS"];
             var stay_cats = [];
             var service_cats = [];
             console.log(cats);
