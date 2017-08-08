@@ -147,6 +147,7 @@
                     }
                 }
             });
+            this.dine_stores =
             this.dine_stores = _.orderBy(temp_dine_array, 'name');
             this.dine_stores = _.groupBy(this.dine_stores, 'name');
             console.log(this.dine_stores);
