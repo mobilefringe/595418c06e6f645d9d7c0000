@@ -15,7 +15,7 @@
                     <div  v-for="(store, index) in dine_stores ">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id: index }}">
-                                <div class="col-xs-6 align_left">
+                                <div class="align_center">
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
@@ -41,7 +41,7 @@
                     <div  v-for="(store, index) in shop_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
-                                <div class="col-xs-6 align_left">
+                                <div class="align_center">
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
@@ -68,7 +68,7 @@
                     <div  v-for="(store, index) in play_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
-                                <div class="col-xs-6 align_left">
+                                <div class="align_center">
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
@@ -95,7 +95,7 @@
                     <div  v-for="(store, index) in service_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
-                                <div class="col-xs-6 align_left">
+                                <div class="align_center">
                                     {{index}}
                                     <!--{{store.name}} -->
                                     <br/>
