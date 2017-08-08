@@ -153,8 +153,8 @@
             this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
             this.shop_stores = _.groupBy(this.shop_stores, 'name');
             
-            this.service_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(service_cats,o.category_name); }), 'name');
-            this.service_stores = _.groupBy(this.service_stores, 'name');
+            this.play_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includesplay_cats,o.category_name); }), 'name');
+            this.play_stores = _.groupBy(this.play_stores, 'name');
             
             this.stay_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(stay_cats,o.category_name); }), 'name');
             this.stay_stores = _.groupBy(this.stay_stores, 'name');
