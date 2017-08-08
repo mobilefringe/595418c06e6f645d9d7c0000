@@ -27,7 +27,7 @@
                 <a class=" menu_btn_label">{{$t("menu.yourLocation")}}</a>
             </router-link>
              <router-link tag="li" to="/map" active-class="active" class=" menu_btn" exact>
-                <a class=" menu_btn_label"{{$t("menu.yourLocation")}}</a>
+                <a class=" menu_btn_label">{{$t("menu.yourLocation")}}</a>
             </router-link>
         </div>
         <!-- Backdrop-->
