@@ -64,7 +64,7 @@
             </div>
             <hr>
             <div  v-show = "show_play" class="" id="shop_store_list">
-                <div class="" id="shop_stores_container">
+                <div class="" id="play_stores_container">
                     <div  v-for="(store, index) in play_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
