@@ -122,7 +122,7 @@
             var shop_cats = [" Jewellery","Apparel","Accessories", "Accessories & Luggage", "Beauty Product","Bedding","Cards & Stationary","Cards, Stationary and Gifts","Children's Apparel", "Children's Wear", "Drugstore","Electronics","Electronics, Computers and Telephones", "Electronics, Computers, and Telephones","Fashion","Fashion & Accessories", "Fashion Accessories","Flower","Flowers", "Footwear", "General Variety","Groceries","Grocery Store","Health & Beauty"];
             var play_cats = ["ATTRACTIONS","Art Gallery"];
             var stay_cats = [];
-            var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health"];
+            var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health","Health & Wellness"];
             console.log(cats);
             var temp_dine_array = [];
             var temp_shop_array = [];
