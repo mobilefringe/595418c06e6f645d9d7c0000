@@ -5,6 +5,6 @@
     },
     "menu":{
         "home" : "Home",
-        "your_location" : "Your Location"
+        "yourLocation" : "Your Location"
     }
 }
