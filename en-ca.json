@@ -2,7 +2,7 @@
     "message": {
         "hello": "hello",
         "date": "Date: {date}",
-        "discoverPath" : " Discover The Toronto Path
+        "discoverPath" : " Discover The Toronto Path"
     },
     "menu":{
         "home" : "Home",
