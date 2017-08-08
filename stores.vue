@@ -58,17 +58,17 @@
                 </div>
                 <hr>
             </div>
-            <div class="all_caps cat_title" id="play">
+            <div class="all_caps cat_title" id="play" v-on:click="toggle('play')">
                 Play
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
             <hr>
-            <div class="all_caps cat_title" id="service">
+            <div class="all_caps cat_title" id="service" v-on:click="toggle('service')">
                 Service
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
-            <div class="all_caps cat_title" id="stay">
+            <div class="all_caps cat_title" id="stay" v-on:click="toggle('stay')">
                 Stay
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
