@@ -63,7 +63,7 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
             <hr>
-            <div  v-show = "show_play" class="" id="shop_store_list">
+            <div  v-show = "show_play" class="" id="play_store_list">
                 <div class="" id="play_stores_container">
                     <div  v-for="(store, index) in play_stores">
                         <div class="row cat_name">
@@ -90,7 +90,7 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
-             <div  v-show = "show_shop" class="" id="shop_store_list">
+             <div  v-show = "show_service" class="" id="service_store_list">
                 <div class="" id="shop_stores_container">
                     <div  v-for="(store, index) in shop_stores">
                         <div class="row cat_name">
