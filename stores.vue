@@ -117,9 +117,9 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
              <hr>
-             <div  v-show = "show_shop" class="" id="shop_store_list">
-                <div class="" id="shop_stores_container">
-                    <div  v-for="(store, index) in shop_stores">
+             <div  v-show = "show_stay" class="" id="stay_store_list">
+                <div class="" id="stay_stores_container">
+                    <div  v-for="(store, index) in stay_stores">
                         <div class="row cat_name">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
                                 <div class="col-xs-6 align_left">
