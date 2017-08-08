@@ -1,9 +1,9 @@
 {
-  "message": {
+    "message": {
     "hello": "hello",
     "date": "Date: {date}"
   },
   "menu":{
-      
+    
   }
 }
