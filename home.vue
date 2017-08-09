@@ -2,7 +2,7 @@
     <div class="home_page">
         <div class="gray_bar">
             <div id="mobile_search"  class="col-xs-10">
-                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect">
+                <search-component :list="processedStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect" placeholder="Search Stores">
                     <template slot="item" scope="option">
                         <article class="media">
                             <p>
