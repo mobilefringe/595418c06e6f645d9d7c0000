@@ -4,7 +4,8 @@
         "date": "Date: {date}",
         "discoverPath" : "Discover The Toronto Path",
         "subscribeMessage" : "Subscribe to our newsletter and get information catered to the retail property management industry and updated features.",
-        "submit" : "Submit"
+        "submit" : "Submit",
+        "thankYouMessage" : "Thank you for subscribing!"
     },
     "menu":{
         "home" : "Home",
