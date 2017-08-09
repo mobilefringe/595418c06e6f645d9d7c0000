@@ -16,7 +16,8 @@
         "play" : "Play",
         "service" : "Service",
         "stay" : "Stay",
-        "storesDirectory" : "Stores Directory"
+        "storesDirectory" : "Stores Directory",
+        "closed" : "Closed"
     },
     "menu":{
         "home" : "Home",
