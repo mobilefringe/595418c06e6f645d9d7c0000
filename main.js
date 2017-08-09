@@ -17,7 +17,7 @@ require.config({
         'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
         'store': 'https://mmvue.codecloudapp.com/store',
         'vue-moment': 'https://mmvue.codecloudapp.com/vue-moment',
-        'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
+        'Raphael': 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.no-deps.min', //'http://mallmaverick.com/javascripts/mapsvg/raphael',
         'mousewheel' : 'https://mallmaverick.com/javascripts/mapsvg/jquery.mousewheel',
         'mapsvg' : 'https://mallmaverick.com/javascripts/mapsvg/mapsvg',
         'mm_mapsvg' : 'https://mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap',
