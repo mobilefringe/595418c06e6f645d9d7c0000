@@ -1,7 +1,7 @@
 <template>
     <div class="stores_page">
         <div class="all_caps store_header">
-            {{$t("message.storesDirectory")}}Stores Directory 
+            {{$t("message.storesDirectory")}}
         </div>
         <h4 class="all_caps home_title"> {{$t("message.discoverPath")}}</h4>
         <div class="store_cat_listing">
