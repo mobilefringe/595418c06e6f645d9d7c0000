@@ -10,7 +10,12 @@
         "poweredBy" : "Powered By",
         "mf" : "Mobile Fringe",
         "noPromoMessage" : "Sorry, There are no promotions available now. Check back later!",
-        "fullHours" : "Full Hours"
+        "fullHours" : "Full Hours",
+        "dine" : "Dine",
+        "shop" : "Shop",
+        "play" : "Play",
+        "service" : "Service",
+        "stay" : "Stay
     },
     "menu":{
         "home" : "Home",
