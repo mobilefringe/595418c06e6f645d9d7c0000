@@ -76,7 +76,7 @@
         },
         mounted: function (){
             console.log(Raphael);
-            let Raphael = Raphael;
+            var Raphael = Raphael;
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
