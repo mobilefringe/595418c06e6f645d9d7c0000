@@ -3,7 +3,7 @@
         <div class="all_caps store_header">
             Stores Directory
         </div>
-        <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
+        <h4 class="all_caps home_title"> {{$t("message.discoverPath")}}</h4>
         <div class="store_cat_listing">
             <div class="all_caps cat_title" id="dine" v-on:click="toggle('dine')">
                 Dine
