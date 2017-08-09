@@ -15,7 +15,8 @@
         "shop" : "Shop",
         "play" : "Play",
         "service" : "Service",
-        "stay" : "Stay"
+        "stay" : "Stay",
+        "storesDirectory" : "Stores Directory"
     },
     "menu":{
         "home" : "Home",
