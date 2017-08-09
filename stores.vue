@@ -59,7 +59,7 @@
                 <hr>
             </div>
             <div class="all_caps cat_title" id="play" v-on:click="toggle('play')">
-                Play
+                {{$t("message.play")}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
             </div>
             <hr>
