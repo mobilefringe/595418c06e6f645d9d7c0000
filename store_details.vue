@@ -54,7 +54,7 @@
         </div>
         <!-- Store Hours -->
         <div class="blue_box promo"  v-if="currentStore" @click="toggleHours">
-            <p class="dets_title">{{$t("menu.fullHours")}}</p>
+            <p class="dets_title">{{$t("message.fullHours")}}</p>
         </div>
         <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore">
             <div class="row" v-for="day in currentStore.store_hours_data">
@@ -66,7 +66,7 @@
                         {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
                     </p>
                     <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
-                        Closed
+                        Closed 
                     </p>
                 </div>
                 
