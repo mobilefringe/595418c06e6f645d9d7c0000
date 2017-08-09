@@ -3,6 +3,7 @@
         "hello": "hello",
         "date": "Date: {date}",
         "discoverPath" : " Discover The Toronto Path"
+        "subscribeData" : "Subscribe to our newsletter and get information catered to the retail property management industry and updated features."
     },
     "menu":{
         "home" : "Home",
