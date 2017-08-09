@@ -8,7 +8,8 @@
         "thankYouMessage" : "Thank you for subscribing!",
         "copyright" : "Copyright",
         "poweredBy" : "Powered By",
-        "mf" : "Mobile Fringe"
+        "mf" : "Mobile Fringe",
+        "noPromoMessage" : "Sorry, There are no promotions available now. Check back later!"
     },
     "menu":{
         "home" : "Home",
