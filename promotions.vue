@@ -3,7 +3,7 @@
         <div class="all_caps store_header">
            {{$t("menu.promotions")}}
         </div>
-        <h4 class="all_caps home_title"> Discover The Toronto Path</h4>
+        <h4 class="all_caps home_title">  {{$t("message.discoverPath")}}</h4>
         <div v-if="sorted_promos" class="store_cat_listing" v-for="(store_promo, index) in sorted_promos">
             <div class="all_caps cat_title" :id="index" v-on:click="toggle(index)">
                 {{store_promo[0].store.name}} @ {{store_promo[0].store.property_id}}
