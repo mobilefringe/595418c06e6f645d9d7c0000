@@ -75,7 +75,7 @@
                 // regions:this.regions,
                 tooltipsMode:'custom',
                 loadingText: this.loadingText,
-                zoom: true,
+                zoom: this.zoom,
                 zoomButtons: {'show': true,'location': 'left' },
                 pan:true,
                 cursor:'pointer',
