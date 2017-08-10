@@ -57,41 +57,6 @@
         matchAllTokens: {
           type: Boolean,
           default: false
-        },
-        findAllMatches: {
-          type: Boolean,
-          default: false
-        },
-        id: {
-          type: String,
-          default: ''
-        },
-        shouldSort: {
-          type: Boolean,
-          default: true
-        },
-        threshold: {
-          type: Number,
-          default: 0
-        },
-        location: {
-          type: Number,
-          default: 0
-        },
-        distance: {
-          type: Number,
-          default: 100
-        },
-        maxPatternLength: {
-          type: Number,
-          default: 32
-        },
-        minMatchCharLength: {
-          type: Number,
-          default: 1
-        },
-        keys:  {
-          type: Array
         }
       },
       data() {
