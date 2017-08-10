@@ -206,7 +206,7 @@
             this.service_stores = _.groupBy(this.service_stores, 'name');
             console.log(this.allStores);
             console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }));
-            this.getCategoryIdArray (catArray);  
+            this.getCategoryIdArray (play_cats);  
         },
         getCategoryIdArray (catArray) {
             console.log(this.state.categories);
