@@ -178,6 +178,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
                 console.log(store_hours);
+                console.log(store_hours);
                 Vue.set(this.currentStore,'store_hours_today', store_hours[this.currentStore.todays_hour][0]);
                 
                  var temp_hours=[];
