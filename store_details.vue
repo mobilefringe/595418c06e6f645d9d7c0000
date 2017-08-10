@@ -83,7 +83,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row" v-else">
+            <div class="row" v-else>
                 {{$t("message.noHoursMessage")}}
             </div>
         </div>
