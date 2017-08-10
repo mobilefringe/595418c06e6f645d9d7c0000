@@ -18,7 +18,7 @@
         colours:{
           type: Object,
           default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
-        }, 
+        },
         height: {
           type: Number,
           default: 1000
