@@ -209,7 +209,7 @@
             
         },
         getCategoryIdArray () {
-            console.log(this.state.results.categories);
+            console.log(this.state.categories);
         }
       },
       computed: {
