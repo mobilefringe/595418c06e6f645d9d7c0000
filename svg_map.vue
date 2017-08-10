@@ -46,7 +46,7 @@
           type: Boolean,
           default: true
         },
-        includeMatches: {
+        cursor: {
           type: Boolean,
           default: false
         },
