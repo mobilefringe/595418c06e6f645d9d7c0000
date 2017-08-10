@@ -31,7 +31,7 @@
           type: Array
         },
         loadingText: {
-          type: Boolean,
+          type: String,
           default: false
         },
         list: {
