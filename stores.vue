@@ -211,7 +211,7 @@
         getCategoryIdArray (catArray) {
             console.log(this.state.categories);
             var all_categories = this.state.categories;
-            console.log(_.keys(_.groupBy(_.filter(all_categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
+            return (_.keys(_.groupBy(_.filter(all_categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
         }
       },
       computed: {
