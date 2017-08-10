@@ -18,10 +18,11 @@
         colours:{
           type: Object,
           default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
-        },
-        placeholder: {
-          type: String,
-          default: 'Search...'
+        }, :,
+                width:1300,
+        height: {
+          type: ,
+          default: 1000
         },
         suggestionAttribute:{
           type: String,
