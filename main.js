@@ -23,15 +23,14 @@ require.config({
         'mm_mapsvg' : 'https://mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
-        'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
-        'vue-simple-spinner':'https://cdn.rawgit.com/dzwillia/vue-simple-spinner/52dae743/dist/vue-simple-spinner.min'
+        'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'
     },
     shim: {
         "Vue": {"exports": "Vue"}
     }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery', 'vue-simple-spinner'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$, VueSimpleSpinner) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
@@ -98,9 +97,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     is_inHome: true
                 }]
             }
-        },
-        components: {
-          VueSimpleSpinner
         },
         created() {
             // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
