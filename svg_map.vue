@@ -19,12 +19,12 @@
           type: Object,
           default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
         }, :,
-                width:1300,
+                :1300,
         height: {
           type: ,
           default: 1000
         },
-        suggestionAttribute:{
+        width:{
           type: String,
           required: true
         },
