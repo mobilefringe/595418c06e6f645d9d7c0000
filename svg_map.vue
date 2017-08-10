@@ -11,7 +11,7 @@
     return Vue.component('svg-map', {
       template: template,
       props: {
-        value: {
+        svgMapUrl: {
           type: String,
           default: ''
         },
