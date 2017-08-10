@@ -74,7 +74,7 @@
                 source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                 colors: this.colours,
                 viewBox: this.viewBox,
-                // disableAll: true,
+                disableAll: true,
                 height:this.height,
                 width:this.width,
                 regions:this.regions,
