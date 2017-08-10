@@ -30,7 +30,7 @@
         regions: {
           type: Array
         },
-        defaultAll: {
+        loadingText: {
           type: Boolean,
           default: false
         },
