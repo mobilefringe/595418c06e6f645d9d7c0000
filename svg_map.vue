@@ -79,7 +79,7 @@
                 zoom: this,
                 zoomButtons: this.zoomButtons,
                 pan:this.pan,
-                cursor:'pointer',
+                cursor:this.cursor,
                 responsive:this.responsive,
                 zoomLimit:this.zoomLimit
             });
