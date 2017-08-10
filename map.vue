@@ -83,6 +83,9 @@
         mounted(){
           this.initMap();
         },
+        beforeUpdate(){
+          this.initMap();
+        }
         watch: {
             store1 : function () {
                 var val = this.store1;
