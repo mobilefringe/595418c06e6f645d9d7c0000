@@ -13,7 +13,7 @@
       props: {
         svgMapUrl: {
           type: String,
-          default: ''
+          required: true
         },
         autocomplete:{
           type: Boolean,
