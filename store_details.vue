@@ -194,7 +194,8 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     });
                 }
                 else {
-                    
+                    var hours =store_hours[val];
+                    temp_hours.push(hours[0]);
                 }
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 console.log(this.currentStore);
