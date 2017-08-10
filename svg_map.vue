@@ -22,7 +22,8 @@
         viewBox : {
             type : Array,
             default: [] //viewBox: [3000,0,6000,6000],
-        },regions: {
+        },
+        regions: {
           type: Array,
           default: []
         },
