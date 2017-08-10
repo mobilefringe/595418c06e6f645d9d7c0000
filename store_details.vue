@@ -11,7 +11,7 @@
             </div >
             <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">
-                {{currentStore.property_id}} - {{currentStore.store_hours_today.open_time | moment("h a ", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a z", timezone)}}
+                {{currentStore.property_id}} - {{currentStore.store_hours_today.open_time }}  {{currentStore.store_hours_today.close_time}}
             </p>
         </div>
         <!-- Store Details -->
@@ -147,7 +147,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
                     disableAll: true,
-                    width:100%,
                     height:200,
                     // regions: regions,
                     tooltipsMode:'custom',
