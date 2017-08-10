@@ -42,7 +42,7 @@
           type: Object,
           default: {'show': true,'location': 'left' }
         },
-        pa: {
+        pan: {
           type: Boolean,
           default: true
         },
