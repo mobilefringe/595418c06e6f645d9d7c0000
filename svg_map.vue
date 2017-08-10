@@ -42,7 +42,7 @@
           type: Object,
           default: {'show': true,'location': 'left' }
         },
-        includeScore: {
+        pa: {
           type: Boolean,
           default: false
         },
