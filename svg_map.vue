@@ -55,7 +55,7 @@
           default: true
         },
         zoomLimit: {
-          type: Boolean,
+          type: Array,
           default: [0,10]
         }
       },
