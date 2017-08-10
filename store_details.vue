@@ -147,6 +147,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                     // viewBox: [3000,0,6000,6000],
                     disableAll: true,
+                    width:100%,
                     height:200,
                     // regions: regions,
                     tooltipsMode:'custom',
