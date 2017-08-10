@@ -71,7 +71,9 @@
                 suggestionAttribute: 'name',
                 input1 : "",
                 search_one : null,
-                search_two : null
+                search_two : null,
+                search1="",
+                search2=""
             }
         },
         created (){
