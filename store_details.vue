@@ -90,7 +90,7 @@
 </template>
 
 <script>
-define(["Vue", "jquery", "mm_mapsvg","mousewheel","raphael", "moment", "moment-timezone", "vue-moment"], function(Vue,$,mapsvg,mousewheel,raphael,moment,tz, VueMoment) {
+define(["Vue", "jquery", "mm_mapsvg","mousewheel","Raphael", "moment", "moment-timezone", "vue-moment"], function(Vue,$,mapsvg,mousewheel,Raphael,moment,tz, VueMoment) {
     return Vue.component("store-details-component", {
         template: template, // the variable template will be injected,
         props: {
