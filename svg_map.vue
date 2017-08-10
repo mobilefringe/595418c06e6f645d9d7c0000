@@ -155,42 +155,42 @@
         // }
       },
       methods: {
-        onInput(value) {
-          this.highlightedPosition = 0
-          this.isOpen = !!value
-          this.$emit('input', value) // emit event back to parent
-        },
-        moveDown() {
-          if (!this.isOpen) {
-            return
-          }
-          this.highlightedPosition =
-            (this.highlightedPosition + 1) % this.result.length
-        },
-        moveUp() {
-          if (!this.isOpen) {
-            return
-          }
-          this.highlightedPosition = this.highlightedPosition - 1 < 0 ? this.result.length - 1 : this.highlightedPosition - 1
-        },
-        select() {
-          if (this.autocomplete){
-            const selectedOption = this.result[this.highlightedPosition]
-            this.$emit('select', selectedOption)
-            this.isOpen = false
-            this.$emit('input', selectedOption[this.suggestionAttribute])
-          }
-          else{
-            const selectedOption = this.result;
-            this.$emit('select', selectedOption)
-          }
-        },
-        initFuse () {
-          this.fuse = new Fuse(this.list, this.options);
-          if (this.defaultAll) {
-            this.result = this.list
-          }
-        }
+        // onInput(value) {
+        //   this.highlightedPosition = 0
+        //   this.isOpen = !!value
+        //   this.$emit('input', value) // emit event back to parent
+        // },
+        // moveDown() {
+        //   if (!this.isOpen) {
+        //     return
+        //   }
+        //   this.highlightedPosition =
+        //     (this.highlightedPosition + 1) % this.result.length
+        // },
+        // moveUp() {
+        //   if (!this.isOpen) {
+        //     return
+        //   }
+        //   this.highlightedPosition = this.highlightedPosition - 1 < 0 ? this.result.length - 1 : this.highlightedPosition - 1
+        // },
+        // select() {
+        //   if (this.autocomplete){
+        //     const selectedOption = this.result[this.highlightedPosition]
+        //     this.$emit('select', selectedOption)
+        //     this.isOpen = false
+        //     this.$emit('input', selectedOption[this.suggestionAttribute])
+        //   }
+        //   else{
+        //     const selectedOption = this.result;
+        //     this.$emit('select', selectedOption)
+        //   }
+        // },
+        // initFuse () {
+        //   this.fuse = new Fuse(this.list, this.options);
+        //   if (this.defaultAll) {
+        //     this.result = this.list
+        //   }
+        // }
       },
       mounted () {
         this.initFuse()
