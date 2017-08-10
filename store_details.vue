@@ -195,7 +195,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 }
                 else {
                     var hours= "No Hours Avaialble";
-                    temp_hours.push(hours[0]);
+                    temp_hours.push(hours);
                 }
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 console.log(this.currentStore);
