@@ -4,7 +4,7 @@
             <!--<div class="map">-->
             <!--    <div class="demo_1 map3" style="" id="mapsvg"></div>-->
             <!--</div>-->
-            <svg-map></svg-map>
+            <svg-map @update-date="updateDate"></svg-map>
         </div>
         <div class="blue_dets_box" v-for="store in all_stores">
             <div class="more_dets pull-right">
