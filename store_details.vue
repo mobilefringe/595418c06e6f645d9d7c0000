@@ -196,8 +196,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 else {
                     
                 }
-                
-                 console.log(this.currentStore);
+                console.log(this.currentStore);
             },
             map : function () {
                 this.loading = false;
