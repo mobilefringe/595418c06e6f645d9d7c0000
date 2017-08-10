@@ -212,7 +212,6 @@
             
         },
         getCategoryIdArray (catArray) {
-            var all_categories = this.state.categories;
             return (_.keys(_.groupBy(_.filter(this.state.categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
         }
       },
