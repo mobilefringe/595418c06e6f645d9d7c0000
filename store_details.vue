@@ -190,7 +190,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     var hours =store_hours[val];
                     temp_hours.push(hours[0]);
                 });
-                if(this.currentStore.store_hours.length > 1) {
+                if(this.currentStore.store_hours.length > 0) {
                     Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 }
                 else {
