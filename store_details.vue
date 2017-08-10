@@ -56,7 +56,7 @@
         <div class="blue_box promo"  v-if="currentStore" @click="toggleHours">
             <p class="dets_title">{{$t("message.fullHours")}}</p>
         </div>
-        <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore">
+        <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore.store_hours_data">
             <div class="row" v-for="day in currentStore.store_hours_data">
                 <div v-if="!day.is_holiday" class="">
                     <p class="col-xs-8 pull-left disp_table_cell">
