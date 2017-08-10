@@ -52,7 +52,7 @@
         },
         responsive: {
           type: Boolean,
-          default: false
+          default: true
         },
         matchAllTokens: {
           type: Boolean,
