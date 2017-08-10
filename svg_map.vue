@@ -56,7 +56,7 @@
         },
         zoomLimit: {
           type: Boolean,
-          default: false
+          default: [0,10]
         }
       },
       data() {
