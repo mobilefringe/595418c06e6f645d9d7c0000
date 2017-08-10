@@ -57,8 +57,8 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component"], function(Vue, $, Raphael, mapsvg,mousewheel,SearchComponent) {
-    console.log($.mapsvg);
+  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent) {
+    console.log($.mapSvg);
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         data: function() {
@@ -83,7 +83,7 @@
         },
         beforeRouteEnter (to, from, next) {
             next(vm => {
-               console.log(vm.mapsvg);
+               console.log(mapSvg);
             })
         },
         mounted: function (){
