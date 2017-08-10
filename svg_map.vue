@@ -78,7 +78,7 @@
                 loadingText: this.loadingText,
                 zoom: this,
                 zoomButtons: this.zoomButtons,
-                pan:true,
+                pan:this.pan,
                 cursor:'pointer',
                 responsive:true,
                 zoomLimit: [0,10]
