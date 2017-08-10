@@ -14,7 +14,7 @@
 <body>
   <div id="app">
     <!-- Backdrop-->
-    <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop">
+    <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop" v-on:loadChange="">
       <div class="loader">Loading...</div>
     </div>
     <div id="main-container" v-cloak v-if="dataLoaded">
