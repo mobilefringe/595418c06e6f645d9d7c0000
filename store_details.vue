@@ -183,7 +183,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     Vue.set(this.currentStore,'store_hours_today', store_hours[this.currentStore.todays_hour][0]);
                 }
                 else {
-                    Vue.set(this.currentStore,'store_hours_today'," store_hours[this.currentStore.todays_hour][0]""");
+                    Vue.set(this.currentStore,'store_hours_today',"");
                 }   
                 
                  var temp_hours=[];
