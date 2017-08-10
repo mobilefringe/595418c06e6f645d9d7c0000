@@ -16,7 +16,7 @@
   <div id="app">
     <!-- Backdrop-->
     <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>
-    <div v-cloak v-if="dataLoaded">
+    <div id="main-container" v-cloak v-if="dataLoaded">
         <div class="row">
           <div class="logo_container">
             <a href="/">
