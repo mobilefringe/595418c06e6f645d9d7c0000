@@ -24,7 +24,7 @@
             default: [] //viewBox: [3000,0,6000,6000],
         },
         disableAll: {
-          type: Array,
+          type: bollean,
           default: []
         },
         height: {
