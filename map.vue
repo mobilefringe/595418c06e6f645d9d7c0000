@@ -167,7 +167,7 @@
         },
          methods: {
             swapSearchTerm: function () {
-                swapSearch = !swapSearch;
+                this.swapSearch = !this.swapSearch;
                 this.map.marksHide();
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
