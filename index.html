@@ -13,66 +13,68 @@
 </head>
 
 <body>
-  <div id="app" >
+  <div id="app">
     <spinner v-if="!dataLoaded" message="Loading..."></spinner>
-    <div class="row" v-cloak v-if="dataLoaded">
-      <div class="logo_container">
-        <a href="/">
-          <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506681000/PathLogo2x.png" class="main_logo"/>
-        </a>
-      </div>
-      <div class="position_relative">
-        <img @click="open_menu" v-show="open_icon" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
-        <div id="menu_page" v-if="show_menu">
-          <div class="menu_page_content">
-            <div class="row">
-              <div class="logo_container">
-                <a href="/">
-                  <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506270000/Path Logo.png" class="main_logo" />
-                </a>
-              </div>
-              <div class="position_relative">
-                <img @click="close_menu" v-show="closed_icon" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/Close Button 2x.png" class="close_menu visible_phone menu-icon" alt="open menu" id="close-menu-icon">
-              </div>
-            </div>
-            <hr>
-            <h4 class="all_caps menu_title">{{$t("message.discoverPath")}}</h4>
-            <hr>
-            <div class="menu_btn_holder">
-              <div v-for="item in menu_items">
-                <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
-                  <a>
-                    <label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label>
-                  </a>
-                </router-link>
+    <div class="container" v-cloak v-if="dataLoaded">
+        <div class="row">
+          <div class="logo_container">
+            <a href="/">
+              <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506681000/PathLogo2x.png" class="main_logo"/>
+            </a>
+          </div>
+          <div class="position_relative">
+            <img @click="open_menu" v-show="open_icon" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/menu Button 2x.png" class="open_menu visible_phone menu-icon" alt="open menu" id="menu-icon">
+            <div id="menu_page" v-if="show_menu">
+              <div class="menu_page_content">
+                <div class="row">
+                  <div class="logo_container">
+                    <a href="/">
+                      <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506270000/Path Logo.png" class="main_logo" />
+                    </a>
+                  </div>
+                  <div class="position_relative">
+                    <img @click="close_menu" v-show="closed_icon" src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498507078000/Close Button 2x.png" class="close_menu visible_phone menu-icon" alt="open menu" id="close-menu-icon">
+                  </div>
+                </div>
+                <hr>
+                <h4 class="all_caps menu_title">{{$t("message.discoverPath")}}</h4>
+                <hr>
+                <div class="menu_btn_holder">
+                  <div v-for="item in menu_items">
+                    <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+                      <a>
+                        <label :class="item.class_list" @click="close_menu" :id="item.name">{{ item.name }}</label>
+                      </a>
+                    </router-link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <router-view></router-view>
-    <section class="copyright_footer main_container">
-      <div class="text-center visible_phone">
-        <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506682000/MFLogo2x.png" class="footer_mf_logo" alt="">
-        <p class="subscribe_text">
-          {{$t("message.subscribeMessage")}}
-        </p>
-        <div class="newsletter_div">
-          <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
-            <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
-            <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>
-            <p class="hidden_now" id="success_subscribe">
-              {{$t("message.thankYouMessage")}}
+        <router-view></router-view>
+        <section class="copyright_footer main_container">
+          <div class="text-center visible_phone">
+            <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506682000/MFLogo2x.png" class="footer_mf_logo" alt="">
+            <p class="subscribe_text">
+              {{$t("message.subscribeMessage")}}
             </p>
-          </form>
-        </div>
-        <p class="footer_text">
-          {{$t("message.poweredBy")}}
-          <a href="//mobilefringe.com" target="_blank"><u>{{$t("message.mf")}}</u></a>. &copy; {{$t("message.copyright")}} {{copyright_year}} {{showLoader}}
-        </p>
-      </div>
-    </section>
+            <div class="newsletter_div">
+              <form action="//mobilefringe.createsend.com/t/d/s/ithdul/" method="post" id="newsletter_form">
+                <input name="cm-ithdul-ithdul" type="text" placeholder="Your Email" class="newsletter_control" required />
+                <button class="newsletter_btn animated_btn">{{$t("message.submit")}}</button>
+                <p class="hidden_now" id="success_subscribe">
+                  {{$t("message.thankYouMessage")}}
+                </p>
+              </form>
+            </div>
+            <p class="footer_text">
+              {{$t("message.poweredBy")}}
+              <a href="//mobilefringe.com" target="_blank"><u>{{$t("message.mf")}}</u></a>. &copy; {{$t("message.copyright")}} {{copyright_year}} {{showLoader}}
+            </p>
+          </div>
+        </section>
+    </div>
   </div>
 
   <!-- Backdrop-->
