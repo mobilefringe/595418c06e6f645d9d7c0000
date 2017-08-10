@@ -80,11 +80,28 @@
         created (){
           window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
         },
-        mounted(){
-          this.initMap();
-        },
-        beforeDestroy(){
-          this.initMap();
+        mounted: function (){
+            var map = $('#mapsvg').mapSvg({
+                source: this.getSVGurl,    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
+                // viewBox: [3000,0,6000,6000],
+                // disableAll: true,
+                height:1000,
+                width:1300,
+                // regions:regions,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+            });
+            this.map = map;
+            console.log(this.store1);
+            this.search_one = $('.search1').offset();
+            this.search_two = $('.search2').offset();
         },
         watch: {
             store1 : function () {
@@ -149,30 +166,6 @@
             }
         },
          methods: {
-            initMap: function() {
-              this.map = null;
-              let map = $('#mapsvg').mapSvg({
-                source: this.getSVGurl,    // Path to SVG map
-                colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
-                // viewBox: [3000,0,6000,6000],
-                // disableAll: true,
-                height:1000,
-                width:1300,
-                // regions:regions,
-                tooltipsMode:'custom',
-                loadingText: "loading...",
-                zoom: true,
-                zoomButtons: {'show': true,'location': 'left' },
-                pan:true,
-                cursor:'pointer',
-                responsive:true,
-                zoomLimit: [0,10]
-              });
-              this.map = map;
-              console.log(this.store1);
-              this.search_one = $('.search1').offset();
-              this.search_two = $('.search2').offset();
-            },
             swapSearchTerm: function () {
                 this.swapSearch = !this.swapSearch;
                 this.map.marksHide();
