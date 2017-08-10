@@ -32,7 +32,7 @@
         },
         loadingText: {
           type: String,
-          default: false
+          default: "loading..."
         },
         list: {
           type: Array
