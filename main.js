@@ -36,7 +36,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
-    Vue.use(VueSimpleSpinner);
     
     /* initialize router */
     const router = new VueRouter({
@@ -99,6 +98,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                     is_inHome: true
                 }]
             }
+        },
+        components: {
+          VueSimpleSpinner
         },
         created() {
             // make an async call to the data store to initialize the locale (i.e. it will check if there is a locale value saved in cookie, otherwise it will default to EN)
