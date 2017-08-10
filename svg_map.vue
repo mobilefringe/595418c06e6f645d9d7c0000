@@ -62,7 +62,6 @@
       data() {
         return {
           isOpen: false,
-          highlightedPosition: 0,
           //search: '',
           fuse: null,
           result: []
