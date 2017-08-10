@@ -145,7 +145,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     // viewBox: [3000,0,6000,6000],
                     disableAll: true,
                     height:200,
-                    width:1300,
                     // regions: regions,
                     tooltipsMode:'custom',
                     loadingText: "loading...",
@@ -191,6 +190,12 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     var hours =store_hours[val];
                     temp_hours.push(hours[0]);
                 });
+                if(this.currentStore.store_hours.length > 1) {
+                    
+                }
+                else {
+                    
+                }
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
                  console.log(this.currentStore);
             },
