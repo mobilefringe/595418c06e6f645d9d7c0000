@@ -27,7 +27,7 @@
           type: Number,
           default: 1300
         },
-        eventName: {
+        regions: {
           type: String,
           default: 'fuseResultsUpdated'
         },
