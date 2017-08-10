@@ -190,10 +190,10 @@
             var stay_cats = ["Hotel","Lounge"];
             var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health","Health & Wellness","Health Services","Management","News","Opitcal/Health/Beauty","Other","Personal Care","Personal Care & Health Service","Pharmacies & Drug Store","Photography & Photo Equipment","Post Office","Postal Services","Printing Services","Professional Services","Retail","SERVICES","Services","Services ","Services and Stores","Specialty Service","Specialty Services","Storage","Telephone,Computers, Electronics","Travel","Travel Agent","florist","health","services"];
             dine_cats = this.getCategoryIdArray (dine_cats);  
-            dine_cats = this.getCategoryIdArray (dine_cats);  
-            dine_cats = this.getCategoryIdArray (dine_cats);  
-            dine_cats = this.getCategoryIdArray (dine_cats);  
-            dine_cats = this.getCategoryIdArray (dine_cats);  
+            shop_cats = this.getCategoryIdArray (shop_cats);  
+            play_cats = this.getCategoryIdArray (play_cats);  
+            stay_cats = this.getCategoryIdArray (stay_cats);  
+            service_cats = this.getCategoryIdArray (service_cats);  
            
             this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }), 'name');
             this.dine_stores = _.groupBy(this.dine_stores, 'name');
