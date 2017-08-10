@@ -84,7 +84,7 @@
             next(vm => {
                console.log(mapsvg);
             })
-        }
+        },
         mounted: function (){
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
