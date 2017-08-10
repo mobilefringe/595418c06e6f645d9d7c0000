@@ -39,7 +39,7 @@
         },
         caseSensitive: {
           type: Boolean,
-          default: false
+          default: true
         },
         includeScore: {
           type: Boolean,
@@ -75,7 +75,7 @@
                 // regions:this.regions,
                 tooltipsMode:'custom',
                 loadingText: this.loadingText,
-                zoom: this.zoom,
+                zoom: this,
                 zoomButtons: {'show': true,'location': 'left' },
                 pan:true,
                 cursor:'pointer',
