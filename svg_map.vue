@@ -34,12 +34,12 @@
           type: String,
           default: "loading..."
         },
-        zoomButtons: {
-          type: Array
-        },
         zoom: {
           type: Boolean,
           default: true
+        },
+        zoomButtons: {
+          type: Array
         },
         includeScore: {
           type: Boolean,
