@@ -186,7 +186,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 }   
                 
                  var temp_hours=[];
-                console.log(this.currentStore.store_hours.length > 0);
+               
                 if(this.currentStore.store_hours.length > 0) {
                     _.forEach(this.currentStore.store_hours, function(val, key) {
                         var hours =store_hours[val];
@@ -194,6 +194,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     });
                 }
                 else {
+                     console.log(this.currentStore.store_hours.length > 0);
                     var hours= "No Hours Avaialble";
                     temp_hours.push(hours);
                 }
