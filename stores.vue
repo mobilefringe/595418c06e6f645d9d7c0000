@@ -210,7 +210,7 @@
             this.service_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(service_cats,o.category_name); }), 'name');
             this.service_stores = _.groupBy(this.service_stores, 'name');
             console.log(this.allStores);
-            console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }));
+            console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.categories[0]); }));
             
         },
         getCategoryIdArray (catArray) {
