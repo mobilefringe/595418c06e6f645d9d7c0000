@@ -74,7 +74,7 @@
                 width:this.width,
                 // regions:this.regions,
                 tooltipsMode:'custom',
-                loadingText: "loading...",
+                loadingText: this.loadingText,
                 zoom: true,
                 zoomButtons: {'show': true,'location': 'left' },
                 pan:true,
