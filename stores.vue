@@ -221,7 +221,10 @@
         },
         allStores() {
             return this.$store.getters.processedStores;
-        }
+        },
+            state () {
+                return this.$store.state;
+            }
       }
     });
   });
