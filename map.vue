@@ -85,11 +85,11 @@
         },
         beforeRouteEnter (to, from, next) {
             next(vm => {
-                initMap();
+                vm.initMap();
             })
         },
         beforeRouteUpdate (to, from, next) {
-            initMap();
+            this.initMap();
         },
         watch: {
             store1 : function () {
