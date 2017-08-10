@@ -39,7 +39,8 @@
           default: true
         },
         zoomButtons: {
-          type: Array
+          type: Array,
+          default: 
         },
         includeScore: {
           type: Boolean,
