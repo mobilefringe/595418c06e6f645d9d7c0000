@@ -28,7 +28,7 @@
           default: 1300
         },
         regions: {
-          type: String,
+          type: Array,
           default: 'fuseResultsUpdated'
         },
         defaultAll: {
