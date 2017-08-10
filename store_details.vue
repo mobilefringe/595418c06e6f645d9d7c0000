@@ -83,7 +83,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row" v-for="day in currentStore.store_hours_data" v-if="currentStore.store_hours_data !== null">
+            <div class="row" v-if="currentStore.store_hours_data !== null">
             </div>
         </div>
         <!-- Backdrop-->
