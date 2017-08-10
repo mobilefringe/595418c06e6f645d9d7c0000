@@ -69,7 +69,7 @@
         var map = $('#mapsvg').mapSvg({
                 source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                 colors: this.colours,
-                // viewBox: [3000,0,6000,6000],
+                viewBox: [3000,0,6000,6000],
                 // disableAll: true,
                 height:this.height,
                 width:this.width,
