@@ -16,7 +16,7 @@
         </div>
         <!-- Store Details -->
         <div class="store_dets"  v-if="currentStore">
-            <div class="row" v-show="currentStore.website">
+            <div class="row" v-show="currentStore.property_id">
                 <i class="fa fa-map-marker col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10">{{currentStore.property_id}}</p>
             </div>
