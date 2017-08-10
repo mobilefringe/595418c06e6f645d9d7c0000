@@ -77,7 +77,7 @@
                 tooltipsMode:'custom',
                 loadingText: this.loadingText,
                 zoom: this,
-                zoomButtons: {'show': true,'location': 'left' },
+                zoomButtons: this.zoomButtons,
                 pan:true,
                 cursor:'pointer',
                 responsive:true,
