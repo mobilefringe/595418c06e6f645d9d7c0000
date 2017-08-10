@@ -1,8 +1,8 @@
 <template>
     <div class="svg-map" >
         <div class="map">
-                <div class="demo_1 map3" style="" id="mapsvg"></div>
-            </div>
+            <div class="demo_1 map3" style="" id="mapsvg"></div>
+        </div>
     </div>
 </template>
 
