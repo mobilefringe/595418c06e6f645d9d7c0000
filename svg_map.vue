@@ -72,7 +72,7 @@
                 // disableAll: true,
                 height:this.height,
                 width:this.width,
-                // regions:regions,
+                // regions:this.regions,
                 tooltipsMode:'custom',
                 loadingText: "loading...",
                 zoom: true,
