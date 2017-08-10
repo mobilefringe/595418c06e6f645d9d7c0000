@@ -162,6 +162,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     console.log("emit in map loader")
                 }
                 this.loadMap(map);
+                console.log(this.state.results);
                 this.all_hours = this.state.results.hours; 
                 
                 var store_promo = _.groupBy(this.promotions(), 'id');
