@@ -17,7 +17,7 @@
         },
         colours:{
           type: Object,
-          default: true
+          default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
         },
         placeholder: {
           type: String,
