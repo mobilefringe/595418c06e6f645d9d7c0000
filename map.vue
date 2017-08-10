@@ -86,7 +86,9 @@
         beforeRouteEnter (to, from, next) {
             console.log("beforeRouteEnter");
             next(vm => {
-                vm.initMap();
+                Vue.nextTick(function () {
+                    vm.initMap();
+                })
             })
         },
         beforeRouteUpdate (to, from, next) {
