@@ -48,7 +48,7 @@
         },
         cursor: {
           type: String,
-          default: false
+          default: 'pointer'
         },
         tokenize: {
           type: Boolean,
