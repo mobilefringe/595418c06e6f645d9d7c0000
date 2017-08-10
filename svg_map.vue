@@ -29,7 +29,7 @@
         },
         regions: {
           type: Array,
-          default: ['fuseResultsUpdated']]
+          default: 'fuseResultsUpdated'
         },
         defaultAll: {
           type: Boolean,
