@@ -191,11 +191,12 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     temp_hours.push(hours[0]);
                 });
                 if(this.currentStore.store_hours.length > 0) {
-                    Vue.set(this.currentStore,'store_hours_data', temp_hours);
+                    
                 }
                 else {
                     
                 }
+                Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 console.log(this.currentStore);
             },
             map : function () {
