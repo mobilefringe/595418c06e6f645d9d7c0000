@@ -80,7 +80,7 @@
                 zoomButtons: this.zoomButtons,
                 pan:this.pan,
                 cursor:'pointer',
-                responsive:true,
+                responsive:this.responsive,
                 zoomLimit: [0,10]
             });
       }
