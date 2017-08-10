@@ -211,7 +211,7 @@
         getCategoryIdArray (catArray) {
             console.log(this.state.categories);
             var all_categories = this.state.categories;
-            
+            console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }))l
         }
       },
       computed: {
