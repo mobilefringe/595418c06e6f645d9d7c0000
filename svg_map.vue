@@ -19,14 +19,14 @@
           type: Object,
           default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
         }, :,
-                :1300,
+                :,
         height: {
           type: ,
           default: 1000
         },
         width:{
           type: String,
-          required: true
+          default: 1300
         },
         eventName: {
           type: String,
