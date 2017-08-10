@@ -67,7 +67,7 @@
       },
       mounted () {
         var map = $('#mapsvg').mapSvg({
-                source: //this.getSVGurl,    // Path to SVG map
+                source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
                 // viewBox: [3000,0,6000,6000],
                 // disableAll: true,
