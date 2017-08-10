@@ -226,7 +226,7 @@
             return this.$store.getters.processedStores;
         },
         state () {
-            return this.$store.state;
+            return this.$store.state.results;
         }
       }
     });
