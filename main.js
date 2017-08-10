@@ -158,8 +158,8 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         this.closed_icon = false;
         this.open_icon = true;
       },
-      updateLoader(variable) {
-        this.showLoader = variable;
+      updateLoader() {
+        this.dataLoaded = !this.dataLoaded;
         console.log("changed showLoader to", this.showLoader);
       }
     },
