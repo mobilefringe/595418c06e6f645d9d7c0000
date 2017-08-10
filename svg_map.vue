@@ -34,10 +34,10 @@
           type: String,
           default: "loading..."
         },
-        list: {
+        zoomButtons: {
           type: Array
         },
-        caseSensitive: {
+        zoom: {
           type: Boolean,
           default: true
         },
