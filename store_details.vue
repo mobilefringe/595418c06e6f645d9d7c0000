@@ -160,7 +160,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 });
                 this.map = map;
                 if(this.map) {
-                    this.$emit('loadChange', false);
+                    this.$emit('loadChange');
                     console.log("emit in map loader")
                 }
                 this.loadMap(map);
