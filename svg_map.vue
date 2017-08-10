@@ -47,7 +47,7 @@
           default: true
         },
         cursor: {
-          type: Boolean,
+          type: String,
           default: false
         },
         tokenize: {
