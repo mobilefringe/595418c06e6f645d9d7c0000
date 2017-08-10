@@ -24,19 +24,19 @@ require.config({
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
         'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
-        'Spinner':'https://cdn.rawgit.com/dzwillia/vue-simple-spinner/master/dist/vue-simple-spinner.min'
+        'Spinner':'https://cdn.rawgit.com/dzwillia/vue-simple-spinner/master/src/components/Spinner.vue?noext'
     },
     shim: {
         "Vue": {"exports": "Vue"}
     }
 });
 
-require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery', 'Spinner'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$, Spinner) {
+require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery', 'vue!Spinner'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta,$, Spinner) {
     Vue.use(Meta);
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
-    Vue.use(Spinner);
+    
     
     /* initialize router */
     const router = new VueRouter({
