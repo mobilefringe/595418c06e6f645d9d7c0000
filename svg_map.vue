@@ -39,7 +39,7 @@
           default: true
         },
         zoomButtons: {
-          type: Array,
+          type: Object,
           default: {'show': true,'location': 'left' }
         },
         includeScore: {
