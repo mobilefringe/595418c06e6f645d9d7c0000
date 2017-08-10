@@ -83,7 +83,7 @@
         mounted(){
           this.initMap();
         },
-        beforeUpdate(){
+        beforeDestroy(){
           this.initMap();
         },
         watch: {
