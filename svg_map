@@ -52,7 +52,7 @@
 </style>
 
 <script>
-  define(["Vue", "Fuse"], function(Vue, Fuse) {
+  define(["Vue"], function(Vue) {
     return Vue.component('svg-map', {
       template: template,
       props: {
