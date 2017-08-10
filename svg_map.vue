@@ -93,7 +93,7 @@
                 zoomLimit:this.zoomLimit
             });
         }
-        this.$emit('updateMap', date);
+        this.$emit('updateMap', map);
     });
   });
 </script>
