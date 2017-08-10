@@ -24,8 +24,8 @@
             default: [] //viewBox: [3000,0,6000,6000],
         },
         disableAll: {
-          type: bollean,
-          default: []
+          type: Boolean,
+          default: flase
         },
         height: {
           type: Number,
