@@ -44,7 +44,8 @@
             return {
                 mobile_search_box : "",
                 suggestionAttribute: 'name',
-                loading : true
+                loading : true,
+                search=""
             }
         },
         computed: {
