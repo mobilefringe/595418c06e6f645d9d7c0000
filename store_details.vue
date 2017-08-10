@@ -24,7 +24,7 @@
                 <i class="fa fa-globe col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10"><a :href="currentStore.website">{{currentStore.website}}</a></p>
             </div>
-            <div class="row">
+            <div class="row" v-show="currentStore.website">
                 <i class="fa fa-phone col-xs-1" aria-hidden="true"></i>
                 <p class="wrap col-xs-10"><a :href="'tel:' +currentStore.phone">{{currentStore.phone}}</a></p>
                 
