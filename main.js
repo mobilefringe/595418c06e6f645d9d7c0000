@@ -60,7 +60,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 closed_icon: false,
                 open_icon : true,
                 show_menu : false,
-                copyright_year :  moment().year(),
+                //copyright_year :  moment().year(),
                 menu_items : [{
                     name: "Home",
                     id: "home",
@@ -131,6 +131,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 set (value) {
                     this.$store.commit('SET_LOCALE', { lang: value })
                 }
+            },
+            copyright_year(){
+                return moment().year();
             }
         },
         methods: {
