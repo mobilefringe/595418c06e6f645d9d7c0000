@@ -15,8 +15,8 @@
           type: String,
           required: true
         },
-        autocomplete:{
-          type: Boolean,
+        colors:{
+          type: Object,
           default: true
         },
         placeholder: {
