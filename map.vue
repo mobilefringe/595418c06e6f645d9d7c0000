@@ -90,7 +90,7 @@
         },
         beforeRouteUpdate (to, from, next) {
             initMap();
-        }
+        },
         watch: {
             store1 : function () {
                 var val = this.store1;
