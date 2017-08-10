@@ -3,7 +3,7 @@
         <div class="position_relative map_search_page">
             <div class="gray_bar">
                 <div class="col-xs-10">
-                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" v-model="swapSearch ? search1 : search2">
+                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect1" class="search1" placeholder="Search Stores" v-model="swap ? search1 : search2">
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
@@ -12,7 +12,7 @@
                             </article>
                         </template>
                     </search-component>
-                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you" v-model="swapSearch ? search2 : search1">
+                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you" v-model="swap ? search2 : search1">
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
@@ -22,7 +22,7 @@
                         </template>
                     </search-component>
                 </div>
-                <img @click="swapSearch = !swapSearch" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">
+                <img @click="swapSearchTerm" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">
             </div>
             <div class="map">
                 <div class="demo_1 map3" style="" id="mapsvg"></div>
