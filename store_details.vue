@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div v-else class="padding_1010">
-                 {{$t("message.noPromoMessage")}}
+                {{$t("message.noPromoMessage")}}
             </div>
         </div>
         <!-- Store Hours -->
