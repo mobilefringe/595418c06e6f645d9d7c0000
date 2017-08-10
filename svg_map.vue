@@ -110,7 +110,7 @@
           console.log(this.result);
           return this.result.filter(o => o[this.suggestionAttribute].match(re))
         },
-        */
+        
         options () {
           var options = {
             caseSensitive: this.caseSensitive,
@@ -135,7 +135,7 @@
             options.keys.push(this.suggestionAttribute)
           }
           return options
-        }
+        }*/
       },
       watch: {
         value() {
