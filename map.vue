@@ -72,9 +72,9 @@
                 input1 : "",
                 search_one : null,
                 search_two : null,
-                search1="",
-                search2="",
-                swapSearch: false;
+                search1 : "",
+                search2 : "",
+                swapSearch : false;
             }
         },
         created (){
