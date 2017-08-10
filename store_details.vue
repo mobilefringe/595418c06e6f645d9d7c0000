@@ -130,6 +130,9 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             console.log(this.showLoader);
             this.$emit('loadChange', true);
             console.log("emit to parent to make this true");
+            
+          window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+       
         },
         mounted : function (){
           
