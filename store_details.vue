@@ -83,6 +83,8 @@
                     </p>
                 </div>
             </div>
+            <div class="row" v-for="day in currentStore.store_hours_data" v-if="currentStore.store_hours_data !== null">
+            </div>
         </div>
         <!-- Backdrop-->
         <!--<div v-show="loading" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>-->
