@@ -92,7 +92,7 @@
                 responsive:this.responsive,
                 zoomLimit:this.zoomLimit
             });
-      }
+        }
     });
   });
 </script>
