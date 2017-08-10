@@ -93,6 +93,7 @@
                 zoomLimit:this.zoomLimit
             });
         }
+        this.$emit('update-date', date);
     });
   });
 </script>
