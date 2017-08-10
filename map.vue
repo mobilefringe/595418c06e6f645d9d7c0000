@@ -84,6 +84,7 @@
             
         },
         beforeRouteEnter (to, from, next) {
+            console.log("beforeRouteEnter");
             next(vm => {
                 vm.initMap();
             })
