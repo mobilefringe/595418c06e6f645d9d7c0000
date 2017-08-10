@@ -195,7 +195,7 @@
             stay_cats = this.getCategoryIdArray (stay_cats);  
             service_cats = this.getCategoryIdArray (service_cats);  
            
-            this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.categories[0]); }), 'name');
+            this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats,_.toString(o.categories[0])); }), 'name');
             this.dine_stores = _.groupBy(this.dine_stores, 'name');
             
             this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats,o.category_name); }), 'name');
