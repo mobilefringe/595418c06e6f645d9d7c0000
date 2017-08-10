@@ -50,7 +50,7 @@
           type: String,
           default: 'pointer'
         },
-        tokenize: {
+        responsive: {
           type: Boolean,
           default: false
         },
