@@ -53,7 +53,7 @@
 
 <script>
   define(["Vue", "Fuse"], function(Vue, Fuse) {
-    return Vue.component('search-component', {
+    return Vue.component('svg-map', {
       template: template,
       props: {
         value: {
