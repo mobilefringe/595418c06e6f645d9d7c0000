@@ -25,7 +25,7 @@
           default: 1000
         },
         width:{
-          type: String,
+          type: Number,
           default: 1300
         },
         eventName: {
