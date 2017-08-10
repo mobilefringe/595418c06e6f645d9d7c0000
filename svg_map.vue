@@ -81,7 +81,7 @@
                 pan:this.pan,
                 cursor:'pointer',
                 responsive:this.responsive,
-                zoomLimit: [0,10]
+                zoomLimit:this.zoomLimit
             });
       }
     });
