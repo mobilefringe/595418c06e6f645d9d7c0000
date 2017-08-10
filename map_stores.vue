@@ -1,9 +1,9 @@
 <template>
     <div class="maps">
         <div class="map_page">
-            <div class="map">
-                <div class="demo_1 map3" style="" id="mapsvg"></div>
-            </div>
+            <!--<div class="map">-->
+            <!--    <div class="demo_1 map3" style="" id="mapsvg"></div>-->
+            <!--</div>-->
         </div>
         <div class="blue_dets_box" v-for="store in all_stores">
             <div class="more_dets pull-right">
