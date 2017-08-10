@@ -13,8 +13,9 @@
 </head>
 
 <body>
-  <div id="app" v-cloak v-if="dataLoaded">
-    <div class="row">
+  <div id="app" >
+    <spinner v-if="!dataLoaded" message="Loading..."></spinner>
+    <div class="row" v-cloak v-if="dataLoaded">
       <div class="logo_container">
         <a href="/">
           <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498506681000/PathLogo2x.png" class="main_logo"/>
