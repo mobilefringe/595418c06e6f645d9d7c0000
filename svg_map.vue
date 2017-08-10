@@ -32,7 +32,8 @@
           default: 1300
         },
         regions: {
-          type: Array
+          type: Array,
+          default: []
         },
         loadingText: {
           type: String,
