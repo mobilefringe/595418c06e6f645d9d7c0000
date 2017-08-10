@@ -89,6 +89,7 @@
             })
         },
         beforeRouteUpdate (to, from, next) {
+            console.log("test");
             this.initMap();
         },
         watch: {
