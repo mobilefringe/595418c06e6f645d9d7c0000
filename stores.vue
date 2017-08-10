@@ -210,6 +210,7 @@
         },
         getCategoryIdArray () {
             console.log(this.state.categories);
+            var all_categories = this.state.categories;
         }
       },
       computed: {
