@@ -57,7 +57,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component"], function(Vue, $, Raphael, mapsvg,mousewheel,SearchComponent) {
+  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         data: function() {
@@ -80,13 +80,7 @@
         created (){
           window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
         },
-        beforeRouteEnter (to, from, next) {
-            next(vm => {
-               console.log($);
-            })
-        },
         mounted: function (){
-            console.log("mounted");
             var map = $('#mapsvg').mapSvg({
                 source: this.getSVGurl,    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
@@ -104,6 +98,7 @@
                 responsive:true,
                 zoomLimit: [0,10]
             });
+            console.log(map);
             this.map = map;
             console.log(this.store1);
             this.search_one = $('.search1').offset();
