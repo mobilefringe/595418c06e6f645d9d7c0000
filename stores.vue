@@ -208,7 +208,7 @@
             console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }));
             
         },
-        getCategoryIdArray (Catarray) {
+        getCategoryIdArray (catAarray) {
             console.log(this.state.categories);
             var all_categories = this.state.categories;
             
