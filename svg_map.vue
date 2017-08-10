@@ -21,7 +21,7 @@
         }, :,
                 :,
         height: {
-          type: ,
+          type: Number,
           default: 1000
         },
         width:{
