@@ -15,7 +15,7 @@
           type: String,
           required: true
         },
-        colors:{
+        colours:{
           type: Object,
           default: true
         },
