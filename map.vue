@@ -157,30 +157,28 @@
         },
          methods: {
             initMap: function() {
-              Vue.nextTick(function () {
-                  this.map = null;
-                  let map = $('#mapsvg').mapSvg({
-                    source: this.getSVGurl,    // Path to SVG map
-                    colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
-                    // viewBox: [3000,0,6000,6000],
-                    // disableAll: true,
-                    height:1000,
-                    width:1300,
-                    // regions:regions,
-                    tooltipsMode:'custom',
-                    loadingText: "loading...",
-                    zoom: true,
-                    zoomButtons: {'show': true,'location': 'left' },
-                    pan:true,
-                    cursor:'pointer',
-                    responsive:true,
-                    zoomLimit: [0,10]
-                  });
-                  this.map = map;
-                  console.log(this.store1);
-                  this.search_one = $('.search1').offset();
-                  this.search_two = $('.search2').offset();
-              })
+              this.map = null;
+              let map = $('#mapsvg').mapSvg({
+                source: this.getSVGurl,    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
+                // viewBox: [3000,0,6000,6000],
+                // disableAll: true,
+                height:1000,
+                width:1300,
+                // regions:regions,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+              });
+              this.map = map;
+              console.log(this.store1);
+              this.search_one = $('.search1').offset();
+              this.search_two = $('.search2').offset();
             },
             swapSearchTerm: function () {
                 this.swapSearch = !this.swapSearch;
