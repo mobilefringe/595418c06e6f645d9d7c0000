@@ -6,51 +6,6 @@
     </div>
 </template>
 
-<style>
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  .search-component{
-    width: 100%;
-    position: relative;
-  }
-
-  ul.options-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: -12px;
-    border: 1px solid #dbdbdb;
-    border-radius: 0 0 3px 3px;
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  ul.options-list li {
-    width: 100%;
-    flex-wrap: wrap;
-    background: white;
-    margin: 0;
-    border-bottom: 1px solid #eee;
-    color: #363636;
-    padding: 7px;
-    cursor: pointer;
-  }
-
-  ul.options-list li.highlighted {
-    background: #f8f8f8
-  }
-
-</style>
-
 <script>
   define(["Vue"], function(Vue) {
     return Vue.component('svg-map', {
