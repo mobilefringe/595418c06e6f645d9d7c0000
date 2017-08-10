@@ -207,6 +207,9 @@
             console.log(this.allStores);
             console.log(_.filter(this.allStores, function(o) { return _.includes(dine_cats,o.category_name); }));
             console.log(this.state.results.categories);
+        },
+        getCategoryIdArray () {
+            
         }
       },
       computed: {
