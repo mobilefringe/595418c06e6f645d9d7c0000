@@ -82,7 +82,7 @@
         },
         beforeRouteEnter (to, from, next) {
             next(vm => {
-               console.log(mapsvg);
+               console.log(vm.mapsvg);
             })
         },
         mounted: function (){
