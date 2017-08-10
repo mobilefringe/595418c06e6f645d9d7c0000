@@ -84,7 +84,6 @@
                 </div>
             </div>
             <div class="row" v-if="currentStore.store_hours_data[0] !== null">
-            Hi
                 {{$t("message.noHoursMessage")}}
             </div>
         </div>
