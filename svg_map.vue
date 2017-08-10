@@ -21,7 +21,7 @@
         },
         viewBox : {
             type : Array,
-            default: []
+            default: [] //viewBox: [3000,0,6000,6000],
         }
         height: {
           type: Number,
