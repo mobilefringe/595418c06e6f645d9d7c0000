@@ -45,7 +45,7 @@
                 mobile_search_box : "",
                 suggestionAttribute: 'name',
                 loading : true,
-                search :""
+                search : ""
             }
         },
         computed: {
