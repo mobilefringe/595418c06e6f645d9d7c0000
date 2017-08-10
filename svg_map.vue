@@ -28,8 +28,7 @@
           default: 1300
         },
         regions: {
-          type: Array,
-          default: 'fuseResultsUpdated'
+          type: Array
         },
         defaultAll: {
           type: Boolean,
