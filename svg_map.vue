@@ -44,7 +44,7 @@
         },
         pa: {
           type: Boolean,
-          default: false
+          default: true
         },
         includeMatches: {
           type: Boolean,
