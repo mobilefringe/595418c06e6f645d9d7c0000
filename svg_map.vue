@@ -54,7 +54,7 @@
           type: Boolean,
           default: true
         },
-        matchAllTokens: {
+        zoomLimit: {
           type: Boolean,
           default: false
         }
