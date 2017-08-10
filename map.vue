@@ -80,18 +80,8 @@
         created (){
           window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
         },
-        mounted: function (){
-            
-        },
-        beforeRouteEnter (to, from, next) {
-            console.log("beforeRouteEnter");
-            next(vm => {
-                vm.initMap();
-            })
-        },
-        beforeRouteUpdate (to, from, next) {
-            console.log("test");
-            this.initMap();
+        beforeUpdate: function (){
+             this.initMap();
         },
         watch: {
             store1 : function () {
