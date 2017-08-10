@@ -25,7 +25,7 @@
         },
         disableAll: {
           type: Boolean,
-          default: flase
+          default: false
         },
         height: {
           type: Number,
