@@ -41,9 +41,11 @@
         // props: ['menu_items'],
         template: template, // the variable template will be injected
          props: {
-            menu_items: type: Array
-                
-         }.
+            menu_items: {
+                type: Array,
+                required: true
+            }
+         },
         data: function() {
             return {
                 mobile_search_box : "",
