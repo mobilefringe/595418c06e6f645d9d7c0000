@@ -42,7 +42,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
   /* initialize router */
   const router = new VueRouter({
     mode: 'history',
-    routes: appRoutes("hi")
+    routes: appRoutes
   });
 
   /* initialize i18n */
