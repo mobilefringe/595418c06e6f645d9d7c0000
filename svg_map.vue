@@ -21,7 +21,7 @@
                     },
                     viewBox : {
                         type : Array,
-                        default: [] //viewBox: [3000,0,6000,6000],
+                        default: tbis.getEmptyArray //viewBox: [3000,0,6000,6000],
                     },
                     disableAll: {
                         type: Boolean,
