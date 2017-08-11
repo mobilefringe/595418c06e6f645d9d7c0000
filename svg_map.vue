@@ -49,7 +49,7 @@
                     },
                     zoomButtons: {
                         type: Object,
-                        default: getZoomBtn
+                        default: this.getZoomBtn
                     },
                     pan: {
                         type: Boolean,
