@@ -75,25 +75,24 @@
         }
       },
       mounted () {
-        // var map = $('#mapsvg').mapSvg({
-        //         source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
-        //         colors: this.colours,
-        //         viewBox: this.viewBox,
-        //         disableAll: this.disableAll,
-        //         height:this.height,
-        //         width:this.width,
-        //         regions:this.regions,
-        //         tooltipsMode:'custom',
-        //         loadingText: this.loadingText,
-        //         zoom: this,
-        //         zoomButtons: this.zoomButtons,
-        //         pan:this.pan,
-        //         cursor:this.cursor,
-        //         responsive:this.responsive,
-        //         zoomLimit:this.zoomLimit
-        //     });
-        // }
-        // this.$emit('updateMap', map);
+        var map = $('#mapsvg').mapSvg({
+                source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
+                colors: this.colours,
+                viewBox: this.viewBox,
+                disableAll: this.disableAll,
+                height:this.height,
+                width:this.width,
+                regions:this.regions,
+                tooltipsMode:'custom',
+                loadingText: this.loadingText,
+                zoom: this,
+                zoomButtons: this.zoomButtons,
+                pan:this.pan,
+                cursor:this.cursor,
+                responsive:this.responsive,
+                zoomLimit:this.zoomLimit
+            });
+        }
     });
   });
 </script>
