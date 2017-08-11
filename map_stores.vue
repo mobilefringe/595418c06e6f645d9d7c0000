@@ -49,7 +49,9 @@
             // });
             this.getStoresByName(this.map);
         },
-        watch: { }
+        watch: { 
+            
+        },
         
         computed: {
             property : function(){
