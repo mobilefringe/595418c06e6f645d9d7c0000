@@ -99,7 +99,7 @@
                 });
                 Vue.nextTick(function () {
                   // DOM updated
-                  this.map=map;
+                  //=map;
                   console.log("svg" ,this.map);
                 })
                 
