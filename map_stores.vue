@@ -81,7 +81,7 @@
                 var stores = this.storesByAlphaIndex[first_letter];
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 console.log( this.all_stores );
-                c
+                
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
@@ -104,7 +104,7 @@
                 return val1 + val2;
             },
             updateSVGMap (map) {
-                onsole.log(this.map);
+                console.log(this.map);
                 this.map = map;
             }
         }
