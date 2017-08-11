@@ -49,6 +49,8 @@
             // });
             this.getStoresByName(this.map);
         },
+        watch: { }
+        
         computed: {
             property : function(){
                 return this.$store.getters.getProperty;
