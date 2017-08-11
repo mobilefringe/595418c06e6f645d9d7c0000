@@ -93,6 +93,11 @@
                 zoomLimit:this.zoomLimit
             });
             this.$emit('updateMap', map);
+        },
+        methods : {
+            getColour : {
+                return {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
+            }
         }
     });
   });
