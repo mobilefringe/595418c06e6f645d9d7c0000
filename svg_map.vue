@@ -7,67 +7,67 @@
 </template>
 
 <script>
-  define(["Vue"], function(Vue) {
-    return Vue.component('svg-map', {
-      template: template,
-      props: {
-        svgMapUrl: {
-          type: String,
-          required: true
-        },
-        colours:{
-          type: Object,
-          default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
-        },
-        viewBox : {
-            type : Array,
-            default: [] //viewBox: [3000,0,6000,6000],
-        },
-        disableAll: {
-          type: Boolean,
-          default: false
-        },
-        height: {
-          type: Number,
-          default: 1000
-        },
-        width:{
-          type: Number,
-          default: 1300
-        },
-        regions: {
-          type: Array,
-          default: []
-        },
-        loadingText: {
-          type: String,
-          default: "loading..."
-        },
-        zoom: {
-          type: Boolean,
-          default: true
-        },
-        zoomButtons: {
-          type: Object,
-          default: {'show': true,'location': 'left' }
-        },
-        pan: {
-          type: Boolean,
-          default: true
-        },
-        cursor: {
-          type: String,
-          default: 'pointer'
-        },
-        responsive: {
-          type: Boolean,
-          default: true
-        },
-        zoomLimit: {
-          type: Array,
-          default: [0,10]
-        }
-      },
+    define(["Vue"], function(Vue) {
+        return Vue.component('svg-map', {
+            template: template,
+                props: {
+                    svgMapUrl: {
+                        type: String,
+                        required: true
+                    },
+                    colours:{
+                        type: Object,
+                        default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
+                    },
+                    viewBox : {
+                        type : Array,
+                        default: [] //viewBox: [3000,0,6000,6000],
+                    },
+                    disableAll: {
+                        type: Boolean,
+                        default: false
+                    },
+                    height: {
+                        type: Number,
+                        default: 1000
+                    },
+                    width:{
+                        type: Number,
+                        default: 1300
+                    },
+                    regions: {
+                        type: Array,
+                        default: []
+                    },
+                    loadingText: {
+                        type: String,
+                        default: "loading..."
+                    },
+                    zoom: {
+                        type: Boolean,
+                        default: true
+                    },
+                    zoomButtons: {
+                        type: Object,
+                        default: {'show': true,'location': 'left' }
+                    },
+                    pan: {
+                        type: Boolean,
+                        default: true
+                    },
+                    cursor: {
+                        type: String,
+                        default: 'pointer'
+                    },
+                    responsive: {
+                        type: Boolean,
+                        default: true
+                    },
+                    zoomLimit: {
+                        type: Array,
+                        default: [0,10]
+                    }
+                  },
       data() {
         return {
           isOpen: false,
