@@ -71,7 +71,7 @@
             data() {
                 return {
                     isOpen: false,
-                    result: []
+                    map: null
                 }
             },
             watch : function () {
