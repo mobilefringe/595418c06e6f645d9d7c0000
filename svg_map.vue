@@ -80,7 +80,7 @@
                 }
             },
             mounted () {
-                var map = $('#mapsvg').mapSvg({
+                this.mapmap = $('#mapsvg').mapSvg({
                     source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                     colors: this.colours,
                     viewBox: this.viewBox,
