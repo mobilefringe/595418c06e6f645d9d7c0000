@@ -51,7 +51,7 @@
         },
         watch: { 
             map : function (){
-                if(map!==null) {
+                if(this.map!==null) {
                     this.getStoresByName(this.map);
                 }
             }
