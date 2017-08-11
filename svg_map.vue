@@ -10,64 +10,64 @@
     define(["Vue"], function(Vue) {
         return Vue.component('svg-map', {
             template: template,
-                props: {
-                    svgMapUrl: {
-                        type: String,
-                        required: true
-                    },
-                    colours:{
-                        type: Object,
-                        default: this.getColour
-                    },
-                    viewBox : {
-                        type : Array,
-                        default: this.getEmptyArray //viewBox: [3000,0,6000,6000],
-                    },
-                    disableAll: {
-                        type: Boolean,
-                        default: false
-                    },
-                    height: {
-                        type: Number,
-                        default: 1000
-                    },
-                    width:{
-                        type: Number,
-                        default: 1300
-                    },
-                    regions: {
-                        type: Array,
-                        default: this.getEmptyArray
-                    },
-                    loadingText: {
-                        type: String,
-                        default: "loading..."
-                    },
-                    zoom: {
-                        type: Boolean,
-                        default: true
-                    },
-                    zoomButtons: {
-                        type: Object,
-                        default: this.getZoomBtn
-                    },
-                    pan: {
-                        type: Boolean,
-                        default: true
-                    },
-                    cursor: {
-                        type: String,
-                        default: 'pointer'
-                    },
-                    responsive: {
-                        type: Boolean,
-                        default: true
-                    },
-                    zoomLimit: {
-                        type: Array,
-                        default: this.getZoomLimit
-                    }
+            props: {
+                svgMapUrl: {
+                    type: String,
+                    required: true
                 },
+                colours:{
+                    type: Object,
+                    default: this.getColour
+                },
+                viewBox : {
+                    type : Array,
+                    default: this.getEmptyArray //viewBox: [3000,0,6000,6000],
+                },
+                disableAll: {
+                    type: Boolean,
+                    default: false
+                },
+                height: {
+                    type: Number,
+                    default: 1000
+                },
+                width:{
+                    type: Number,
+                    default: 1300
+                },
+                regions: {
+                    type: Array,
+                    default: this.getEmptyArray
+                },
+                loadingText: {
+                    type: String,
+                    default: "loading..."
+                },
+                zoom: {
+                    type: Boolean,
+                    default: true
+                },
+                zoomButtons: {
+                    type: Object,
+                    default: this.getZoomBtn
+                },
+                pan: {
+                    type: Boolean,
+                    default: true
+                },
+                cursor: {
+                    type: String,
+                    default: 'pointer'
+                },
+                responsive: {
+                    type: Boolean,
+                    default: true
+                },
+                zoomLimit: {
+                    type: Array,
+                    default: this.getZoomLimit
+                }
+            },
             data() {
                 return {
                     isOpen: false,
