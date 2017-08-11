@@ -92,7 +92,7 @@
                     responsive:this.responsive,
                     zoomLimit:this.zoomLimit
                 });
-                    this.$emit('updateMap', map);
+                this.$emit('updateMap', map);
                 },
         methods : {
             getColour : {
