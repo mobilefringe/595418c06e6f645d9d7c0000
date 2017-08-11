@@ -97,7 +97,11 @@
                     responsive:this.responsive,
                     zoomLimit:this.zoomLimit
                 });
-                this.map=map;
+                Vue.nextTick(function () {
+                  // DOM updated
+                  this.map=map;
+                })
+                
                 console.log(this.map);
             },
             methods : {
