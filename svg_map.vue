@@ -67,7 +67,7 @@
                         type: Array,
                         default: [0,10]
                     }
-                  },
+                },
       data() {
         return {
           isOpen: false,
