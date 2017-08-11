@@ -3,7 +3,7 @@ define([], function () {
     {
       path: '/',
       component: view('home'),
-      props: this.menu_items
+      props: {something:"no" }
     },
     {
       path: '/stores',
