@@ -74,7 +74,7 @@
                     map: null
                 }
             },
-            watch : function () {
+            watch : {
                 map : function () {
                     
                 }
