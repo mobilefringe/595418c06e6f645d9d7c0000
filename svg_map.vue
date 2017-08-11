@@ -76,7 +76,7 @@
             },
             watch : {
                 map : function () {
-                    
+                        
                 }
             },
             mounted () {
