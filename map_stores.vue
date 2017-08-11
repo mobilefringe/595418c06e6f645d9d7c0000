@@ -107,7 +107,7 @@
                 return val1 + val2;
             },
             updateSVGMap (map) {
-                console.log("updating ")
+                console.log("updating ");
                 this.map = map;
             }
         }
