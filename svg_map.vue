@@ -97,6 +97,9 @@
             methods : {
                 getColour() {
                     return {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"} ;
+                },
+                getEmptyArray () {
+                    return [];
                 }
             }
         });
