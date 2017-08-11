@@ -74,6 +74,9 @@
                     result: []
                 }
             },
+            watch : function () {
+                
+            },
             mounted () {
                 var map = $('#mapsvg').mapSvg({
                     source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
