@@ -37,7 +37,7 @@
                     },
                     regions: {
                         type: Array,
-                        default: []
+                        default: this.getEmptyArray
                     },
                     loadingText: {
                         type: String,
