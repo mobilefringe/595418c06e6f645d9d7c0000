@@ -74,7 +74,7 @@
           result: []
         }
       },
-      mounted () {console.log("hey");
+      mounted () {
         var map = $('#mapsvg').mapSvg({
                 source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                 colors: this.colours,
