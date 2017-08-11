@@ -51,7 +51,7 @@
         },
         watch: { 
             map : function (){
-                if(this.map!==null && this.map!== undefined) {
+                if(this.map.fileExists!==null && this.map..fileExists !== undefined) {
                     this.getStoresByName(this.map);
                 }
             }
