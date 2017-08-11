@@ -41,7 +41,8 @@
         // props: ['menu_items'],
         template: template, // the variable template will be injected
          props: {
-            something: {
+            menu_items: {
+                type: Array,
                 required: true
             }
          },
@@ -58,7 +59,7 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                console.log(this.something);
+                console.log(this.menu_items);
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
