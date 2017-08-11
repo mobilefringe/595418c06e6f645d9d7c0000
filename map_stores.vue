@@ -23,7 +23,7 @@
         data: function() {
             return {
                 all_stores: {},
-                map :{}
+                map :null
             }
         },
         created (){
