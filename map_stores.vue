@@ -77,13 +77,13 @@
         },
          methods: {
             getStoresByName(map) {
-                console.log(map);
+                // console.log(map);
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 console.log( this.all_stores );
-                console.log("last", map);
+                // console.log("last", map);
                 $.each( this.all_stores , function( key, val ) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
