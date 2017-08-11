@@ -17,7 +17,7 @@
                     },
                     colours:{
                         type: Object,
-                        default: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"}
+                        default: this.getColor();
                     },
                     viewBox : {
                         type : Array,
