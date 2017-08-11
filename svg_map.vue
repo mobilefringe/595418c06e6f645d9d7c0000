@@ -17,7 +17,7 @@
                     },
                     colours:{
                         type: Object,
-                        default: this.getColour();
+                        default: this.getColour()
                     },
                     viewBox : {
                         type : Array,
