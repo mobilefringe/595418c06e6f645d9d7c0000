@@ -100,7 +100,7 @@
                 Vue.nextTick(function () {
                   // DOM updated
                   this.map=map;
-                  console.log(this.map);
+                  console.log("svg" ,this.map);
                 })
                 
                 
