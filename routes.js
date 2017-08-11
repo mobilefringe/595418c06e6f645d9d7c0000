@@ -2,7 +2,8 @@ define([], function () {
   return [
     {
       path: '/',
-      component: view('home')
+      component: view('home'),
+      props: this.menu_items: 
     },
     {
       path: '/stores',
