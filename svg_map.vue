@@ -49,7 +49,7 @@
                     },
                     zoomButtons: {
                         type: Object,
-                        default: {'show': true,'location': 'left' }
+                        default: getZoomBtn
                     },
                     pan: {
                         type: Boolean,
