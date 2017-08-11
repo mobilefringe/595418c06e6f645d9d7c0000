@@ -92,6 +92,7 @@
                 responsive:this.responsive,
                 zoomLimit:this.zoomLimit
             });
+            this.$emit('updateMap', map);
         }
     });
   });
