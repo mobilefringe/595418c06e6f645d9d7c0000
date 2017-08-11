@@ -1,9 +1,9 @@
-define([], function (word) {
+define([], function () {
   return [
     {
       path: '/',
       component: view('home'),
-      props: {menu_items: word }
+      props: {menu_items: app.menu_items }
     },
     {
       path: '/stores',
