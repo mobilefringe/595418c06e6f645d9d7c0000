@@ -109,7 +109,7 @@
             updateSVGMap (map) {
                 
                 this.map = map;
-                console.log("updating map in svg_map");
+                console.log("updating map in svg_map",this.map );
             }
         }
         
