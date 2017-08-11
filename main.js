@@ -23,7 +23,8 @@ require.config({
     'mm_mapsvg': 'https://mmvue.codecloudapp.com/mallmaverick_svgmap',
     'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
     'today_hours': 'https://mmvue.codecloudapp.com/today_hours.vue?noext', //append a dummy query string so requireJS doesn't auto-append .js to the end of the url
-    'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext'
+    'search-component': 'https://mmvue.codecloudapp.com/search-component.vue?noext',
+    '': 'http://595418c06e6f645d9d7c0000.codecloudapp.com/'
   },
   shim: {
     "Vue": {
