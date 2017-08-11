@@ -76,7 +76,7 @@
             },
             watch : {
                 map : function () {
-                    this.$emit('updateMap', map);  
+                    this.$emit('updateMap', this.map);  
                 }
             },
             mounted () {
