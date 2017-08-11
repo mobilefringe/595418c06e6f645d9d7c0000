@@ -51,7 +51,9 @@
         },
         watch: { 
             map : function (){
-                this.getStoresByName(this.map);
+                if(map!==null) {
+                    this.getStoresByName(this.map);
+                }
             }
         },
         
