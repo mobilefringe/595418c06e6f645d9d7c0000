@@ -3,7 +3,7 @@ define([], function (word) {
     {
       path: '/',
       component: view('home'),
-      props: {menu_items: this.menu_items }
+      props: {menu_items: word }
     },
     {
       path: '/stores',
