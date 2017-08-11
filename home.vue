@@ -42,7 +42,7 @@
         template: template, // the variable template will be injected
          props: {
             menu_items: {
-                type: String,
+                type: Array,
                 required: true
             }
          }
