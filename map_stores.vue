@@ -52,7 +52,7 @@
         watch: { 
             map : function (){
                 console.log(this.map);
-                if(this.map.fileExists !== null && this.map !== undefined) {
+                if(this.map !== null && this.map !== undefined) {
                     this.getStoresByName(this.map);
                 }
             }
