@@ -42,7 +42,6 @@
         template: template, // the variable template will be injected
          props: {
             something: {
-                type: Object,
                 required: true
             }
          },
