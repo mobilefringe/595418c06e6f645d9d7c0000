@@ -41,10 +41,10 @@
         // props: ['menu_items'],
         template: template, // the variable template will be injected
          props: {
-                svgMapUrl: {
-                    type: String,
-                    required: true
-                }
+            svgMapUrl: {
+                type: String,
+                required: true
+            }
          }
         data: function() {
             return {
