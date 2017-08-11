@@ -41,10 +41,8 @@
         // props: ['menu_items'],
         template: template, // the variable template will be injected
          props: {
-            menu_items: {
-                type: Array,
-                required: true
-            }
+            menu_items: type: Array,
+                
          }.
         data: function() {
             return {
