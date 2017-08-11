@@ -84,7 +84,6 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 // console.log( this.all_stores );
                 // console.log("last", map);
-                $.each( this.all_stores , function( key, val ) {
                 _.forEach(this.all_stores, function(val, key) {
                     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                         var coords = map.get_coords(val.svgmap_region);
