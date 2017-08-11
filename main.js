@@ -164,7 +164,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         console.log("changed showLoader to", this.showLoader);
       }
     },
-    router: router("hi"),
+    router: router,
     store,
     i18n
   });
