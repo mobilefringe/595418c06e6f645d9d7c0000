@@ -98,7 +98,7 @@
                     zoomLimit:this.zoomLimit
                 });
                 this.map=map;
-                console.log(this.map)
+                console.log(this.map);
             },
             methods : {
                 getColour() {
