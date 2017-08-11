@@ -65,7 +65,7 @@
                     },
                     zoomLimit: {
                         type: Array,
-                        default: getZoomLimit
+                        default: this.getZoomLimit
                     }
                 },
             data() {
