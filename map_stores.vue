@@ -50,7 +50,9 @@
             
         },
         watch: { 
-            
+            map : {
+                this.getStoresByName(this.map);
+            }
         },
         
         computed: {
