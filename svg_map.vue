@@ -75,7 +75,9 @@
                 }
             },
             watch : function () {
-                
+                map : function () {
+                    
+                }
             },
             mounted () {
                 var map = $('#mapsvg').mapSvg({
