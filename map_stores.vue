@@ -47,7 +47,7 @@
             //     responsive:true,
             //     zoomLimit: [0,10]
             // });
-            this.getStoresByName(map);
+            this.getStoresByName(this,map);
         },
         computed: {
             property : function(){
