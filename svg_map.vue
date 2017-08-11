@@ -100,6 +100,9 @@
                 },
                 getEmptyArray () {
                     return [];
+                },
+                getZoomBtn () {
+                    {'show': true,'location': 'left' };
                 }
             }
         });
