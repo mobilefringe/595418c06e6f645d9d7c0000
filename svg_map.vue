@@ -102,7 +102,7 @@
                     return [];
                 },
                 getZoomBtn () {
-                    {'show': true,'location': 'left' };
+                    return {'show': true,'location': 'left' };
                 }
             }
         });
