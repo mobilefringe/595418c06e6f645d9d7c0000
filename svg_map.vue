@@ -103,6 +103,9 @@
                 },
                 getZoomBtn () {
                     return {'show': true,'location': 'left' };
+                },
+                getZoomLimit () {
+                    return [0,10]l
                 }
             }
         });
