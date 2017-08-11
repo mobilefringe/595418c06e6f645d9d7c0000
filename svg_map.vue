@@ -100,9 +100,10 @@
                 Vue.nextTick(function () {
                   // DOM updated
                   this.map=map;
+                  console.log(this.map);
                 })
                 
-                console.log(this.map);
+                
             },
             methods : {
                 getColour() {
