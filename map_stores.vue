@@ -106,7 +106,6 @@
             updateSVGMap (map) {
                 
                 this.map = map;
-                console.log(this.map);
             }
         }
         
