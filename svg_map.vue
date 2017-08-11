@@ -68,12 +68,12 @@
                         default: [0,10]
                     }
                 },
-      data() {
-        return {
-          isOpen: false,
-          result: []
-        }
-      },
+            data() {
+                return {
+                    isOpen: false,
+                    result: []
+                }
+            },
       mounted () {
         var map = $('#mapsvg').mapSvg({
                 source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
