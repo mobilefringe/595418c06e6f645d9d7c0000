@@ -76,6 +76,7 @@
             },
             watch : {
                 map : function () {
+                    console.log("emit change in map");
                     this.$emit('updateMap', this.map);  
                 }
             },
