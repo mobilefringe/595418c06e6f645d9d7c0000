@@ -75,7 +75,7 @@
                 }
             },
             created () {
-                this.$on('greet',this.sayHello)
+                this.$on('setMarker',this.sayHello)
             }
             watch : {
                 map : function () {
