@@ -139,6 +139,7 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
+                        console.log("HELLOOOOOO PT2");
                     }
                 }
             }
