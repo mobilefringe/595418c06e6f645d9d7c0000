@@ -116,7 +116,7 @@
                 var val = this.store1;
                 var map= this.map;
                 console.log("hello");
-                this.$emit("setMarker");
+                console.log(this.$emit("setMarker"));
                 
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
                 //     var coords = map.get_coords(val.svgmap_region);
