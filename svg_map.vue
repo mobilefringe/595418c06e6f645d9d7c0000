@@ -75,7 +75,7 @@
                 }
             },
             created() {
-                this.$on('setMarker',this.addMarker)
+                console.log(this.$on('setMarker',this.addMarker));
             },
             watch : {
                 map : function () {
