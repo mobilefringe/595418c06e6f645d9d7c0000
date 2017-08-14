@@ -110,12 +110,6 @@
                 
                 
             },
-            computed : {
-              
-                addMarker () {
-                    console.log("HELLOOOOOO");
-                }  
-            },
             methods : {
                 getColour() {
                     return {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"} ;
@@ -127,8 +121,10 @@
                     return {'show': true,'location': 'left' };
                 },
                 getZoomLimit () {
-                    
                     return [0,10];
+                },
+                addMarker () {
+                    console.log("HELLOOOOOO");
                 }
             }
         });
