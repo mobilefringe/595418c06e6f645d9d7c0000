@@ -75,12 +75,12 @@
                 }
             },
             created () {
-                this.$on('setMarker',this.sayHello)
+                this.$on('setMarker',this.addMarker)
             }
             watch : {
                 map : function () {
                     console.log("emit change in map",  this.map);
-                    this.$emit('updateMap', this.addMarker);  
+                    this.$emit('updateMap', this.map);  
                 }
             },
             mounted () {
