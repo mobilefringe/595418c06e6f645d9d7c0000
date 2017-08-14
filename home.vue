@@ -30,7 +30,7 @@
             <!--    <a class=" menu_btn_label">{{$t("menu.pathMap")}}</a>-->
             <!--</router-link>-->
             <div v-for="item in menu_items">
-                <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact v-if="is_inHome">
+                <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact v-if="item.is_inHome">
                     <a>
                         <label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
                     </a>
