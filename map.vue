@@ -61,7 +61,7 @@
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         props: {
-            menu_items: {
+            dataLoaded: {
                 type: Array,
                 required: true
             }
