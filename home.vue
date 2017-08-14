@@ -103,7 +103,7 @@
                     return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
                 });
             },
-            changemenu () {
+            changeMenu () {
                 // show_menu = !show_menu
                 this.$emit('switchMenu');
             }
