@@ -1,7 +1,7 @@
 <template>
     <div class="svg-map" >
         <div class="map">
-            <div class="demo_1 map3" id="mapsvg" @loadChange="updateLoader" ></div>
+            <div class="demo_1 map3" id="mapsvg" @setmarker="updateLoader" ></div>
         </div>
     </div>
 </template>
