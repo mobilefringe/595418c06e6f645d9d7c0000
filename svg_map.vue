@@ -79,7 +79,7 @@
             }
             watch : {
                 map : function () {
-                    console.log("emit change in map",  this.map);
+                    console.log("emit change in map",  this.addMarker);
                     this.$emit('updateMap', this.map);  
                 }
             },
