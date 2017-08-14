@@ -204,8 +204,8 @@
             },
             onOptionSelect1(option) {
                 // if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
-                    this.store1 = option;
-                    console.log("search1",this.search1);
+                this.store1 = option;
+                console.log("search1",this.search1);
                 // }
                 // else {
                 //     this.store2 = option;
@@ -213,8 +213,8 @@
             },
             onOptionSelect2(option) {
                 // if((this.search_two.left === $('.search2').offset().left) && (this.search_two.top === $('.search2').offset().top)) {
-                    this.store2 = option;
-                    console.log("search2",this.search2);
+                this.store2 = option;
+                console.log("search2",this.search2);
                 // }
                 // else {
                 //     this.store1 = option;
