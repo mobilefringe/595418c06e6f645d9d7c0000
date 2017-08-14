@@ -81,7 +81,7 @@
                 search_two : null,
                 search1 : "",
                 search2 : "",
-                swapSearch : true
+                swapSearch : false
             }
         },
         created (){
