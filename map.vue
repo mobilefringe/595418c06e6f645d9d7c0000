@@ -116,7 +116,7 @@
             store1 : function () {
                 var val = this.store1;
                 var map= this.map;
-                console.log("Emiting setMarker",this.$children); _.filter(this.$children, function(o) { return o.$el, "div.svg-map" }));
+                console.log("Emiting setMarker",this.$children);// _.filter(this.$children, function(o) { return o.$el, "div.svg-map" }));
                 // this.$emit("setMarker");
                 // this.child.addMarker();div.svg-map
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
