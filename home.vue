@@ -52,7 +52,7 @@
                 type: Array,
                 required: true
             }
-         },
+        },
         data: function() {
             return {
                 mobile_search_box : "",
