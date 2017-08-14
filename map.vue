@@ -54,6 +54,10 @@
             </div>
         </div>
     </div>
+    <!-- Backdrop-->
+    <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop" v-on:loadChange="updateLoader">
+      <div class="loader">Loading...</div>
+    </div>
 </template>
 
 <script>
