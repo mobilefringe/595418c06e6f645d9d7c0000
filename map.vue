@@ -59,7 +59,7 @@
 </template>
 
 <script>
-  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent) {
+  define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
         props: {
