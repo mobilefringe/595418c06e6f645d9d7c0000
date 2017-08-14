@@ -74,6 +74,9 @@
                     map: null
                 }
             },
+            created : {
+                .$on('greet',this.sayHello)
+            }
             watch : {
                 map : function () {
                     console.log("emit change in map",  this.map);
