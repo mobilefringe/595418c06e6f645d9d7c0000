@@ -95,7 +95,7 @@
                     regions:this.regions,
                     tooltipsMode:'custom',
                     loadingText: this.loadingText,
-                    zoom: this,
+                    zoom: this.zoom,
                     zoomButtons: this.zoomButtons,
                     pan:this.pan,
                     cursor:this.cursor,
