@@ -193,6 +193,7 @@
             },
             removeSearch1 :function() {
                 $(".search1 .input").val('');
+                this.search1 = "";
                 this.store1 = null;
             },
             removeSearch2 :function() {
