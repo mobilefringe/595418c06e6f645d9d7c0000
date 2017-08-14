@@ -213,6 +213,7 @@
             onOptionSelect2(option) {
                 // if((this.search_two.left === $('.search2').offset().left) && (this.search_two.top === $('.search2').offset().top)) {
                     this.store2 = option;
+                    console.log("search1",);
                 // }
                 // else {
                 //     this.store1 = option;
