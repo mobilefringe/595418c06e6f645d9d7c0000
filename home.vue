@@ -51,9 +51,9 @@
             menu_items: {
                 type: Array,
                 required: true
-            },show_menu
-            menu_items: {
-                type: Array,
+            },
+            show_menu: {
+                type: Boolean,
                 required: true
             }
         },
