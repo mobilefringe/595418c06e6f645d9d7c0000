@@ -81,11 +81,14 @@
                 search_two : null,
                 search1 : "",
                 search2 : "",
-                swapSearch : false
+                swapSearch : false,
+                child = this.$refs.profile
             }
         },
         created (){
           window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+          
+child.x();
         },
         mounted: function (){
             // var map = $('#mapsvg').mapSvg({
