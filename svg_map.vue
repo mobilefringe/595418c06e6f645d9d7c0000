@@ -143,6 +143,9 @@
                         console.log("HELLOOOOOO PT2");
                     }
                 }
+                hideMarkers () {
+                    
+                }
             }
         });
     });
