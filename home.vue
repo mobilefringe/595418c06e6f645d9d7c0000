@@ -59,7 +59,7 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                console.log(this.menu_items);
+                console.log("here", this.menu_items);
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
