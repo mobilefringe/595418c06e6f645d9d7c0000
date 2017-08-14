@@ -12,7 +12,7 @@
                             </article>
                         </template>
                     </search-component>
-                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you" v-model="swapSearch ? search2 : search1">
+                    <search-component :list="allStores" :suggestion-attribute="suggestionAttribute" @select="onOptionSelect2" class="search2" placeholder="Find a store near you" v-model="swapSearch ? search1 : search1">
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
