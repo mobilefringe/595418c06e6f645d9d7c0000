@@ -115,21 +115,22 @@
             store1 : function () {
                 var val = this.store1;
                 var map= this.map;
-                if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
-                    var coords = map.get_coords(val.svgmap_region);
-                    var height = parseInt(coords["height"])
-                    var width = parseInt(coords["width"])
-                    var x_offset = (parseInt(width) / 2);
-                    var y_offset = (parseInt(height) /2);
+                this.$emit("setMarker",al.svgmap_region);
+                // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
+                //     var coords = map.get_coords(val.svgmap_region);
+                //     var height = parseInt(coords["height"])
+                //     var width = parseInt(coords["width"])
+                //     var x_offset = (parseInt(width) / 2);
+                //     var y_offset = (parseInt(height) /2);
                     
-                    map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
-                        attrs: {
-                            src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png', // image for marker
-                            href: '/stores/'+val.slug
-                        },
-                        tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
-                    }]);
-                }
+                //     map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
+                //         attrs: {
+                //             src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png', // image for marker
+                //             href: '/stores/'+val.slug
+                //         },
+                //         tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
+                //     }]);
+                // }
             },
             store2 : function () {
                 var val = this.store2;
