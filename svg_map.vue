@@ -74,9 +74,9 @@
                     map: null
                 }
             },
-             created() {
+            created() {
                 this.$on('setMarker',this.addMarker)
-            }
+            },
             watch : {
                 map : function () {
                     console.log("emit change in map",  this.map);
