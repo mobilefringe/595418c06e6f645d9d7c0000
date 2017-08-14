@@ -199,20 +199,20 @@
                 this.store2 = null;
             },
             onOptionSelect1(option) {
-                if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
+                // if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
                     this.store1 = option;
-                }
-                else {
-                    this.store2 = option;
-                }   
+                // }
+                // else {
+                //     this.store2 = option;
+                // }   
             },
             onOptionSelect2(option) {
-                if((this.search_two.left === $('.search2').offset().left) && (this.search_two.top === $('.search2').offset().top)) {
+                // if((this.search_two.left === $('.search2').offset().left) && (this.search_two.top === $('.search2').offset().top)) {
                     this.store2 = option;
-                }
-                else {
-                    this.store1 = option;
-                }
+                // }
+                // else {
+                //     this.store1 = option;
+                // }
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
