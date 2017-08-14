@@ -149,16 +149,16 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       changeLocale: function (val) {
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
       },
-      open_menu() {
-        this.show_menu = true;
-        this.open_icon = false;
-        this.closed_icon = true;
-      },
-      close_menu() {
-        this.show_menu = false;
-        this.closed_icon = false;
-        this.open_icon = true;
-      },
+    //   open_menu() {
+    //     this.show_menu = true;
+    //     this.open_icon = false;
+    //     this.closed_icon = true;
+    //   },
+    //   close_menu() {
+    //     this.show_menu = false;
+    //     this.closed_icon = false;
+    //     this.open_icon = true;
+    //   },
       updateLoader() {
         this.dataLoaded = !this.dataLoaded;
         console.log("changed showLoader to", this.showLoader);
