@@ -116,7 +116,7 @@
             store1 : function () {
                 var val = this.store1;
                 var map= this.map;
-                console.log("Emiting setMarker", _.filter(this.allStores, function(o) { return _.includes(dine_cats, _.toString(o.categories[0])); }));
+                console.log("Emiting setMarker", _.filter(this.$children, function(o) { return _.includes(dine_cats, _.toString(o.categories[0])); }));
                 // this.$emit("setMarker");
                 // this.child.addMarker();div.svg-map
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
