@@ -1,7 +1,7 @@
 <template>
     <div class="svg-map" >
         <div class="map">
-            <div class="demo_1 map3" id="mapsvg" @setMarker="addmarker" ></div>
+            <div class="demo_1 map3" id="mapsvg" @setMarker="addMarker" ></div>
         </div>
     </div>
 </template>
