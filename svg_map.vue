@@ -119,8 +119,8 @@
                 getZoomLimit () {
                     return [0,10];
                 },
-                addMarker (region) {
-                    console.log("HELLOOOOOO", region);
+                addMarker () {
+                    console.log("HELLOOOOOO");
                 }
             }
         });
