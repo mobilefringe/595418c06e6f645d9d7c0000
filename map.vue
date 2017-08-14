@@ -108,8 +108,8 @@
             console.log(map);
             this.map = map;
             console.log(this.store1);
-            this.search_one = $('.search1').offset();
-            this.search_two = $('.search2').offset();
+            // this.search_one = $('.search1').offset();
+            // this.search_two = $('.search2').offset();
         },
         watch: {
             store1 : function () {
