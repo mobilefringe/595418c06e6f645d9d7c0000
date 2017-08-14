@@ -75,7 +75,7 @@
                 }
             },
             created : {
-                .$on('greet',this.sayHello)
+                this.$on('greet',this.sayHello)
             }
             watch : {
                 map : function () {
