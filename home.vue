@@ -20,15 +20,22 @@
             <!--<router-link tag="li" to="/location" active-class="active" class=" menu_btn" exact>-->
             <!--    <a class=" menu_btn_label">{{$t("menu.yourLocation")}}</a>-->
             <!--</router-link>-->
-            <router-link tag="li" to="/stores" active-class="active" class=" menu_btn" exact>
-                <a class=" menu_btn_label">{{$t("menu.stores")}}</a>
-            </router-link>
-            <router-link tag="li" to="/promotions" active-class="active" class=" menu_btn" exact>
-                <a class=" menu_btn_label">{{$t("menu.promotions")}}</a>
-            </router-link>
-             <router-link tag="li" to="/map" active-class="active" class=" menu_btn" exact>
-                <a class=" menu_btn_label">{{$t("menu.pathMap")}}</a>
-            </router-link>
+            <!--<router-link tag="li" to="/stores" active-class="active" class=" menu_btn" exact>-->
+            <!--    <a class=" menu_btn_label">{{$t("menu.stores")}}</a>-->
+            <!--</router-link>-->
+            <!--<router-link tag="li" to="/promotions" active-class="active" class=" menu_btn" exact>-->
+            <!--    <a class=" menu_btn_label">{{$t("menu.promotions")}}</a>-->
+            <!--</router-link>-->
+            <!-- <router-link tag="li" to="/map" active-class="active" class=" menu_btn" exact>-->
+            <!--    <a class=" menu_btn_label">{{$t("menu.pathMap")}}</a>-->
+            <!--</router-link>-->
+            <div v-for="item in menu_items">
+                  <router-link tag="li" :to="item.href" active-class="active" class="menu_btn" exact>
+                    <a>
+                      <label :class="item.class_list" @click="show_menu = !show_menu" :id="item.name">{{ item.name }}</label>
+                    </a>
+                  </router-link>
+            </div>
         </div>
         <!-- Backdrop-->
         <!--<div v-show="loading" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>-->
