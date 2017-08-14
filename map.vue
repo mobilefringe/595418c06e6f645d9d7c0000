@@ -116,7 +116,7 @@
             store1 : function () {
                 var val = this.store1;
                 var map= this.map;
-                console.log("Emiting setMarker", this.child);
+                console.log("Emiting setMarker", this.this.$refs.profile);
                 // this.$emit("setMarker");
                 // this.child.addMarker();
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
