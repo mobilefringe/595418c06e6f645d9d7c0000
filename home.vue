@@ -105,6 +105,7 @@
             },
             changemenu () {
                 // show_menu = !show_menu
+                this.$emit('switchMenu');
             }
         }
     })
