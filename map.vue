@@ -177,7 +177,7 @@
                 return this.$store.getters.processedStores;
             },
             svgMapRef() {
-                 _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })
+                 _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") });
             }
         },
          methods: {
