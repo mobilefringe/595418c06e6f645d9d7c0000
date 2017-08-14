@@ -123,7 +123,7 @@
                 getZoomLimit () {
                     return [0,10];
                 },
-                addMarker () {
+                addMarker (val) {
                     console.log("HELLOOOOOO");
                     // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
                 //     var coords = map.get_coords(val.svgmap_region);
