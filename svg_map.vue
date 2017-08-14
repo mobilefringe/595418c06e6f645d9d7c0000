@@ -120,7 +120,7 @@
                     return [0,10];
                 },
                 addMarker (region) {
-                    console.log(region);
+                    console.log("HELLOOOOOO",region);
                 }
             }
         });
