@@ -118,6 +118,9 @@
                 },
                 getZoomLimit () {
                     return [0,10];
+                },
+                addMarker () {
+                    
                 }
             }
         });
