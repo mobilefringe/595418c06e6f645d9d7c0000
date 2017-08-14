@@ -62,7 +62,7 @@
         template: template, // the variable template will be injected
         props: {
             dataLoaded: {
-                type: Array,
+                type: Boolean,
                 required: true
             }
         },
