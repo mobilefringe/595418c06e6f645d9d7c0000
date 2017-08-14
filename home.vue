@@ -70,7 +70,6 @@
                 return this.$store.getters.getProperty;
             },
             processedStores() {
-                console.log("here", this.menu_items);
                 return this.removeDuplicates(this.allStores, 'name');
             },
             allStores() {
