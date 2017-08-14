@@ -134,7 +134,7 @@
                         console.log("HELLOOOOOO",this.map);
                         this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
                             attrs: {
-                                src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png', // image for marker
+                                src:image , // image for marker
                                 href: '/stores/'+val.slug
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
