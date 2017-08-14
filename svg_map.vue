@@ -1,6 +1,6 @@
 <template>
     <div class="svg-map" >
-        <div class="map" @setMarker="addMarker">
+        <div class="map">
             <div class="demo_1 map3" id="mapsvg"></div>
         </div>
     </div>
