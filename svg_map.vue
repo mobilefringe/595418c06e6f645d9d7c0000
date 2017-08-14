@@ -144,7 +144,7 @@
                     }
                 }
                 hideMarkers () {
-                    
+                    this.map.marksHide();
                 }
             }
         });
