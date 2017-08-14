@@ -25,7 +25,8 @@
                 <img @click="swapSearchTerm" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1498848398000/Arrows Icon.png" class="search_icon" alt="">
             </div>
             <div class="map">
-                <div class="demo_1 map3" style="" id="mapsvg"></div>
+                <!--<div class="demo_1 map3" style="" id="mapsvg"></div>-->
+                <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
                 <div v-if = "store1" class="blue_dets_box">
                     <div class="close_dets pull-left">
                         <img @click="removeSearch1" src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180586000/Close_button.png" class="" alt="">
