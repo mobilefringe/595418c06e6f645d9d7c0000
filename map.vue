@@ -198,7 +198,7 @@
             },
             removeSearch2 :function() {
                 // $(".search2 .input").val('');
-                this.search1 = "";
+                this.search2 = "";
                 this.store2 = null;
             },
             onOptionSelect1(option) {
