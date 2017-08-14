@@ -118,7 +118,7 @@
                 var map= this.map;
                 console.log("Emiting setMarker", this.$children);
                 // this.$emit("setMarker");
-                // this.child.addMarker();
+                // this.child.addMarker();div.svg-map
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
                 //     var coords = map.get_coords(val.svgmap_region);
                 //     var height = parseInt(coords["height"])
