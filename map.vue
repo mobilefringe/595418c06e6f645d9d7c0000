@@ -117,7 +117,7 @@
                 var map= this.map;
                 console.log("Emiting setMarker");
                 // this.$emit("setMarker");
-                this.svgMapRef.addMarker(val);
+                this.svgMapRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                 console.log(this.svgMapRef);
                 // if ( val!= null && val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined' ){
                 //     var coords = map.get_coords(val.svgmap_region);
