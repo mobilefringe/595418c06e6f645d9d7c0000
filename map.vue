@@ -113,9 +113,9 @@
         },
         watch: {
             store1 : function () {
-                var val = this.store1;
+                var val =;
                 
-                this.svgMapRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                this.svgMapRef.addMarker( this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
             },
             store2 : function () {
                 this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
