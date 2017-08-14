@@ -102,6 +102,9 @@
                 return myArr.filter((obj, pos, arr) => {
                     return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
                 });
+            },
+            changemenu () {
+                // show_menu = !show_menu
             }
         }
     })
