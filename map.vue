@@ -82,7 +82,7 @@
                 search1 : "",
                 search2 : "",
                 swapSearch : false,
-                child = this.$refs.profile
+                child : this.$refs.profile
             }
         },
         created (){
