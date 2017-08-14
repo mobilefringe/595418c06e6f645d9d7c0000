@@ -162,6 +162,9 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       updateLoader() {
         this.dataLoaded = !this.dataLoaded;
         console.log("changed showLoader to", this.showLoader);
+      },
+      switchMenu () {
+          
       }
     },
     router: router,
