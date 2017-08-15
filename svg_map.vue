@@ -137,6 +137,7 @@
                                 href: '/stores/'+val.slug
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
+                            id:"marker_"+ val.id
                         };
                         var new_mark = this.map.setMarks([mark]);
                     }
