@@ -137,7 +137,7 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
-                        console.log("maek in svg" ,this.map.getMarks());
+                        console.log("maek in svg" ,this.map.marksGet());
                     }
                     return mark;
                 },
