@@ -164,11 +164,13 @@
             },
             removeSearch1 :function() {
                 // $(".search1 .input").val('');
+                this.svgMapRef.removeMark (mark)
                 this.search1 = "";
                 this.store1 = null;
             },
             removeSearch2 :function() {
                 // $(".search2 .input").val('');
+                this.svgMapRef.removeMark (mark)
                 this.search2 = "";
                 this.store2 = null;
             },
