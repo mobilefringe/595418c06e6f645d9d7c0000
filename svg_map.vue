@@ -138,7 +138,7 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         };
-                        this.map.setMarks([mark]);
+                        var new_mark = this.map.setMarks([mark]);
                     }
                     return mark;
                 },
