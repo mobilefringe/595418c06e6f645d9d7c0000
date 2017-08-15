@@ -138,7 +138,7 @@
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]);
                     }
-                    return ,ark;
+                    return mark;
                 },
                 hideMarkers () {
                     this.map.marksHide();
