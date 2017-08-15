@@ -173,6 +173,7 @@
                 this.store2 = null;
             },
             onOptionSelect1(option) {
+                console.log(this.svgMapRef);
                 // if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
                 this.store1 = option;
                 console.log("search1",this.search1);
