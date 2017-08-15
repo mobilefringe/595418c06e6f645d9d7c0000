@@ -130,13 +130,13 @@
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
                         var y_offset = (parseInt(height) /2);
-                        var mark = this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
+                        var mark = console.log(this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
                             attrs: {
                                 src:image , // image for marker
                                 href: '/stores/'+val.slug
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
-                        }]);
+                        }]));
                         console.log("mark in svg" ,mark);
                     }
                     return mark;
