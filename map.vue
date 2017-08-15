@@ -119,7 +119,7 @@
                     Vue.set(this.store1,'marker',mark[0]);
                 }
                 
-                console.log("the mark is" ,this.store1);
+                console.log("the mark is" ,this.store1.marker);
                
             },
             store2 : function () {
