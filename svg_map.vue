@@ -140,7 +140,7 @@
                         };
                         var new_mark = this.map.setMarks([mark]);
                     }
-                    return mark;
+                    return new_mark;
                 },
                 hideMarkers () {
                     this.map.marksHide();
