@@ -132,6 +132,7 @@
                         var y_offset = (parseInt(height) /2);
                         var mark = this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
                             attrs: {
+                                id:"marker_"+val.id
                                 src:image , // image for marker
                                 href: '/stores/'+val.slug
                             },
