@@ -141,7 +141,7 @@
                         };
                         var new_mark = this.map.setMarks([mark]);
                     }
-                    console.log(this.map.getData());
+                    console.log(this.map.getData().RMarks);
                     return new_mark;
                 },
                 hideMarkers () {
