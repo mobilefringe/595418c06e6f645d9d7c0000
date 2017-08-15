@@ -138,14 +138,7 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         };
-                        this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
-                            attrs: {
-                                id:"marker_"+ val.id,
-                                src:image , // image for marker
-                                href: '/stores/'+val.slug
-                            },
-                            tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
-                        }]);
+                        this.map.setMarks([mark]);
                     }
                 },
                 hideMarkers () {
