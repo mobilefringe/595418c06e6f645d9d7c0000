@@ -142,6 +142,9 @@
                 },
                 hideMarkers () {
                     this.map.marksHide();
+                },
+                removeMark (mark) {
+                    this.map.markDelete(mark);
                 }
             }
         });
