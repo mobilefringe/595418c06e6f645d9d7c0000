@@ -137,7 +137,7 @@
                             },
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                         }]));
-                        console.log("mark in svg" ,mark);
+                        //console.log("mark in svg" ,mark);
                     }
                     return mark;
                 },
