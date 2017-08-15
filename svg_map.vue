@@ -139,7 +139,7 @@
                         }]));
                         //console.log("mark in svg" ,mark);
                     }
-                    return mark;
+                    return "mark;
                 },
                 hideMarkers () {
                     this.map.marksHide();
