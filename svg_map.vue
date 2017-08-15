@@ -130,7 +130,7 @@
                         var width = parseInt(coords["width"])
                         var x_offset = (parseInt(width) / 2);
                         var y_offset = (parseInt(height) /2);
-                        var mark = console.log(this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
+                         console.log(this.map.setMarks([{ xy: [coords["x"]    + x_offset-15, coords["y"]  + y_offset-20],
                             attrs: {
                                 src:image , // image for marker
                                 href: '/stores/'+val.slug
