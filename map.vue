@@ -118,7 +118,7 @@
                 console.log("the mark is" ,this.store1);
             },
             store2 : function () {
-                 var mark = this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
+                 var mark = this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png')[0];
                 Vue.set(this.store2,'marker',mark);
             }
         },
