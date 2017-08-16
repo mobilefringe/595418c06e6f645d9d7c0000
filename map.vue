@@ -61,12 +61,12 @@
   define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent,SVGMapComponent) {
     return Vue.component("map-component", {
         template: template, // the variable template will be injected
-        props: {
-            dataLoaded: {
-                type: Boolean,
-                required: true
-            }
-        },
+        // props: {
+        //     dataLoaded: {
+        //         type: Boolean,
+        //         required: true
+        //     }
+        // },
         data: function() {
             return {
                 mobile_search_store : "",
