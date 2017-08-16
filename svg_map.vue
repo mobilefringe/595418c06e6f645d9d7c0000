@@ -147,7 +147,7 @@
                 },
                 setMarkerOnMap (mark) {
                     this.map.setMarks(mark);
-                }
+                },
                 hideMarkers () {
                     this.map.marksHide();
                 },
