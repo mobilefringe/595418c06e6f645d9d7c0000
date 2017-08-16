@@ -164,8 +164,6 @@
                     console.log("filtered Rmarks ", this.all_markers);
                     this.hideMarkers();
                     this.setMarkerOnMap(this.all_markers);
-                    // this.map.marksReset(filtered_set);
-                    // return _.filter(marks, function(o) { return (o.0.id == mark_id) })[0];
                     
                 }
             }
