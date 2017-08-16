@@ -89,7 +89,7 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 // console.log( this.all_stores );
                 // console.log("last", map);
-                _.delay(function(val) {
+                _.delay(function() {
                     console.log("hello world 2",this.all_stores);
                     _.forEach(this.all_stores, function(val, key) {
                         console.log("hello");
