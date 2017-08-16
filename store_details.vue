@@ -159,8 +159,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             },
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
-                // console.log(store_hours);
-                // console.log(this.currentStore);
                 if(this.currentStore.todays_hour!== null){
                     Vue.set(this.currentStore,'store_hours_today', store_hours[this.currentStore.todays_hour][0]);
                 }
@@ -169,7 +167,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 }   
                 
                 var temp_hours=[];
-               
                 if(this.currentStore.store_hours.length > 0) {
                     _.forEach(this.currentStore.store_hours, function(val, key) {
                         var hours =store_hours[val];
@@ -179,9 +176,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 else {
                     temp_hours.push(null);
                 }
-                // console.log(temp_hours);
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
-                // console.log(this.currentStore);
             },
             map : function () {
                 this.loading = false;
