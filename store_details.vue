@@ -177,7 +177,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 // console.log(this.all_promos);
                 _.delay(function(val) {
                   console.log(text);
-                }, 1000, 'later');
+                }, 1000, this.currentStore;);
             },
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
