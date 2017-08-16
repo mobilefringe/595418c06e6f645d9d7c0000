@@ -163,7 +163,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 //     console.log("emit in map loader")
                 // }
                 // this.loadMap(map);
-                this.svgMapRef.addMarker(this.currentStore);
+                this.svgMapRef.addMarker(this.currentStore,'');
                 this.svgMapRef.setViewBox(this.currentStore);
                 this.all_hours = this.state.results.hours; 
                 
