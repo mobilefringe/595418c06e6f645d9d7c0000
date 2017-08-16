@@ -150,6 +150,7 @@
                     this.map.markDelete( mark);
                 },
                 resetMapMarks(id) {
+                    var mark_id = "marker_"+ val.id
                   var  marks =  this.map.getData().RMarks;
                 }
             }
