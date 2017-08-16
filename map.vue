@@ -132,7 +132,7 @@
                     if(mark !== null && mark != undefined) {
                         Vue.set(this.store2,'marker',mark[0]);
                     }
-                   console.log("the mark is" ,this.store1);
+                   console.log("the mark is" ,this.store2);
                 }
                 
             }
