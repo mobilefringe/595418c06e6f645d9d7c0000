@@ -248,7 +248,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     },
                     tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
                 }]);
-               this.svgMapRef.setViewBox(val.svgmap_region);
+               this.svgMapRef.setViewBox(val);
                 // map.selectRegion(val.svgmap_region);
             },
             concatVal(val1,val2) {
