@@ -141,29 +141,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
         },
         watch: {
             currentStore : function () {
-                // var map = $('#mapsvg').mapSvg({
-                //     source: this.getSVGurl,    // Path to SVG map
-                //     colors: {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"},
-                //     // viewBox: [3000,0,6000,6000],
-                //     disableAll: true,
-                //     height:200,
-                //     // regions: regions,
-                //     tooltipsMode:'custom',
-                //     loadingText: "loading...",
-                //     zoom: true,
-                //     zoomButtons: {'show': true,'location': 'left' },
-                //     pan:true,
-                //     cursor:'pointer',
-                //     responsive:true,
-                //     zoomLimit: [0,5]
-                // });
-                // this.map = map;
-                // if(this.map) {
-                //     this.$emit('loadChange');
-                //     console.log("emit in map loader")
-                // }
-                // this.loadMap(map);
-                
+               
                 this.all_hours = this.state.results.hours; 
                 
                 var store_promo = _.groupBy(this.promotions(), 'id');
