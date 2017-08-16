@@ -154,7 +154,7 @@
                     var  marks =  this.map.getData().RMarks;
                     console.log(marks);
                     console.log(mark-id);
-                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                    // return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                     
                 }
             }
