@@ -227,7 +227,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 return this.$store.getters.findPromoBySlug;
             },
             svgMapRef() {
-                var svgRef = _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                // var svgRef = _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 
                 return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
             }
