@@ -82,19 +82,19 @@
         },
          methods: {
             getStoresByName() {
-                console.log("hello world");
+                // console.log("hello world");
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 var temp = this.all_stores ;
-                console.log( this.all_stores );
+                // console.log( this.all_stores );
                 var temp_ref = this.svgMapRef;
                 // console.log("last", map);
                 _.delay(function() {
-                    console.log("hello world 2",temp);
+                    // console.log("hello world 2",temp);
                     _.forEach(temp, function(val, key) {
-                        console.log("hello");
+                        // console.log("hello");
                         temp_ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                        
                     });
