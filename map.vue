@@ -121,8 +121,6 @@
                     console.log("store marker container",this.store1.marker);
                     Vue.set(this.store1,'marker',mark[0]);
                 }
-                
-                console.log("the mark is" ,this.store1.marker);
                
             },
             store2 : function () {
