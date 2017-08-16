@@ -121,7 +121,7 @@
                         console.log("store marker container",this.store1.marker);
                         Vue.set(this.store1,'marker',mark[0]);
                     }
-                   console.log("the mark is" ,this.store1);
+                   console.log("the mark1 is" ,this.store1);
                 }
                 
             },
@@ -132,7 +132,7 @@
                     if(mark !== null && mark != undefined) {
                         Vue.set(this.store2,'marker',mark[0]);
                     }
-                   console.log("the mark is" ,this.store2);
+                   console.log("the mark2 is" ,this.store2);
                 }
                 
             }
