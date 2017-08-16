@@ -89,6 +89,7 @@
                 this.all_stores = _.groupBy(stores, 'name')[slug];
                 var temp = this.all_stores ;
                 console.log( this.all_stores );
+                var temp_ref = this.svgMapRef;
                 // console.log("last", map);
                 _.delay(function() {
                     console.log("hello world 2",temp);
