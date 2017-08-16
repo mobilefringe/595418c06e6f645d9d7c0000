@@ -71,7 +71,8 @@
             data() {
                 return {
                     isOpen: false,
-                    map: null
+                    map: null,
+                    marks : []
                 }
             },
             created() {
