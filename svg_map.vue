@@ -149,7 +149,7 @@
                 removeMark (mark) {
                     this.map.markDelete( mark);
                 },
-                resetMapMarks() {
+                resetMapMarks(id) {
                   var  marks =  this.map.getData().RMarks;
                 }
             }
