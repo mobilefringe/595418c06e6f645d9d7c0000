@@ -292,6 +292,9 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             },
             go_back () {
                this.$router.go(-1);
+            },
+            updateSVGMap (map) {
+                this.map = map;
             }
         }
     });
