@@ -155,6 +155,7 @@
                     var  marks =  this.map.getData().RMarks;
                     console.log(marks);
                     console.log(mark_id);
+                    console.log(_.filter(marks, function(o) { return (o.0.id == mark_id) }));
                     // return _.filter(marks, function(o) { return (o.0.id == mark_id) })[0];
                     
                 }
