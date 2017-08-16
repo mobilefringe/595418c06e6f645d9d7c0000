@@ -79,7 +79,6 @@
             },
             watch : {
                 map : function () {
-                    console.log("emit change in map",  this.map);
                     this.$emit('updateMap', this.map);  
                     // console.log(this.$on('setMarker',this.addMarker));
                 }
