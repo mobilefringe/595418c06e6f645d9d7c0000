@@ -101,11 +101,11 @@
                     responsive:this.responsive,
                     zoomLimit:this.zoomLimit
                 });
-                Vue.nextTick(function () {
-                  // DOM updated
-                  //=map;
-                  console.log("svg" ,this.map);
-                })
+                // Vue.nextTick(function () {
+                //   // DOM updated
+                //   //=map;
+                //   console.log("svg" ,this.map);
+                // })
                 
                 
             },
