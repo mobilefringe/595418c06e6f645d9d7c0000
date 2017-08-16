@@ -202,31 +202,10 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 return this.$store.getters.findPromoBySlug;
             },
             svgMapRef() {
-                // var svgRef = _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-                
                 return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
             }
         }, 
         methods : {
-            // loadMap(map) {
-        
-                // console.log(map);
-                // var val = this.currentStore;
-                // var coords = map.get_coords(val.svgmap_region);
-                // var height = parseInt(coords["height"])
-                // var width = parseInt(coords["width"])
-                // var x_offset = (parseInt(width) / 2);
-                // var y_offset = (parseInt(height) /2);
-        
-                // map.setMarks([{ xy: [coords["x"]  - 12.5 + x_offset, coords["y"] -34 + y_offset],
-                //     attrs: {
-                //         src: '//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png',   // image for marker
-                //     },
-                //     tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>"
-                // }]);
-                //   this.svgMapRef.setViewBox(this.currentStore);
-                // map.selectRegion(val.svgmap_region);
-            // },
             concatVal(val1,val2) {
                 return val1 + val2;
             },
