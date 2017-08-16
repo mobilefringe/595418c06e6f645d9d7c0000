@@ -148,7 +148,7 @@
                 },
                 removeMark (id) {
                     // this.map.markDelete( mark);
-                    resetMapMarks(id)
+                    this.resetMapMarks(id)
                 },
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
