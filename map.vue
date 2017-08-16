@@ -181,7 +181,7 @@
             },
             removeSearch1 :function() {
                 // $(".search1 .input").val('');
-                this.svgMapRef.removeMark (this.store1.marker);
+                this.svgMapRef.removeMark (this.store1.id);
                 this.search1 = "";
                 this.store1 = null;
             },
