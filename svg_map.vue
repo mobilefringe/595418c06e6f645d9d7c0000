@@ -150,7 +150,7 @@
                     this.map.markDelete( mark);
                 },
                 resetMapMarks() {
-                   maks =  this.map.getData().RMarks
+                  var  marks =  this.map.getData().RMarks
                 }
             }
         });
