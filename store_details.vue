@@ -174,6 +174,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     temp_promo.push(promo[0]);
                 });
                 this.all_promos = temp_promo;
+                var ref = this.svgMapRef;
                 // console.log(this.all_promos);
                 _.delay(function(val) {
                     console.log(this.svgMapRef,"Loading marker and setting viewBox");
