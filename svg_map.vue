@@ -139,14 +139,14 @@
                             tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>",
                             id:"marker_"+ val.id
                         };
-                        var new_mark = this.setMarkerOnMap(mark);
+                        var new_mark = this.setMarkerOnMap([mark]);
                     }
                     console.log(this.map.getData().RMarks);
                     
                     return new_mark;
                 },
                 setMarkerOnMap (mark) {
-                    this.map.setMarks([mark]);
+                    this.map.setMarks(mark);
                 }
                 hideMarkers () {
                     this.map.marksHide();
