@@ -146,7 +146,7 @@
                 hideMarkers () {
                     this.map.marksHide();
                 },
-                removeMark (mark) {
+                removeMark (id) {
                     // this.map.markDelete( mark);
                     resetMapMarks(id)
                 },
