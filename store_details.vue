@@ -197,8 +197,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     });
                 }
                 else {
-                    
-                   
                     temp_hours.push(null);
                 }
                  console.log(temp_hours);
