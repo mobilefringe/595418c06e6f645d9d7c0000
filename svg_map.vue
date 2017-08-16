@@ -152,7 +152,7 @@
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
                     var  marks =  this.map.getData().RMarks;
-                    console.log();
+                    console.log(marks);
                     return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                     
                 }
