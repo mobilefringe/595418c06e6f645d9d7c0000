@@ -161,7 +161,7 @@
                     // console.log("RMarks is " ,marks);
                     console.log("mark Id is " ,mark_id);
                     var filtered_set = _.filter(this.markers, function(o) { return (o.id !== mark_id) });
-                    // console.log("filtered Rmarks ", filtered_set);
+                    console.log("filtered Rmarks ", filtered_set);
                     // this.map.marksReset(filtered_set);
                     // return _.filter(marks, function(o) { return (o.0.id == mark_id) })[0];
                     
