@@ -87,7 +87,7 @@
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
                 this.all_stores = _.groupBy(stores, 'name')[slug];
-                // console.log( this.all_stores );
+                console.log( this.all_stores );
                 // console.log("last", map);
                 _.delay(function() {
                     console.log("hello world 2",this.all_stores);
