@@ -141,9 +141,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
         },
         watch: {
             currentStore : function () {
-               
                 this.all_hours = this.state.results.hours; 
-                
                 var store_promo = _.groupBy(this.promotions(), 'id');
                 var temp_promo=[];
                 _.forEach(this.currentStore.promotions, function(val, key) {
@@ -153,7 +151,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 });
                 this.all_promos = temp_promo;
                 var ref = this.svgMapRef;
-                // console.log(this.all_promos);
+                
                 _.delay(function(val) {
                     ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                     ref.setViewBox(val);
