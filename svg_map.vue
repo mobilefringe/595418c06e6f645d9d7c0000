@@ -157,11 +157,7 @@
                 },
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
-                    // var  marks =  this.map.getData().RMarks;
-                    // console.log("RMarks is " ,marks);
-                    console.log("mark Id is " ,mark_id);
                     this.all_markers = _.filter(this.all_markers, function(o) { return (o.id !== mark_id) });
-                    console.log("filtered Rmarks ", this.all_markers);
                     this.hideMarkers();
                     this.setMarkerOnMap(this.all_markers);
                     
