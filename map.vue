@@ -124,23 +124,12 @@
          methods: {
             swapSearchTerm: function () {
                 this.swapSearch = !this.swapSearch;
-                console.log("swap");
                 this.svgMapRef.hideMarkers();
                 var temp_store1 = this.store1;
                 this.store1 = this.store2;
                 this.store2 = temp_store1;
-                // if(this.store1 || this.store2) {
-                //     var temp_cords1 =  $('.search1').offset();
-                //     var temp_cords2 =  $('.search2').offset();
-                //     $('.search1').offset( temp_cords2 );
-                //     $('.search2').offset( temp_cords1 );
-                //     var temp_placeholder =  $(".search1 input").attr("placeholder");
-                //     $(".search1 input").attr("placeholder", $(".search2 input").attr("placeholder"));
-                //     $(".search2 input").attr("placeholder",temp_placeholder );;
-                // }
             },
             removeSearch1 :function() {
-                // $(".search1 .input").val('');
                 this.svgMapRef.removeMark (this.store1.id);
                 this.search1 = "";
                 this.store1 = null;
@@ -152,22 +141,10 @@
                 this.store2 = null;
             },
             onOptionSelect1(option) {
-                // if((this.search_one.left === $('.search1').offset().left) && (this.search_one.top === $('.search1').offset().top)) {
                 this.store1 = option;
-                // console.log("search1",this.search1);
-                // }
-                // else {
-                //     this.store2 = option;
-                // }   
             },
             onOptionSelect2(option) {
-                // if((this.search_two.left === $('.search2').offset().left) && (this.search_two.top === $('.search2').offset().top)) {
                 this.store2 = option;
-                // console.log("search2",this.search2);
-                // }
-                // else {
-                //     this.store1 = option;
-                // }
             },
             removeDuplicates(myArr, prop) {
                 return myArr.filter((obj, pos, arr) => {
