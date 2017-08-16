@@ -104,9 +104,9 @@
                 });
             },
             computed : {
-            svgMapRef() {
-                return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-            }  
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                }  
             },
             methods : {
                 getColour() {
