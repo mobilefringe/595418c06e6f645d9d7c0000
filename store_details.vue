@@ -205,7 +205,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 }
                 // console.log(temp_hours);
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
-                console.log(this.currentStore);
+                // console.log(this.currentStore);
             },
             map : function () {
                 this.loading = false;
