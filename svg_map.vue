@@ -152,7 +152,6 @@
                     this.map.marksHide();
                 },
                 removeMark (id) {
-                    // this.map.markDelete( mark);
                     this.resetMapMarks(id)
                 },
                 resetMapMarks(id) {
