@@ -72,7 +72,7 @@
                 return {
                     isOpen: false,
                     map: null,
-                    marks : []
+                    markers : []
                 }
             },
             created() {
