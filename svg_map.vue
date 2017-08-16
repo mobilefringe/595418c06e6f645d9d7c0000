@@ -150,7 +150,7 @@
                     this.map.markDelete( mark);
                 },
                 resetMapMarks() {
-                    
+                    this.map.getData().RMarks
                 }
             }
         });
