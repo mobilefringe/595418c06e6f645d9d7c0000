@@ -140,7 +140,7 @@
                     this.map.setMarks(mark);
                 },
                 setViewBox(val){
-                    map.setViewBox(val.svgmap_region);  
+                    this.map.setViewBox(val.svgmap_region);  
                 },
                 hideMarkers () {
                     this.map.marksHide();
