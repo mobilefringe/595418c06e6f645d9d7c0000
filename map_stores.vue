@@ -88,12 +88,12 @@
                 // console.log( this.all_stores );
                 // console.log("last", map);
                 _.delay(function(val) {
-                    ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                }, 4000, this.currentStore);
-                _.forEach(this.all_stores, function(val, key) {
+                    _.forEach(this.all_stores, function(val, key) {
                     this.svgMapRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                    
                 });
+                }, 4000, this.currentStore);
+                
                 
             },
             concatVal(val1,val2) {
