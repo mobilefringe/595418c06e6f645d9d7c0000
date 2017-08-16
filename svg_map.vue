@@ -151,7 +151,7 @@
                 },
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
-                  var  marks =  this.map.getData().RMarks;
+                    var  marks =  this.map.getData().RMarks;
                 }
             }
         });
