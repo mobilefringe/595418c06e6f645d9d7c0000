@@ -47,13 +47,14 @@
             //     responsive:true,
             //     zoomLimit: [0,10]
             // });
+            this.getStoresByName();
             
         },
         watch: { 
             map : function (){
                 // console.log(this.map);
                 // if(this.map !== null && this.map !== undefined) {
-                    this.getStoresByName();
+                    
                 // }
             }
         },
