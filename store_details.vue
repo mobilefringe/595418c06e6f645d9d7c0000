@@ -175,6 +175,9 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 });
                 this.all_promos = temp_promo;
                 // console.log(this.all_promos);
+                _.delay(function(val) {
+                  console.log(text);
+                }, 1000, 'later');
             },
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
