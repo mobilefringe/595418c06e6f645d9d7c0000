@@ -293,7 +293,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             },
             updateSVGMap (map) {
                 this.map = map;
-                
             }
         }
     });
