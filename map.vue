@@ -115,7 +115,7 @@
             store1 : function () {
                 this.svgMapRef.hideMarkers();
                 var mark = this.svgMapRef.addMarker(this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                this.store1.marker
+                console.log("store marker container",this.store1.marker);
                 if( this.store1.marker == null && this.store1.marker == undefined && mark !== null && mark != undefined) {
                     Vue.set(this.store1,'marker',mark[0]);
                 }
