@@ -1,8 +1,7 @@
 <template>
     <div >
         <!-- SVG Map diplay area -->
-        <div class="demo_1 map3" style="" id="mapsvg">
-        </div>
+        <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
         <div class="blue_box"  v-if="currentStore">
             <div class="close_dets  pull-left" @click="go_back">
                 <a href="">
