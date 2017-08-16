@@ -188,7 +188,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     Vue.set(this.currentStore,'store_hours_today',"");
                 }   
                 
-                 var temp_hours=[];
+                var temp_hours=[];
                
                 if(this.currentStore.store_hours.length > 0) {
                     _.forEach(this.currentStore.store_hours, function(val, key) {
