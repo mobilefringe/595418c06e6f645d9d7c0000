@@ -202,11 +202,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 // console.log(temp_hours);
                 Vue.set(this.currentStore,'store_hours_data', temp_hours);
                 console.log(this.currentStore);
-                _.delay(function(val) {
-                 console.log(svgRef,"Loading marker and setting viewBox");
-                   svgRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                    svgRef.setViewBox(val);
-                }, 4000, this.currentStore);
             },
             map : function () {
                 this.loading = false;
@@ -233,8 +228,12 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             },
             svgMapRef() {
                 var svgRef = _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-                
-                return svgRef;
+                _.delay(function(val) {
+                 console.log(this.svgMapRef,"Loading marker and setting viewBox");
+                    this.svgMapRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                    this.svgMapRef.setViewBox(val);
+                }, 4000, this.currentStore);
+                return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
             }
         }, 
         methods : {
