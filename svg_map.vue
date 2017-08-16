@@ -148,6 +148,7 @@
                 },
                 removeMark (mark) {
                     // this.map.markDelete( mark);
+                    resetMapMarks(id)
                 },
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
