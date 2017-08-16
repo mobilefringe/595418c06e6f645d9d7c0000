@@ -55,6 +55,8 @@
                 // if(this.map !== null && this.map !== undefined) {
                     
                 // }
+                
+            this.getStoresByName();
             }
         },
         
