@@ -139,8 +139,8 @@
                 setMarkerOnMap (mark) {
                     this.map.setMarks(mark);
                 },
-                {
-                    
+                setViewBox(val){
+                  map.setViewBox(val.svgmap_region);  
                 },
                 hideMarkers () {
                     this.map.marksHide();
