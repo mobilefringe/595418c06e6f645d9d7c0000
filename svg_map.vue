@@ -163,7 +163,7 @@
                     this.all_markers = _.filter(this.all_markers, function(o) { return (o.id !== mark_id) });
                     console.log("filtered Rmarks ", this.all_markers);
                     this.hideMarkers();
-                    this.setMarkerOnMap()
+                    this.setMarkerOnMap(this.all_markers);
                     // this.map.marksReset(filtered_set);
                     // return _.filter(marks, function(o) { return (o.0.id == mark_id) })[0];
                     
