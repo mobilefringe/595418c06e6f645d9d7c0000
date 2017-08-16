@@ -249,7 +249,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 // }]);
                 //   this.svgMapRef.setViewBox(this.currentStore);
                 // map.selectRegion(val.svgmap_region);
-            },
+            // },
             concatVal(val1,val2) {
                 return val1 + val2;
             },
