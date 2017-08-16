@@ -51,7 +51,7 @@
         },
         watch: { 
             map : function (){
-                console.log("this.map"hi);
+                console.log(this.map);
                 // if(this.map !== null && this.map !== undefined) {
                     
                 // }
