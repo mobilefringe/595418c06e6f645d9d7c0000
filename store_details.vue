@@ -177,9 +177,9 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 var ref = this.svgMapRef;
                 // console.log(this.all_promos);
                 _.delay(function(val) {
-                    console.log(this.svgMapRef,"Loading marker and setting viewBox");
-                    this.svgMapRef.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                    this.svgMapRef.setViewBox(val);
+                    console.log(ref,"Loading marker and setting viewBox");
+                    ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                    ref.setViewBox(val);
                 }, 4000, this.currentStore);
             },
             all_hours : function () {
