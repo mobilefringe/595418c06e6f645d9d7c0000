@@ -154,7 +154,7 @@
                     var mark_id = "marker_"+ id;
                     var  marks =  this.map.getData().RMarks;
                     console.log(marks);
-                    console.log(mark-id);
+                    console.log(mark_id);
                     // return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                     
                 }
