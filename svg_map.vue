@@ -103,11 +103,6 @@
                     zoomLimit:this.zoomLimit
                 });
             },
-            computed : {
-                svgMapRef() {
-                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-                }  
-            },
             methods : {
                 getColour() {
                     return {stroke: '#aaaaaa', selected: "#CC00CC", hover: "#CC00CC"} ;
