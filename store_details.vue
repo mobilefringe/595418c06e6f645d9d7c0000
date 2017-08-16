@@ -231,7 +231,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             }
         }, 
         methods : {
-            loadMap(map) {
+            // loadMap(map) {
         
                 // console.log(map);
                 // var val = this.currentStore;
