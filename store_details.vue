@@ -163,8 +163,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 //     console.log("emit in map loader")
                 // }
                 // this.loadMap(map);
-                this.svgMapRef.addMarker(this.currentStore,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                this.svgMapRef.setViewBox(this.currentStore);
+                
                 this.all_hours = this.state.results.hours; 
                 
                 var store_promo = _.groupBy(this.promotions(), 'id');
