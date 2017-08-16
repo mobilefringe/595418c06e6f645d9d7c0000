@@ -82,7 +82,7 @@
         },
          methods: {
             getStoresByName() {
-                console.log(map);
+                console.log("hello");
                 var slug = this.$route.params.id;
                 var first_letter = slug[0].toUpperCase();
                 var stores = this.storesByAlphaIndex[first_letter];
