@@ -142,7 +142,7 @@
                         var new_mark = this.setMarkerOnMap([mark]);
                     }
                     console.log(this.map.getData().RMarks);
-                    
+                    this.markers.push(mark);
                     return new_mark;
                 },
                 setMarkerOnMap (mark) {
