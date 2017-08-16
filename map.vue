@@ -129,9 +129,9 @@
                 
                  var mark = this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
                  
-                if (this.store2.marker == null && this.store2.marker == undefined) {
+                if (this.store2.marker=== null && this.store2.marker=== undefined) {
                     var mark = this.svgMapRef.addMarker(this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                    if( this.store2.marker=== null && this.store2.marker=== undefined && mark !== null && mark != undefined) {
+                    if(  && mark !== null && mark != undefined) {
                     Vue.set(this.store2,'marker',mark[0]);
                 }
                    console.log("the mark is" ,this.store1);
