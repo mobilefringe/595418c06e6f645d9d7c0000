@@ -148,6 +148,9 @@
                 },
                 removeMark (mark) {
                     this.map.markDelete( mark);
+                },
+                resetMapMarks() {
+                    
                 }
             }
         });
