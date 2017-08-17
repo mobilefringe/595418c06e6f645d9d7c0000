@@ -17,12 +17,7 @@
                             <router-link :to="{ name: 'mapStores', params: { id: index }}">
                                 <div class="align_center">
                                     {{index}}
-                                    <br/>
-                                    <!--{{store.property_id}}-->
                                 </div>
-                                <!--<div class="col-xs-6 align_right">-->
-                                <!--    April 27-29-->
-                                <!--</div>-->
                             </router-link>
                         </div>
                          <hr>
