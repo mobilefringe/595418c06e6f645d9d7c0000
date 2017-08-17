@@ -33,7 +33,7 @@
             <div  v-show = "show_shop" class="" id="shop_store_list">
                 <div class="" id="shop_stores_container">
                     <div  v-for="(store, index) in shop_stores">
-                        <div class="row cat_name">
+                        <div class="row cat_name" @click="getRoute(store,index)">
                             <router-link :to="{ name: 'mapStores', params: { id:  index }}">
                                 <div class="align_center">
                                     {{index}}
