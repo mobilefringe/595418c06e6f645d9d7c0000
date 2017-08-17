@@ -7,8 +7,11 @@
             <div class="more_dets pull-right">
                 <a :href="concatVal('/stores/',store.slug)"><img src="//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1499180555000/Right Arrow.png" class="" alt=""></a>
             </div>
-            <p class="dets_title">{{store.name}} </p>
+            <div>
+                <p class="dets_title">{{store.name}} </p>
             <p class="dets_data">{{store.property_id}}</p>
+            </div>
+            
         </div>
     </div>
 </template>
