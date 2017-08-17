@@ -80,10 +80,12 @@
             onOptionSelect(option) {
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
-                console.log(counted_stores, $(".input").val());
+                
+                console.log("counted_stores is",counted_stores, $(".input").val());
                 if(option.type==="click") {
                     console.log($(".input").val());
                 }
+                
                 else {
                     if( counted_stores[option.name] >1) {
                         var route = '/map/' + option.name;
