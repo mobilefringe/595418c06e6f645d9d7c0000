@@ -13,7 +13,7 @@
             <div  v-show = "show_dine" class="" id="dine_store_list">
                 <div class="" id="dine_stores_container">
                     <div  v-for="(store, index) in dine_stores ">
-                        <div class="row cat_name">
+                        <div class="row cat_name" @click="getRoute(store)">
                             <router-link :to="getRoute(store)">
                                 <div class="align_center">
                                     {{index}}
