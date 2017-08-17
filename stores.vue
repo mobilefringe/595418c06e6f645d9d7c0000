@@ -14,11 +14,9 @@
                 <div class="" id="dine_stores_container">
                     <div  v-for="(store, index) in dine_stores ">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <!--<router-link :to="getRoute(store)">-->
-                                <div class="align_center">
-                                    {{index}}
-                                </div>
-                            <!--</router-link>-->
+                            <div class="align_center">
+                                {{index}}
+                            </div>
                         </div>
                          <hr>
                     </div>
