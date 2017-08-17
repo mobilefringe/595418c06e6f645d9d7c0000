@@ -14,7 +14,7 @@
                 <div class="" id="dine_stores_container">
                     <div  v-for="(store, index) in dine_stores ">
                         <div class="row cat_name">
-                            <router-link :to="{ name: 'mapStores', params: { id: index }}">
+                            <router-link :to="getRoute">
                                 <div class="align_center">
                                     {{index}}
                                 </div>
