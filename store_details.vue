@@ -12,7 +12,7 @@
             <p class="dets_data">
                 {{currentStore.property_id}} - 
             </p>
-            <p>
+            <p class="dets_data">
                 {{currentStore.store_hours_today.open_time | moment("h a ", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a z", timezone)}}
             </p>
         </div>
