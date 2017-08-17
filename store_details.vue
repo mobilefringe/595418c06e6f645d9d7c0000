@@ -58,26 +58,26 @@
         <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore">
             <div class="row" v-for="day in currentStore.store_hours_data" v-if="currentStore.store_hours_data[0] !== null">
                 <div v-if="!day.is_holiday" class="">
-                    <p class="col-xs-8 pull-left disp_table_cell">
+                    <p class="col-xs-7 pull-left disp_table_cell">
                         {{getDay(day.day_of_week)}}
                     </p>
-                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                    <p class="col-xs-5 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                         {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
                     </p>
-                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                    <p class="col-xs-5 pull-right align_right disp_table_cell" v-else>
                          {{$t("message.closed")}}
                     </p>
                 </div>
                 
                 <div v-else id="holiday_hours">
                     <hr/>
-                    <p class="col-xs-8 pull-left disp_table_cell">
+                    <p class="col-xs-7 pull-left disp_table_cell">
                         {{day.holiday_name}}
                     </p>
-                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-if="!day.is_closed">
+                    <p class="col-xs-5 pull-right align_right disp_table_cell" v-if="!day.is_closed">
                         {{day.open_time | moment("h a", timezone)}} - {{day.close_time | moment("h a", timezone)}}
                     </p>
-                    <p class="col-xs-4 pull-right align_right disp_table_cell" v-else>
+                    <p class="col-xs-5 pull-right align_right disp_table_cell" v-else>
                         {{$t("message.closed")}}
                     </p>
                 </div>
