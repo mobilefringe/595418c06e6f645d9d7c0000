@@ -31,12 +31,7 @@
         },
         watch: { 
             map : function (){
-                console.log("hi");
-                // if(this.map !== null && this.map !== undefined) {
-                    
-                // }
-                
-            this.getStoresByName();
+                this.getStoresByName();
             }
         },
         
