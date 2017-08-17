@@ -212,7 +212,7 @@
                 // this.$router.push(route);
             }
             else {
-                var route = '/stores/' + val.slug;
+                var route = '/stores/' + val[0].slug;
                 console.log(route);
                 // this.$router.push(route);
             }
