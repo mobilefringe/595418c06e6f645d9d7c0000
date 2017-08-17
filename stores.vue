@@ -34,11 +34,11 @@
                 <div class="" id="shop_stores_container">
                     <div  v-for="(store, index) in shop_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <router-link :to="{ name: 'mapStores', params: { id:  index }}">
+                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
                                 <div class="align_center">
                                     {{index}}
                                 </div>
-                            </router-link>
+                            <!--</router-link>-->
                         </div>
                          <hr>
                     </div>
@@ -53,19 +53,12 @@
             <div  v-show = "show_play" class="" id="play_store_list">
                 <div class="" id="play_stores_container">
                     <div  v-for="(store, index) in play_stores">
-                        <div class="row cat_name">
-                            <router-link :to="{ name: 'mapStores', params: { id:  index }}">
+                        <div class="row cat_name" @click="getRoute(store,index)">
+                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
                                 <div class="align_center">
                                     {{index}}
-                                    <!--{{store.name}} -->
-                                    <br/>
-                                   <!--{{index}}-->
-                                    <!--{{store.name}} {{store.property_id}}-->
                                 </div>
-                                <!--<div class="col-xs-6 align_right">-->
-                                <!--    April 27-29-->
-                                <!--</div>-->
-                            </router-link>
+                            <!--</router-link>-->
                         </div>
                          <hr>
                     </div>
