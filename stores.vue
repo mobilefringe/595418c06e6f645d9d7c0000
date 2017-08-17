@@ -18,7 +18,7 @@
                                 <div class="align_center">
                                     {{index}}
                                 </div>
-                            </router-link>
+                            <!--</router-link>-->
                         </div>
                          <hr>
                     </div>
