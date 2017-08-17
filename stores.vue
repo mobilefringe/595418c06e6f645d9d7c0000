@@ -94,7 +94,7 @@
                 <div class="" id="stay_stores_container">
                     <div  v-for="(store, index) in stay_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <router-link :to="{ name: 'mapStores', params: { id:  index }}">
+                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
                                 <div class="align_center">
                                     {{index}}
                                 </div>
