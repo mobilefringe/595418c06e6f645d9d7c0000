@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div id="store_details">
         <!-- SVG Map diplay area -->
         <svg-map @updateMap="updateSVGMap()" :svgMapUrl="getSVGurl"></svg-map>
         <div class="blue_box"  v-if="currentStore">
