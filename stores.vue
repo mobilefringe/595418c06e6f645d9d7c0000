@@ -206,13 +206,13 @@
             var counted_stores = _.countBy(this.allStores,'name');
             // console.log("counted_stores is",counted_stores[option.name]);
             
-            if( counted_stores[option.name] >1) {
-                var route = '/map/' + option.name;
+            if( counted_stores[val.name] >1) {
+                var route = '/map/' + val.name;
                 console.log(route);
                 // this.$router.push(route);
             }
             else {
-                var route = '/stores/' + option.slug;
+                var route = '/stores/' + val.slug;
                 console.log(route);
                 // this.$router.push(route);
             }
