@@ -208,7 +208,7 @@
             
             if( counted_stores[index] >1) {
                 var route = '/map/' + index;
-                console.log(route);
+                // console.log(route);
                 this.$router.push(route);
             }
             else {
