@@ -17,7 +17,6 @@
                             <router-link :to="{ name: 'mapStores', params: { id: index }}">
                                 <div class="align_center">
                                     {{index}}
-                                    <!--{{store.name}} -->
                                     <br/>
                                     <!--{{store.property_id}}-->
                                 </div>
