@@ -14,7 +14,7 @@
                 <div class="" id="dine_stores_container">
                     <div  v-for="(store, index) in dine_stores ">
                         <div class="row cat_name">
-                            <router-link :to="getRoute()">
+                            <router-link :to="getRoute(store)">
                                 <div class="align_center">
                                     {{index}}
                                 </div>
