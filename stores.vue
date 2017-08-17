@@ -204,7 +204,7 @@
         getRoute (val, index) {
             //{ name: 'mapStores', params: { id: index }}
             var counted_stores = _.countBy(this.allStores,'name');
-            console.log("counted_stores is",counted_stores, val, index);
+            console.log("counted_stores is",counted_stores[index], val, index);
             
             if( counted_stores[index] >1) {
                 var route = '/map/' + index;
