@@ -202,6 +202,7 @@
             return (_.keys(_.groupBy(_.filter(this.state.categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
         },
         getRoute (val) {
+            //{ name: 'mapStores', params: { id: index }}
             var counted_stores = _.countBy(this.allStores,'name');
             // console.log("counted_stores is",counted_stores[option.name]);
             
