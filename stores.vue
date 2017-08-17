@@ -209,7 +209,7 @@
             if( counted_stores[index] >1) {
                 var route = '/map/' + index;
                 console.log(route);
-                // this.$router.push(route);
+                this.$router.push(route);
             }
             else {
                 var route = '/stores/' + val[0].slug;
