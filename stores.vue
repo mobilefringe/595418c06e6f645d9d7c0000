@@ -214,7 +214,7 @@
             else {
                 var route = '/stores/' + val[0].slug;
                 console.log(route);
-                // this.$router.push(route);
+                this.$router.push(route);
             }
             
         }
