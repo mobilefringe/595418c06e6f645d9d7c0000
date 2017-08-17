@@ -34,11 +34,9 @@
                 <div class="" id="shop_stores_container">
                     <div  v-for="(store, index) in shop_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
-                                <div class="align_center">
-                                    {{index}}
-                                </div>
-                            <!--</router-link>-->
+                            <div class="align_center">
+                                {{index}}
+                            </div>
                         </div>
                          <hr>
                     </div>
@@ -54,11 +52,9 @@
                 <div class="" id="play_stores_container">
                     <div  v-for="(store, index) in play_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
-                                <div class="align_center">
-                                    {{index}}
-                                </div>
-                            <!--</router-link>-->
+                            <div class="align_center">
+                                {{index}}
+                            </div>
                         </div>
                          <hr>
                     </div>
@@ -74,11 +70,9 @@
                 <div class="" id="service_stores_container">
                     <div  v-for="(store, index) in service_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
-                                <div class="align_center">
-                                    {{index}}
-                                </div>
-                            <!--</router-link>-->
+                            <div class="align_center">
+                                {{index}}
+                            </div>
                         </div>
                          <hr>
                     </div>
@@ -94,11 +88,9 @@
                 <div class="" id="stay_stores_container">
                     <div  v-for="(store, index) in stay_stores">
                         <div class="row cat_name" @click="getRoute(store,index)">
-                            <!--<router-link :to="{ name: 'mapStores', params: { id:  index }}">-->
-                                <div class="align_center">
-                                    {{index}}
-                                </div>
-                            <!--</router-link>-->
+                            <div class="align_center">
+                                {{index}}
+                            </div>
                         </div>
                          <hr>
                     </div>
