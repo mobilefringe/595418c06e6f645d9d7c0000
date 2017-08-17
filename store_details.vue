@@ -94,12 +94,6 @@
 define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-timezone", "vue-moment","vue!svg-map"], function(Vue,$,Raphael, mapsvg,mousewheel,moment,tz, VueMoment,SVGMapComponent) {
     return Vue.component("store-details-component", {
         template: template, // the variable template will be injected,
-        props: {
-            showLoader:{
-              type: Boolean,
-              default: true
-            }
-        },
         data: function() {
             return {
                 currentStore : null,
