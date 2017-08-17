@@ -11,7 +11,7 @@
             <p class="dets_title">{{currentStore.name | uppercase}} </p>
             <p class="dets_data">
                 {{currentStore.property_id}} 
-                <span v-if="currentStore.store_hours_today.open_time != ""> - {{currentStore.store_hours_today.open_time | moment("h a ", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a z", timezone)}}</span>
+                <span v-if='currentStore.store_hours_today.open_time != ""'> - {{currentStore.store_hours_today.open_time | moment("h a ", timezone)}}  {{currentStore.store_hours_today.close_time | moment("h a z", timezone)}}</span>
             </p>
         </div>
         <!-- Store Details -->
