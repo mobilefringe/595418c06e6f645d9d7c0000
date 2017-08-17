@@ -81,7 +81,7 @@
                 console.log('Selected option:', option);
                 var counted_stores = _.countBy(this.allStores,'name');
                 
-                console.log("counted_stores is",counted_stores);
+                console.log("counted_stores is",counted_stores[option.name]);
                 if(option.type==="click") {
                     console.log($(".input").val());
                 }
