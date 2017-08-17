@@ -206,7 +206,7 @@
             var counted_stores = _.countBy(this.allStores,'name');
             console.log("counted_stores is",counted_stores, val, index);
             
-            if( counted_stores[val.name] >1) {
+            if( counted_stores[index] >1) {
                 var route = '/map/' + val.name;
                 console.log(route);
                 // this.$router.push(route);
