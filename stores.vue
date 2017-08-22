@@ -25,7 +25,7 @@
             </div>
             <div class="all_caps cat_title" id="shop" v-on:click="toggle('shop')">
                 {{$t("message.shop")}}
-                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
+                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_dine">
             </div>
             <hr>
             <div  v-show = "show_shop" class="" id="shop_store_list">
@@ -43,7 +43,7 @@
             </div>
             <div class="all_caps cat_title" id="play" v-on:click="toggle('play')">
                 {{$t("message.play")}}
-                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
+               <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_dine">
             </div>
             <hr>
             <div  v-show = "show_play" class="" id="play_store_list">
@@ -61,7 +61,7 @@
             </div>
             <div class="all_caps cat_title" id="service" v-on:click="toggle('service')">
                 {{$t("message.service")}}
-                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
+                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_dine">
             </div>
              <hr>
              <div  v-show = "show_service" class="" id="service_store_list">
@@ -79,7 +79,7 @@
             </div>
             <div class="all_caps cat_title" id="stay" v-on:click="toggle('stay')">
                 {{$t("message.stay")}}
-                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right hidden_now" alt="">
+                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_dine">
             </div>
              <hr>
              <div  v-show = "show_stay" class="" id="stay_store_list">
