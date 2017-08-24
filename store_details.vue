@@ -118,7 +118,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             })
         },
         beforeRouteUpdate (to, from, next) {
-            this.$forceUpdate()
+            this.$forceUpdate();
             this.currentStore = this.findStoreBySlug(to.params.id);
             if (this.currentStore === null || this.currentStore === undefined){
                 this.$router.replace({ name: '404'});
