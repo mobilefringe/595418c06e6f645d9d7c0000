@@ -148,6 +148,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     temp_promo.push(promo[0]);
                 });
                 this.all_promos = temp_promo;
+                console.log(this.all_promos);
                 var ref = this.svgMapRef;
                 
                 _.delay(function(val) {
