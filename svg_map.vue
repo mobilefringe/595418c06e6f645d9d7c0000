@@ -82,6 +82,17 @@
                 // if (this.currentStore === null || this.currentStore === undefined){
                 //     this.$router.replace({ name: '404'});
                 // }
+            },
+            created() {
+                // console.log(vm.$on('setMarker',this.addMarker));
+            },
+            watch : {
+                map : function () {
+                    this.$emit('updateMap', this.map);  
+                    // console.log(this.$on('setMarker',this.addMarker));
+                }
+            },
+            mounted () {
                 this.map = $('#mapsvg').mapSvg({
                     source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
                     colors: this.colours,
@@ -100,35 +111,6 @@
                     zoomLimit:this.zoomLimit
                 });
                 console.log("mounted");
-            },
-            created() {
-                // console.log(vm.$on('setMarker',this.addMarker));
-            },
-            watch : {
-                map : function () {
-                    this.$emit('updateMap', this.map);  
-                    // console.log(this.$on('setMarker',this.addMarker));
-                }
-            },
-            mounted () {
-                // this.map = $('#mapsvg').mapSvg({
-                //     source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
-                //     colors: this.colours,
-                //     viewBox: this.viewBox,
-                //     disableAll: this.disableAll,
-                //     height:this.height,
-                //     width:this.width,
-                //     regions:this.regions,
-                //     tooltipsMode:'custom',
-                //     loadingText: this.loadingText,
-                //     zoom: this.zoom,
-                //     zoomButtons: this.zoomButtons,
-                //     pan:this.pan,
-                //     cursor:this.cursor,
-                //     responsive:this.responsive,
-                //     zoomLimit:this.zoomLimit
-                // });
-                // console.log("mounted");
             },
             methods : {
                 getColour() {
