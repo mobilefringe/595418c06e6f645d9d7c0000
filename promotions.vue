@@ -6,7 +6,7 @@
         <h4 class="all_caps home_title">  {{$t("message.discoverPath")}}</h4>
         <div v-if="sorted_promos" class="store_cat_listing" v-for="(store_promo, index) in sorted_promos">
             <div class="all_caps cat_title" :id="index" v-on:click="toggle(index)">
-                {{store_promo[0].store.name}} @ {{store_promo[0].store.property_id}}
+                {{store_promo[0].store.name}} @ {{store_promo[0].store.property}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right" alt="" v-show="store_promo[0].show_promo">
             </div>
              <hr>
