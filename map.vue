@@ -37,7 +37,7 @@
                         </router-link>
                     </div>
                     <p class="dets_title">{{store1.name}} </p>
-                    <p class="dets_data">{{store1.property_id}}</p>
+                    <p class="dets_data">{{store1.property}}</p>
                 </div>
                 <div  v-if = "store2" class="green_dets_box">
                     <div class="close_dets pull-left">
