@@ -79,23 +79,23 @@
             
                 next(vm => {
                     //location.reload();// vm.$forceUpdate(SVGMapComponent);
-                    console.log("force updated in vm");
-                    // access to component instance via `vm`
-                    vm.currentStore = vm.findStoreBySlug(to.params.id);
-                    this.currentStore = vm.currentStore;
-                    if (vm.currentStore === null || vm.currentStore === undefined){
-                        vm.$router.replace({ name: '404'});
-                    }
+                    // console.log("force updated in vm");
+                    // // access to component instance via `vm`
+                    // vm.currentStore = vm.findStoreBySlug(to.params.id);
+                    // this.currentStore = vm.currentStore;
+                    // if (vm.currentStore === null || vm.currentStore === undefined){
+                    //     vm.$router.replace({ name: '404'});
+                    // }
                     // Vue.component(SVGMapComponent, {props: {svgMapUrl:this.getSVGurl }});
                 })
             },
             beforeRouteUpdate (to, from, next) {
-                this.$forceUpdate();
-                console.log("force updated in this");
-                this.currentStore = this.findStoreBySlug(to.params.id);
-                if (this.currentStore === null || this.currentStore === undefined){
-                    this.$router.replace({ name: '404'});
-                }
+                // this.$forceUpdate();
+                // console.log("force updated in this");
+                // this.currentStore = this.findStoreBySlug(to.params.id);
+                // if (this.currentStore === null || this.currentStore === undefined){
+                //     this.$router.replace({ name: '404'});
+                // }
             },
             created() {
                 // console.log(vm.$on('setMarker',this.addMarker));
