@@ -116,8 +116,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 if (vm.currentStore === null || vm.currentStore === undefined){
                     vm.$router.replace({ name: '404'});
                 }
-                new Vue(SVGMapComponent, {props: {
-                svgMapUrl:this.getSVGurl }});
+                new Vue(SVGMapComponent, {props: {svgMapUrl:this.getSVGurl }});
             })
         },
         beforeRouteUpdate (to, from, next) {
