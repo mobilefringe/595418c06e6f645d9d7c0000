@@ -35,7 +35,7 @@
             <p class="dets_title">{{$t("menu.promotions")}} </p>
         </div>
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
-            <div class="" v-if="all_promos">
+            <div class="" v-if="currentStore.promotions">
                 <div class="row promo_row" v-for="promo in all_promos">
                     <div class="disp_table">
                         <p class="col-xs-7 pull-left disp_table_cell">
