@@ -110,7 +110,7 @@
                     responsive:this.responsive,
                     zoomLimit:this.zoomLimit
                 });
-                console.log("mounted", this.map);
+                console.log("mounted", this.map.getData());
             },
             methods : {
                 getColour() {
