@@ -49,7 +49,7 @@
                         </router-link>
                     </div>
                     <p class="dets_title">{{store2.name}}</p>
-                    <p class="dets_data">{{store2.property_id}}</p>
+                    <p class="dets_data">{{store2.property}}</p>
                     
                 </div>
             </div>
