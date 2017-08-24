@@ -16,9 +16,9 @@
         </div>
         <!-- Store Details -->
         <div class="store_dets"  v-if="currentStore">
-            <div class="row" v-show="currentStore.property">
+            <div class="row" v-show="currentStore.property_address1">
                 <i class="fa fa-map-marker col-xs-1" aria-hidden="true"></i>
-                <p class="wrap col-xs-10">{{currentStore.property}}</p>
+                <p class="wrap col-xs-10">{{currentStore.property_address1}}</p>
             </div>
             <div class="row"  v-show="currentStore.website">
                 <i class="fa fa-globe col-xs-1" aria-hidden="true"></i>
