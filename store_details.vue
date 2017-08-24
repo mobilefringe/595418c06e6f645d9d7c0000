@@ -108,7 +108,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
         beforeRouteEnter (to, from, next) {
             
             next(vm => {
-                new Vue(SVGMapComponent);//location.reload();// vm.$forceUpdate(SVGMapComponent);
+                //location.reload();// vm.$forceUpdate(SVGMapComponent);
                 console.log("force updated in vm");
                 // access to component instance via `vm`
                 vm.currentStore = vm.findStoreBySlug(to.params.id);
