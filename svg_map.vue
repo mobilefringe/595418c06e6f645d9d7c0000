@@ -77,7 +77,7 @@
             },
              activated {
                 // this.$forceUpdate();
-                // console.log("force updated in this");
+                console.log("activedthis");
                 // this.currentStore = this.findStoreBySlug(to.params.id);
                 // if (this.currentStore === null || this.currentStore === undefined){
                 //     this.$router.replace({ name: '404'});
