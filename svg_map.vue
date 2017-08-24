@@ -102,6 +102,7 @@
                     responsive:this.responsive,
                     zoomLimit:this.zoomLimit
                 });
+                console.log("mounted");
             },
             methods : {
                 getColour() {
