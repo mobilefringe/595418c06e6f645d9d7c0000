@@ -7,7 +7,7 @@
                         <template slot="item" scope="option">
                             <article class="media ">
                                 <p>
-                                    <strong>{{ option.data.name }} @ {{option.data.property_id}}</strong>
+                                    <strong>{{ option.data.name }} @ {{option.data.property}}</strong>
                                 </p>
                             </article>
                         </template>
