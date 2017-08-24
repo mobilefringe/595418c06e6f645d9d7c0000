@@ -117,10 +117,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     vm.$router.replace({ name: '404'});
                 }
                 new Vue(SVGMapComponent, {props: {
-                svgMapUrl: {
-                    type: String,
-                    required: true
-                },}this.getSVGurl);
+                svgMapUrl:this.getSVGurl }});
             })
         },
         beforeRouteUpdate (to, from, next) {
