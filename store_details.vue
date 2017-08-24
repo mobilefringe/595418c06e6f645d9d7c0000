@@ -38,12 +38,15 @@
             <div class="" v-if="currentStore.promotions">
                 <div class="row promo_row" v-for="promo in all_promos">
                     <div class="">
-                        <p class="col-xs-7 pull-left disp_table_cell">
+                    <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">
+                                <p class="col-xs-7 pull-left disp_table_cell">
                             {{promo.name}}
                         </p>
                         <p class="col-xs-5 pull-right align_right disp_table_cell">
                             {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
                         </p>
+                            </router-link>
+                        
                     </div>
                     <hr/>
                 </div>
