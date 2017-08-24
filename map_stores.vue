@@ -9,7 +9,7 @@
             </div>
             <div>
                 <p class="dets_title">{{store.name}} </p>
-                <p class="dets_data">{{store.property_id}}</p>
+                <p class="dets_data">{{store.property}}</p>
             </div>
             
         </div>
