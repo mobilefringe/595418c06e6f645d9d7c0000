@@ -75,21 +75,7 @@
                     all_markers : []
                 }
             },
-             beforeRouteEnter (to, from, next) {
-            
-                next(vm => {
-                    //location.reload();// vm.$forceUpdate(SVGMapComponent);
-                    // console.log("force updated in vm");
-                    // // access to component instance via `vm`
-                    // vm.currentStore = vm.findStoreBySlug(to.params.id);
-                    // this.currentStore = vm.currentStore;
-                    // if (vm.currentStore === null || vm.currentStore === undefined){
-                    //     vm.$router.replace({ name: '404'});
-                    // }
-                    // Vue.component(SVGMapComponent, {props: {svgMapUrl:this.getSVGurl }});
-                })
-            },
-            beforeRouteUpdate (to, from, next) {
+             activated {
                 // this.$forceUpdate();
                 // console.log("force updated in this");
                 // this.currentStore = this.findStoreBySlug(to.params.id);
