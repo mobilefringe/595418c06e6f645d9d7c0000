@@ -75,6 +75,17 @@
                     all_markers : []
                 }
             },
+             activated () {
+                // this.$forceUpdate();
+                console.log("activedthis");
+                // this.currentStore = this.findStoreBySlug(to.params.id);
+                // if (this.currentStore === null || this.currentStore === undefined){
+                //     this.$router.replace({ name: '404'});
+                // }
+            },
+            created() {
+                // console.log(vm.$on('setMarker',this.addMarker));
+            },
             watch : {
                 map : function () {
                     this.$emit('updateMap', this.map);  
