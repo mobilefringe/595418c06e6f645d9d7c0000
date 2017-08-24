@@ -109,7 +109,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             
             next(vm => {
                 vm.$forceUpdate()
-                console.log("force updated");
+                console.log("force updated in vm");
                 // access to component instance via `vm`
                 vm.currentStore = vm.findStoreBySlug(to.params.id);
                 this.currentStore = vm.currentStore;
