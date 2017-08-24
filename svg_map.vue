@@ -129,7 +129,7 @@
                                 src:image , // image for marker
                                 href: '/stores/'+val.slug
                             },
-                            tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property_id +"</p>",
+                            tooltip : "<p class='tooltip_name'>"+val.name+" @ " + val.property +"</p>",
                             id:"marker_"+ val.id
                         };
                         this.setMarkerOnMap([mark]);
