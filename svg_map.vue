@@ -78,6 +78,24 @@
              beforeRouteEnter (to, from, next) {
             
                 next(vm => {
+                    this.map = $('#mapsvg').mapSvg({
+                    source: this.svgMapUrl,//this.getSVGurl,    // Path to SVG map
+                    colors: this.colours,
+                    viewBox: this.viewBox,
+                    disableAll: this.disableAll,
+                    height:this.height,
+                    width:this.width,
+                    regions:this.regions,
+                    tooltipsMode:'custom',
+                    loadingText: this.loadingText,
+                    zoom: this.zoom,
+                    zoomButtons: this.zoomButtons,
+                    pan:this.pan,
+                    cursor:this.cursor,
+                    responsive:this.responsive,
+                    zoomLimit:this.zoomLimit
+                });
+                console.log("mounted");
                     //location.reload();// vm.$forceUpdate(SVGMapComponent);
                     // console.log("force updated in vm");
                     // // access to component instance via `vm`
