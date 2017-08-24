@@ -75,7 +75,7 @@
                     all_markers : []
                 }
             },
-             activated {
+             activated () {
                 // this.$forceUpdate();
                 console.log("activedthis");
                 // this.currentStore = this.findStoreBySlug(to.params.id);
