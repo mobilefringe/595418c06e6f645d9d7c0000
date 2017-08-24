@@ -106,6 +106,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             }
         },
         beforeRouteEnter (to, from, next) {
+            vm.$forceUpdate()
             next(vm => {
                 // access to component instance via `vm`
                 vm.currentStore = vm.findStoreBySlug(to.params.id);
