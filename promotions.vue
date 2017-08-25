@@ -55,7 +55,7 @@
             created : function ()  {
                 this.promo_by_stores;
             },
-      computed: {
+        computed: {
         promotions() {
           
           return this.$store.getters.processedPromos;
