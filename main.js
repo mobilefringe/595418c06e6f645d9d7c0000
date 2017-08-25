@@ -119,22 +119,22 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 moment.locale(val);
             }
         },
-    computed: {
-      // computed property for locale which returns locale value from data store and also updates the data store with new locale information
-      locale: {
-        get() {
-          return this.$store.state.locale
+        computed: {
+            // computed property for locale which returns locale value from data store and also updates the data store with new locale information
+            locale: {
+                get() {
+                    return this.$store.state.locale
+                },
+                set(value) {
+                    this.$store.commit('SET_LOCALE', {
+                    lang: value
+                })
+            }
+          },
+            copyright_year() {
+            return moment().year();
+          }
         },
-        set(value) {
-          this.$store.commit('SET_LOCALE', {
-            lang: value
-          })
-        }
-      },
-        copyright_year() {
-        return moment().year();
-      }
-    },
     methods: {
       // utility method to allow user to change locale value
       changeLocale: function (val) {
