@@ -110,9 +110,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
         },
         beforeRouteEnter (to, from, next) {
             
-            next(vm => {
-                //location.reload();// vm.$forceUpdate(SVGMapComponent);
-                console.log("force updated in vm");
+            next(vm => {;
                 // access to component instance via `vm`
                 vm.currentStore = vm.findStoreBySlug(to.params.id);
                 this.currentStore = vm.currentStore;
@@ -124,17 +122,13 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
         },
         beforeRouteUpdate (to, from, next) {
             this.$forceUpdate();
-            console.log("force updated in this");
             this.currentStore = this.findStoreBySlug(to.params.id);
             if (this.currentStore === null || this.currentStore === undefined){
                 this.$router.replace({ name: '404'});
             }
         },
         created () {
-            // console.log(this.showLoader);
             this.$emit('loadChange');
-            console.log("emit to parent to make this true");
-            
             window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
        
         },
@@ -158,7 +152,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     ref.setViewBox(val);
                 }, 3500, this.currentStore);
                 this.$emit('loadChange');
-                console.log("emit to parent to make this false");
             },
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
@@ -250,7 +243,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 return day;
             },
             go_back () {
-                //   this.$router.back();
                 this.$router.go(-1);
             },
             updateSVGMap (map) {
