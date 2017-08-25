@@ -33,15 +33,6 @@
     </div>
 </template>
 
-<style>
-  .center{
-    text-align: center
-  }
-  .store-section a{
-    color: #708090;
-  }
-</style>
-
 <script>
   define(["Vue", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, moment, tz, VueMoment, Meta) {
     Vue.use(Meta);
