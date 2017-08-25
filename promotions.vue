@@ -17,9 +17,7 @@
                             <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">
                                 <div class="col-xs-6 align_left">
                                     {{promo.name}}
-                                    <!--{{store.name}} -->
                                     <br/>
-                                    <!--{{store.property_id}}-->
                                 </div>
                                 <div class="col-xs-6 align_right">
                                    {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}
