@@ -41,7 +41,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="all_caps cat_title" id="play" v-on:click="toggle('play')">
+            <div class="all_caps cat_title" id="play" @click="show_shop = !show_shop">
                 {{$t("message.play")}}
                <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_play">
             </div>
@@ -59,7 +59,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="all_caps cat_title" id="service" v-on:click="toggle('service')">
+            <div class="all_caps cat_title" id="service" @click="show_shop = !show_shop">
                 {{$t("message.service")}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_service">
             </div>
@@ -77,7 +77,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="all_caps cat_title" id="stay" v-on:click="toggle('stay')">
+            <div class="all_caps cat_title" id="stay" @click="show_shop = !show_shop">
                 {{$t("message.stay")}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_stay">
             </div>
