@@ -142,6 +142,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       changeLocale: function (val) {
         this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
       },
+      //toggle this from components to show loading screen
       updateLoader() {
         this.dataLoaded = !this.dataLoaded;
         console.log("changed showLoader to", this.dataLoaded);
