@@ -72,16 +72,16 @@
                 this.sorted_promos = promo;
             }
         },
-      methods : {
-        toggle: function (index) {
-            if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
-                Vue.set(this.sorted_promos[index][0],'show_promo', true);
-            }
-            else {
-                this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
+        methods : {
+            toggle: function (index) {
+                if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
+                    Vue.set(this.sorted_promos[index][0],'show_promo', true);
+                }
+                else {
+                    this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
+                }
             }
         }
-      }
     });
   });
 </script>
