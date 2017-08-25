@@ -65,7 +65,6 @@
                 var temp_ref = this.svgMapRef;
                 _.delay(function() {
                     _.forEach(temp, function(val, key) {
-                        // console.log("hello");
                         temp_ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                        
                     });
