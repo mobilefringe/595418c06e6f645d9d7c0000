@@ -37,20 +37,20 @@ define([], function () {
             ]
         },
         {
-          path: '/map',
-          component: view('default'),
-          children: [
-            {
-              path: '',
-              component: view('map'),
-              name: 'map'
-            },
-            {
-              path: ':id',
-              component: view('map_stores'),
-              name: 'mapStores'
-            }
-          ]
+            path: '/map',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('map'),
+                    name: 'map'
+                },
+                {
+                    path: ':id',
+                    component: view('map_stores'),
+                    name: 'mapStores'
+                }
+            ]
         },
         {
           path: '/404',
