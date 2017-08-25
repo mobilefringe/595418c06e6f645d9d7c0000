@@ -95,7 +95,7 @@
                 }
             },
             search2 : function () {
-                if(this.search1 == "" || this.search1 == null || this.search1 == undefined) {
+                if(this.search2 == "" || this.search1 == null || this.search2 == undefined) {
                     
                 }
             }
