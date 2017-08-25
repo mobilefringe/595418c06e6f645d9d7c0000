@@ -91,7 +91,7 @@
             },
             search1 : function () {
                 if(this.search1 == "" || this.search1 == null || this.search1 == undefined) {
-                    removeSearch1
+                    this.removeSearch1
                 }
             },
             search2 : function () {
