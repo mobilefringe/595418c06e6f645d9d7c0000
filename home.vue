@@ -25,8 +25,7 @@
                 </router-link>
             </div>
         </div>
-        <!-- Backdrop-->
-        <!--<div v-show="loading" class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>-->
+        
     </div>
 </template>
 
