@@ -35,7 +35,7 @@
             <p class="dets_title">{{$t("menu.promotions")}} {{show_promo}} </p>
         </div>
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
-            <div class="" v-if="currentStore.promotions">
+            <div class="" v-if="currentStore.promotionslength> 0">
                 <div class="row promo_row" v-for="promo in all_promos">
                     <div class="">
                         <router-link :to="{ name: 'promotionDetails', params: { id: promo.slug }}">
