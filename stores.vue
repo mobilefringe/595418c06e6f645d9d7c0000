@@ -121,10 +121,10 @@
         created: function () {
             this.getStoreByCategory();
         },
-      methods: {
-        changeMode (mode) {
-          this.listMode = mode;
-        },
+        methods: {
+            changeMode (mode) {
+                this.listMode = mode;
+            },
         toggle: function (clicked) {
             if(clicked === "dine")
                 this.show_dine = !this.show_dine;
