@@ -59,81 +59,81 @@
 
 <script>
     define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel","vue!search-component","vue!svg-map"], function(Vue, $, Raphael, mapSvg,mousewheel,SearchComponent,SVGMapComponent) {
-    return Vue.component("map-component", {
-        template: template, // the variable template will be injected
-        data: function() {
-            return {
-                lift_blue_box: false,
-                store1: null,
-                store2: null,
-                map :{},
-                suggestionAttribute: 'name',
-                search1 : "",
-                search2 : "",
-                swapSearch : false
+        return Vue.component("map-component", {
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    lift_blue_box: false,
+                    store1: null,
+                    store2: null,
+                    map :{},
+                    suggestionAttribute: 'name',
+                    search1 : "",
+                    search2 : "",
+                    swapSearch : false
+                }
+            },
+            created (){
+              window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+            },
+            watch: {
+                store1 : function () {
+                    this.svgMapRef.addMarker(this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                },
+                store2 : function () {
+                    this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
+                }
+            },
+            computed: {
+                property (){
+                    return this.$store.getters.getProperty;
+                },
+                getSVGurl () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                },
+                findStoreBySlug (){
+                    return this.$store.getters.findStoreBySlug;
+                },
+                allStores() {
+                    return this.$store.getters.processedStores;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
+                }
+            },
+             methods: {
+                swapSearchTerm: function () {
+                    this.swapSearch = !this.swapSearch;
+                    this.svgMapRef.hideMarkers();
+                    var temp_store1 = this.store1;
+                    this.store1 = this.store2;
+                    this.store2 = temp_store1;
+                },
+                removeSearch1 :function() {
+                    this.svgMapRef.removeMark (this.store1.id);
+                    this.search1 = "";
+                    this.store1 = null;
+                },
+                removeSearch2 :function() {
+                    this.svgMapRef.removeMark (this.store2.id);
+                    this.search2 = "";
+                    this.store2 = null;
+                },
+                onOptionSelect1(option) {
+                    this.store1 = option;
+                },
+                onOptionSelect2(option) {
+                    this.store2 = option;
+                },
+                removeDuplicates(myArr, prop) {
+                    return myArr.filter((obj, pos, arr) => {
+                        return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+                    });
+                },
+                updateSVGMap (map) {
+                    this.map = map;
+                }
             }
-        },
-        created (){
-          window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-        },
-        watch: {
-            store1 : function () {
-                this.svgMapRef.addMarker(this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-            },
-            store2 : function () {
-                this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
-            }
-        },
-        computed: {
-            property (){
-                return this.$store.getters.getProperty;
-            },
-            getSVGurl () {
-                return "https://www.mallmaverick.com" + this.property.svgmap_url;
-            },
-            findStoreBySlug (){
-                return this.$store.getters.findStoreBySlug;
-            },
-            allStores() {
-                return this.$store.getters.processedStores;
-            },
-            svgMapRef() {
-                return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
-            }
-        },
-         methods: {
-            swapSearchTerm: function () {
-                this.swapSearch = !this.swapSearch;
-                this.svgMapRef.hideMarkers();
-                var temp_store1 = this.store1;
-                this.store1 = this.store2;
-                this.store2 = temp_store1;
-            },
-            removeSearch1 :function() {
-                this.svgMapRef.removeMark (this.store1.id);
-                this.search1 = "";
-                this.store1 = null;
-            },
-            removeSearch2 :function() {
-                this.svgMapRef.removeMark (this.store2.id);
-                this.search2 = "";
-                this.store2 = null;
-            },
-            onOptionSelect1(option) {
-                this.store1 = option;
-            },
-            onOptionSelect2(option) {
-                this.store2 = option;
-            },
-            removeDuplicates(myArr, prop) {
-                return myArr.filter((obj, pos, arr) => {
-                    return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
-                });
-            },
-            updateSVGMap (map) {
-                this.map = map;
-            }
-        }
+        })
     })
-  })
 </script>
