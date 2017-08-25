@@ -87,6 +87,7 @@
                 
             },
             store2 : function () {
+                console.log("adding pin to store 2");
                 this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
             }
             // ,
