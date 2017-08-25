@@ -132,9 +132,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
        
         },
-        mounted : function (){
-          
-        },
         watch: {
             currentStore : function () {
                 this.all_hours = this.state.results.hours; 
