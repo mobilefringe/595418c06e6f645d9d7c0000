@@ -142,8 +142,8 @@
                             id:"marker_"+ val.id
                         };
                         this.setMarkerOnMap([mark]);
-                    }
                     this.all_markers.push(mark);
+                    }
                 },
                 setMarkerOnMap (mark) {
                     this.map.setMarks(mark);
