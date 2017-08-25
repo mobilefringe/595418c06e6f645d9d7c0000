@@ -70,7 +70,6 @@
                 store2: null,
                 map :{},
                 suggestionAttribute: 'name',
-                input1 : "",
                 search1 : "",
                 search2 : "",
                 swapSearch : false
