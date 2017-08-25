@@ -34,16 +34,16 @@ require.config({
 });
 
 require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'locales', 'moment', "vue-meta", 'jquery'], function (Vue, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, moment, Meta, $) {
-  Vue.use(Meta);
-  Vue.use(VueRouter);
-  Vue.use(Vue2Filters);
-  Vue.use(VueI18n);
+    Vue.use(Meta);
+    Vue.use(VueRouter);
+    Vue.use(Vue2Filters);
+    Vue.use(VueI18n);
 
-  /* initialize router */
-  const router = new VueRouter({
-    mode: 'history',
-    routes: appRoutes
-  });
+    /* initialize router */
+    const router = new VueRouter({
+        mode: 'history',
+        routes: appRoutes
+    });
 
   /* initialize i18n */
   const i18n = new VueI18n({
