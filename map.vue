@@ -88,7 +88,7 @@
             property(){
                 return this.$store.getters.getProperty;
             },
-            getSVGurl : function () {
+            getSVGurl () {
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;
             },
             findStoreBySlug (){
