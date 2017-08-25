@@ -102,92 +102,92 @@
 <script>
     define(["Vue","lodash"], function(Vue,_) {
         return Vue.component("stores-component", {
-        template: template, // the variable template will be injected
-        data: function() {
-            return {
-                listMode: "alphabetical",
-                dine_stores: [],
-                shop_stores: [],
-                play_stores: [],
-                stay_stores: [],
-                service_stores: [],
-                show_dine : false,
-                show_shop : false,
-                show_play : false,
-                show_stay : false,
-                show_service : false
-            }
-        },
-        created: function () {
-            this.getStoreByCategory();
-        },
-        methods: {
-            changeMode (mode) {
-                this.listMode = mode;
-            },
-            getStoreByCategory() {
-                var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
-                "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food","Healthy Choices","Take-out Restaurant"];
-                var shop_cats = ["Apparel","Accessories", "Accessories & Luggage", "Beauty Product","Bedding","Cards & Stationary","Cards, Stationary and Gifts","Children's Apparel", "Children's Wear", "Drugstore","Electronics","Electronics, Computers and Telephones", "Electronics, Computers, and Telephones","Fashion","Fashion & Accessories", "Fashion Accessories","Flower","Flowers", "Footwear", "General Variety","Groceries","Grocery Store","Health & Beauty","Healthy Choices","Jewelery & Accessories"," Jewellery","Jewellery","Kids & Ladies Apparel","Kids Apparel","Ladies Apparel","Leather & Luggage","Leather and Luggage","Market Place","Men's Wear","Mens Apparel","Mens and Ladies Apparel","Mens, Ladies and Kids Apparel ","Music & Videos","Office Supplies","SPECIALTY SHOPS","Shoes","Specialty Apparel","Specialty ","Specialty Store","Specialty, News & Gifts","Sporting Goods & Athleticwear","Telephone,Computers, Electronics","Telephones","Unisex Apparel", "Women's Wear","florist"];
-                var play_cats = ["ATTRACTIONS","Art Gallery","Lounge","Toys","Toys, Hobbies & Pets"];
-                var stay_cats = ["Hotel","Lounge"];
-                var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health","Health & Wellness","Health Services","Management","News","Opitcal/Health/Beauty","Other","Personal Care","Personal Care & Health Service","Pharmacies & Drug Store","Photography & Photo Equipment","Post Office","Postal Services","Printing Services","Professional Services","Retail","SERVICES","Services","Services ","Services and Stores","Specialty Service","Specialty Services","Storage","Telephone,Computers, Electronics","Travel","Travel Agent","florist","health","services"];
-                dine_cats = this.getCategoryIdArray (dine_cats);  
-                shop_cats = this.getCategoryIdArray (shop_cats);  
-                play_cats = this.getCategoryIdArray (play_cats);  
-                stay_cats = this.getCategoryIdArray (stay_cats);  
-                service_cats = this.getCategoryIdArray (service_cats);  
-               
-                this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats, _.toString(o.categories[0])); }), 'name');
-                this.dine_stores = _.groupBy(this.dine_stores, 'name');
-                
-                this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats, _.toString(o.categories[0])); }), 'name');
-                this.shop_stores = _.groupBy(this.shop_stores, 'name');
-                
-                this.play_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(play_cats, _.toString(o.categories[0])); }), 'name');
-                this.play_stores = _.groupBy(this.play_stores, 'name');
-                
-                this.stay_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(stay_cats, _.toString(o.categories[0]));; }), 'name');
-                this.stay_stores = _.groupBy(this.stay_stores, 'name');
-                
-                this.service_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(service_cats, _.toString(o.categories[0])); }), 'name');
-                this.service_stores = _.groupBy(this.service_stores, 'name');
-                
-            },
-            getCategoryIdArray (catArray) {
-                return (_.keys(_.groupBy(_.filter(this.state.categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
-            },
-            getRoute (val, index) {
-                var counted_stores = _.countBy(this.allStores,'name');
-                
-                if( counted_stores[index] >1) {
-                    var route = '/map/' + index;
-                    this.$router.push(route);
+            template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    listMode: "alphabetical",
+                    dine_stores: [],
+                    shop_stores: [],
+                    play_stores: [],
+                    stay_stores: [],
+                    service_stores: [],
+                    show_dine : false,
+                    show_shop : false,
+                    show_play : false,
+                    show_stay : false,
+                    show_service : false
                 }
-                else {
-                    var route = '/stores/' + val[0].slug;
-                    this.$router.push(route);
+            },
+            created: function () {
+                this.getStoreByCategory();
+            },
+            methods: {
+                changeMode (mode) {
+                    this.listMode = mode;
+                },
+                getStoreByCategory() {
+                    var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
+                    "Restaurant","Restaurants", "Specialtu Food & Drink", "Specialty Food & Drink", "Specialty Food", "Specialy Food","Healthy Choices","Take-out Restaurant"];
+                    var shop_cats = ["Apparel","Accessories", "Accessories & Luggage", "Beauty Product","Bedding","Cards & Stationary","Cards, Stationary and Gifts","Children's Apparel", "Children's Wear", "Drugstore","Electronics","Electronics, Computers and Telephones", "Electronics, Computers, and Telephones","Fashion","Fashion & Accessories", "Fashion Accessories","Flower","Flowers", "Footwear", "General Variety","Groceries","Grocery Store","Health & Beauty","Healthy Choices","Jewelery & Accessories"," Jewellery","Jewellery","Kids & Ladies Apparel","Kids Apparel","Ladies Apparel","Leather & Luggage","Leather and Luggage","Market Place","Men's Wear","Mens Apparel","Mens and Ladies Apparel","Mens, Ladies and Kids Apparel ","Music & Videos","Office Supplies","SPECIALTY SHOPS","Shoes","Specialty Apparel","Specialty ","Specialty Store","Specialty, News & Gifts","Sporting Goods & Athleticwear","Telephone,Computers, Electronics","Telephones","Unisex Apparel", "Women's Wear","florist"];
+                    var play_cats = ["ATTRACTIONS","Art Gallery","Lounge","Toys","Toys, Hobbies & Pets"];
+                    var stay_cats = ["Hotel","Lounge"];
+                    var service_cats = ["Automotive","Banking and Financial Services","Beauty Salon","Business Services","Dental","Dry Cleaning Services","Dry Clearers","Education","Eyewear","Eyewear and Health Services","Food Exchange","Food Services","Groceries","General Variety","Hair Salon","Health","Health & Wellness","Health Services","Management","News","Opitcal/Health/Beauty","Other","Personal Care","Personal Care & Health Service","Pharmacies & Drug Store","Photography & Photo Equipment","Post Office","Postal Services","Printing Services","Professional Services","Retail","SERVICES","Services","Services ","Services and Stores","Specialty Service","Specialty Services","Storage","Telephone,Computers, Electronics","Travel","Travel Agent","florist","health","services"];
+                    dine_cats = this.getCategoryIdArray (dine_cats);  
+                    shop_cats = this.getCategoryIdArray (shop_cats);  
+                    play_cats = this.getCategoryIdArray (play_cats);  
+                    stay_cats = this.getCategoryIdArray (stay_cats);  
+                    service_cats = this.getCategoryIdArray (service_cats);  
+                   
+                    this.dine_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(dine_cats, _.toString(o.categories[0])); }), 'name');
+                    this.dine_stores = _.groupBy(this.dine_stores, 'name');
+                    
+                    this.shop_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(shop_cats, _.toString(o.categories[0])); }), 'name');
+                    this.shop_stores = _.groupBy(this.shop_stores, 'name');
+                    
+                    this.play_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(play_cats, _.toString(o.categories[0])); }), 'name');
+                    this.play_stores = _.groupBy(this.play_stores, 'name');
+                    
+                    this.stay_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(stay_cats, _.toString(o.categories[0]));; }), 'name');
+                    this.stay_stores = _.groupBy(this.stay_stores, 'name');
+                    
+                    this.service_stores = _.orderBy(_.filter(this.allStores, function(o) { return _.includes(service_cats, _.toString(o.categories[0])); }), 'name');
+                    this.service_stores = _.groupBy(this.service_stores, 'name');
+                    
+                },
+                getCategoryIdArray (catArray) {
+                    return (_.keys(_.groupBy(_.filter(this.state.categories, function(o) { return _.includes(catArray,o.name); }), 'id')));
+                },
+                getRoute (val, index) {
+                    var counted_stores = _.countBy(this.allStores,'name');
+                    
+                    if( counted_stores[index] >1) {
+                        var route = '/map/' + index;
+                        this.$router.push(route);
+                    }
+                    else {
+                        var route = '/stores/' + val[0].slug;
+                        this.$router.push(route);
+                    }
+                    
                 }
-                
+            },
+            computed: {
+                storesByAlphaIndex() {
+                    return this.$store.getters.storesByAlphaIndex;
+                },
+                storesByCategoryName() {
+                    return this.$store.getters.storesByCategoryName;
+                },
+                findStoreBySlug (){
+                    return this.$store.getters.findStoreBySlug;
+                },
+                allStores() {
+                    return this.$store.getters.processedStores;
+                },
+                state () {
+                    return this.$store.state.results;
+                }
             }
-        },
-        computed: {
-            storesByAlphaIndex() {
-                return this.$store.getters.storesByAlphaIndex;
-            },
-            storesByCategoryName() {
-                return this.$store.getters.storesByCategoryName;
-            },
-            findStoreBySlug (){
-                return this.$store.getters.findStoreBySlug;
-            },
-            allStores() {
-                return this.$store.getters.processedStores;
-            },
-            state () {
-                return this.$store.state.results;
-            }
-        }
+        });
     });
-  });
 </script>
