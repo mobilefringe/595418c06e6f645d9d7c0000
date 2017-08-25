@@ -8,17 +8,17 @@ define([], function () {
             path: '/stores',
             component: view('default'),
             children: [
-            {
-              path: '',
-              component: view('stores'),
-              name: 'storeList'
-            },
-            {
-              path: ':id',
-              component: view('store_details'),
-              name: 'storeDetails'
-            }
-          ]
+                {
+                  path: '',
+                  component: view('stores'),
+                  name: 'storeList'
+                },
+                {
+                  path: ':id',
+                  component: view('store_details'),
+                  name: 'storeDetails'
+                }
+            ]
         },
         {
           path: '/promotions',
