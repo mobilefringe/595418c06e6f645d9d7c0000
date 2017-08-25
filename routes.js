@@ -67,9 +67,9 @@ define([], function () {
     * Asynchronously load view (lazy-loading)
     * @param {string} name the filename (basename) of the view to load.
     */
-  function view(name) {
-    return function(resolve) {
-      require(['vue!' + name + '.vue'], resolve);
-    }
-  };
+    function view(name) {
+        return function(resolve) {
+            require(['vue!' + name + '.vue'], resolve);
+        }
+    };
 });
