@@ -5,7 +5,7 @@
         </div>
         <h4 class="all_caps home_title"> {{$t("message.discoverPath")}}</h4>
         <div class="store_cat_listing">
-            <div class="all_caps cat_title" id="dine" v-on:click="toggle('dine')">
+            <div class="all_caps cat_title" id="dine" @click="toggle('dine')">
                 {{$t("message.dine")}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_dine">
             </div>
@@ -125,9 +125,9 @@
             changeMode (mode) {
                 this.listMode = mode;
             },
-        toggle: function (clicked) {
-            if(clicked === "dine")
-                this.show_dine = !this.show_dine;
+            toggle: function (clicked) {
+                if(clicked === "dine")
+                    this.show_dine = !this.show_dine;
             else if(clicked === "shop")
                 this.show_shop = !this.show_shop;
             else if(clicked === "play")
