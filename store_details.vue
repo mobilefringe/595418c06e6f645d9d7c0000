@@ -32,7 +32,7 @@
         </div> 
         <!-- Store Promotions -->
         <div class="blue_box promo"  v-if="currentStore" @click="show_promo = !show_promo">
-            <p class="dets_title">{{$t("menu.promotions")}} {{show_promo} </p>
+            <p class="dets_title">{{$t("menu.promotions")}} {{show_promo}} </p>
         </div>
         <div  v-show = "show_promo" class="" id="" v-if="currentStore">
             <div class="" v-if="currentStore.promotions">
