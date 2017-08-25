@@ -118,9 +118,9 @@
                 show_service : false
             }
         },
-      created: function () {
-        this.getStoreByCategory();
-      },
+        created: function () {
+            this.getStoreByCategory();
+        },
       methods: {
         changeMode (mode) {
           this.listMode = mode;
