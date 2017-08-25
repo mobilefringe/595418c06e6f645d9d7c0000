@@ -41,7 +41,7 @@
                 },
                 loadingText: {
                     type: String,
-                    default: "Please wait while the map is loading..."
+                    default: "Loading, please wait..."
                 },
                 zoom: {
                     type: Boolean,
