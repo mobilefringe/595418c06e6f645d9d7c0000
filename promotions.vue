@@ -55,33 +55,33 @@
             created : function ()  {
                 this.promo_by_stores;
             },
-        computed: {
-            promotions() {
-              
-              return this.$store.getters.processedPromos;
-            },
-            timezone () {
-              return this.$store.getters.getTimezone;
-            },
-            promo_by_stores () {
-                
-                var promo = _.groupBy(this.promotions, 'store.id');
-                // console.log(this.promotions, promo);
-                // console.log(_.toArray(promo));
-                //   _.orderBy(promo, 'store.name');
-                this.sorted_promos = promo;
-            }
-        },
-        methods : {
-            toggle: function (index) {
-                if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
-                    Vue.set(this.sorted_promos[index][0],'show_promo', true);
+            computed: {
+                promotions() {
+                  
+                  return this.$store.getters.processedPromos;
+                },
+                timezone () {
+                  return this.$store.getters.getTimezone;
+                },
+                promo_by_stores () {
+                    
+                    var promo = _.groupBy(this.promotions, 'store.id');
+                    // console.log(this.promotions, promo);
+                    // console.log(_.toArray(promo));
+                    //   _.orderBy(promo, 'store.name');
+                    this.sorted_promos = promo;
                 }
-                else {
-                    this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
+            },
+            methods : {
+                toggle: function (index) {
+                    if(this.sorted_promos[index][0].show_promo == undefined || this.sorted_promos[index][0].show_promo == null) {
+                        Vue.set(this.sorted_promos[index][0],'show_promo', true);
+                    }
+                    else {
+                        this.sorted_promos[index][0].show_promo = !this.sorted_promos[index][0].show_promo;
+                    }
                 }
             }
-        }
+        });
     });
-  });
 </script>
