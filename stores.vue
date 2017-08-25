@@ -125,19 +125,6 @@
             changeMode (mode) {
                 this.listMode = mode;
             },
-        //     ,
-        //     toggle: function (clicked) {
-        //         if(clicked === "dine")
-        //             this.show_dine = !this.show_dine;
-        //     else if(clicked === "shop")
-        //         this.show_shop = !this.show_shop;
-        //     else if(clicked === "play")
-        //         this.show_play = !this.show_play;
-        //     else if(clicked === "stay")
-        //         this.show_stay = !this.show_stay;
-        //     else if(clicked === "service")
-        //         this.show_service = !this.show_service;
-        // },
         getStoreByCategory() {
 
             var dine_cats = ["Food", "Fast Food", "Coffee and Cafe","Coffee and Cafes","Coffee and Café","Food Court Eatery", "Food Exchange","Food Services",
