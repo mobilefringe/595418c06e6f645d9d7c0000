@@ -57,7 +57,7 @@
         </div>
         <!-- Store Hours -->
         <div class="blue_box promo"  v-if="currentStore" @click="show_hours = !show_hours">
-            <p class="dets_title">{{$t("message.fullHours")}} {{show_hours}}</p>
+            <p class="dets_title">{{$t("message.fullHours")}}</p>
         </div>
         <div  v-show = "show_hours" class="padding_1010" id="" v-if="currentStore">
             <div class="row" v-for="day in currentStore.store_hours_data" v-if="currentStore.store_hours_data[0] !== null">
