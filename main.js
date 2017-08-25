@@ -145,7 +145,6 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
       //toggle this from components to show loading screen
       updateLoader() {
         this.dataLoaded = !this.dataLoaded;
-        console.log("changed showLoader to", this.dataLoaded);
       },
       //this function helps home Page show and hide menu using the prop showMenu
       toggleMenu () {
