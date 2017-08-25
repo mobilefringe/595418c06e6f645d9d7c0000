@@ -124,7 +124,7 @@
         methods: {
             changeMode (mode) {
                 this.listMode = mode;
-            }
+            },
         //     ,
         //     toggle: function (clicked) {
         //         if(clicked === "dine")
