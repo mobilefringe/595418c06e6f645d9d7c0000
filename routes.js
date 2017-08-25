@@ -58,8 +58,8 @@ define([], function () {
             component: view('notfoundcomponent')
         },
         {
-          path: '*',
-          redirect: '/404'
+            path: '*',
+            redirect: '/404'
         }
     ]
 
