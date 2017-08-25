@@ -25,14 +25,14 @@ define([], function () {
             component: view('default'),
             children: [
                 {
-                  path: '',
-                  component: view('promotions'),
-                  name: 'storeList'
+                    path: '',
+                    component: view('promotions'),
+                    name: 'storeList'
                 },
                 {
-                  path: ':id',
-                  component: view('promotion_details'),
-                  name: 'promotionDetails'
+                    path: ':id',
+                    component: view('promotion_details'),
+                    name: 'promotionDetails'
                 }
             ]
         },
