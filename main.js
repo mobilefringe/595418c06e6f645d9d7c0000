@@ -135,20 +135,20 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
                 return moment().year();
             }
         },
-    methods: {
-      // utility method to allow user to change locale value
-      changeLocale: function (val) {
-        this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
-      },
-      //toggle this from components to show loading screen
-      updateLoader() {
-        this.dataLoaded = !this.dataLoaded;
-      },
-      //this function helps home Page show and hide menu using the prop showMenu
-      toggleMenu () {
-          this.show_menu = !this.show_menu;
-      }
-    },
+        methods: {
+            // utility method to allow user to change locale value
+            changeLocale: function (val) {
+                this.locale = val; // this will update the data store, which in turn will trigger the watcher to update the locale in the system
+            },
+            //toggle this from components to show loading screen
+            updateLoader() {
+                this.dataLoaded = !this.dataLoaded;
+            },
+            //this function helps home Page show and hide menu using the prop showMenu
+            toggleMenu () {
+                this.show_menu = !this.show_menu;
+          }
+        },
     router: router,
     store,
     i18n
