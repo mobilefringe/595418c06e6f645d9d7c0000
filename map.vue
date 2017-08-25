@@ -92,7 +92,7 @@
             search1 : function () {
                 
             },
-            search1 : function () {
+            search2 : function () {
                 
             }
         },
