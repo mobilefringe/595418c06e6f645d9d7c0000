@@ -157,7 +157,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                 _.delay(function(val) {
                     ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
                     ref.setViewBox(val);
-                }, 4000, this.currentStore);
+                }, 3500, this.currentStore);
                 this.$emit('loadChange');
                 console.log("emit to parent to make this false");
             },
