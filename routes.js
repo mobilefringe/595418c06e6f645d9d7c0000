@@ -1,13 +1,13 @@
 define([], function () {
     return [
         {
-          path: '/',
-          component: view('home')
+            path: '/',
+            component: view('home')
         },
         {
-          path: '/stores',
-          component: view('default'),
-          children: [
+            path: '/stores',
+            component: view('default'),
+            children: [
             {
               path: '',
               component: view('stores'),
