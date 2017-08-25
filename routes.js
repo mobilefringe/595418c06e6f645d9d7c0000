@@ -9,14 +9,14 @@ define([], function () {
             component: view('default'),
             children: [
                 {
-                  path: '',
-                  component: view('stores'),
-                  name: 'storeList'
+                    path: '',
+                    component: view('stores'),
+                    name: 'storeList'
                 },
                 {
-                  path: ':id',
-                  component: view('store_details'),
-                  name: 'storeDetails'
+                    path: ':id',
+                    component: view('store_details'),
+                    name: 'storeDetails'
                 }
             ]
         },
