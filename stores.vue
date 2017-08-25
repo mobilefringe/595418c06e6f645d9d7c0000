@@ -23,7 +23,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="all_caps cat_title" id="shop" v-on:click="toggle('shop')">
+            <div class="all_caps cat_title" id="shop" @click="show_shop = !show_shop">
                 {{$t("message.shop")}}
                 <img src="//codecloud.cdn.speedyrails.net/sites/59515e256e6f646e860c0000/image/png/1498596224000/up_arrow_2x.png" class="up_arrow pull-right " alt="" v-show="show_shop">
             </div>
