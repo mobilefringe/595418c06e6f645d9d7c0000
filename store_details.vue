@@ -159,6 +159,7 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
                     ref.setViewBox(val);
                 }, 4000, this.currentStore);
                 this.$emit('loadChange');
+                console.log("emit to parent to make this false");
             },
             all_hours : function () {
                 var store_hours = _.groupBy(this.all_hours, 'id');
