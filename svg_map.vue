@@ -159,6 +159,7 @@
                 },
                 resetMapMarks(id) {
                     var mark_id = "marker_"+ id;
+                    console.log(this.all_markers);
                     this.all_markers = _.filter(this.all_markers, function(o) { return (o.id !== mark_id) });
                     this.hideMarkers();
                     this.setMarkerOnMap(this.all_markers);
