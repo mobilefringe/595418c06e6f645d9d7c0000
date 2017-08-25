@@ -164,6 +164,9 @@
                     this.setMarkerOnMap(this.all_markers);
                     
                 }
+            },
+            beforeDestroy: function() {
+                this.map.destroy();
             }
         });
     });
