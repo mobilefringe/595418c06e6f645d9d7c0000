@@ -9,10 +9,10 @@
 <script>
     define(["Vue"], function(Vue) {
         return Vue.component("not-found-component", {
-          template: template, // the variable template will be injected
-          data: function() {
-            return {"text": "Custom 404 Page"};
-          }
+            template: template, // the variable template will be injected
+            data: function() {
+                return {"text": "Custom 404 Page"};
+            }
         });
     });
 </script>
