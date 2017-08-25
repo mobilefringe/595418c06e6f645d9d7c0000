@@ -84,7 +84,7 @@
         watch: {
             store1 : function () {
                 this.svgMapRef.addMarker(this.store1,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                
+                console.log("adding pin to store 1");
             },
             store2 : function () {
                 console.log("adding pin to store 2");
