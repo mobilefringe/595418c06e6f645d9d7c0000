@@ -171,22 +171,22 @@
                 
             }
         },
-      computed: {
-        storesByAlphaIndex() {
-            return this.$store.getters.storesByAlphaIndex;
-        },
-        storesByCategoryName() {
-            return this.$store.getters.storesByCategoryName;
-        },
-        findStoreBySlug (){
-            return this.$store.getters.findStoreBySlug;
-        },
-        allStores() {
-            return this.$store.getters.processedStores;
-        },
-        state () {
-            return this.$store.state.results;
-        }
+        computed: {
+            storesByAlphaIndex() {
+                return this.$store.getters.storesByAlphaIndex;
+            },
+            storesByCategoryName() {
+                return this.$store.getters.storesByCategoryName;
+            },
+            findStoreBySlug (){
+                return this.$store.getters.findStoreBySlug;
+            },
+            allStores() {
+                return this.$store.getters.processedStores;
+            },
+            state () {
+                return this.$store.state.results;
+            }
       }
     });
   });
