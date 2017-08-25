@@ -88,17 +88,18 @@
             },
             store2 : function () {
                 this.svgMapRef.addMarker(this.store2,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1501693321000/map_pin_green_1x.png');
-            },
-            search1 : function () {
-                if(this.search1 == "" || this.search1 == null || this.search1 == undefined) {
-                    this.removeSearch1();
-                }
-            },
-            search2 : function () {
-                if(this.search2 == "" || this.search2 == null || this.search2 == undefined) {
-                    this.removeSearch2();
-                }
             }
+            // ,
+            // search1 : function () {
+            //     if(this.search1 == "" || this.search1 == null || this.search1 == undefined) {
+            //         this.removeSearch1();
+            //     }
+            // },
+            // search2 : function () {
+            //     if(this.search2 == "" || this.search2 == null || this.search2 == undefined) {
+            //         this.removeSearch2();
+            //     }
+            // }
         },
         computed: {
             property(){
