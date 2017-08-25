@@ -100,23 +100,23 @@
 </template>
 
 <script>
-  define(["Vue","lodash"], function(Vue,_) {
-    return Vue.component("stores-component", {
-      template: template, // the variable template will be injected
-      data: function() {
-        return {
-          listMode: "alphabetical",
-          dine_stores: [],
-          shop_stores: [],
-          play_stores: [],
-          stay_stores: [],
-          service_stores: [],
-          show_dine : false,
-          show_shop : false,
-          show_play : false,
-          show_stay : false,
-          show_service : false
-        }
+    define(["Vue","lodash"], function(Vue,_) {
+        return Vue.component("stores-component", {
+        template: template, // the variable template will be injected
+        data: function() {
+            return {
+                listMode: "alphabetical",
+                dine_stores: [],
+                shop_stores: [],
+                play_stores: [],
+                stay_stores: [],
+                service_stores: [],
+                show_dine : false,
+                show_shop : false,
+                show_play : false,
+                show_stay : false,
+                show_service : false
+            }
       },
       created: function () {
         this.getStoreByCategory();
