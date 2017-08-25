@@ -91,14 +91,6 @@
             getSVGurl : function () {
                 return "https://www.mallmaverick.com" + this.property.svgmap_url;
             },
-            showStore1Details: function() {
-                this.store1 =  this.findStoreBySlug("tdcentre-starbucks-coffee--2");
-                this.store1.path_url = "stores/" + this.store1.slug;
-            },
-            showStore2Details: function() {
-                this.store2 = this.findStoreBySlug("eatoncentrepath-nino-d-arena");
-                 this.store2.path_url = "stores/" + this.store2.slug;
-            },
             findStoreBySlug (){
                 return this.$store.getters.findStoreBySlug;
             },
