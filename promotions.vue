@@ -26,7 +26,7 @@
                                 </div>
                             </router-link>
                         </div>
-                         <hr>
+                        <hr>
                     </div>
                 </div>
                 <hr>
