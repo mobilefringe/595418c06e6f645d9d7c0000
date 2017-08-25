@@ -206,12 +206,6 @@ define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-
             concatVal(val1,val2) {
                 return val1 + val2;
             },
-            // togglePromo () {
-            //     this.show_promo = ! this.show_promo;
-            // },
-            // toggleHours () {
-            //      this.show_hours = ! this.show_hours;
-            // },
             promotions() {
                 return this.$store.getters.processedPromos;
             },
