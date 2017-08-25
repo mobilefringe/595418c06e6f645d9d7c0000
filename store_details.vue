@@ -94,152 +94,152 @@
 </template>
 
 <script>
-define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-timezone", "vue-moment","vue!svg-map"], function(Vue,$,Raphael, mapsvg,mousewheel,moment,tz, VueMoment,SVGMapComponent) {
-    return Vue.component("store-details-component", {
-        template: template, // the variable template will be injected,
-        data: function() {
-            return {
-                currentStore : null,
-                map : null,
-                all_hours : {},
-                show_promo : false,
-                show_hours : false,
-                all_promos : [],
-                loading : true
-            }
-        },
-        beforeRouteEnter (to, from, next) {
-            
-            next(vm => {;
-                // access to component instance via `vm`
-                vm.currentStore = vm.findStoreBySlug(to.params.id);
-                this.currentStore = vm.currentStore;
-                if (vm.currentStore === null || vm.currentStore === undefined){
-                    vm.$router.replace({ name: '404'});
+    define(["Vue", "jquery", "Raphael", "mm_mapsvg","mousewheel", "moment", "moment-timezone", "vue-moment","vue!svg-map"], function(Vue,$,Raphael, mapsvg,mousewheel,moment,tz, VueMoment,SVGMapComponent) {
+        return Vue.component("store-details-component", {
+            template: template, // the variable template will be injected,
+            data: function() {
+                return {
+                    currentStore : null,
+                    map : null,
+                    all_hours : {},
+                    show_promo : false,
+                    show_hours : false,
+                    all_promos : [],
+                    loading : true
                 }
-                // Vue.component(SVGMapComponent, {props: {svgMapUrl:this.getSVGurl }});
-            })
-        },
-        beforeRouteUpdate (to, from, next) {
-            this.$forceUpdate();
-            this.currentStore = this.findStoreBySlug(to.params.id);
-            if (this.currentStore === null || this.currentStore === undefined){
-                this.$router.replace({ name: '404'});
-            }
-        },
-        created () {
-            this.$emit('loadChange');
-            window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
-       
-        },
-        watch: {
-            currentStore : function () {
-                this.all_hours = this.state.results.hours; 
-                var store_promo = _.groupBy(this.promotions(), 'id');
-                var temp_promo=[];
-                _.forEach(this.currentStore.promotions, function(val, key) {
-                    var promo =store_promo[val];
-                    temp_promo.push(promo[0]);
-                });
-                this.all_promos = temp_promo;
-                var ref = this.svgMapRef;
+            },
+            beforeRouteEnter (to, from, next) {
                 
-                _.delay(function(val) {
-                    ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
-                    ref.setViewBox(val);
-                }, 3500, this.currentStore);
+                next(vm => {;
+                    // access to component instance via `vm`
+                    vm.currentStore = vm.findStoreBySlug(to.params.id);
+                    this.currentStore = vm.currentStore;
+                    if (vm.currentStore === null || vm.currentStore === undefined){
+                        vm.$router.replace({ name: '404'});
+                    }
+                    // Vue.component(SVGMapComponent, {props: {svgMapUrl:this.getSVGurl }});
+                })
+            },
+            beforeRouteUpdate (to, from, next) {
+                this.$forceUpdate();
+                this.currentStore = this.findStoreBySlug(to.params.id);
+                if (this.currentStore === null || this.currentStore === undefined){
+                    this.$router.replace({ name: '404'});
+                }
+            },
+            created () {
                 this.$emit('loadChange');
+                window.Raphael = Raphael; // our mapSvg plugin is stupid and outdated. need this hack to tie Raphael to window object (global variable)
+           
             },
-            all_hours : function () {
-                var store_hours = _.groupBy(this.all_hours, 'id');
-                if(this.currentStore.todays_hour!== null){
-                    Vue.set(this.currentStore,'store_hours_today', store_hours[this.currentStore.todays_hour][0]);
-                }
-                else {
-                    Vue.set(this.currentStore,'store_hours_today',"");
-                }   
-                
-                var temp_hours=[];
-                if(this.currentStore.store_hours.length > 0) {
-                    _.forEach(this.currentStore.store_hours, function(val, key) {
-                        var hours =store_hours[val];
-                        temp_hours.push(hours[0]);
+            watch: {
+                currentStore : function () {
+                    this.all_hours = this.state.results.hours; 
+                    var store_promo = _.groupBy(this.promotions(), 'id');
+                    var temp_promo=[];
+                    _.forEach(this.currentStore.promotions, function(val, key) {
+                        var promo =store_promo[val];
+                        temp_promo.push(promo[0]);
                     });
+                    this.all_promos = temp_promo;
+                    var ref = this.svgMapRef;
+                    
+                    _.delay(function(val) {
+                        ref.addMarker(val,'//codecloud.cdn.speedyrails.net/sites/595418c06e6f645d9d7c0000/image/png/1500567644000/map_pin_1x.png');
+                        ref.setViewBox(val);
+                    }, 3500, this.currentStore);
+                    this.$emit('loadChange');
+                },
+                all_hours : function () {
+                    var store_hours = _.groupBy(this.all_hours, 'id');
+                    if(this.currentStore.todays_hour!== null){
+                        Vue.set(this.currentStore,'store_hours_today', store_hours[this.currentStore.todays_hour][0]);
+                    }
+                    else {
+                        Vue.set(this.currentStore,'store_hours_today',"");
+                    }   
+                    
+                    var temp_hours=[];
+                    if(this.currentStore.store_hours.length > 0) {
+                        _.forEach(this.currentStore.store_hours, function(val, key) {
+                            var hours =store_hours[val];
+                            temp_hours.push(hours[0]);
+                        });
+                    }
+                    else {
+                        temp_hours.push(null);
+                    }
+                    Vue.set(this.currentStore,'store_hours_data', temp_hours);
+                    console.log(this.currentStore);
+                },
+                map : function () {
+                    this.loading = false;
+                } 
+            },
+            computed: {
+                property(){
+                    return this.$store.getters.getProperty;
+                },
+                findStoreBySlug () {
+                  return this.$store.getters.findStoreBySlug;
+                },
+                getSVGurl : function () {
+                    return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
+                },
+                state () {
+                    return this.$store.state;
+                },
+                timezone() {
+                  return this.$store.getters.getTimezone;
+                },
+                findPromoBySlug () {
+                    return this.$store.getters.findPromoBySlug;
+                },
+                svgMapRef() {
+                    return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
                 }
-                else {
-                    temp_hours.push(null);
+            }, 
+            methods : {
+                concatVal(val1,val2) {
+                    return val1 + val2;
+                },
+                promotions() {
+                    return this.$store.getters.processedPromos;
+                },
+                getDay(day_of_week) {
+                    var day= "";
+                    switch(day_of_week) {
+                        case 0:
+                            day = "Sunday";
+                            break;
+                        case 1:
+                            day = "Monday";
+                            break;
+                        case 2:
+                            day = "Tuesday";
+                            break;
+                        case 3:
+                            day = "Wednesday";
+                            break;
+                        case 4:
+                            day = "Thursday";
+                            break;
+                        case 5:
+                            day = "Friday";
+                            break;
+                        case 6:
+                            day = "Saturday";
+                            break;
+                    }
+                    return day;
+                },
+                go_back () {
+                    this.$router.go(-1);
+                },
+                updateSVGMap (map) {
+                    this.map = map;
                 }
-                Vue.set(this.currentStore,'store_hours_data', temp_hours);
-                console.log(this.currentStore);
-            },
-            map : function () {
-                this.loading = false;
-            } 
-        },
-        computed: {
-            property(){
-                return this.$store.getters.getProperty;
-            },
-            findStoreBySlug () {
-              return this.$store.getters.findStoreBySlug;
-            },
-            getSVGurl : function () {
-                return "https://www.mallmaverick.com" + this.property.svgmap_url;//this.property.svgmap_url;
-            },
-            state () {
-                return this.$store.state;
-            },
-            timezone() {
-              return this.$store.getters.getTimezone;
-            },
-            findPromoBySlug () {
-                return this.$store.getters.findPromoBySlug;
-            },
-            svgMapRef() {
-                return _.filter(this.$children, function(o) { return (o.$el.className == "svg-map") })[0];
             }
-        }, 
-        methods : {
-            concatVal(val1,val2) {
-                return val1 + val2;
-            },
-            promotions() {
-                return this.$store.getters.processedPromos;
-            },
-            getDay(day_of_week) {
-                var day= "";
-                switch(day_of_week) {
-                    case 0:
-                        day = "Sunday";
-                        break;
-                    case 1:
-                        day = "Monday";
-                        break;
-                    case 2:
-                        day = "Tuesday";
-                        break;
-                    case 3:
-                        day = "Wednesday";
-                        break;
-                    case 4:
-                        day = "Thursday";
-                        break;
-                    case 5:
-                        day = "Friday";
-                        break;
-                    case 6:
-                        day = "Saturday";
-                        break;
-                }
-                return day;
-            },
-            go_back () {
-                this.$router.go(-1);
-            },
-            updateSVGMap (map) {
-                this.map = map;
-            }
-        }
+        });
     });
-});
 </script>
