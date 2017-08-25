@@ -12,11 +12,11 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-      <div id="app">
-        <!-- Backdrop-->
-        <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop" v-on:loadChange="updateLoader">
-          <div class="loader">Loading...</div>
-        </div>
+        <div id="app">
+            <!-- Backdrop-->
+            <div v-if="!dataLoaded" class="modal-backdrop custom_backdrop" v-on:loadChange="updateLoader">
+                <div class="loader">Loading...</div>
+            </div>
         <div id="main-container" v-cloak v-if="dataLoaded">
           <div class="row">
             <div class="logo_container">
