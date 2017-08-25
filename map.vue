@@ -85,7 +85,7 @@
             }
         },
         computed: {
-            property(){
+            property (){
                 return this.$store.getters.getProperty;
             },
             getSVGurl () {
