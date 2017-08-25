@@ -187,7 +187,7 @@
             state () {
                 return this.$store.state.results;
             }
-      }
+        }
     });
   });
 </script>
