@@ -61,7 +61,7 @@ define([], function () {
           path: '*',
           redirect: '/404'
         }
-  ]
+    ]
 
   /**
    * Asynchronously load view (lazy-loading)
