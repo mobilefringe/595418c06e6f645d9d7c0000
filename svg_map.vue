@@ -167,6 +167,7 @@
             },
             beforeDestroy: function() {
                 this.map.destroy();
+                console.log("Destroyed!");
             }
         });
     });
