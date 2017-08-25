@@ -146,6 +146,7 @@ require(['Vue', 'vue2-filters', 'vue_router', 'routes', 'store', 'vue-i18n', 'lo
         this.dataLoaded = !this.dataLoaded;
         console.log("changed showLoader to", this.dataLoaded);
       },
+      //this function helps home Page show and hide the prop
       toggleMenu () {
           this.show_menu = !this.show_menu;
       }
