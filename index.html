@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <router-view :menu_items="menu_items" :show_menu="show_menu" :dataLoaded="dataLoaded" @switchMenu="toggleMenu" @loadChange="updateLoader">
+                <router-view :menu_items="menu_items" :show_menu="show_menu" :dataLoaded="dataLoaded" @switchMenu="toggleMenu" @loadChange="updateLoader" v-show="!show_menu">
                     <!-- contains each view -->
                 </router-view>
                 <section class="copyright_footer main_container">
